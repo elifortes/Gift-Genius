@@ -1,2 +1,11 @@
 <h1>Groups#new</h1>
 <p>Find me in app/views/groups/new.html.erb</p>
+
+<%= simple_form_for  @group do |f| %>
+  <%= f.input :name %>
+  <%# <%= f.input :members, collection: @your_collection, input_html: { multiple: true } %>
+  <%= f.button :submit, "Next", class: "btn btn-primary" %>
+
+<% end %>
+<br>
+<%= link_to "cancel", root_path,class: "btn btn-dark"  %>

@@ -23,13 +23,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_063901) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
   create_table "occasions", force: :cascade do |t|
     t.string "group_name"
     t.bigint "group_id", null: false
-    t.integer "recipient", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "gift_spec_id", null: false
