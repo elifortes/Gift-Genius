@@ -1,3 +1,4 @@
-<h1>Groups#create</h1>
-<p>Find me in app/views/groups/create.html.erb</p>
-<%= @occasion.group_name %>
+<h1>Create a group</h1>
+
+<%= link_to "back", new_group_path(@group), class: "btn btn-dark"%>
+<%= link_to "Save group", confirmation_group_path, class: "btn btn-dark" %>
