@@ -1,0 +1,3 @@
+class GiftSpec < ApplicationRecord
+
+end
