@@ -1,7 +1,18 @@
 <div class="d-flex align-items-start flex-column bd-highlight mb-3">
   <h1>Profiles#show</h1>
-  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:cadetblue">
-    Survey
+  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:cadetblue;color:white">
+    <%= current_user.personnal.name if current_user.personnal %>
+    My contacts aka friends
+    <ul class="list list-group list-flush">
+      <% unless current_user.contacts.empty? %>
+        <% current_user.contacts.each do |c| %>
+          <li class="list-group-item">
+            <%= User.find(c.contact_id).personnal.name  %>
+            <%= User.find(c.contact_id).personnal.birthday  %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
   </div>
-  <div class="mt-auto p-2 bd-highlight"> <%= link_to "Submit Questionnaire", groups_path, class: 'btn btn-sucess' %></div>
+  <%= link_to "Submit Questionnaire", groups_path, class: 'btn btn-primary' %>
 </div>

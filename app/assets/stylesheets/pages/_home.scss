@@ -1,11 +1,12 @@
 // Specific CSS for your home-page
 html {
   background-color: rgba(0, 0, 0, 0.648);
-  color: cadetblue
 }
 
 body {
-
+  position: relative;
+  top: 0;
+  left: 0;
   height: 852px;
   max-width: 393px;
   margin: 0 auto;

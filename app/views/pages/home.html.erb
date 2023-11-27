@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="d-flex align-items-start flex-column bd-highlight mb-3">
+  <h1>Pages#home</h1>
+  <p>Find me in app/views/pages/home.html.erb</p>
+  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:cadetblue;color:white">
+    <%= current_user.personnal.name if current_user %>
+    My contacts aka friends
+    <ul class="list list-group list-flush">
+      <% if current_user %>
+        <% unless current_user.contacts.empty? %>
+          <% current_user.contacts.each do |c| %>
+            <li class="list-group-item">
+              <%= User.find(c.contact_id).personnal.name  %>
+              <%= User.find(c.contact_id).personnal.birthday  %>
+            </li>
+          <% end %>
+        <% end %><% end %>
+    </ul>
+  </div>
+  <%= link_to "Create group", new_group_path, class: 'btn btn-primary  p-2' %>
+</div>
