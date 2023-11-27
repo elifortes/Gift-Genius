@@ -10,7 +10,12 @@ class GroupsController < ApplicationController
   end
 
   def gift
-    @group = Group.find(params[:group_id])
+    @group = Group.find(params[:id])
+  end
+
+  def confirmation
+    @group = Group.find(params[:id])
+
   end
 
   def new
@@ -22,6 +27,7 @@ class GroupsController < ApplicationController
       @group = Group.new(group_params)
       # group_id = params[:group_id]
       # if @group.save
+      @occasion= Occasion.new
 
         redirect_to group_gift_path(params[:group_id])
       # else
