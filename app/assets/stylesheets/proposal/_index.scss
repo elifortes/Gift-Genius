@@ -1,0 +1,39 @@
+.proposal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.select-circle {
+  order: 2;
+}
+
+.circle-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #9BBEC8;
+  text-decoration: none;
+  border: 2px solid transparent;
+
+  &:hover, &:focus {
+    background-color: #164863;
+    border-color: #0056b3;
+  }
+}
+
+.proposal-content {
+  order: 1;
+  flex-grow: 1;
+}
+
+.custom-primary-button {
+  background-color: rgb(155, 190, 200); /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  padding: 05px 20px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underline for links */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}

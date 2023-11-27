@@ -1,16 +1,16 @@
 
-
-<h1>Top Gifts</h1>
-
-
-<ul>
+<h1>Top gifts for John</h1>
+<br>
+<div class="proposals-list">
   <% @proposals.each do |proposal| %>
-    <li>
-      <%= link_to proposal.title, proposal_path(proposal) %>
-      - <%= proposal.description %>
-
-    </li>
+    <div class="proposal-item">
+      <div class="proposal-content">
+        <h2><%= proposal.title %></h2>
+        <p><%= proposal.description %></p>
+      </div>
+      <div class="select-circle">
+        <%= link_to '', proposal_path(proposal), class: "circle-link" %>
+      </div>
+    </div>
   <% end %>
-</ul>
-
- <%= link_to 'Back', proposals_path %>
+</div>

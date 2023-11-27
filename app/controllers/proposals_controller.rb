@@ -6,7 +6,7 @@ class ProposalsController < ApplicationController
 
 
   def new
-    @proposal = Proposal.new
+
   end
 
   def show
@@ -23,6 +23,11 @@ class ProposalsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def confirmation
+    @proposal = Proposal.find(params[:id])
+
   end
 
 
