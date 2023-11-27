@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     get "gift", to: "groups#gift"
   end
 
+  resources :proposals
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
