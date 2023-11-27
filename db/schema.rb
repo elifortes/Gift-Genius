@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
 
   create_table "contacts", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.integer "contact_id", null: false
+    t.integer "contact_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_contacts_on_user_id"
@@ -28,22 +28,20 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "occasion_id", null: false
+    t.integer "contact_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
-    t.index ["user_id"], name: "index_groups_on_user_id"
+    t.index ["occasion_id"], name: "index_groups_on_occasion_id"
   end
 
   create_table "occasions", force: :cascade do |t|
     t.string "group_name"
-    t.bigint "group_id", null: false
-    t.integer "recipient", null: false
+    t.integer "recipient"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "gift_spec_id", null: false
     t.index ["gift_spec_id"], name: "index_occasions_on_gift_spec_id"
-    t.index ["group_id"], name: "index_occasions_on_group_id"
   end
 
   create_table "personnals", force: :cascade do |t|
@@ -77,9 +75,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   end
 
   add_foreign_key "contacts", "users"
-  add_foreign_key "groups", "users"
+  add_foreign_key "groups", "occasions"
   add_foreign_key "occasions", "gift_specs"
-  add_foreign_key "occasions", "groups"
   add_foreign_key "personnals", "users"
   add_foreign_key "proposals", "users"
 end

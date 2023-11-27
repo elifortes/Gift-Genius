@@ -26,22 +26,52 @@ def users
   end
 end
 User.destroy_all
-user = User.create!(email: 'nak@me.com',password: 'kalvin')
-user.personnal = Personnal.new(name: 'Francois',birthday:Date.new(01/14/1971))
-user.save!
+userU = User.create!(email: 'nak@me.com',password: 'kalvin')
+userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
+userU.save!
 users
 
 def contacts
-  20.times do
   User.all.each do |u|
+    array = []
+    30.times do
     if rand < 0.5
       contact = Contact.new
       contact.user = u
-      contact.contact_id = User.all.sample.id
+      userid = User.all.sample.id
+      contact.contact_id =userid if contact.contact_id != userid
+      if array.include?(userid)
+        p 'no'; userid
+      else
       p contact.save!
+      array.push( userid)
+      end
     end
   end
 end
 end
+
 Contact.destroy_all
 contacts
+
+
+gift = GiftSpec.new
+gift.save!
+
+occasion = Occasion.new(group_name:'myevent')
+occasion.gift_spec = gift
+occasion.recipient = userU.contacts.sample.id
+group = Group.new()
+group.occasion = occasion
+occasion.save!
+
+group = Group.new()
+group.occasion = occasion
+
+5.times  do
+group = Group.new()
+group.occasion = occasion
+group.contact_id = userU.contacts.sample.id
+group.save!
+p group
+end
