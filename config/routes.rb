@@ -24,8 +24,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :proposals
+  resources :proposals do
+    member do
+      get :confirmation
 
   # Defines the root path route ("/")
   # root "posts#index"
+    end
+  end
 end

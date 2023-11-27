@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :proposals
 
   has_one :personnal
   has_many :groups
