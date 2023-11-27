@@ -10,9 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_27_020908) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_27_043238) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "gift_specs", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_groups_on_user_id"
+  end
+
+  create_table "occasions", force: :cascade do |t|
+    t.string "group_name"
+    t.bigint "group_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "gift_spec_id", null: false
+    t.index ["gift_spec_id"], name: "index_occasions_on_gift_spec_id"
+    t.index ["group_id"], name: "index_occasions_on_group_id"
+  end
+
+  create_table "personnals", force: :cascade do |t|
+    t.string "name"
+    t.integer "birthday"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_personnals_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,4 +57,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_020908) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "groups", "users"
+  add_foreign_key "occasions", "gift_specs"
+  add_foreign_key "occasions", "groups"
+  add_foreign_key "personnals", "users"
 end
