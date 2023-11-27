@@ -1,0 +1,16 @@
+
+
+<h1>Top Gifts</h1>
+
+
+<ul>
+  <% @proposals.each do |proposal| %>
+    <li>
+      <%= link_to proposal.title, proposal_path(proposal) %>
+      - <%= proposal.description %>
+
+    </li>
+  <% end %>
+</ul>
+
+ <%= link_to 'Back', proposals_path %>

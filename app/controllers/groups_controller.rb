@@ -9,18 +9,25 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
   end
 
+  def gift
+    @group = Group.find(params[:group_id])
+  end
+
   def new
     @group = Group.new
   end
 
   def create
 
-      @group = Group.new(name: params[:name], user_id: current_user.id)
-      if @group.save
-        redirect_to groups_path
-      else
-        render :new
-      end
+      @group = Group.new(group_params)
+      # group_id = params[:group_id]
+      # if @group.save
+
+        redirect_to group_gift_path(params[:group_id])
+      # else
+
+        # render :new
+      # end
   end
 
   def edit
@@ -32,5 +39,11 @@ class GroupsController < ApplicationController
 
 
   def destroy
+  end
+
+  private
+
+  def group_params
+    params.require(:group).permit()
   end
 end
