@@ -9,9 +9,9 @@
 #   end
 require 'faker'
 
-Proposal.create(title: 'First Proposal', description: 'This is the first proposal')
-Proposal.create(title: 'Second Proposal', description: 'This is the second proposal')
-
+Proposal.create(title: 'First Proposal', description: 'This is the first proposal.', user: User.first)
+Proposal.create(title: 'Second Proposal', description: 'This is the second proposal.', user: User.first)
+Proposal.create(title: 'Third Proposal', description: 'This is the second proposal.', user: User.first)
 def users
 
   if User.all.count < 10
