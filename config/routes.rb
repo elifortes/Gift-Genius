@@ -24,7 +24,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'questionnaire', to: 'questions#show'
+  get 'questions', to: 'questions#show'
 
   resources :profiles do
     member do
