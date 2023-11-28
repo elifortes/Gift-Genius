@@ -38,7 +38,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   create_table "occasions", force: :cascade do |t|
     t.string "group_name"
     t.integer "recipient"
-    t.bigint "group_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "gift_spec_id", null: false
