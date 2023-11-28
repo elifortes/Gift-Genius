@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   has_many :proposals
+  has_many :user_answers
+  has_many :answers, through: :user_answers
 
   has_one :personnal
   has_many :groups

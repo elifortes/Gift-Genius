@@ -24,6 +24,16 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'questionnaire', to: 'questions#show'
+
+  resources :profiles do
+    member do
+      get :questionnaire
+      post :user_answers
+    end
+  end
+
+  post 'answers', to: 'answers#create'
   resources :proposals do
     member do
       get :confirmation
