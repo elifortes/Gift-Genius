@@ -21,20 +21,13 @@ def users
       personnal = Personnal.new(
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
-<<<<<<< HEAD
-        user.personnal = personnal
+
         user.personnal = personnal
         contact = Contact.new
         contact.user = user
         contact.save!
         user.contact = contact
-=======
-       user.personnal = personnal
-       contact = Contact.new
-       contact.user = user
-       contact.save!
-       user.contact = contact
->>>>>>> main
+
       p user.save!
     end
   end
@@ -172,4 +165,3 @@ end
 
 # recipient for the occasion.
 #
-
