@@ -4,7 +4,7 @@ class CreateMyoccasions < ActiveRecord::Migration[7.1]
       t.references :user, null: false, foreign_key: true
       t.integer :groups, array: true
       t.integer :recipient
-      t.integer :gift
+      t.references :gift, foreign_key: true
       t.timestamps
     end
   end

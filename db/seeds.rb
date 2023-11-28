@@ -47,12 +47,18 @@ p array
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
 print userU, userU.save!
+userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+userM.save!
 
 mycontacts = Mycontact.new
 mycontacts.user = userU
 mycontacts.contacts = array
-print mycontacts
 p mycontacts.save!
+contacts = Mycontact.new
+contacts.user = userM
+contacts.contacts = array
+p contacts.save!
 
 
 
@@ -102,9 +108,3 @@ end
 
 occasion(userU)
 occasion(userU)
-userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
-userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
-userM.save!
-contact = Contact.new
-contact.user = userM
-contact.save!
