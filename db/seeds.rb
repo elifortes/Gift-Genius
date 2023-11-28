@@ -34,19 +34,20 @@ def users
 end
 User.destroy_all
 
-userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
- userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
- userM.save!
-userU = User.create!(email: 'nak@me.com',password: 'kalvin')
-userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
-contact = Contact.new
-contact.user = userU
-p contact.save!
-p contact
-userU.contact = Contact.new()
-p userU
-p userU.save!
-user
+# userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+#  userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+#  userM.save!
+#   users
+# userU = User.create!(email: 'nak@me.com',password: 'kalvin')
+# userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
+# contact = Contact.new
+# # contact.user = userU
+# p contact.save!
+# p contact
+# userU.contact = Contact.new()
+# p userU
+# p userU.save!
+# user
 
 userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
 userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
@@ -57,28 +58,26 @@ users
 
 def contacts
   User.all.each do |u|
+  end
+end
 
-def user_contacts(userU)
-  5.times do
 
-    array = []
-
-def user_contacts(userU)
+def user_contacts(userM)
   5.times do
   array = []
 
-  user_contact = UserContact.new
-  user_contact.user = userU
-  contact = Contact.all.sample
-  if contact.user_id != userU.id || array.include?(contact.id)
-    user_contact.contact = contact
-    array.push(contact.id)
-    user_contact.save!
-  end
+    user_contact = UserContact.new
+    user_contact.user = userM
+    contact = Contact.all.sample
+    if contact.user_id != userM.id || array.include?(contact.id)
+      user_contact.contact = contact
+      array.push(contact.id)
+      user_contact.save!
+    end
   end
 end
 UserContact.destroy_all
-user_contacts(userU)
+user_contacts(userM)
 
 GroupMember.destroy_all
 
@@ -86,20 +85,19 @@ p gift = GiftSpec.new
 p gift.save!
 
 occasion = Occasion.new(occasion_name:'ThisIsMyEvent')
-occasion.user = userU
-occasion.user_contact = userU.user_contacts.sample
+occasion.user = userM
+occasion.user_contact = userM.user_contacts.sample
 occasion.gift_spec = gift
 p occasion
 p occasion.save!
 
-userU.user_contacts.each do |c|
+userM.user_contacts.each do |c|
   group_member = GroupMember.new
   group_member.occasion = occasion
   group_member.user_contact = c
   p group_member
   p group_member.save!
 end
-
 
 # require 'faker'
 
