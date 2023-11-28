@@ -31,6 +31,10 @@ def users
   end
 end
 User.destroy_all
+
+userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+ userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+ userM.save!
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
 contact = Contact.new
