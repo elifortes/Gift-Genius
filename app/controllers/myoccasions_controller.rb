@@ -7,6 +7,9 @@ class MyoccasionsController < ApplicationController
     @myoccasion = Myoccasion.find(params[:id])
   end
 
+  def confirmation
+  end
+
   def new
     @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
     @mycontacts = @mycontacts.map { |c| c.personnal }
@@ -22,7 +25,9 @@ class MyoccasionsController < ApplicationController
     end
     @myoccasion.user = current_user
     @myoccasion.groups.delete(0)
+
     if @myoccasion.save!
+
       redirect_to myoccasion_gift_path(@myoccasion)
     else
       render :new, status: :unprocessable_entity
@@ -32,14 +37,12 @@ class MyoccasionsController < ApplicationController
   def gift
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
     @gift = Gift.new
-    @myoccasion.gift = @gift
-    @myoccasion.save!
   end
 
   private
 
   def param_strong
-    params.require(:myoccasion).permit(:groups, :user, :recipient)
+    params.require(:myoccasion).permit(:groups, :user, :recipient, :gift_id)
   end
 
   def getmyoccasion

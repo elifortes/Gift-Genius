@@ -7,17 +7,6 @@
     <hr>
     <h4 class="mb-2">select the member of the group</h4>
     <%= f.input :groups, as: :check_boxes, collection:@mycontacts, label_method: :name , value_method: :user_id %>
-    <%= f.button :submit %>
+    <%= f.button :submit,class: 'btn btn-success' %>
   <% end %>
   <hr>
-  <%= @myoccasion.groups %>
-  <hr>
-  <br>
-  <ul class="list list-group list-flush">
-    <% @mycontacts.each do |c| %>
-      <li class="list-group-item">
-        <%= c.id  %>
-        <%= c.name  %>
-        <%= c.birthday %>
-      </li>
-    <% end %>

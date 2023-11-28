@@ -34,10 +34,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
     t.string "title"
     t.integer "price"
     t.integer "price_range", array: true
-    t.bigint "occasion_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["occasion_id"], name: "index_gifts_on_occasion_id"
   end
 
   create_table "group_members", force: :cascade do |t|
@@ -145,7 +143,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "contacts", "users"
-  add_foreign_key "gifts", "occasions"
   add_foreign_key "group_members", "occasions"
   add_foreign_key "group_members", "user_contacts"
   add_foreign_key "groups", "occasions"

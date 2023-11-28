@@ -5,7 +5,7 @@ class CreateGift < ActiveRecord::Migration[7.1]
       t.string :title
       t.integer :price
       t.integer :price_range, array: true
-      t.references :occasion, foreign_key: true
+     # t.references : myoccasion, foreign_key: true
       t.timestamps
     end
   end

@@ -15,11 +15,11 @@ Rails.application.routes.draw do
   root to: "pages#home"
 resources :myoccasions do
   get 'gift', to:'myoccasions#gift'
+  get 'confirmation', to: "myoccasions#confirmation"
   resources :gifts
 end
 resources :gifts
   get 'myoccasions/new', to: 'myoccasions#new'
-
   get 'myoccasions/create', to: 'myoccasions#create'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
