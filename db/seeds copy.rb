@@ -13,7 +13,6 @@ Proposal.create(title: 'First Proposal', description: 'This is the first proposa
 Proposal.create(title: 'Second Proposal', description: 'This is the second proposal')
 
 def users
-
   if User.all.count < 10
     10.times do |i|
       user = User.new(email:"user0#{i}@gmail.com")
@@ -22,10 +21,6 @@ def users
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
        user.personnal = personnal
-       contact = Contact.new
-       contact.user = user
-       contact.save!
-       user.contact = contact
       p user.save!
     end
   end
@@ -33,46 +28,52 @@ end
 User.destroy_all
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
-contact = Contact.new
-contact.user = userU
-p contact.save!
-p contact
-userU.contact = Contact.new()
-p userU
-p userU.save!
+userU.save!
 users
 
-def user_contacts(userU)
-  5.times do
+# need to be redone...
+
+def contacts
+  User.all.each do |u|
     array = []
-  user_contact = UserContact.new
-  user_contact.user = userU
-  contact = Contact.all.sample
-  if contact.user_id != userU.id || array.include?(contact.id)
-    user_contact.contact = contact
-    array.push(contact.id)
-    user_contact.save!
-  end
+    30.times do
+    if rand < 0.5
+      contact = Contact.new
+      contact.user = u
+      userid = User.all.sample.id
+      contact.contact_id =userid if contact.contact_id != userid
+      if array.include?(userid)
+        p 'no'; userid
+      else
+      p contact.save!
+      array.push( userid)
+      end
+    end
   end
 end
-UserContact.destroy_all
-user_contacts(userU)
+end
 
-GroupMember.destroy_all
+Contact.destroy_all
+contacts
 
 
-p gift = GiftSpec.new
-p gift.save!
+gift = GiftSpec.new
+gift.save!
 
-occasion = Occasion.new(occasion_name:'ThisIsMyEvent')
+occasion = Occasion.new(group_name:'myevent')
 occasion.gift_spec = gift
-p occasion
-p occasion.save!
+occasion.recipient = userU.contacts.sample.id
+group = Group.new()
+group.occasion = occasion
+occasion.save!
 
-userU.user_contacts.each do |c|
-  group_member = GroupMember.new
-  group_member.occasion = occasion
-  group_member.user_contact = c
-  p group_member
-  p group_member.save!
+group = Group.new()
+group.occasion = occasion
+
+5.times  do
+group = Group.new()
+group.occasion = occasion
+group.contact_id = userU.contacts.sample.id
+group.save!
+p group
 end
