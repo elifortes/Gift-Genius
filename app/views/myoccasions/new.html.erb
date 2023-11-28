@@ -1,0 +1,23 @@
+<div class="p-2 bd-highlight w-100" style="height:100px;padding:-10px;background-color:#E1F2FC">
+  <h1>Myoccassions#new</h1>
+  <p>Find me in app/views/myoccassions/new.html.erb</p>
+  <%= simple_form_for @myoccasion do |f| %>
+    <h4>Select the guest for the occasion</h4>
+    <%# f.input :recipient,collection:@mycontacts %>
+    <hr>
+    <h4 class="mb-2">select the member of the group</h4>
+    <%= f.input :groups, as: :check_boxes, collection:@mycontacts, label_method: :name , value_method: :user_id %>
+    <%= f.button :submit %>
+  <% end %>
+  <hr>
+  <%= @myoccasion.groups %>
+  <hr>
+  <br>
+  <ul class="list list-group list-flush">
+    <% @mycontacts.each do |c| %>
+      <li class="list-group-item">
+        <%= c.id  %>
+        <%= c.name  %>
+        <%= c.birthday %>
+      </li>
+    <% end %>

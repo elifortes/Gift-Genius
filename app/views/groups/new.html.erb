@@ -1,10 +1,10 @@
-<div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
+<div class="p-2 bd-highlight w-100" style="height:100px;padding:-10px;background-color:#E1F2FC;color:white">
   <h1>Groups#new</h1>
   <p>Find me in app/views/groups/new.html.erb</p>
   <%= current_user.personnal.name if current_user %>
   My contacts aka friends
   <hr>
-  <input class="input w-100" value="select a recipient for the occasion">
+  <input class="input w-100" value="select a recipient for the occasion" />
   <hr>
   <br>
   <h4 class="mb-2">select the member of the group</h4>
@@ -13,19 +13,20 @@
       <% unless current_user.user_contacts.empty? %>
         <% current_user.user_contacts.each do |c| %>
           <li class="list-group-item">
+            <%= c.contact.user.id %>
             <%= c.contact.user.personnal.name  %>
             <%= c.contact.user.personnal.birthday %>
           </li>
         <% end %>
-      <% end %><% end %>
+      <% end %>
+    <% end %>
   </ul>
-</input>
-<div class="btn-group  m-2">
-  <%= link_to "cancel", root_path,class: "btn btn-dark w-50"  %>
-  <%# simple_form_for  @group do |f| %>
-    <%#  <%= f.input :name %>
-    <%# <%= f.input :members, collection: @your_collection, input_html: { multiple: true } %>
-    <%# f.button :submit, "Next", class: "btn btn-primary" %>
-    <%# end %>
-    <%= link_to "Next", groups_gift_path,class: "btn btn-dark w-50"  %>
-  </div>
+  <div class="btn-group  m-2">
+    <%= link_to "cancel", root_path,class: "btn btn-dark w-50"  %>
+    <%# simple_form_for  @group do |f| %>
+      <%#  <%= f.input :name %>
+      <%# <%= f.input :members, collection: @your_collection, input_html: { multiple: true } %>
+      <%# f.button :submit, "Next", class: "btn btn-primary" %>
+      <%# end %>
+      <%= link_to "Next", groups_gift_path,class: "btn btn-dark w-50"  %>
+    </div>
