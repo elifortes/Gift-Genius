@@ -1,2 +1,13 @@
-<h1>Profiles#show</h1>
-<p>Find me in app/views/profiles/show.html.erb</p>
+<div class="d-flex align-items-start flex-column bd-highlight mb-3">
+  <h1>Profiles#show</h1>
+  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF;color:white">
+    <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
+    <p>
+      the recipient : ...
+    </p>
+    <p>
+      the Questionnaire: ...
+    </p>
+  </div>
+  <%= link_to "Submit Questionnaire", groups_path, class: 'btn btn-primary' %>
+</div>

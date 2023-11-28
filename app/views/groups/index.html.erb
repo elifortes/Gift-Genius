@@ -1,12 +1,19 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
-<%= link_to "Create Group", new_group_path(@group),class: "btn btn-dark"  %>
+<div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F2A59E;color:white">
+  <h1>Groups#index</h1>
+  <p>Find me in app/views/groups/index.html.erb</p>
+  <% @occasions.each do |g| %>
+    recipient: <%= g.user_contact.contact.user.personnal.name %><br>
+    <%= g.occasion_name %><br>
+    <%= link_to "see Group details", group_path(g),class: "btn btn-dark"  %>
+    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+  <% end %>
+</div>
 <br>
 <br>
 <ul>
-<% @groups.each do |group| %>
-  <div>
-    <li><%= group.name %></li>
-  </div>
-<% end %>
-</ul>
+  <%# @groups.each do |group| %>
+    <div>
+      <li><%#= group.name %></li>
+    </div>
+    <%# end %>
+  </ul>

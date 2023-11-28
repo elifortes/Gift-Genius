@@ -1,4 +1,3 @@
 class Group < ApplicationRecord
-
-  has_one :occasion
+  belongs_to :occasion
 end
