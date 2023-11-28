@@ -1,21 +1,20 @@
 class GroupsController < ApplicationController
   # before_action :authenticate_user!
   def index
-    @groups = Group.all
+    # @groups = Group.all
+    @occasions = Occasion.all
   end
 
-
   def show
-    @group = Group.find(params[:id])
+    @occasion = Occasion.find(params[:id])
   end
 
   def gift
-    @group = Group.find(params[:id])
+    ## @group = Group.find(params[:id])
   end
 
   def confirmation
-    @group = Group.find(params[:id])
-
+    # @group = Group.find(params[:id])
   end
 
   def new
@@ -23,26 +22,23 @@ class GroupsController < ApplicationController
   end
 
   def create
+    # @group = Group.new(group_params)
+    # group_id = params[:group_id]
+    # if @group.save
+    # @occasion = Occasion.new
 
-      @group = Group.new(group_params)
-      # group_id = params[:group_id]
-      # if @group.save
-      @occasion= Occasion.new
+    redirect_to groups_gift_path
+    # else
 
-        redirect_to group_gift_path(params[:group_id])
-      # else
-
-        # render :new
-      # end
+    # render :new
+    # end
   end
 
   def edit
-
   end
 
   def update
   end
-
 
   def destroy
   end
@@ -50,6 +46,6 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit()
+    params.require(:group).permit
   end
 end

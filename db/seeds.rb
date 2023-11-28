@@ -31,6 +31,8 @@ userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
 userU.save!
 users
 
+# need to be redone...
+
 def contacts
   User.all.each do |u|
     array = []
