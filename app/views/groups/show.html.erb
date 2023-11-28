@@ -1,11 +1,11 @@
 <h1>Groups#show</h1>
 <p>Find me in app/views/groups/show.html.erb</p>
 <%= @occasion.id %>
-<%= @occasion.group_name %>
+<%= @occasion.occasion_name %>
 <ul>
-  <% @occasion.groups.each do |g| %>
+  <% @occasion.group_members.each do |g| %>
     <li>
-      <%= User.find(Contact.find(g.contact_id).contact_id).personnal.name %>
+      <%= g.user_contact.contact.user.personnal.name %>
     </li>
   <% end %>
 </ul>

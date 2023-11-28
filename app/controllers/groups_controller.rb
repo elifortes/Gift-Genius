@@ -2,7 +2,9 @@ class GroupsController < ApplicationController
   # before_action :authenticate_user!
   def index
     # @groups = Group.all
-    @occasions = Occasion.all
+    # @occasions = Occasion.all
+    # this is the real:
+    @occasions = current_user.occasions
   end
 
   def show
