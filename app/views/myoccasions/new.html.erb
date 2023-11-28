@@ -3,7 +3,7 @@
   <p>Find me in app/views/myoccassions/new.html.erb</p>
   <%= simple_form_for @myoccasion do |f| %>
     <h4>Select the guest for the occasion</h4>
-    <%# f.input :recipient,collection:@mycontacts %>
+    <%= f.input :recipient,collection:@mycontacts %>
     <hr>
     <h4 class="mb-2">select the member of the group</h4>
     <%= f.input :groups, as: :check_boxes, collection:@mycontacts, label_method: :name , value_method: :user_id %>

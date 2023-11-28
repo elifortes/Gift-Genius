@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'gifts/create'
 
 
 
@@ -12,7 +13,11 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: "pages#home"
-resources :myoccasions
+resources :myoccasions do
+  get 'gift', to:'myoccasions#gift'
+  resources :gifts
+end
+resources :gifts
   get 'myoccasions/new', to: 'myoccasions#new'
 
   get 'myoccasions/create', to: 'myoccasions#create'

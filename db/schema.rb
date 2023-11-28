@@ -29,9 +29,15 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
     t.index ["user_id"], name: "index_contacts_on_user_id"
   end
 
-  create_table "gift_specs", force: :cascade do |t|
+  create_table "gifts", force: :cascade do |t|
+    t.string "description"
+    t.string "title"
+    t.integer "price"
+    t.integer "price_range", array: true
+    t.bigint "occasion_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["occasion_id"], name: "index_gifts_on_occasion_id"
   end
 
   create_table "group_members", force: :cascade do |t|
@@ -62,6 +68,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
   create_table "myoccasions", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.integer "groups", array: true
+    t.integer "recipient"
+    t.integer "gift"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_myoccasions_on_user_id"
@@ -71,10 +79,10 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
     t.string "occasion_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "gift_spec_id", null: false
+    t.bigint "gift_id"
     t.bigint "user_contact_id", null: false
     t.bigint "user_id", null: false
-    t.index ["gift_spec_id"], name: "index_occasions_on_gift_spec_id"
+    t.index ["gift_id"], name: "index_occasions_on_gift_id"
     t.index ["user_contact_id"], name: "index_occasions_on_user_contact_id"
     t.index ["user_id"], name: "index_occasions_on_user_id"
   end
@@ -137,12 +145,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_085358) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "contacts", "users"
+  add_foreign_key "gifts", "occasions"
   add_foreign_key "group_members", "occasions"
   add_foreign_key "group_members", "user_contacts"
   add_foreign_key "groups", "occasions"
   add_foreign_key "mycontacts", "users"
   add_foreign_key "myoccasions", "users"
-  add_foreign_key "occasions", "gift_specs"
+  add_foreign_key "occasions", "gifts"
   add_foreign_key "occasions", "user_contacts"
   add_foreign_key "occasions", "users"
   add_foreign_key "personnals", "users"

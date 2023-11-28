@@ -9,7 +9,7 @@
 #   end
 require 'faker'
 # clean database
-GiftSpec.destroy_all
+Gift.destroy_all
 GroupMember.destroy_all
 UserContact.destroy_all
 Contact.destroy_all
@@ -80,12 +80,12 @@ end
 user_contacts(userU)
 
 def occasion(userU)
-gift = GiftSpec.new
+gift = Gift.new
 gift.save!
 occasion = Occasion.new(occasion_name:Faker::Esport.event)
 occasion.user = userU
 occasion.user_contact = userU.user_contacts.sample
-occasion.gift_spec = gift
+occasion.gift = gift
 p occasion
 p occasion.save!
 userU.user_contacts.each do |c|
