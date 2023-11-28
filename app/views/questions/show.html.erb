@@ -1,0 +1,12 @@
+<h1>Questionnaire</h1>
+
+<%= simple_form_for :survey, url: answers_path, method: :post do |f| %>
+  <% @questions.each do |question| %>
+    <div class="question">
+      <%= f.label :content, question.content %>
+
+      <%= f.input :answers, as: :text, name: "answers[#{question.id}]", label: false %>
+    </div>
+  <% end %>
+  <%= f.button :submit, 'Submit Answers' %>
+<% end %>

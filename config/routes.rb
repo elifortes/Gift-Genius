@@ -28,6 +28,16 @@ Rails.application.routes.draw do
   end
   get "groups/gift", to: "groups#gift"
 
+  get 'questions', to: 'questions#show'
+
+  resources :profiles do
+    member do
+      get :questionnaire
+      post :user_answers
+    end
+  end
+
+  post 'answers', to: 'answers#create'
   resources :proposals do
     member do
       get :confirmation

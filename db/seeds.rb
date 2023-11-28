@@ -7,11 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-# require 'faker'
+require 'faker'
 
-Proposal.create(title: 'First Proposal', description: 'This is the first proposal')
-Proposal.create(title: 'Second Proposal', description: 'This is the second proposal')
-
+Proposal.create(title: 'First Proposal', description: 'This is the first proposal.', user: User.first)
+Proposal.create(title: 'Second Proposal', description: 'This is the second proposal.', user: User.first)
+Proposal.create(title: 'Third Proposal', description: 'This is the second proposal.', user: User.first)
 def users
 
   if User.all.count < 10
@@ -21,17 +21,29 @@ def users
       personnal = Personnal.new(
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
+<<<<<<< HEAD
         user.personnal = personnal
         user.personnal = personnal
         contact = Contact.new
         contact.user = user
         contact.save!
         user.contact = contact
+=======
+       user.personnal = personnal
+       contact = Contact.new
+       contact.user = user
+       contact.save!
+       user.contact = contact
+>>>>>>> main
       p user.save!
     end
   end
 end
 User.destroy_all
+
+userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+ userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+ userM.save!
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
 contact = Contact.new
@@ -41,8 +53,7 @@ p contact
 userU.contact = Contact.new()
 p userU
 p userU.save!
-users
-
+user
 
 userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
 userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
@@ -58,6 +69,11 @@ def user_contacts(userU)
   5.times do
 
     array = []
+
+def user_contacts(userU)
+  5.times do
+  array = []
+
   user_contact = UserContact.new
   user_contact.user = userU
   contact = Contact.all.sample
@@ -73,11 +89,12 @@ user_contacts(userU)
 
 GroupMember.destroy_all
 
-
 p gift = GiftSpec.new
 p gift.save!
 
 occasion = Occasion.new(occasion_name:'ThisIsMyEvent')
+occasion.user = userU
+occasion.user_contact = userU.user_contacts.sample
 occasion.gift_spec = gift
 p occasion
 p occasion.save!
@@ -89,6 +106,7 @@ userU.user_contacts.each do |c|
   p group_member
   p group_member.save!
 end
+
 
 # require 'faker'
 
@@ -151,3 +169,7 @@ end
 #   group.save!
 #   p group
 # end
+
+# recipient for the occasion.
+#
+
