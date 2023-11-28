@@ -10,9 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_27_063901) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contacts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.integer "contact_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_contacts_on_user_id"
+  end
 
   create_table "gift_specs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -20,26 +28,26 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_063901) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "occasion_id", null: false
+    t.integer "contact_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
-    t.index ["user_id"], name: "index_groups_on_user_id"
+    t.index ["occasion_id"], name: "index_groups_on_occasion_id"
   end
 
   create_table "occasions", force: :cascade do |t|
     t.string "group_name"
+    t.integer "recipient"
     t.bigint "group_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "gift_spec_id", null: false
     t.index ["gift_spec_id"], name: "index_occasions_on_gift_spec_id"
-    t.index ["group_id"], name: "index_occasions_on_group_id"
   end
 
   create_table "personnals", force: :cascade do |t|
     t.string "name"
-    t.integer "birthday"
+    t.date "birthday"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -67,9 +75,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_063901) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "groups", "users"
+  add_foreign_key "contacts", "users"
+  add_foreign_key "groups", "occasions"
   add_foreign_key "occasions", "gift_specs"
-  add_foreign_key "occasions", "groups"
   add_foreign_key "personnals", "users"
   add_foreign_key "proposals", "users"
 end
