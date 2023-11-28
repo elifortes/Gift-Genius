@@ -1,8 +1,7 @@
-
 <h1>Top gifts for John</h1>
 <br>
 <div class="proposals-list">
-  <% @proposals.each do |proposal| %>
+  <%= @proposals.each do |proposal| %>
     <div class="proposal-item">
       <div class="proposal-content">
         <h2><%= proposal.title %></h2>
@@ -16,4 +15,8 @@
 </div>
 
 
-    <%# <%= link_to "Back", proposals_path, class: "custom-primary-button" %>
+
+<%= link_to "Back", proposals_path, class: "custom-primary-button" %>
+
+<%= link_to " back to groups ", groups_path,class: "btn btn-dark" %>
+
