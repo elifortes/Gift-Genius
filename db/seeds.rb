@@ -21,15 +21,12 @@ def users
       personnal = Personnal.new(
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
-<<<<<<< HEAD
         user.personnal = personnal
-=======
-       user.personnal = personnal
-       contact = Contact.new
-       contact.user = user
-       contact.save!
-       user.contact = contact
->>>>>>> main
+        user.personnal = personnal
+        contact = Contact.new
+        contact.user = user
+        contact.save!
+        user.contact = contact
       p user.save!
     end
   end
@@ -46,7 +43,7 @@ p userU
 p userU.save!
 users
 
-<<<<<<< HEAD
+
 userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
 userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
 userM.save!
@@ -56,10 +53,10 @@ users
 
 def contacts
   User.all.each do |u|
-=======
+
 def user_contacts(userU)
   5.times do
->>>>>>> main
+
     array = []
   user_contact = UserContact.new
   user_contact.user = userU
@@ -92,7 +89,6 @@ userU.user_contacts.each do |c|
   p group_member
   p group_member.save!
 end
-
 
 # require 'faker'
 
