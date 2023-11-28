@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_28_030112) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "contacts", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.integer "contact_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_contacts_on_user_id"
@@ -25,6 +24,15 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   create_table "gift_specs", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "group_members", force: :cascade do |t|
+    t.bigint "user_contact_id", null: false
+    t.bigint "occasion_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["occasion_id"], name: "index_group_members_on_occasion_id"
+    t.index ["user_contact_id"], name: "index_group_members_on_user_contact_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -36,7 +44,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   end
 
   create_table "occasions", force: :cascade do |t|
-    t.string "group_name"
+    t.string "occasion_name"
     t.integer "recipient"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -62,6 +70,15 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
     t.index ["user_id"], name: "index_proposals_on_user_id"
   end
 
+  create_table "user_contacts", force: :cascade do |t|
+    t.bigint "contact_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["contact_id"], name: "index_user_contacts_on_contact_id"
+    t.index ["user_id"], name: "index_user_contacts_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -75,8 +92,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_27_090730) do
   end
 
   add_foreign_key "contacts", "users"
+  add_foreign_key "group_members", "occasions"
+  add_foreign_key "group_members", "user_contacts"
   add_foreign_key "groups", "occasions"
   add_foreign_key "occasions", "gift_specs"
   add_foreign_key "personnals", "users"
   add_foreign_key "proposals", "users"
+  add_foreign_key "user_contacts", "contacts"
+  add_foreign_key "user_contacts", "users"
 end
