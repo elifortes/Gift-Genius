@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_28_030112) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_28_043414) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,7 +49,11 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_030112) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "gift_spec_id", null: false
+    t.bigint "user_contact_id", null: false
+    t.bigint "user_id", null: false
     t.index ["gift_spec_id"], name: "index_occasions_on_gift_spec_id"
+    t.index ["user_contact_id"], name: "index_occasions_on_user_contact_id"
+    t.index ["user_id"], name: "index_occasions_on_user_id"
   end
 
   create_table "personnals", force: :cascade do |t|
@@ -96,6 +100,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_030112) do
   add_foreign_key "group_members", "user_contacts"
   add_foreign_key "groups", "occasions"
   add_foreign_key "occasions", "gift_specs"
+  add_foreign_key "occasions", "user_contacts"
+  add_foreign_key "occasions", "users"
   add_foreign_key "personnals", "users"
   add_foreign_key "proposals", "users"
   add_foreign_key "user_contacts", "contacts"

@@ -44,7 +44,7 @@ users
 
 def user_contacts(userU)
   5.times do
-    array = []
+  array = []
   user_contact = UserContact.new
   user_contact.user = userU
   contact = Contact.all.sample
@@ -60,11 +60,12 @@ user_contacts(userU)
 
 GroupMember.destroy_all
 
-
 p gift = GiftSpec.new
 p gift.save!
 
 occasion = Occasion.new(occasion_name:'ThisIsMyEvent')
+occasion.user = userU
+occasion.user_contact = userU.user_contacts.sample
 occasion.gift_spec = gift
 p occasion
 p occasion.save!
@@ -76,3 +77,6 @@ userU.user_contacts.each do |c|
   p group_member
   p group_member.save!
 end
+
+# recipient for the occasion.
+#
