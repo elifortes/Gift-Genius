@@ -1,12 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .category {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+
+  }
+
+  .selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
 <h1>Questionnaire</h1>
 
-<%= simple_form_for :survey, url: answers_path, method: :post do |f| %>
-  <% @questions.each do |question| %>
-    <div class="question">
-      <%= f.label :content, question.content %>
-
-      <%= f.input :answers, as: :text, name: "answers[#{question.id}]", label: false %>
-    </div>
-  <% end %>
-  <%= f.button :submit, 'Submit Answers' %>
+<%= simple_form_for :survey, url: questions_path, method: :post, remote: true do |f| %>  <div id="categories">
+    <% @categories.first(05).each do |category| %>
+      <div class="category" onclick="toggleSelection(this, '<%= category['id'] %>')">
+        <%= category['name'] %>
+      </div>
+    <% end %>
+    <%= f.hidden_field :selected_category_id, value: '' %>
+  </div>
+  <%= f.button :submit, class: 'btn btn-primary' %>
 <% end %>
+
+
+<script>
+  var selectedCategory = null;
+
+  function toggleSelection(element, categoryId) {
+    document.querySelectorAll('.category').forEach(function(el) {
+      el.classList.remove('selected');
+    });
+
+    element.classList.add('selected');
+    selectedCategory = categoryId;
+    document.querySelector('input[name="selected_category_id"]').value = categoryId;
+  }
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -6,7 +6,7 @@
       Welcome back,   <%= current_user.personnal.name if current_user %></h2>
     <p>Some upcoming birthday!</p>
     <ul class="list list-group list-flush">
-      <%= current_user.id %>
+      <%# <%= current_user.id %>
       <% if current_user %>
         <% unless current_user.user_contacts.empty? %>
           <% current_user.user_contacts.sample(2).each do |c| %>

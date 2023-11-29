@@ -9,9 +9,9 @@
 #   end
 require 'faker'
 
-Proposal.create(title: 'First Proposal', description: 'This is the first proposal.', user: User.first)
-Proposal.create(title: 'Second Proposal', description: 'This is the second proposal.', user: User.first)
-Proposal.create(title: 'Third Proposal', description: 'This is the second proposal.', user: User.first)
+# Proposal.create(title: 'First Proposal', description: 'This is the first proposal.', user: User.first)
+# Proposal.create(title: 'Second Proposal', description: 'This is the second proposal.', user: User.first)
+# Proposal.create(title: 'Third Proposal', description: 'This is the second proposal.', user: User.first)
 def users
 
   if User.all.count < 10
@@ -32,27 +32,27 @@ def users
 end
 User.destroy_all
 
-userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
- userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
- userM.save!
-userU = User.create!(email: 'nak@me.com',password: 'kalvin')
-userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
-contact = Contact.new
-contact.user = userU
-p contact.save!
-p contact
-userU.contact = Contact.new()
-p userU
-p userU.save!
-users
+# userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+#  userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+#  userM.save!
+# userU = User.create!(email: 'nak@me.com',password: 'kalvin')
+# userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
+# contact = Contact.new
+# contact.user = userU
+# p contact.save!
+# p contact
+# userU.contact = Contact.new()
+# p userU
+# p userU.save!
+# users
 
-def user_contacts(userU)
+def user_contacts(userE)
   5.times do
   array = []
   user_contact = UserContact.new
-  user_contact.user = userU
+  user_contact.user = userE
   contact = Contact.all.sample
-  if contact.user_id != userU.id || array.include?(contact.id)
+  if contact.user_id != userE.id || array.include?(contact.id)
     user_contact.contact = contact
     array.push(contact.id)
     user_contact.save!
@@ -60,7 +60,7 @@ def user_contacts(userU)
   end
 end
 UserContact.destroy_all
-user_contacts(userU)
+user_contacts(userE)
 
 GroupMember.destroy_all
 

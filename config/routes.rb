@@ -27,6 +27,13 @@ Rails.application.routes.draw do
     end
   end
   get "groups/gift", to: "groups#gift"
+  get 'questions/new', to: 'questions#new'
+
+  resources :questions
+
+
+
+  post 'recommendations', to: 'recommendations#create'
 
 
   get 'question', to: 'questions#show'
