@@ -1,0 +1,10 @@
+<% if @products.present? %>
+  var suggestionsDiv = document.getElementById('suggestions');
+  suggestionsDiv.innerHTML = '';
+
+  <% @products.each do |product| %>
+    suggestionsDiv.innerHTML += '<div><%= escape_javascript(product['name']) %></div>';
+  <% end %>
+<% else %>
+  alert('No products found');
+<% end %>
