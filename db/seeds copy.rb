@@ -9,6 +9,12 @@
 #   end
 require 'faker'
 
+
+product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
+
+product.save!
+
+
 Proposal.create(title: 'First Proposal', description: 'This is the first proposal')
 Proposal.create(title: 'Second Proposal', description: 'This is the second proposal')
 
@@ -217,3 +223,13 @@ userM.save!
 contact = Contact.new
 contact.user = userM
 contact.save!
+
+
+proposal = Proposal.create(title: 'First Proposal', description: 'This is the first proposal')
+proposal.user = user
+proposal.save!
+
+
+product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
+product.proposal = proposal
+product.save!

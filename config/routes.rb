@@ -22,6 +22,9 @@ resources :gifts
   get 'myoccasions/new', to: 'myoccasions#new'
   get 'myoccasions/create', to: 'myoccasions#create'
 
+
+
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -38,7 +41,13 @@ resources :gifts
   end
   get "groups/gift", to: "groups#gift"
   get 'questions/new', to: 'questions#new'
+
+  get "products", to: "products#index"
+
   resources :questions
+
+
+
 
 
 

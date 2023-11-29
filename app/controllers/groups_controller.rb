@@ -93,19 +93,21 @@ class GroupsController < ApplicationController
   private
 
 
-  def group_params
-    params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
+        def group_params
+          params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
 
 
-  def param_strong
-    params.require(:myoccasion).permit(:groups, :user, :recipient)
+        def param_strong
+          params.require(:myoccasion).permit(:groups, :user, :recipient)
 
-  def group_params
-    params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
+        def group_params
+          params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
 
-  def param_strong
-    params.require(:myoccasion).permit(:groups, :user, :recipient)
+        def param_strong
+          params.require(:myoccasion).permit(:groups, :user, :recipient)
 
+        end
+      end
+    end
   end
 end
-
