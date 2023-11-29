@@ -27,3 +27,52 @@
   <%= form.submit 'Next page', class: 'btn btn-dark ', type: 'submit' %>
 </div>
 <% end %>
+
+
+  <%# <h4 class="mb-2">select the member of the group</h4>
+  <ul class="list list-group list-flush">
+    <% if current_user %>
+
+      <%# <% unless current_user.user_contacts.empty? %>
+        <%# <% current_user.user_contacts.each do |c| %>
+          <%# <li class="list-group-item"> %>
+            <%# /<%= c.contact.user.personnal.name  %>
+            <%# <%= c.contact.user.personnal.birthday %>
+          <%# </li> %>
+        <%# <% end %>
+      <%# <% end %>
+      <%# <% end %>
+  <%# </ul> %>
+
+<div class="btn-group  m-2">
+  <%# <%= link_to "cancel", root_path,class: "btn btn-dark w-50"  %>
+  <%# simple_form_for  @group do |f| %>
+    <%#  <%= f.input :name %>
+    <%# <%= f.input :members, collection: @your_collection, input_html: { multiple: true } %>
+    <%# f.button :submit, "Next", class: "btn btn-primary" %>
+    <%# end %>
+    <%# <%= link_to "Next", groups_gift_path,class: "btn btn-dark w-50"  %>
+  </div>
+
+      <% unless current_user.user_contacts.empty? %>
+        <% current_user.user_contacts.each do |c| %>
+          <li class="list-group-item">
+            <%= c.contact.user.id %>
+            <%= c.contact.user.personnal.name  %>
+            <%= c.contact.user.personnal.birthday %>
+          </li>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ul>
+  <div class="btn-group  m-2">
+    <%= link_to "cancel", root_path,class: "btn btn-dark w-50"  %>
+    <%# simple_form_for  @group do |f| %>
+      <%#  <%= f.input :name %>
+      <%# <%= f.input :members, collection: @your_collection, input_html: { multiple: true } %>
+      <%# f.button :submit, "Next", class: "btn btn-primary" %>
+      <%# end %>
+      <%= link_to "Next", groups_gift_path,class: "btn btn-dark w-50"  %>
+    </div>
+
+
