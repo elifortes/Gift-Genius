@@ -8,7 +8,8 @@ class ProposalsController < ApplicationController
   end
 
   def show
-    @proposal = Proposal.find(params[:id])
+    @question = Question.find(params[:id])
+    @proposal = Proposal.find(params[:proposal_id])
   end
 
   def create

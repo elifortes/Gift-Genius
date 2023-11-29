@@ -28,13 +28,14 @@ def users
       print i,user.save!
     end
 end
+
 users
 
 # creating a contacts group from User.all
 array = []
 User.all.each do |u|
   if rand < 0.5
-   array << u.id
+    array << u.id
   end
 end
 

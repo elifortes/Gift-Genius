@@ -1,0 +1,15 @@
+
+    <div class="product-image">
+<%= image_tag 'apple.jpg', alt: "Product image", size: "300x200" %>
+
+    <% @products.each do |product| %>
+    <br>
+    <%= product.description %>
+    <br>
+    <%= product.price %>
+    <br>
+    <%= product.rating %>
+    <% end  %>
+    </div>
+<%= link_to "Back", proposals_path, class: "custom-primary-button" %>
+<%= link_to "Select Gift", confirmation_proposal_path(@products.first.proposal_id), class: "custom-primary-button" %>
