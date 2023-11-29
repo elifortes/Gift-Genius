@@ -24,8 +24,7 @@ def users
       personnal = Personnal.new(
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
         user.personnal = personnal
         contact = Contact.new
@@ -34,9 +33,7 @@ def users
         user.contact = contact
 
       p user.save!
-=======
-=======
->>>>>>> main
+
       user.personnal = personnal
       user.personnal = personnal
       contact = Contact.new
@@ -44,11 +41,10 @@ def users
       contact.save!
       user.contact = contact
       print i,user.save!
-<<<<<<< HEAD
->>>>>>> main
+
     end
 end
-<<<<<<< HEAD
+
 User.destroy_all
 
 # userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
@@ -95,11 +91,10 @@ def user_contacts(userM)
 end
 UserContact.destroy_all
 user_contacts(userM)
-=======
-=======
+
     end
 end
->>>>>>> main
+
 users
 
 array = []
@@ -110,10 +105,7 @@ User.all.each do |u|
   end
 end
 p array
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
+
 
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
@@ -122,8 +114,7 @@ userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
 userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
 userM.save!
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 p gift = GiftSpec.new
 p gift.save!
 
@@ -206,9 +197,7 @@ end
 
 # recipient for the occasion.
 #
-=======
-=======
->>>>>>> main
+
 mycontacts = Mycontact.new
 mycontacts.user = userU
 mycontacts.contacts = array
@@ -217,7 +206,3 @@ contacts = Mycontact.new
 contacts.user = userM
 contacts.contacts = array
 p contacts.save!
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
