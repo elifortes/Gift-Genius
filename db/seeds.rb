@@ -5,11 +5,9 @@
 require 'faker'
 # clean database
 Gift.destroy_all
-GroupMember.destroy_all
 UserContact.destroy_all
-Contact.destroy_all
-Occasion.destroy_all
 User.destroy_all
+Myoccasion.destroy_all
 
 # creating 30 users for login with userxx@me.com
 def users
@@ -30,15 +28,16 @@ def users
 end
 users
 
+# creating a contacts group from User.all
 array = []
 User.all.each do |u|
-
   if rand < 0.5
    array << u.id
   end
 end
-p array
 
+
+# creating userlogin for mains
 userU = User.create!(email: 'nak@me.com',password: 'kalvin')
 userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
 print userU, userU.save!
@@ -51,12 +50,18 @@ userE = User.create!(email: 'elimrfortes@gmail.com',password: 'blabla')
 userE.personnal = Personnal.new(name: 'Eli',birthday:Date.new(1992,01,1))
 userE.save!
 
+# assign the contacts to main
+array << UserU.id
+array << userM.id
+array << userE.id
+p array
 
 mycontacts = Mycontact.new
 mycontacts.user = userU
 mycontacts.contacts = array
 p mycontacts.save!
 
+array << userM.id
 contacts = Mycontact.new
 contacts.user = userM
 contacts.contacts = array
