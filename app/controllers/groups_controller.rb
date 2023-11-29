@@ -19,6 +19,8 @@ class GroupsController < ApplicationController
     # @group_member = GroupMember.new
     # @group_member = GroupMember.find(params[:id])
     # @occasion = Occasion.find(params[:id])
+    @myoccasion = Myoccasion.new(param_strong)
+    raise
     ## @group = Group.find(params[:id])
   end
 
@@ -85,5 +87,7 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
 
+  def param_strong
+    params.require(:myoccasion).permit(:groups, :user, :recipient)
   end
 end
