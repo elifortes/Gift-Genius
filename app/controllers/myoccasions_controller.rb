@@ -8,6 +8,11 @@ class MyoccasionsController < ApplicationController
   end
 
   def confirmation
+    @myoccasion = Myoccasion.find(params[:myoccasion_id])
+    # @gift = Gift.find(@myoccasion.gift)
+    # @recipient = User.find(@myoccasion.recipient)
+    
+
   end
 
   def new
@@ -27,7 +32,6 @@ class MyoccasionsController < ApplicationController
     @myoccasion.groups.delete(0)
 
     if @myoccasion.save!
-
       redirect_to myoccasion_gift_path(@myoccasion)
     else
       render :new, status: :unprocessable_entity
@@ -36,13 +40,14 @@ class MyoccasionsController < ApplicationController
 
   def gift
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
+
     @gift = Gift.new
   end
 
   private
 
   def param_strong
-    params.require(:myoccasion).permit(:groups, :user, :recipient, :gift_id)
+    params.require(:myoccasion).permit(:groups, :user, :recipient, :gift, :photo)
   end
 
   def getmyoccasion
