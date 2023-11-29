@@ -29,16 +29,15 @@ resources :gifts
   get "up" => "rails/health#show", as: :rails_health_check
   get 'profiles/show', to: 'profiles#show'
   get "groups/gift", to: "groups#gift"
+  post "groups/gift", to: "groups#gift"
   get "groups/confirmation", to: "groups#confirmation"
+  post "groups/confirmation", to: "groups#confirmation"
   resources :groups do
-    member do
-
-
-    end
+      get "groups/gift", to: "groups#gift"
+      post "groups/gift", to: "groups#gift"
   end
   get "groups/gift", to: "groups#gift"
   get 'questions/new', to: 'questions#new'
-
   resources :questions
 
 

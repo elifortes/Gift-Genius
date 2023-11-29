@@ -1,5 +1,20 @@
 <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
   <h1>You are in groups/gifts</h1>
+  <%= @user_contact_ids =%>
+  <%= form_with(model: @group_member, url: groups_confirmation_path, method: :post, data: {turbo: false}) do |form| -%>
+    <% @user_contact_ids.each do |user_contact_id| %>
+      <%= form.text_field :user_contact_ids, :multiple => true, :value => user_contact_id %>
+    <% end %>
+
+
+
+
+
 </div>
-<%= link_to "back", new_group_path(@group), class: "btn btn-dark"%>
-<%= link_to "Save group", groups_confirmation_path, class: "btn btn-dark" %>
+<div class = "d-flex justify-content-between">
+  <%= link_to "back", new_group_path(@group), class: "btn btn-dark "%>
+  <%= form.submit "Save group", class: 'btn btn-dark w-50', type: 'submit' %>
+</div>
+<% end %>
+
+<%# <%= link_to "Save group", groups_confirmation_path, class: "btn btn-dark" %>
