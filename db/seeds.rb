@@ -3,11 +3,13 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 require 'faker'
+
 # clean database
 Gift.destroy_all
 UserContact.destroy_all
-User.destroy_all
+
 Myoccasion.destroy_all
+User.destroy_all
 
 # creating 30 users for login with userxx@me.com
 def users
@@ -51,7 +53,7 @@ userE.personnal = Personnal.new(name: 'Eli',birthday:Date.new(1992,01,1))
 userE.save!
 
 # assign the contacts to main
-array << UserU.id
+array << userU.id
 array << userM.id
 array << userE.id
 p array
@@ -71,3 +73,44 @@ contacts = Mycontact.new
 contacts.user = userE
 contacts.contacts = array
 p contacts.save!
+
+
+def occasion(user)
+myoccasion = Myoccasion.new(
+groups: [10, 20, 24, 25],
+recipient: 14,
+gift: 1,
+)
+myoccasion.user = user
+myoccasion.save!
+
+
+preference = Favorite.new(
+  user: user,
+favorites: {
+  movies: ["Drama", "Adventure"],
+  music: ["Pop", "Indie"],
+  books: ["Mystery", "Science Fiction"]
+},
+hobbies: ["Reading", "Photography", "Hiking"],
+activities: ["Cooking", "Traveling"],
+channels: ["Email", "Text Messages"],
+contents: ["Articles", "Videos"],
+brands: ["Nike", "Apple"],
+places: ["Beach", "Mountain"],
+socials: ["Twitter", "Instagram"],
+onlines: ["Best hiking trails", "Photography tips"],
+purchases: ["Books", "Outdoor gear"],
+communications: ["Family gatherings", "Friends hangouts"],
+apps: ["Fitness tracker app", "Recipe app"],
+websites: ["National Geographic", "Cooking blogs"],
+locations: ["Visited Paris", "Explored Grand Canyon"],
+devices: ["iPhone", "MacBook"],
+softwares: ["Adobe Lightroom", "Google Chrome"],
+games:  ["Adventure", "Puzzle"],
+platforms: ["Nintendo Switch"]
+)
+
+preference.myoccasion = myoccasion
+end
+
