@@ -1,12 +1,57 @@
+<div class="p-2 bd-highlight text-dark w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
 <h1>Myoccassions#gift</h1>
 <p>Find me in app/views/myoccassions/gift.html.erb</p>
-<%=  @myoccasion.recipient %>
-<hr>
-<%=  @myoccasion.groups %>
-<hr>
-<%= simple_form_for [@myoccasion,@gift] do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :price %>
-  <%= f.button :submit %>
+
+
+<% if @myoccasion.photo.present? %>
+  <%= cl_image_tag @myoccasion.photo.key, height: 90, width: 90, crop: :fill,  class: "rounded-circle"%>
+<% else %>
+  <p>No picture available for the gift.</p>
 <% end %>
+<%=  User.find(@myoccasion.recipient).personnal.name %>
+
+
+<hr>
+<%# <%=  @myoccasion.groups %>
+
+<%= simple_form_for [@myoccasion,@gift] do |f| %>
+  <%= f.input :occasion, collection: Gift.occasions.keys, prompt: 'Select an Occasion' %>
+  <%# <%= f.input :relationship %>
+  <%# <%= f.input :description %>
+  <div class="price-range-container">
+  <span class="price-value">$0</span>
+  <%= f.input :price, as: :range, input_html: { class: 'form-control-range', in: 0..1000 } %>
+  <span class="price-value">$1000</span>
+</div>
+
+
+  <%# <span id="price-range-value">Selected Price Range: $<span id="selected-value">10..1000 </span></span> %>
+  <%# <%= f.input :price %>
+
+
+
+  <div class = "d-flex justify-content-between">
+    <%= link_to 'Back', new_myoccasion_path(@myoccasion), class: "btn btn-dark " %>
+    <%= f.button :submit, class: "btn btn-dark"%>
+
+    <% end %>
+
+  </div>
+</div>
+
+<style>
+  .price-range-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-value {
+    flex: 0 0 auto; /* This ensures the values don't grow or shrink */
+    margin: 0 0px; /* Adjust the margin as needed */
+  }
+  /* Adjust the width of the slider */
+  .form-control-range {
+    width: 80%; /* Set the desired width */
+  }
+</style>
