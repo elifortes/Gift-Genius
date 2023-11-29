@@ -95,17 +95,15 @@ class GroupsController < ApplicationController
 
   def group_params
     params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
-
+  end
 
   def param_strong
     params.require(:myoccasion).permit(:groups, :user, :recipient)
-
+  end
   def group_params
     params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
-
+  end
   def param_strong
     params.require(:myoccasion).permit(:groups, :user, :recipient)
-
   end
 end
-
