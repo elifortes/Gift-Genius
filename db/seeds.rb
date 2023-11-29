@@ -92,8 +92,7 @@ end
 UserContact.destroy_all
 user_contacts(userM)
 
-    end
-end
+
 
 users
 
