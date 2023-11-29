@@ -12,6 +12,8 @@ class GroupsController < ApplicationController
   end
 
   def gift
+    @myoccasion = Myoccasion.new(param_strong)
+    raise
     ## @group = Group.find(params[:id])
   end
 
@@ -47,7 +49,7 @@ class GroupsController < ApplicationController
 
   private
 
-  def group_params
-    params.require(:group).permit
+  def param_strong
+    params.require(:myoccasion).permit(:groups, :user, :recipient)
   end
 end
