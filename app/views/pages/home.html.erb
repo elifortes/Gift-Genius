@@ -8,15 +8,6 @@
       <p>Some upcoming birthday!</p>
       <ul class="list list-group list-flush">
         <% if current_user %>
-          <% unless current_user.user_contacts.empty? %>
-            <% current_user.user_contacts.sample(2).each do |c| %>
-              <li class="list-group-item">
-                <%= c.contact.user.personnal.name  %>
-                <%= c.contact.user.personnal.birthday %>
-              </li>
-            <% end %>
-          <% end %>
-          <hr>
           <p>from user.mycontacts.contacts</p>
           <% @mycontacts.last(2).each do |c| %>
             <li class="list-group-item">
