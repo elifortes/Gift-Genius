@@ -51,11 +51,21 @@ userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
 userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
 userM.save!
 
+userE = User.create!(email: 'elimrfortes@gmail.com',password: 'blabla')
+userE.personnal = Personnal.new(name: 'Eli',birthday:Date.new(1992,01,1))
+userE.save!
+
+
 mycontacts = Mycontact.new
 mycontacts.user = userU
 mycontacts.contacts = array
 p mycontacts.save!
 contacts = Mycontact.new
 contacts.user = userM
+contacts.contacts = array
+p contacts.save!
+
+contacts = Mycontact.new
+contacts.user = userE
 contacts.contacts = array
 p contacts.save!
