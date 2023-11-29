@@ -3,7 +3,7 @@
   <%= @user_contact_ids =%>
   <%= form_with(model: @group_member, url: groups_confirmation_path, method: :post, data: {turbo: false}) do |form| -%>
     <% @user_contact_ids.each do |user_contact_id| %>
-      <%= form.hidden_field :user_contact_ids, :multiple => true, :value => user_contact_id %>
+      <%= form.text_field :user_contact_ids, :multiple => true, :value => user_contact_id %>
     <% end %>
 
 

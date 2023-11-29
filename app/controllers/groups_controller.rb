@@ -15,7 +15,7 @@ class GroupsController < ApplicationController
     # p "TEST GIFT ADD MEMBER"
 
     @user_contact_ids = params["group_member"] ? params["group_member"]["user_contact_ids"] : []
-
+    
     # @group_member = GroupMember.new
     # @group_member = GroupMember.find(params[:id])
     # @occasion = Occasion.find(params[:id])
