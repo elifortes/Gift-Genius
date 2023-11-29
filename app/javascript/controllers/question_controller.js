@@ -1,25 +1,19 @@
-// import { Controller } from "stimulus";
-// import axios from 'axios';
 
-// export default class extends Controller {
-//   static targets = ["output"];
+// document.addEventListener('DOMContentLoaded', function() {
+//   let lifestyleSelect = document.getElementById('lifestyle-select');
+//   let interestsSelect = document.getElementById('interests-select');
 
-//   updateQuestions(event) {
-//     const subcategory = event.target.value;
-//     axios.get(`/fetch_external_data?category=${subcategory}`)
-//       .then(response => this.outputTarget.innerHTML = this.formatResponse(response.data))
-//       .catch(error => console.error("Error:", error));
-//   }
+//   lifestyleSelect.addEventListener('change', redirectToProposalsPath);
+//   interestsSelect.addEventListener('change', redirectToProposalsPath);
+// });
 
-//   formatResponse(data) {
-//     // Assuming data is an array of book objects as formatted in the fetch_books_from_google method
-//     return data.map(book => `
-//       <div>
-//         <h3>${book.title}</h3>
-//         <p>Authors: ${book.authors}</p>
-//         <p>Rating: ${book.average_rating}</p>
-//         <img src="${book.thumbnail}" alt="Book cover">
-//       </div>
-//     `).join('');
+
+// function redirectToProposalsPath() {
+//   let selectedLifestyle = document.getElementById('lifestyle-select').value;
+//   let selectedInterests = document.getElementById('interests-select').value;
+
+//   if (selectedLifestyle !== 'Select' && selectedInterests !== 'Select') {
+
+//     window.location.href = '<%= proposals_path %>';
 //   }
 // }
