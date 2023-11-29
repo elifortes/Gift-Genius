@@ -4,7 +4,7 @@
 
 
 <% if @myoccasion.photo.present? %>
-  <%= cl_image_tag @myoccasion.photo.key, height: 80, width: 120, crop: :fill %>
+  <%= cl_image_tag @myoccasion.photo.key, height: 90, width: 90, crop: :fill,  class: "rounded-circle"%>
 <% else %>
   <p>No picture available for the gift.</p>
 <% end %>
@@ -18,11 +18,13 @@
   <%= f.input :occasion, collection: Gift.occasions.keys, prompt: 'Select an Occasion' %>
   <%# <%= f.input :relationship %>
   <%# <%= f.input :description %>
- <div class="price-range-container">
+  <div class="price-range-container">
   <span class="price-value">$0</span>
   <%= f.input :price, as: :range, input_html: { class: 'form-control-range', in: 0..1000 } %>
   <span class="price-value">$1000</span>
 </div>
+
+
   <%# <span id="price-range-value">Selected Price Range: $<span id="selected-value">10..1000 </span></span> %>
   <%# <%= f.input :price %>
 
@@ -36,6 +38,7 @@
 
   </div>
 </div>
+
 <style>
   .price-range-container {
     display: flex;
