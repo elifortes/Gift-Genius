@@ -8,19 +8,23 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 require 'faker'
+# clean database
+Gift.destroy_all
+GroupMember.destroy_all
+UserContact.destroy_all
+Contact.destroy_all
+Occasion.destroy_all
+User.destroy_all
 
-Proposal.create(title: 'First Proposal', description: 'This is the first proposal.', user: User.first)
-Proposal.create(title: 'Second Proposal', description: 'This is the second proposal.', user: User.first)
-Proposal.create(title: 'Third Proposal', description: 'This is the second proposal.', user: User.first)
+# creating 30 users for login with userxx@me.com
 def users
-
-  if User.all.count < 10
-    10.times do |i|
-      user = User.new(email:"user0#{i}@gmail.com")
+    30.times do |i|
+      user = User.new(email:"user#{i}@gmail.com")
       user.password = "123456"
       personnal = Personnal.new(
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
+<<<<<<< HEAD
 
         user.personnal = personnal
         contact = Contact.new
@@ -29,9 +33,18 @@ def users
         user.contact = contact
 
       p user.save!
+=======
+      user.personnal = personnal
+      user.personnal = personnal
+      contact = Contact.new
+      contact.user = user
+      contact.save!
+      user.contact = contact
+      print i,user.save!
+>>>>>>> main
     end
-  end
 end
+<<<<<<< HEAD
 User.destroy_all
 
 # userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
@@ -78,9 +91,27 @@ def user_contacts(userM)
 end
 UserContact.destroy_all
 user_contacts(userM)
+=======
+users
 
-GroupMember.destroy_all
+array = []
+User.all.each do |u|
 
+  if rand < 0.5
+   array << u.id
+  end
+end
+p array
+>>>>>>> main
+
+userU = User.create!(email: 'nak@me.com',password: 'kalvin')
+userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
+print userU, userU.save!
+userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+userM.save!
+
+<<<<<<< HEAD
 p gift = GiftSpec.new
 p gift.save!
 
@@ -163,3 +194,13 @@ end
 
 # recipient for the occasion.
 #
+=======
+mycontacts = Mycontact.new
+mycontacts.user = userU
+mycontacts.contacts = array
+p mycontacts.save!
+contacts = Mycontact.new
+contacts.user = userM
+contacts.contacts = array
+p contacts.save!
+>>>>>>> main

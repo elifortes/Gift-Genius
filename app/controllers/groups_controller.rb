@@ -12,13 +12,18 @@ class GroupsController < ApplicationController
   end
 
   def gift
+
     # p "TEST GIFT ADD MEMBER"
 
     @user_contact_ids = params["group_member"] ? params["group_member"]["user_contact_ids"] : []
-    
+
     # @group_member = GroupMember.new
     # @group_member = GroupMember.find(params[:id])
     # @occasion = Occasion.find(params[:id])
+
+    @myoccasion = Myoccasion.new(param_strong)
+    raise
+
     ## @group = Group.find(params[:id])
   end
 
@@ -82,8 +87,13 @@ class GroupsController < ApplicationController
 
   private
 
+<<<<<<< HEAD
   def group_params
     params.require(:group_member).permit(occasion_id: [], user_contact_id: [])
 
+=======
+  def param_strong
+    params.require(:myoccasion).permit(:groups, :user, :recipient)
+>>>>>>> main
   end
 end
