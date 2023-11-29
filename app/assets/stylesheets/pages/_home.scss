@@ -11,3 +11,16 @@ body {
   max-width: 393px;
   margin: 0 auto;
 }
+
+.shadow {
+  box-shadow: 4px 4px 4px white;
+  text-shadow: 4px 4px 4px white;
+}
+
+.background-img {
+  background-image: url(https://www.figma.com/file/bQwm5ppXCmdAjqFNJslR6O/Gift-Genius---Relume-Components?type=design&node-id=4494-686&mode=design&t=vx5fqyKz4oj8581i-4);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

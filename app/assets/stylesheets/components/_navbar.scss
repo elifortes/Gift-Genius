@@ -1,6 +1,22 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #244861;
+
+}
+
+
+
+
+.navbar-font {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-font:hover {
+
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 
 .navbar-lewagon .navbar-collapse {
