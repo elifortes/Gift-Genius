@@ -5,7 +5,7 @@
 <ul>
   <% @occasion.group_members.each do |g| %>
     <li>
-      <%= g.user_contact.contact.user.personnal.name %>
+      <%= g.user_contact.contact.user.personnal.name %>  <%= g.user_contact.contact.id %>
     </li>
   <% end %>
 </ul>

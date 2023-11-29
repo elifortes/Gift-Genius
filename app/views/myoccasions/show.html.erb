@@ -1,0 +1,12 @@
+<h1>myoccasion#show</h1>
+<p>Find me in app/views/myoccasions/show.html.erb</p>
+<%= @myoccasion.id %>
+<ul>
+  <% @myoccasion.groups.each do |g| %>
+    <li>
+      <%= User.find(g).personnal.name %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
+<%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
