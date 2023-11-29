@@ -80,3 +80,4 @@ group :test do
 end
 
 gem "hotwire-livereload", "~> 1.3", group: :development
+gem 'dotenv'

@@ -37,8 +37,16 @@ resources :gifts
     end
   end
   get "groups/gift", to: "groups#gift"
+  get 'questions/new', to: 'questions#new'
 
-  get 'questions', to: 'questions#show'
+  resources :questions
+
+
+
+  post 'recommendations', to: 'recommendations#create'
+
+
+  get 'question', to: 'questions#show'
 
   resources :profiles do
     member do
