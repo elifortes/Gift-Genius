@@ -1,6 +1,9 @@
 class ProfilesController < ApplicationController
+
   def show
     @occasion = Occasion.find(params[:occasion_id])
+    @profile = @occasion.profile
+    @favorite = @profile.favorite
   end
 
   def edit
@@ -26,20 +29,31 @@ class ProfilesController < ApplicationController
 
   end
 
+
+
   def update
 
     @profile = Profile.find(params[:id])
+    @occasion = Occasion.find @profile.occasion_id
+    # @favorite = Favorite.new(param_strong)
     @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
-    @favorite.user = current_user
-    @occasion = Occasion.find(@profile.occasion_id)
     @favorite.occasion = @occasion
+    @favorite.user = current_user
     if @favorite.save!
+
+   # @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
+   # @favorite.user = current_user
+   # @occasion = Occasion.find(@profile.occasion_id)
+   # @favorite.occasion = @occasion
+   # if @favorite.save!
+
 
       redirect_to @occasion, notice: 'Questionnaire is saved.'
     else
       render :new, alert: :unprocessable_entity
     end
   end
+
 
   def questionnaire
     @profile = Profile.find(params[:id])

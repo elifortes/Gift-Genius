@@ -16,9 +16,15 @@
       </li>
     </ul>
     <ul>
+
       <li>
         <%= simple_form_for @profile do |p| %>
 
+         <div class="card h-25 overflow-auto p-1">
+          <%= p.input :favorites, as: :check_boxes, collection:@profile.favorites %>
+          <%= p.input :hobbies, collection: @profile.hobbies, as: :check_boxes %>
+          <%= p.input :activities, collection: @profile.activities, as: :check_boxes %>
+          <%= p.input :channels, collection: @profile.channels, as: :check_boxes %>
           <%= p.input :favorites, collection:@profile.favorites, as: :check_boxes %>
           <%# <% p.input :favorites, collection: @profile.favorites.values, as: :grouped_select, group_method: @profile.favorites %>
           <%= p.label :favorites, 'Select  favorite movies:' %>
@@ -33,7 +39,9 @@
           <%= p.input :favorites, collection:@music, as: :check_boxes %>
           <%# <%= p.input :hobbies, as: :check_boxes, collection:@profile.hobbies %>
           <%= p.button :submit, class: 'btn btn-primary' %>
+
         <% end %>
+        </div>
       </li>
     </ul>
   </div>
