@@ -5,6 +5,7 @@ class CreateOccasions < ActiveRecord::Migration[7.1]
       t.references :myoccasion, null: false, foreign_key: true
       t.integer :recipient
       t.integer :gift
+      t.boolean :status
       t.timestamps
     end
   end
