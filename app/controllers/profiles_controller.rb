@@ -1,38 +1,68 @@
 class ProfilesController < ApplicationController
+
   def show
     @occasion = Occasion.find(params[:occasion_id])
+    @profile = @occasion.profile
+    @favorite = @profile.favorite
   end
 
   def edit
     @occasion = Occasion.find(params[:occasion_id])
+
     @profile = @occasion.profile
+    @movies= ["Drama", "Adventure"]
+
+    @music =  ["Pop", "Indie"]
+    @books =  ["Mystery", "Science Fiction"]
+    @hobbies = ["Reading", "Photography", "Hiking"]
+    @activities = ["Cooking", "Traveling"]
+    @channels = ["Email", "Text Messages"]
+
     # add new field
   end
 
   def new
     @occasion = Occasion.find(params[:occasion_id])
     @profile = @occasion.profile
+    raise
+
+
   end
 
+
+
   def update
+
     @profile = Profile.find(params[:id])
+
     # check if there is a favorite [occasion.profile -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
     # creating a new favorite
-    @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies])
+
+    @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
     @favorite.user = current_user
     @occasion = Occasion.find(@profile.occasion_id)
     # update status in occasion questionnaire is done
     @occasion.status = true
     @occasion.save!
-    @favorite.occasion = @occasion
-    if @favorite.save!
 
+   
+#    # @favorite = Favorite.new(param_strong)
+#   @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
+#
+#    @favorite.user = current_user
+    if @favorite.save!
+   # @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
+   # @favorite.user = current_user
+   # @occasion = Occasion.find(@profile.occasion_id)
+   # @favorite.occasion = @occasion
+   # if @favorite.save!
       redirect_to @occasion, notice: 'Questionnaire is saved.'
     else
       render :new, alert: :unprocessable_entity
     end
   end
+
 
   def questionnaire
     @profile = Profile.find(params[:id])
