@@ -42,7 +42,7 @@ resources :gifts
   get "groups/gift", to: "groups#gift"
   get 'questions/new', to: 'questions#new'
 
-  get "products", to: "products#index"
+  # get "products", to: "products#index"
 
   resources :questions
 

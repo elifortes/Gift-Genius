@@ -1,14 +1,14 @@
-class ProductsController < ApplicationController
+# class ProductsController < ApplicationController
 
-  def index
-    @products = Product.all
-  end
+#   def index
+#     @products = Product.all
+#   end
 
-  def show
+#   def show
 
-  end
+#   end
 
-  def new
-  end
+#   def new
+#   end
 
-end
+# end
