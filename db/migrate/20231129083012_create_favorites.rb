@@ -8,9 +8,9 @@ class CreateFavorites < ActiveRecord::Migration[7.1]
        t.integer :gift
        t.integer :user
        t.jsonb :favorites
-       t.text :hobbies, array: true
-       t.text :activities, array: true
-       t.text :channels, array: true
+       t.jsonb :hobbies, array: true
+       t.jsonb :activities, array: true
+       t.jsonb :channels, array: true
        t.text :contents, array: true
        t.text :brands, array: true
        t.text :places, array: true
