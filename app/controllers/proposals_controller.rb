@@ -34,8 +34,6 @@ class ProposalsController < ApplicationController
   end
 
   def filter_proposals_for(user)
-
     user_answers = user.user_answers.includes(:answer).last(10)
-
   end
 end

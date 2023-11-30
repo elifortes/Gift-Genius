@@ -7,9 +7,24 @@ require 'faker'
 # clean database
 Gift.destroy_all
 UserContact.destroy_all
-
 Myoccasion.destroy_all
+Occasion.destroy_all
+Favorite.destroy_all
 User.destroy_all
+# creating userlogin for mains
+userU = User.create!(email: 'nak@me.com',password: 'kalvin')
+userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
+print userU, userU.save!
+
+userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
+userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
+userM.save!
+
+userE = User.create!(email: 'elimrfortes@gmail.com',password: 'blabla')
+userE.personnal = Personnal.new(name: 'Eli',birthday:Date.new(1992,01,1))
+userE.save!
+
+
 
 # creating 30 users for login with userxx@me.com
 def users
@@ -20,11 +35,6 @@ def users
         name: Faker::Name.name,
         birthday:Faker::Date.birthday)
       user.personnal = personnal
-      user.personnal = personnal
-      contact = Contact.new
-      contact.user = user
-      contact.save!
-      user.contact = contact
       print i,user.save!
     end
 end
@@ -39,24 +49,12 @@ User.all.each do |u|
   end
 end
 
-
-# creating userlogin for mains
-userU = User.create!(email: 'nak@me.com',password: 'kalvin')
-userU.personnal = Personnal.new(name: 'Francois',birthday:Date.new(1971,01,14))
-print userU, userU.save!
-
-userM = User.create!(email: 'mena@gmail.com',password: 'aaaaaa')
-userM.personnal = Personnal.new(name: 'Menahil',birthday:Date.new(1994,01,1))
-userM.save!
-
-userE = User.create!(email: 'elimrfortes@gmail.com',password: 'blabla')
-userE.personnal = Personnal.new(name: 'Eli',birthday:Date.new(1992,01,1))
-userE.save!
-
 # assign the contacts to main
 array << userU.id
 array << userM.id
 array << userE.id
+
+
 p array
 
 mycontacts = Mycontact.new
@@ -76,18 +74,40 @@ contacts.contacts = array
 p contacts.save!
 
 
-def occasion(user)
+def occasion(user,array,user1,user2)
 myoccasion = Myoccasion.new(
-groups: [10, 20, 24, 25],
-recipient: 14,
-gift: 1,
+groups:array.sample(3) << user1.id << user2.id,
+recipient: array.sample
 )
+gift = Gift.new(
+price: 200,
+title: [:Anniversary, :Baby_Shower, :Birthday, :Christmas, :Easter,
+:Eid, :Engagement, :Father_s_Day, :Graduation, :Halloween,
+:Housewarming, :Mother_s_Day, :New_Home, :New_Year_s_Eve,
+:Retirement, :Thanksgiving, :Valentine_s_Day, :Wedding].sample.to_s
+)
+gift.save!
 myoccasion.user = user
+myoccasion.gift = gift.id
 myoccasion.save!
 
 
-preference = Favorite.new(
-  user: user,
+# create an occasion for each of the group member
+myoccasion.groups.push(user.id).each do |p|
+  occasion = Occasion.new(
+    recipient: myoccasion.recipient,
+    gift: myoccasion.gift
+  )
+  occasion.myoccasion = myoccasion
+  userR = User.find(p)
+  occasion.user = userR
+  occasion.save!
+
+
+profile = Profile.new(
+myoccasion: myoccasion.id,
+recipient: myoccasion.recipient,
+gift: gift.id,
 favorites: {
   movies: ["Drama", "Adventure"],
   music: ["Pop", "Indie"],
@@ -111,7 +131,12 @@ softwares: ["Adobe Lightroom", "Google Chrome"],
 games:  ["Adventure", "Puzzle"],
 platforms: ["Nintendo Switch"]
 )
-
-preference.myoccasion = myoccasion
+profile.occasion = occasion
+profile.user =userR
+profile.save!
+p profile
 end
-
+end
+occasion(userU,array,userM,userE)
+occasion(userM,array,userU,userE)
+occasion(userE,array,userU,userM)

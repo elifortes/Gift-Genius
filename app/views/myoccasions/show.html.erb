@@ -1,12 +1,20 @@
-<h1>myoccasion#show</h1>
-<p>Find me in app/views/myoccasions/show.html.erb</p>
-<%= @myoccasion.id %>
-<ul>
-  <% @myoccasion.groups.each do |g| %>
-    <li>
-      <%= User.find(g).personnal.name %>
-    </li>
-  <% end %>
-</ul>
+<h1>Creator of a Gift Group</h1>
+<p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
+<div class="card h-90 overflow-auto ">
+  <p>  Group members</p>
+  <ul class=" list-group">
+    <% @myoccasion.groups.each do |g| %>
+      <li class="list-group-item">
+        <%= User.find(g).personnal.name %><br>
+        <% if [true,false].sample %>
+          <i class="fas fa-file-circle-xmark ms-4"></i> no 
+        <% else %>
+          <i class="fas fa-file-signature ms-4"></i> done 
+        <% end %>
+        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 <%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
 <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

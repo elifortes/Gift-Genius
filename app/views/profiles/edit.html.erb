@@ -1,0 +1,25 @@
+<div class="d-flex align-items-start flex-column bd-highlight mb-3">
+  <h1>Profiles#edit</h1>
+  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF">
+    <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
+    <p>
+      the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>.. 
+    </p>
+    <p>
+      the Questionnaire: ...  
+    </p>
+    <ul>
+      <li>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <%= simple_form_for @profile do |p| %>
+          <%= p.input :favorites, as: :check_boxes, collection:@profile.favorites %>
+          <%= p.input :hobbies, collection:@profile.hobbies  %>
+          <%= p.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
