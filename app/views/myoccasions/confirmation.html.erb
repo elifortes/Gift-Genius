@@ -6,6 +6,18 @@
   <br>
   <hr>
   <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong>?</h5>
+  <h2>as Member</h2>
+  <ul>
+    <%= @myoccasion.id %>
+    <% @occasions.each do |o| %>
+      <% if o.recipient == @myoccasion.recipient &&  @myoccasion.id==o.myoccasion.id %>
+        <li>
+          <%= o.id %>|  <%= o.myoccasion.id %>|<%= o.recipient%>
+          recipient: <%= User.find(o.recipient).personnal.name %><br>
+          <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
+        <% end %>  </li>
+    <% end %>
+  </ul>
 </div>
 <%= link_to "Skip to groups", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "Questionnaire", edit_occasion_profile_path(@occasion),class: "btn btn-dark"  %>
+<%# link_to "Questionnaire", edit_occasion_profile_path,class: "btn btn-dark"  %>
