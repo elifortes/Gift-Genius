@@ -58,9 +58,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
     t.integer "gift"
     t.integer "user"
     t.jsonb "favorites"
-    t.jsonb "hobbies", array: true
-    t.jsonb "activities", array: true
-    t.jsonb "channels", array: true
+    t.jsonb "hobbies"
+    t.jsonb "activities"
+    t.jsonb "channels"
     t.text "contents", array: true
     t.text "brands", array: true
     t.text "places", array: true
@@ -120,6 +120,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
     t.bigint "myoccasion_id", null: false
     t.integer "recipient"
     t.integer "gift"
+    t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["myoccasion_id"], name: "index_occasions_on_myoccasion_id"
