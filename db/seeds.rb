@@ -111,11 +111,12 @@ gift: gift.id,
 favorites: {
   movies: ["Drama", "Adventure"],
   music: ["Pop", "Indie"],
-  books: ["Mystery", "Science Fiction"]
+  books: ["Mystery", "Science Fiction"],
+  hobbies: ["Reading", "Photography", "Hiking"],
+  activities: ["Cooking", "Traveling"],
+  channels: ["Email", "Text Messages"]
 },
-#hobbies: ["Reading", "Photography", "Hiking"],
-#activities: ["Cooking", "Traveling"],
-#channels: ["Email", "Text Messages"],
+
 contents: ["Articles", "Videos"],
 brands: ["Nike", "Apple"],
 places: ["Beach", "Mountain"],
