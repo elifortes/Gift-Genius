@@ -34,20 +34,29 @@ class ProfilesController < ApplicationController
   def update
 
     @profile = Profile.find(params[:id])
-    @occasion = Occasion.find @profile.occasion_id
-    # @favorite = Favorite.new(param_strong)
-    @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
-    @favorite.occasion = @occasion
-    @favorite.user = current_user
-    if @favorite.save!
 
+    # check if there is a favorite [occasion.profile -> occasion.favorite]
+    #       if exist? -> favorite[merge/update]
+    # creating a new favorite
+
+    @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
+    @favorite.user = current_user
+    @occasion = Occasion.find(@profile.occasion_id)
+    # update status in occasion questionnaire is done
+    @occasion.status = true
+    @occasion.save!
+
+   
+#    # @favorite = Favorite.new(param_strong)
+#   @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
+#
+#    @favorite.user = current_user
+    if @favorite.save!
    # @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies], activities: params[:profile][:activities])
    # @favorite.user = current_user
    # @occasion = Occasion.find(@profile.occasion_id)
    # @favorite.occasion = @occasion
    # if @favorite.save!
-
-
       redirect_to @occasion, notice: 'Questionnaire is saved.'
     else
       render :new, alert: :unprocessable_entity
