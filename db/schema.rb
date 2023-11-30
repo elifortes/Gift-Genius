@@ -10,9 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "active_storage_attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
+  end
+
+  create_table "active_storage_blobs", force: :cascade do |t|
+    t.string "key", null: false
+    t.string "filename", null: false
+    t.string "content_type"
+    t.text "metadata"
+    t.string "service_name", null: false
+    t.bigint "byte_size", null: false
+    t.string "checksum"
+    t.datetime "created_at", null: false
+    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "active_storage_variant_records", force: :cascade do |t|
+    t.bigint "blob_id", null: false
+    t.string "variation_digest", null: false
+    t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
 
   create_table "answers", force: :cascade do |t|
     t.text "content"
@@ -30,30 +58,15 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.bigint "myoccasion_id"
-    t.integer "recipient"
-    t.integer "user"
-    t.jsonb "favorites"
-    t.text "hobbies"
-    t.text "activities"
-    t.text "channels"
-    t.text "contents"
-    t.text "brands"
-    t.text "places"
-    t.text "socials"
-    t.text "onlines"
-    t.text "purchases"
-    t.text "communications"
-    t.text "apps"
-    t.text "websites"
-    t.text "locations"
-    t.text "devices"
-    t.text "softwares"
-    t.text "games"
-    t.text "platforms"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["myoccasion_id"], name: "index_favorites_on_myoccasion_id"
+  end
+
+  create_table "gift_categories", force: :cascade do |t|
+    t.string "name"
+    t.text "categories"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "gifts", force: :cascade do |t|
@@ -63,6 +76,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
     t.integer "price_range", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "occasion"
   end
 
   create_table "group_members", force: :cascade do |t|
@@ -121,6 +135,16 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
     t.index ["user_id"], name: "index_personnals_on_user_id"
   end
 
+  create_table "products", force: :cascade do |t|
+    t.string "description"
+    t.decimal "price"
+    t.float "rating"
+    t.bigint "proposal_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["proposal_id"], name: "index_products_on_proposal_id"
+  end
+
   create_table "proposals", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -168,9 +192,10 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "questions"
   add_foreign_key "contacts", "users"
-  add_foreign_key "favorites", "myoccasions"
   add_foreign_key "group_members", "occasions"
   add_foreign_key "group_members", "user_contacts"
   add_foreign_key "groups", "occasions"
@@ -180,6 +205,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_055001) do
   add_foreign_key "occasions", "user_contacts"
   add_foreign_key "occasions", "users"
   add_foreign_key "personnals", "users"
+  add_foreign_key "products", "proposals"
   add_foreign_key "proposals", "users"
   add_foreign_key "user_answers", "answers"
   add_foreign_key "user_answers", "questions"

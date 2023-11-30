@@ -10,9 +10,9 @@
 require 'faker'
 
 
-product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
+# product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
 
-product.save!
+# product.save!
 
 
 Proposal.create(title: 'First Proposal', description: 'This is the first proposal')
@@ -230,6 +230,6 @@ proposal.user = user
 proposal.save!
 
 
-product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
-product.proposal = proposal
-product.save!
+# product = Product.create(description: "Product 1", price: 19.99, rating: 4.5, proposal_id: 1)
+# product.proposal = proposal
+# product.save!
