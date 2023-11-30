@@ -8,4 +8,4 @@
   <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong>?</h5>
 </div>
 <%= link_to "Skip to groups", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "Questionnaire", edit_occasion_profile_path(@occasion),class: "btn btn-dark"  %>
+<%= link_to "Questionnaire", edit_occasion_profile_path(@occasion.id),class: "btn btn-dark"  %>

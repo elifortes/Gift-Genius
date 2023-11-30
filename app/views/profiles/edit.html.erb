@@ -3,22 +3,28 @@
   <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF">
     <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
     <p>
-      the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>.. 
+      the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>..
     </p>
     <p>
-      the Questionnaire: ...  
+      the Questionnaire: ...
     </p>
     <ul>
       <li>
       </li>
     </ul>
     <ul>
+
       <li>
         <%= simple_form_for @profile do |p| %>
+         <div class="card h-25 overflow-auto p-1">
           <%= p.input :favorites, as: :check_boxes, collection:@profile.favorites %>
-          <%= p.input :hobbies, collection:@profile.hobbies  %>
+          <%= p.input :hobbies, collection: @profile.hobbies, as: :check_boxes %>
+          <%= p.input :activities, collection: @profile.activities, as: :check_boxes %>
+          <%= p.input :channels, collection: @profile.channels, as: :check_boxes %>
           <%= p.button :submit, class: 'btn btn-primary' %>
+
         <% end %>
+        </div>
       </li>
     </ul>
   </div>
