@@ -8,16 +8,15 @@ class GiftsController < ApplicationController
     @max_price = 1000
     @min_price = 0
 
-    @gift.price = (params[:gift][:price].to_f/100 * 1000).to_i
+    @gift.price = (params[:gift][:price].to_f / 100 * 1000).to_i
 
     if @gift.save!
       @myoccasion.gift = @gift.id
       @myoccasion.save!
 
-
       redirect_to myoccasion_confirmation_path(@myoccasion)
     else
-      render :new, status: :unprocessable_entity
+      render :new, alert: :unprocessable_entity
     end
   end
 
