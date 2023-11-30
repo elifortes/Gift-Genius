@@ -6,6 +6,7 @@ class ProfilesController < ApplicationController
   def edit
     @occasion = Occasion.find(params[:occasion_id])
     @profile = @occasion.profile
+    # add new field
   end
 
   def new
@@ -20,6 +21,7 @@ class ProfilesController < ApplicationController
     @occasion = Occasion.find(@profile.occasion_id)
     @favorite.occasion = @occasion
     if @favorite.save!
+
       redirect_to @occasion, notice: 'Questionnaire is saved.'
     else
       render :new, alert: :unprocessable_entity
@@ -40,6 +42,6 @@ class ProfilesController < ApplicationController
   private
 
   def param_strong
-    params.require(:profile).permit(:profile, :favorites, :recipient, :myoccasion, :gift, :hobbies)
+    params.require(:profile).permit(:favorites, :recipient, :myoccasion, :gift, :hobbies)
   end
 end
