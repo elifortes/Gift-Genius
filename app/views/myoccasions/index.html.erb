@@ -2,15 +2,19 @@
   <h1>Gift genius Dashboard </h1>
   <h2>As Creator</h2>
   <% @myoccasions.each do |g| %>
-    recipient: <%= User.find(g.recipient).personnal.name %><br>
-    <%= link_to "see Group details", myoccasion_path(g),class: "btn btn-dark"  %>
-    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+    <% if g.recipient %>
+      recipient: <%= User.find(g.recipient).personnal.name %><br>
+      <%= link_to "see Group details", myoccasion_path(g),class: "btn btn-dark"  %>
+      <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+    <% end %>
   <% end %>
   <hr>
   <h2>as Member</h2>
   <% @occasions.each do |o| %>
-    recipient: <%= User.find(o.recipient).personnal.name %><br>
-    <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
-    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+    <% if o.recipient %>
+      recipient: <%= User.find(o.recipient).personnal.name %><br>
+      <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
+      <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+    <% end %>
   <% end %>
 </div>
