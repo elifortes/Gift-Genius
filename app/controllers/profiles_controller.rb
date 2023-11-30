@@ -16,9 +16,15 @@ class ProfilesController < ApplicationController
 
   def update
     @profile = Profile.find(params[:id])
+    # check if there is a favorite [occasion.profile -> occasion.favorite]
+    #       if exist? -> favorite[merge/update]
+    # creating a new favorite
     @favorite = Favorite.new(favorites: params[:profile][:favorites], hobbies: params[:profile][:hobbies])
     @favorite.user = current_user
     @occasion = Occasion.find(@profile.occasion_id)
+    # update status in occasion questionnaire is done
+    @occasion.status = true
+    @occasion.save!
     @favorite.occasion = @occasion
     if @favorite.save!
 
