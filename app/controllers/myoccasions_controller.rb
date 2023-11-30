@@ -11,8 +11,8 @@ class MyoccasionsController < ApplicationController
 
   def confirmation
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
-    # @gift = Gift.find(@myoccasion.gift)
-    # @recipient = User.find(@myoccasion.recipient)
+    @occasion = current_user.occasions.select { |o| o.myoccasion_id == @myoccasion.id }
+    @occasions = current_user.occasions
   end
 
   def new
@@ -30,6 +30,7 @@ class MyoccasionsController < ApplicationController
     end
     @myoccasion.user = current_user
     @myoccasion.groups.delete(0)
+    @myoccasion.groups.uniq!
 
     if @myoccasion.save!
       redirect_to myoccasion_gift_path(@myoccasion)
@@ -50,6 +51,6 @@ class MyoccasionsController < ApplicationController
     params.require(:myoccasion).permit(:groups, :user, :recipient, :gift, :photo)
   end
 
-  def getmyoccasion
+  def myoccasion_to_occasion
   end
 end

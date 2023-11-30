@@ -1,14 +1,11 @@
-<div class="p-2 bd-highlight w-100" style="height:100px;padding:-10px;background-color:#E1F2FC">
-  <h1>Myoccassions#new</h1>
-  <p>Find me in app/views/myoccassions/new.html.erb</p>
+<div class="p-2" style="background-color:#E1F2FC">
+  <h4>Group for this occasion</h4>
   <%= simple_form_for @myoccasion do |f| %>
-    <h4>Select the guest for the occasion</h4>
     <%= f.input :recipient, collection:@mycontacts %>
     <%= f.input :photo, as: :file %>
-    <hr>
-    <h4 class="mb-2">select the member of the group</h4>
-    <%= f.input :groups, as: :check_boxes, collection:@mycontacts, label_method: :name , value_method: :user_id %>
-    <%= f.button :submit,class: 'btn btn-success' %>
+    <div class=" h-50 overflow-auto p-4" style="height:300px">
+      <h4>select the member of the group</h4>
+      <%= f.input :groups, as: :check_boxes, collection:@mycontacts, label_method: :name , value_method: :user_id %>
+    </div>
+    <%= f.button :submit,class: 'btn btn-success mt-2' %>
   <% end %>
-  <hr>
-</div>

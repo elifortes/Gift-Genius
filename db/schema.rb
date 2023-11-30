@@ -58,9 +58,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
     t.integer "gift"
     t.integer "user"
     t.jsonb "favorites"
-    t.text "hobbies", array: true
-    t.text "activities", array: true
-    t.text "channels", array: true
+    t.jsonb "hobbies", array: true
+    t.jsonb "activities", array: true
+    t.jsonb "channels", array: true
     t.text "contents", array: true
     t.text "brands", array: true
     t.text "places", array: true
@@ -153,9 +153,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
     t.integer "gift"
     t.integer "user"
     t.jsonb "favorites"
-    t.text "hobbies", array: true
-    t.text "activities", array: true
-    t.text "channels", array: true
+    t.jsonb "hobbies", array: true
+    t.jsonb "activities", array: true
+    t.jsonb "channels", array: true
     t.text "contents", array: true
     t.text "brands", array: true
     t.text "places", array: true
