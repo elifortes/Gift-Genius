@@ -9,7 +9,7 @@
     <% end %>
   <% end %>
   <hr>
-  <h2>as Member</h2>
+  <h2>Questionnaires</h2>
   <% @occasions.each do |o| %>
     <% if o.recipient %>
       recipient: <%= User.find(o.recipient).personnal.name %><br>
