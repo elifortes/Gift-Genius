@@ -1,18 +1,16 @@
 <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F2A59E;color:white">
-  <h1>Groups#index</h1>
-  <p>Find me in app/views/myoccasions/index.html.erb</p>
+  <h1>Gift genius Dashboard </h1>
+  <h2>As Creator</h2>
   <% @myoccasions.each do |g| %>
-    recipient: <%= g.recipient %><br>
+    recipient: <%= User.find(g.recipient).personnal.name %><br>
     <%= link_to "see Group details", myoccasion_path(g),class: "btn btn-dark"  %>
     <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
   <% end %>
+  <hr>
+  <h2>as Member</h2>
+  <% @occasions.each do |o| %>
+    recipient: <%= User.find(o.recipient).personnal.name %><br>
+    <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
+    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+  <% end %>
 </div>
-<br>
-<br>
-<ul>
-  <%# @groups.each do |group| %>
-    <div>
-      <li><%#= group.name %></li>
-    </div>
-    <%# end %>
-  </ul>

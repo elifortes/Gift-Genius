@@ -1,11 +1,10 @@
 class CreateGift < ActiveRecord::Migration[7.1]
   def change
     create_table :gifts do |t|
-      t.string :description
-      t.string :title
+      t.jsonb :div
       t.integer :price
-      t.integer :price_range, array: true
-     # t.references : myoccasion, foreign_key: true
+      t.string  :occasion
+      t.string  :title
       t.timestamps
     end
   end

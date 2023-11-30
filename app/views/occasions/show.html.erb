@@ -1,0 +1,17 @@
+<h1>Member of a Gift Group</h1>
+<ul>
+  <li><%= @occasion %></li>
+  <li> Creator:<%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
+  <li>Me:  <%= User.find(@occasion.user_id).personnal.name %></li>
+  <li>Recipient:  <%=User.find(@occasion.recipient).personnal.name  %></li>
+  <li>Gift:  <%= Gift.find( @occasion.gift).price %></li>
+</ul>
+<div class="card h-50">
+  <p></p>
+  Go to questionnaire
+  <%= link_to "Questionnaire", edit_occasion_profile_path(@occasion),class: "btn btn-dark"  %>
+  <p></p>
+  Pledge an ammout
+</div>
+<%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>
+<%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

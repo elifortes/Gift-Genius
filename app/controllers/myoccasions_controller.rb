@@ -1,6 +1,7 @@
 class MyoccasionsController < ApplicationController
   def index
     @myoccasions = current_user.myoccasions
+    @occasions = current_user.occasions
   end
 
   def show
@@ -11,8 +12,6 @@ class MyoccasionsController < ApplicationController
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
     # @gift = Gift.find(@myoccasion.gift)
     # @recipient = User.find(@myoccasion.recipient)
-    
-
   end
 
   def new

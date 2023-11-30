@@ -1,28 +1,36 @@
-<div class="d-flex align-items-start flex-column bd-highlight mb-3 ">
-  <div class="p-2 bd-highlight w-100 background-img" style="height:650px">
-    <h1>Pages#home</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
-    <h2>
+<div class="d-flex align-items-start flex-column bd-highlight mb-3  background-img">
+  <div class="p-2 bd-highlight w-100" style="height:650px">
+    <h1>Gift Genius</h1>
+    <h2 class="my-4">
       <% if  current_user %>
         Welcome back,   <%= current_user.personnal.name if current_user.personnal %></h2>
-      <p>Some upcoming birthday!</p>
-      <ul class="list list-group list-flush">
-        <% if current_user %>
-          <p>from user.mycontacts.contacts</p>
-          <% @mycontacts.last(2).each do |c| %>
-            <li class="list-group-item">
-              <%= c.personnal.name  %>
-              <%= c.personnal.birthday %>
-            </li>
+      <div class="card h-75 overflow-auto p-1">
+        <ul class="list list-group ">
+          <% if current_user %>
+            <h4>Some upcoming birthday!</h4>
+            <% @mycontacts.last(2).each do |c| %>
+              <li class="list-group-item">
+                <%= c.personnal.name  %>
+                <%= c.personnal.birthday %>
+              </li>
+            <% end %>
+          </ul>
+          <hr>
+          <h4> Your current Gift Genius Projects</h4>
+          <ul class="list list-group ">
+            <% @myoccasions.last(2).each do |o| %>
+              <li class="list-group-item ">
+                <%=User.find( o.recipient).personnal.name  %>
+                <%= Gift.find(o.gift).occasion %>
+              </li>
+            <% end %>
           <% end %>
-        <% end %>
-      </ul>
-      <hr>
-    <% end %>
-    <br>
-    <%= link_to "Go to genius results",myoccasions_path,class: "btn btn-dark" %>
-  </div>
-  <div class="btn-group  m-2">
-    <%= link_to "Create MyOccasion", myoccasions_new_path,class: "btn btn-dark"  %>
+        </ul>
+      <% end %>
+    </div>
+  </dir>
+  <div class="btn-group w-100 mt-4 p-1">
+    <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-dark col-6 m-1" %>
+    <%= link_to "Create New", myoccasions_new_path,class: "btn btn-dark col-6 m-1"  %>
   </div>
 </div>

@@ -4,9 +4,8 @@
   <br>
   <h3>Congratulation GiftGenius has accepted your request.🥳</h3>
   <br>
-<hr>
+  <hr>
   <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong>?</h5>
-
 </div>
 <%= link_to "Skip to groups", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "Questionnaire", profiles_show_path,class: "btn btn-dark"  %>
+<%= link_to "Questionnaire", edit_occasion_profile_path(@occasion),class: "btn btn-dark"  %>
