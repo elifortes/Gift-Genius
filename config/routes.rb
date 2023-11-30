@@ -9,11 +9,16 @@ Rails.application.routes.draw do
     get "confirmation", to: "myoccasions#confirmation"
     resources :gifts
   end
- resources :occasions do
-  resources :profiles
- end
+  resources :occasions do
+    resources :profiles
+  end
+  resources :proposals
 
-
+  resources :products do
+    member do
+      patch :move_image
+    end
+  end
   resources :gifts
   get "profiles/show", to: "profiles#show"
   get "groups/gift", to: "groups#gift"

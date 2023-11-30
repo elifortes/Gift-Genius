@@ -50,12 +50,14 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
-gem 'bootstrap-icons'
-gem 'bootstrap-icons-helper'
-gem 'dotenv-rails'
-gem 'faker'
+gem "bootstrap-icons"
+gem "bootstrap-icons-helper"
+gem "dotenv-rails"
+gem "faker"
 #  upload photo 'cloudinary'
 gem "cloudinary"
+gem "acts_as_list"
+gem "requestjs-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -82,4 +84,4 @@ group :test do
 end
 
 gem "hotwire-livereload", "~> 1.3", group: :development
-gem 'dotenv'
+gem "dotenv"

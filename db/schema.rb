@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_30_210227) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
     t.bigint "record_id", null: false
     t.bigint "blob_id", null: false
     t.datetime "created_at", null: false
+    t.integer "position"
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
@@ -137,10 +138,14 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
   end
 
   create_table "products", force: :cascade do |t|
+    t.bigint "proposal_id"
+    t.string "title"
     t.string "description"
+    t.string "url"
+    t.integer "position"
+    t.boolean "selected"
     t.decimal "price"
     t.float "rating"
-    t.bigint "proposal_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["proposal_id"], name: "index_products_on_proposal_id"
@@ -178,12 +183,14 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
   end
 
   create_table "proposals", force: :cascade do |t|
+    t.bigint "occasion_id"
+    t.bigint "myoccasion_id"
     t.string "title"
-    t.text "description"
-    t.bigint "user_id", null: false
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_proposals_on_user_id"
+    t.index ["myoccasion_id"], name: "index_proposals_on_myoccasion_id"
+    t.index ["occasion_id"], name: "index_proposals_on_occasion_id"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -235,7 +242,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_29_104705) do
   add_foreign_key "products", "proposals"
   add_foreign_key "profiles", "occasions"
   add_foreign_key "profiles", "users"
-  add_foreign_key "proposals", "users"
+  add_foreign_key "proposals", "myoccasions"
+  add_foreign_key "proposals", "occasions"
   add_foreign_key "user_answers", "answers"
   add_foreign_key "user_answers", "questions"
   add_foreign_key "user_answers", "users"
