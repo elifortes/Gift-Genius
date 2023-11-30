@@ -6,6 +6,7 @@ class MyoccasionsController < ApplicationController
 
   def show
     @myoccasion = Myoccasion.find(params[:id])
+    
   end
 
   def confirmation
