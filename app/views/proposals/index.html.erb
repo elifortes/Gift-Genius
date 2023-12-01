@@ -1,17 +1,15 @@
 <div class="d-flex h-75 w-100 overflow-auto p-1">
   <ul>
-    <% @myoccasions.each do |myoccasion| %>
-      <li>
-        <%= myoccasion.id %></li>
-      <li>
-        <%=  myoccasion.proposal %></li>
-      <%# link_to "Proposal", proposal_path( myoccasion.proposal ),class: "btn btn-dark" %>
-    <% end %>
+    <li>
+      <%= link_to "Proposal", proposal_path(@proposals[1].id) ,class: "btn btn-dark" %>
+    </li>
+    <li>
+      <%= link_to "Proposal", proposal_path(@proposals[2].id) ,class: "btn btn-dark" %>
+    </li>
+    <li>
+      <%= link_to "Proposal", proposal_path(@proposals[1].id) ,class: "btn btn-dark" %>
+    </li>
   </ul>
-  <% @occassions.each do |occassion| %>
-    <%= occassion.id %>
-    <%= occassion.proposal %>
-  <% end %>
 </div>
 <div class="btn-group col-6 p-2">
   <%= link_to "Back", myoccasions_path, class: "btn btn-primary" %>

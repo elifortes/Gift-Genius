@@ -6,7 +6,6 @@ class MyoccasionsController < ApplicationController
 
   def show
     @myoccasion = Myoccasion.find(params[:id])
-    
   end
 
   def confirmation
@@ -41,7 +40,6 @@ class MyoccasionsController < ApplicationController
 
   def gift
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
-
     @gift = Gift.new
   end
 

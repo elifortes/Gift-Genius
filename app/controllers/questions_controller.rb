@@ -10,7 +10,6 @@ class QuestionsController < ApplicationController
 
     @question = @occasion.question
     @movies = ["Drama", "Adventure"]
-
     @music = ["Pop", "Indie"]
     @books = ["Mystery", "Science Fiction"]
     @hobbies = ["Reading", "Photography", "Hiking"]

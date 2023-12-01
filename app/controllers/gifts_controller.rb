@@ -2,8 +2,8 @@ class GiftsController < ApplicationController
   def create
     @gift = Gift.new(param_strong)
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
-    @myoccasion.gift = @gift.id
-    @myoccasion.save!
+    #@myoccasion.gift = @gift.id
+    #@myoccasion.save!
     @max_price = 1000
     @min_price = 0
     @gift.price = (params[:gift][:price].to_f / 100 * 1000).to_i
