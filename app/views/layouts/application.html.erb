@@ -9,11 +9,9 @@
     <%= javascript_importmap_tags %>
     <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
-
-  <body><%= render "shared/navbar" %>
-<%= render "shared/flashes" %>
-
+  <body>
+    <%= render "shared/navbar" %>
+    <%= render "shared/flashes" %>
     <%= yield %>
-
   </body>
 </html>

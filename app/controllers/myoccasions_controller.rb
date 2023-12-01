@@ -40,7 +40,6 @@ class MyoccasionsController < ApplicationController
 
   def gift
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
-
     @gift = Gift.new
   end
 

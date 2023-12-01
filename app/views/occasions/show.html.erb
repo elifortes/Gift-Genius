@@ -1,8 +1,8 @@
 <h1>Member of a Gift Group</h1>
 <ul>
   <li><%= @occasion %></li>
-  <li> Creator:<%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
-  <li>Me:  <%= User.find(@occasion.user_id).personnal.name %></li>
+  <li>Creator:<%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
+  <li>group member:  <%= User.find(@occasion.user_id).personnal.name %></li>
   <li>Recipient:  <%=User.find(@occasion.recipient).personnal.name  %></li>
   <li>Gift:  <%= Gift.find( @occasion.gift).price %></li>
 </ul>
@@ -13,10 +13,10 @@
   <p></p>
   Pledge an ammout
   <%# <%=  @favorite.favorite %>
-  <p><%= @favorite.favorites if @favorite %></p>
-  favorite
-  <% if @favorite %>
-    <%=  @favorite.favorites %>
+  <p><%= @answer.answers if @answer %></p>
+  answer
+  <% if @answer %>
+    <%=  @answer.favorites %>
   <% end %>
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>

@@ -18,7 +18,7 @@
           <hr>
           <h4> Your current Gift Genius Projects</h4>
           <ul class="list list-group ">
-            <% @myoccasions.last(2).each do |o| %>
+            <% @myoccasions.each do |o| %>
               <% if o.recipient %>
                 <li class="list-group-item ">
                   <%=User.find( o.recipient).personnal.name  %>

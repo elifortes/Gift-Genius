@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
+
   devise_for :users
   root to: "pages#home"
+
   get "myoccasions/new", to: "myoccasions#new"
   get "gifts/create"
   resources :myoccasions do
@@ -9,6 +11,7 @@ Rails.application.routes.draw do
     get "confirmation", to: "myoccasions#confirmation"
     resources :gifts
   end
+  resources :gifts
   resources :occasions do
     resources :questions
   end
@@ -19,7 +22,7 @@ Rails.application.routes.draw do
       patch :move_image
     end
   end
-  resources :gifts
+
   get "questions/show", to: "questions#show"
   get "groups/gift", to: "groups#gift"
   post "groups/gift", to: "groups#gift"
