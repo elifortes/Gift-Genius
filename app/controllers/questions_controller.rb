@@ -31,8 +31,8 @@ class QuestionsController < ApplicationController
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
     # creating a new favorite
-    @answer = Favorite.new(favorites: params[:question][:favorites], hobbies: params[:question][:hobbies],
-                           activities: params[:question][:activities])
+    @answer = Answer.new(favorites: params[:question][:favorites], hobbies: params[:question][:hobbies],
+                         activities: params[:question][:activities])
     @answer.user = current_user
     @occasion = Occasion.find(@question.occasion_id)
     # update status in occasion questionnaire is done

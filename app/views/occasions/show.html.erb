@@ -9,10 +9,9 @@
 <div class="card h-50">
   <p></p>
   Go to questionnaire
-  <%= link_to "Questionnaire", edit_occasion_profile_path(@occasion),class: "btn btn-dark"  %>
+  <%= link_to "Questionnaire", edit_occasion_question_path(@occasion),class: "btn btn-dark"  %>
   <p></p>
   Pledge an ammout
-
   <%# <%=  @favorite.favorite %>
   <p><%= @favorite.favorites if @favorite %></p>
   favorite
@@ -22,5 +21,4 @@
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>
 <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
-
 <div class="card h-50">

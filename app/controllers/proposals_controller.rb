@@ -1,4 +1,4 @@
-class QuestionsController < ApplicationController
+class ProposalsController < ApplicationController
   def index
     @myoccasions = current_user.myoccasions.includes(:occasions)
     @occassions = current_user.occasions

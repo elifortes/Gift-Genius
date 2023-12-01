@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :gifts
   end
   resources :occasions do
-    resources :profiles
+    resources :questions
   end
   resources :proposals
 
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     end
   end
   resources :gifts
-  get "profiles/show", to: "profiles#show"
+  get "questions/show", to: "questions#show"
   get "groups/gift", to: "groups#gift"
   post "groups/gift", to: "groups#gift"
   get "groups/confirmation", to: "groups#confirmation"
@@ -39,7 +39,7 @@ Rails.application.routes.draw do
   post "recommendations", to: "recommendations#create"
   get "question", to: "questions#show"
 
-  resources :profiles do
+  resources :questions do
     member do
       get :questionnaire
       post :user_answers

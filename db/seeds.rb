@@ -9,7 +9,8 @@ Gift.destroy_all
 UserContact.destroy_all
 Myoccasion.destroy_all
 Occasion.destroy_all
-Favorite.destroy_all
+Question.destroy_all
+Answer.destroy_all
 User.destroy_all
 # creating userlogin for mains
 userU = User.create!(email: "nak@me.com", password: "kalvin")
