@@ -1,0 +1,4 @@
+
+class ApiService < ApplicationRecord
+ 
+end
