@@ -1,6 +1,6 @@
 class OccasionsController < ApplicationController
   def show
     @occasion = Occasion.find(params[:id])
-    @favorite =   @occasion.favorite
+    @answer = @occasion.answer
   end
 end

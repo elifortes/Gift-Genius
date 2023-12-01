@@ -9,13 +9,18 @@ Rails.application.routes.draw do
     get "confirmation", to: "myoccasions#confirmation"
     resources :gifts
   end
- resources :occasions do
-  resources :profiles
- end
+  resources :occasions do
+    resources :questions
+  end
+  resources :proposals
 
-
+  resources :products do
+    member do
+      patch :move_image
+    end
+  end
   resources :gifts
-  get "profiles/show", to: "profiles#show"
+  get "questions/show", to: "questions#show"
   get "groups/gift", to: "groups#gift"
   post "groups/gift", to: "groups#gift"
   get "groups/confirmation", to: "groups#confirmation"
@@ -34,7 +39,7 @@ Rails.application.routes.draw do
   post "recommendations", to: "recommendations#create"
   get "question", to: "questions#show"
 
-  resources :profiles do
+  resources :questions do
     member do
       get :questionnaire
       post :user_answers

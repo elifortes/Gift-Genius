@@ -1,15 +1,30 @@
 class ProposalsController < ApplicationController
   def index
-    @proposals = Proposal.all
-    @proposals = filter_proposals_for(current_user)
+    @myoccasions = current_user.myoccasions.includes(:occasions)
+    @occassions = current_user.occasions
   end
 
   def new
   end
 
   def show
-    @question = Question.find(params[:id])
-    @proposal = Proposal.find(params[:proposal_id])
+    @proposals = Proposal.find(params[:id])
+    @products = @proposals.products
+  end
+
+  def move_image
+    @proposal = Proposal.find(params[:id])
+    @product = @proposal.products[params[:old_position].to_i - 1]
+    @product.insert_at(params[:new_position].to_i)
+    head :ok
+  end
+
+  def update
+    raise
+    @proposal = GeneralListing.find(params[:id])
+    @product = @proposal.products[params[:old_position].to_i - 1]
+    @product.insert_at(params[:new_position].to_i)
+    head :ok
   end
 
   def create
@@ -17,7 +32,7 @@ class ProposalsController < ApplicationController
     @proposal.user = current_user
 
     if @proposal.save
-      redirect_to @proposal, notice: 'Proposal was successfully created.'
+      redirect_to @proposal, notice: "Proposal was successfully created."
     else
       render :new, alert: :unprocessable_entity
     end
@@ -30,10 +45,6 @@ class ProposalsController < ApplicationController
   private
 
   def proposal_params
-    params.require(:proposal).permit(:title, :description, :user_id)
-  end
-
-  def filter_proposals_for(user)
-    user_answers = user.user_answers.includes(:answer).last(10)
+    params.require(:proposal).permit(:title, :description, :myoccasion_id, :occasion_id, :position)
   end
 end

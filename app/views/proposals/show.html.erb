@@ -1,21 +1,8 @@
-<div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#798187;color:white">
-  <div class="product-show">
-    <div class="product-image">
-      <% if @proposal.id == 1 %>
-        <%= image_tag 'apple.jpg', alt: "Product image", size: "300x200" %>
-      <% elsif @proposal.id == 2 %>
-        <%= image_tag 'disco.jpg', alt: "Product image", size: "300x200" %>
-      <% end  %>
+<div class="images-wrapper" data-controller="sortable" >
+  <% @products.each do |product| %>
+    <div class="form-image-card h-25 p-2">
+      <%= image_tag 'apple.jpg', alt: "Product image", size: "100x100", class: "form-image-card form-image p-2 m-1" %>
+      <%= product.title %>
     </div>
-    <h1><%= @proposal.title %></h1>
-    <div class="product-details">
-      <div class="product-description">
-        <%= @proposal.description %>
-      </div>
-    </div>
-  </div>
-  <div class="action-buttons">
-    <%= link_to "Back", proposals_path, class: "custom-primary-button" %>
-    <%= link_to "Select Gift", confirmation_proposal_path, class: "custom-primary-button" %>
-  </div>
+  <% end %>
 </div>
