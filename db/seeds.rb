@@ -82,7 +82,7 @@ def occasion(user, array, user1, user2)
     title: ["Anniversary", "Baby_Shower", "Birthday", "Christmas", "Easter",
             "Eid", "Engagement", "Father_s_Day", "Graduation", "Halloween",
             "Housewarming", "Mother_s_Day", "New_Home", "New_Year_s_Eve",
-            "Retirement", "Thanksgiving", "Valentine_s_Day", "Wedding"].sample.to_s,
+            "Retirement", "Thanksgiving", "Valentine_s_Day", "Wedding"].sample,
   )
   gift.save!
   myoccasion.user = user
@@ -115,14 +115,12 @@ def occasion(user, array, user1, user2)
       myoccasion: myoccasion.id,
       recipient: myoccasion.recipient,
       gift: gift.id,
-      favorites: {
-        movies: ["Drama", "Adventure"],
-        music: ["Pop", "Indie"],
-        books: ["Mystery", "Science Fiction"],
-        hobbies: ["Reading", "Photography", "Hiking"],
-        activities: ["Cooking", "Traveling"],
-        channels: ["Email", "Text Messages"],
-      },
+      movies: ["Drama", "Adventure"],
+      music: ["Pop", "Indie"],
+      books: ["Mystery", "Science Fiction"],
+      hobbies: ["Reading", "Photography", "Hiking"],
+      activities: ["Cooking", "Traveling"],
+      channels: ["Email", "Text Messages"],
       contents: ["Articles", "Videos"],
       brands: ["Nike", "Apple"],
       places: ["Beach", "Mountain"],
