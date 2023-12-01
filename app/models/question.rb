@@ -1,4 +1,4 @@
-class Question < ApplicationRecord
-  has_many :user_answers
-  has_many :answers
+class Profile < ApplicationRecord
+  belongs_to :occasion
+  belongs_to :user
 end

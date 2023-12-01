@@ -14,15 +14,15 @@ class GiftsController < ApplicationController
         user = User.find(o)
         occasion = Occasion.new(
           recipient: @myoccasion.recipient,
-          gift: @gift.id
+          gift: @gift.id,
         )
         occasion.myoccasion = @myoccasion
         occasion.user = user
         occasion.save!
-        profile = Profile.new
-        profile.user = user
-        profile.occasion = occasion
-        profile.save!
+        question = Question.new
+        question.user = user
+        question.occasion = occasion
+        question.save!
       end
 
       redirect_to myoccasion_confirmation_path(@myoccasion)

@@ -1,32 +1,60 @@
 class QuestionsController < ApplicationController
-
-  def index
-    @questions = Question.all
+  def show
+    @occasion = Occasion.find(params[:occasion_id])
+    @question = @occasion.question
+    @answer = @question.answer
   end
 
-  def show
-    @question = Question.all
+  def edit
+    @occasion = Occasion.find(params[:occasion_id])
 
+    @question = @occasion.question
+    @movies = ["Drama", "Adventure"]
+
+    @music = ["Pop", "Indie"]
+    @books = ["Mystery", "Science Fiction"]
+    @hobbies = ["Reading", "Photography", "Hiking"]
+    @activities = ["Cooking", "Traveling"]
+    @channels = ["Email", "Text Messages"]
+
+    # add new field
   end
 
   def new
-    @question = Question.new
+    @occasion = Occasion.find(params[:occasion_id])
+    @question = @occasion.question
+    raise
   end
 
-  def create
-    @question = Question.new(question_params)
-    if @question.save!
+  def update
+    @question = Question.find(params[:id])
+    # check if there is a favorite [occasion.question -> occasion.favorite]
+    #       if exist? -> favorite[merge/update]
+    # creating a new favorite
+    @answer = Favorite.new(favorites: params[:question][:favorites], hobbies: params[:question][:hobbies],
+                           activities: params[:question][:activities])
+    @answer.user = current_user
+    @occasion = Occasion.find(@question.occasion_id)
+    # update status in occasion questionnaire is done
+    @answer.occasion = @occasion
+    @occasion.status = true
+    @occasion.save!
 
-    redirect_to myoccasions_path
+    if @answer.save!
+      redirect_to @occasion, notice: "Questionnaire is saved."
     else
-      render :new
+      render :new, alert: :unprocessable_entity
+    end
   end
-end
+
+  def questionnaire
+    @question = Question.find(params[:id])
+    @questions = Question.all
+  end
 
   private
 
-  def question_params
-    params.require(:question).permit(:content)
+  def param_strong
+    params.require(:question).permit(:favorites, :recipient, :myoccasion, :gift, :hobbies)
   end
-
 end

@@ -1,4 +1,4 @@
-class ProposalsController < ApplicationController
+class QuestionsController < ApplicationController
   def index
     @myoccasions = current_user.myoccasions.includes(:occasions)
     @occassions = current_user.occasions
@@ -46,9 +46,5 @@ class ProposalsController < ApplicationController
 
   def proposal_params
     params.require(:proposal).permit(:title, :description, :myoccasion_id, :occasion_id, :position)
-  end
-
-  def filter_proposals_for(user)
-    user_answers = user.user_answers.includes(:answer).last(10)
   end
 end

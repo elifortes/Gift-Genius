@@ -110,7 +110,7 @@ def occasion(user, array, user1, user2)
       product.save!
     end
 
-    profile = Profile.new(
+    question = Question.new(
       myoccasion: myoccasion.id,
       recipient: myoccasion.recipient,
       gift: gift.id,
@@ -137,10 +137,10 @@ def occasion(user, array, user1, user2)
       games: ["Adventure", "Puzzle"],
       platforms: ["Nintendo Switch"],
     )
-    profile.occasion = occasion
-    profile.user = userR
-    profile.save!
-    p profile
+    question.occasion = occasion
+    question.user = userR
+    question.save!
+    p question
   end
 end
 

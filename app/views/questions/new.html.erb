@@ -1,16 +1,25 @@
-<h1>QUESTIONNAIRE</h1>
-
-<%= simple_form_for @question  do |f| %>
-  <div class="form-group">
-    <%= f.label :content, "How would you describe your friend's lifestyle?" %>
-    <%= f.select :content, options_for_select(['Select', 'Active', 'Sedentary', 'Balanced']), { include_blank: true }, class: 'form-select' %>
+<div class="d-flex align-items-start flex-column bd-highlight mb-3">
+  <h1>questions#edit</h1>
+  <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF">
+    <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
+    <p>
+      the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>.. 
+    </p>
+    <p>
+      the Questionnaire: ...  
+    </p>
+    <ul>
+      <li>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <%= simple_form_for @question do |p| %>
+          <%= p.input :favorites, as: :check_boxes, collection:@question.favorites %>
+          <%= p.input :hobbies, as: :check_boxes, collection:@question.hobbies  %>
+          <%= p.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+      </li>
+    </ul>
   </div>
-
-  <div class="form-group">
-    <%= f.label :content, "What are your friend's interests?" %>
-    <%= f.select :content, options_for_select(['Select', 'Reading', 'Sports', 'Music', 'Art']), { include_blank: true }, class: 'form-select' %>
-  </div>
-  <br>
-
-  <%= f.button :submit, "Submit", class: "btn custom-primary-button" %>
-<% end %>
+</div>
