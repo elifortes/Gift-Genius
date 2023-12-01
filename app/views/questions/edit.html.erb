@@ -18,7 +18,8 @@
           <%= simple_form_for @question do |p| %>
             <div class="card h-25 overflow-auto p-1">
               <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
-              <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
+              <%= p.input :hobbies, collection: @hobbies, as: :select, prompt: 'Select a hobby' %>
+              <%= p.input :music, collection: @music, as: :select, prompt: 'Select a music' %>
               <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
               <%# p.input :channels, collection: @question.channels, as: :check_boxes %>
               <%# p.input :favorites, collection:@question.favorites, as: :check_boxes %>
@@ -33,7 +34,7 @@
               <%= p.input :favorites, collection:@hobbies, as: :check_boxes %>
               <%= p.label :favorites, 'Select  favorite music:' %>
               <%= p.input :favorites, collection:@music, as: :check_boxes %>
-              <%# <%= p.input :hobbies, as: :check_boxes, collection:@question.hobbies %>
+              <%= p.input :hobbies, as: :check_boxes, collection:@question.hobbies%>%
               <%= p.button :submit, class: 'btn btn-primary' %>
             <% end %>
           </div>

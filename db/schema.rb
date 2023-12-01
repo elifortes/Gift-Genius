@@ -165,22 +165,22 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_30_210227) do
     t.integer "user"
     t.text "favorites"
     t.text "hobbies", array: true
-    t.text "activities", array: true
-    t.text "channels", array: true
+    t.text "music", array: true
+    t.text "movies", array: true
     t.text "contents", array: true
     t.text "brands", array: true
     t.text "places", array: true
     t.text "socials", array: true
     t.text "onlines", array: true
     t.text "purchases", array: true
-    t.text "communications", array: true
+    t.text "resturant", array: true
     t.text "apps", array: true
     t.text "websites", array: true
     t.text "locations", array: true
     t.text "devices", array: true
     t.text "softwares", array: true
     t.text "games", array: true
-    t.text "platforms", array: true
+    t.text "books", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["occasion_id"], name: "index_questions_on_occasion_id"
