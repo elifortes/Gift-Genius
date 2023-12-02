@@ -13,6 +13,10 @@
   <p></p>
   Pledge an ammout
   <%# <%=  @favorite.favorite %>
+  <%=  simple_form_for @occasion do  |f|%>
+    <%= f.input :status %>
+    <%= f.button :submit %>
+  <% end %>
   <p><%= @answer.answers if @answer %></p>
   answer
   <% if @answer %>

@@ -97,7 +97,7 @@ def occasion(user, array, user1, user2)
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
-    occasion.user = userR
+    occasion.user = user
     occasion.save!
 
     proposal = Proposal.new
@@ -115,9 +115,6 @@ def occasion(user, array, user1, user2)
       myoccasion: myoccasion.id,
       recipient: myoccasion.recipient,
       gift: gift.id,
-      movies: ["Drama", "Adventure"],
-      music: ["Pop", "Indie"],
-      books: ["Mystery", "Science Fiction"],
       hobbies: ["Reading", "Photography", "Hiking"],
       activities: ["Cooking", "Traveling"],
       channels: ["Email", "Text Messages"],

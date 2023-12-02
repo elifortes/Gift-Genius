@@ -3,4 +3,8 @@ class OccasionsController < ApplicationController
     @occasion = Occasion.find(params[:id])
     @question = @occasion.question
   end
+
+  def update
+    raise
+  end
 end
