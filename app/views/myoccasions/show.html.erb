@@ -1,26 +1,30 @@
-<h1>Creator of a Gift Group</h1>
-<p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
-<div class="card h-90 overflow-auto ">
-  <p>  Group members</p>
-  <ul class=" list-group">
-    <% @myoccasion.groups.each do |g| %>
-      <li class="list-group-item">
-        <%= User.find(g).personnal.name %><br>
-        <!-- 
+<div class="p-2 w-100 bg-body" style="height:680px">
+  <div class="">
+    <h1>Creator of a Gift Group</h1>
+    <p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
+    <div class="card h-90 overflow-auto ">
+      <p>  Group members</p>
+      <ul class=" list-group">
+        <% @myoccasion.groups.each do |g| %>
+          <li class="list-group-item">
+            <%= User.find(g).personnal.name %><br>
+            <!-- 
         # thisoccasion= @myoccasion.occasions.select { o| o.user = g } ||
         # thisoccasion = g.occasions.select { |o| o.myoccasion == @myoccasion.id}
         # thisoccasion.status
         -->
-        <% if [true,false].sample %>
-          <i class="fas fa-file-circle-xmark ms-4"></i> no 
-        <% else %>
-          <i class="fas fa-file-signature ms-4"></i> done 
+            <% if [true,false].sample %>
+              <i class="fas fa-file-circle-xmark ms-4"></i> no 
+            <% else %>
+              <i class="fas fa-file-signature ms-4"></i> done 
+            <% end %>
+            <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+            <!-- in thisoccasion but no field. -->
+          </li>
         <% end %>
-        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
-        <!-- in thisoccasion but no field. -->
-      </li>
-    <% end %>
-  </ul>
+      </ul>
+    </div>
+    <%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
+    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+  </div>
 </div>
-<%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

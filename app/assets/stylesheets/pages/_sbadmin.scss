@@ -10,6 +10,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --c01: #244861;
+  --c02: #507C9A;
+  --c03: #E1F2FC;
+  --c04: #C7D6D6;
+  --c05: #798187;
+  --c06: #F7DDAF;
+  --c07: #F2A59E;
+  --c08: #BB3261;
+
   --blue: #4e73df;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -36,7 +45,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Noto Sans", "Noto Sans JP", "Work Sans", "Helvetica", "sans-serif", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -396,7 +405,8 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 2.5rem
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 .h2,
