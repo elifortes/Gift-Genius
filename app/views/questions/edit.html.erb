@@ -17,23 +17,37 @@
         <li>
           <%= simple_form_for @question do |p| %>
             <div class="card h-25 overflow-auto p-1">
+                <%= p.input :hobbies, as: :select, collection: @hobbies%>
+                <%= p.input :movies, as: :select, collection: @movies%>
+                <%= p.input :music, as: :select, collection: @music%>
+                <%= p.input :books, as: :select, collection: @books%>
+                <%= p.input :brands, as: :select, collection: @brands%>
+                <%= p.input :places, as: :select, collection: @places%>
+                <%= p.input :games, as: :select, collection: @games%>
+                <%= p.input :restaurant, as: :select, collection: @restaurant%>
+                <%= p.input :devices, as: :select, collection: @devices%>
+                <%= p.input :purchases, as: :select, collection: @purchases%>
+
+
               <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
               <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
               <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
               <%# p.input :channels, collection: @question.channels, as: :check_boxes %>
               <%# p.input :favorites, collection:@question.favorites, as: :check_boxes %>
               <%# <% p.input :favorites, collection: @question.favorites.values, as: :grouped_select, group_method: @question.favorites %>
-              <%= p.label :favorites, 'Select  favorite movies:' %>
-              <%= p.input :favorites, collection:@movies,as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite channels:' %>
-              <%= p.input :favorites, collection:@channels, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite books:' %>
-              <%= p.input :favorites, collection:@books, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite hobbies:' %>
-              <%= p.input :favorites, collection:@hobbies, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite music:' %>
-              <%= p.input :favorites, collection:@music, as: :check_boxes %>
-              <%# <%= p.input :hobbies, as: :check_boxes, collection:@question.hobbies %>
+              <%# p.label :favorites, 'Select  favorite movies:'
+              p.input :favorites, collection:@movies,as: :check_boxes
+              p.label :favorites, 'Select  favorite channels:'
+              p.input :favorites, collection:@channels, as: :check_boxes
+              p.label :favorites, 'Select  favorite books:'
+              p.input :favorites, collection:@books, as: :check_boxes
+              p.label :favorites, 'Select  favorite hobbies:'
+              p.input :favorites, collection:@hobbies, as: :check_boxes
+              p.label :favorites, 'Select  favorite music:'
+              p.input :favorites, collection:@music, as: :check_boxes  %>
+            <%#  p.input :hobbies, as: :check_boxes, collection:@question.hobbies
+
+              <%= p.button :submit, class: 'btn btn-primary' %>
               <%= p.button :submit, class: 'btn btn-primary' %>
             <% end %>
           </div>

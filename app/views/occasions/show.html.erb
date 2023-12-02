@@ -13,10 +13,13 @@
   <p></p>
   Pledge an ammout
   <%# <%=  @favorite.favorite %>
-  <p><%= @answer.answers if @answer %></p>
+  <p><%= @answer if @answer %></p>
   answer
   <% if @answer %>
-    <%=  @answer.favorites %>
+  <% raise %>
+    <%=  @answer%>
+  <% else %>
+  <%=puts "no "%>
   <% end %>
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>

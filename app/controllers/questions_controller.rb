@@ -83,8 +83,11 @@ class QuestionsController < ApplicationController
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
     # creating a new favorite
-    @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
-    games: params[:question][:games])
+    @answer = Answer.new(music: params[:answer][:music], hobbies: params[:answer][:hobbies],
+                          games: params[:question][:games], movies: params[:question][:movies],
+                            books: params[:question][:books],restaurant: params[:question][:restaurant],
+                              brands: params[:question][:brands],devices: params[:question][:devices],
+                                places: params[:question][:places],purchases: params[:question][:purchases])
     @answer.user = current_user
     @occasion = Occasion.find(@question.occasion_id)
     # update status in occasion questionnaire is done
@@ -93,6 +96,7 @@ class QuestionsController < ApplicationController
     @occasion.save!
 
     if @answer.save!
+      raise
       redirect_to @occasion, notice: "Questionnaire is saved."
     else
       render :new, alert: :unprocessable_entity
@@ -108,6 +112,7 @@ class QuestionsController < ApplicationController
 
   def param_strong
     params.require(:question).permit(:music, :hobbies,:movies, :brands, :books, :restaurant,
-                            :recipient, :myoccasion, :gift)
+                                      :games, :places, :devices, :purchases, :occasion_id, :user_id,
+                                        :recipient, :myoccasion, :gift)
   end
 end
