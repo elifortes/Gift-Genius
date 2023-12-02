@@ -97,7 +97,7 @@ def occasion(user, array, user1, user2)
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
-    occasion.user = userR
+    occasion.user = user # userR
     occasion.save!
 
 

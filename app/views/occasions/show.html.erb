@@ -15,12 +15,10 @@
   <%# <%=  @favorite.favorite %>
   <p><%= @answer if @answer %></p>
   answer
-  <% if @answer %>
-  <% raise %>
-    <%=  @answer%>
-  <% else %>
-  <%=puts "no "%>
-  <% end %>
+  <% @answer.answers.each do |attribute, value| %>
+  <p><strong><%= attribute %>:</strong> <%= value %></p>
+<% end %>
+
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>
 <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

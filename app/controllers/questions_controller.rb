@@ -1,8 +1,12 @@
 class QuestionsController < ApplicationController
   def show
-    @occasion = Occasion.find(params[:occasion_id])
-    @question = @occasion.question
-    @answer = @question.answer
+    @occasion = Occasion.find_by(id: params[:occasion_id])
+    if @occasion
+      @question = @occasion.question
+      @answer = @question.answer
+    else
+      redirect_to root_path ,   notice: "Occasion not found."
+    end
   end
 
   def edit
@@ -83,7 +87,7 @@ class QuestionsController < ApplicationController
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
     # creating a new favorite
-    @answer = Answer.new(music: params[:answer][:music], hobbies: params[:answer][:hobbies],
+    @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
                           games: params[:question][:games], movies: params[:question][:movies],
                             books: params[:question][:books],restaurant: params[:question][:restaurant],
                               brands: params[:question][:brands],devices: params[:question][:devices],
@@ -95,8 +99,8 @@ class QuestionsController < ApplicationController
     @occasion.status = true
     @occasion.save!
 
-    if @answer.save!
-      raise
+    if @answer.save
+
       redirect_to @occasion, notice: "Questionnaire is saved."
     else
       render :new, alert: :unprocessable_entity
