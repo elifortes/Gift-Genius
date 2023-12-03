@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_03_100021) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -52,10 +52,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
     t.integer "user"
     t.text "favorites"
     t.text "hobbies"
-    t.text "movies"
-    t.text "music"
-    t.text "books"
-    t.text "restaurant"
     t.text "activities"
     t.text "channels"
     t.text "contents", array: true
@@ -123,6 +119,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
     t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.jsonb "questions"
+    t.jsonb "answers"
+    t.jsonb "proposals"
     t.index ["myoccasion_id"], name: "index_occasions_on_myoccasion_id"
     t.index ["user_id"], name: "index_occasions_on_user_id"
   end
@@ -133,6 +132,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.jsonb "info"
     t.index ["user_id"], name: "index_personnals_on_user_id"
   end
 
@@ -171,10 +171,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
     t.text "favorites"
     t.text "hobbies", array: true
     t.text "activities", array: true
-    t.text "movies", array: true
-    t.text "music", array: true
-    t.text "books", array: true
-    t.text "restaurant", array: true
     t.text "channels", array: true
     t.text "contents", array: true
     t.text "brands", array: true
