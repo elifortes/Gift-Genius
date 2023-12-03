@@ -91,7 +91,7 @@ def occasion(user, array, user1, user2)
     recipient: array.sample,
   )
   gift = Gift.new(
-    price: 200,
+    # price: 100,
     title: ["Anniversary", "Baby_Shower", "Birthday", "Christmas", "Easter",
             "Eid", "Engagement", "Father_s_Day", "Graduation", "Halloween",
             "Housewarming", "Mother_s_Day", "New_Home", "New_Year_s_Eve",
@@ -106,16 +106,26 @@ def occasion(user, array, user1, user2)
   myoccasion.groups.push(user.id).each do |p|
     occasion = Occasion.new(
       recipient: myoccasion.recipient,
-      gift: myoccasion.gift,
+      # gift: myoccasion.gift,
+      # same gift for all occasions created in the loop
+
+      title: gift.title,
+      gift_id: gift.id,
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
+<<<<<<< HEAD
     occasion.user = user
+=======
+    occasion.user = user # userR
+>>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
     occasion.save!
+
 
     proposal = Proposal.new
     proposal.occasion = occasion
     proposal.myoccasion = myoccasion
+    proposal.user = userR
     proposal.save!
     5.times do |p|
       product = Product.new(title: p, price: rand(1..300))

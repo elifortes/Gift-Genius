@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- New home page -->
 <div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="   ">
@@ -71,4 +72,59 @@
     <%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
     <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
   </div>
+=======
+<h1>Creator of a Gift Group</h1>
+<p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
+<div class="card h-90 overflow-auto ">
+  <p>  Group members</p>
+  <ul class=" list-group">
+    <% @myoccasion.groups.each do |g| %>
+      <li class="list-group-item">
+# <<<<<<< 3rd_branch
+        <% u = User.find(g)%>
+        <%= u.personnal.name %><br>
+        <% o = @myoccasion.occasions.find_by({user:u}) %>
+        occ: <%= o.id %>
+        <% a = Answer.find_by({user:u, occasion:o})%><br>
+# =======
+        <%= User.find(g).personnal.name %><br>
+# >>>>>>> main
+        <!--
+        # thisoccasion= @myoccasion.occasions.select { o| o.user = g } ||
+        # thisoccasion = g.occasions.select { |o| o.myoccasion == @myoccasion.id}
+        # thisoccasion.status
+
+
+
+        <% if [true,false].sample %>
+# <<<<<<< 3rd_branch
+          <i class="fas fa-file-circle-xmark ms-4"></i> pending
+        <% else %>
+          <i class="fas fa-file-signature ms-4"></i> done
+        <% end %>
+        <%# <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+        <i class="fas fa-coins ms-4"></i> <%= if a then a.pledge_amount else "Not pledged yet" end %>
+# =======
+          <i class="fas fa-file-circle-xmark ms-4"></i> no
+        <% else %>
+          <i class="fas fa-file-signature ms-4"></i> done
+        <% end %>
+           -->
+      <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
+      <% if member_occasion&.status %>
+                <i class="fas fa-file-signature ms-4"></i> DONE
+        <% else %>
+          <i class="fas fa-file-circle-xmark ms-4"></i> NO
+        <% end %>
+
+
+
+
+        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+# >>>>>>> main
+        <!-- in thisoccasion but no field. -->
+      </li>
+    <% end %>
+  </ul>
+>>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
 </div>

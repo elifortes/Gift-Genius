@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="p-2 w-100" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class=" p-2">
     <div class="card p-2 mb-2">
@@ -52,3 +53,37 @@
     width: 100%; /* Set the desired width */
   }
 </style>
+=======
+<div class="p-2 bd-highlight text-dark w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
+<h1>Myoccassions#gift</h1>
+
+<% if @myoccasion.photo.present? %>
+  <%= cl_image_tag @myoccasion.photo.key, height: 90, width: 90, crop: :fill,  class: "rounded-circle"%>
+<% else %>
+  <p>No picture available for the gift.</p>
+<% end %>
+<%=  User.find(@myoccasion.recipient).personnal.name %>
+<hr>
+
+
+<%= simple_form_for [@myoccasion,@gift] do |f| %>
+  <%= f.input :title, collection: Gift.occasions.keys, prompt: 'Select an Occasion'%>
+
+
+  <%= f.input :price, as: :hidden, input_html: { id: "gift_price" } %>
+  <div class="price-range-container" data-controller="custom-range">
+<span data-custom-range-target="minPrice">0</span>
+    <input type="range" class="form-control-range" id="priceRange-container" min="0" max="1000" step="1"
+           data-action="input->custom-range#rangeUpdate"
+           data-custom-range-target="range">
+        <span data-custom-range-target="maxPrice">1000</span>
+    </div>
+
+
+  <div class = "d-flex justify-content-between">
+    <%= link_to 'Back', new_myoccasion_path(@myoccasion), class: "btn btn-dark " %>
+    <%= f.button :submit, class: "btn btn-dark"%>
+    <% end %>
+  </div>
+</div>
+>>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b

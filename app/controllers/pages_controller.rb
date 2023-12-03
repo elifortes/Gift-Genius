@@ -7,6 +7,7 @@ class PagesController < ApplicationController
     # myoccasions
     # occasions
 
+
     return unless current_user
     # looking for events i created
     @myoccasions = current_user.myoccasions
@@ -31,4 +32,6 @@ class PagesController < ApplicationController
     end
     @mycontacts.sort_by! { |p| p.personnal.birthday }
   end
+
+
 end
