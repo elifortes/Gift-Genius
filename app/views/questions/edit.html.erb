@@ -17,17 +17,20 @@
         <li>
           <%= simple_form_for @question do |p| %>
             <div class="card h-25 overflow-auto p-1">
-                <%# <%= p.input :pledge , collection: @activities%> 
-                <%= p.input :hobbies, as: :select, collection: @hobbies%>
-                <%= p.input :movies, as: :select, collection: @movies%>
-                <%= p.input :music, as: :select, collection: @music%>
-                <%= p.input :books, as: :select, collection: @books%>
-                <%= p.input :brands, as: :select, collection: @brands%>
-                <%= p.input :places, as: :select, collection: @places%>
-                <%= p.input :games, as: :select, collection: @games%>
-                <%= p.input :restaurant, as: :select, collection: @restaurant%>
-                <%= p.input :devices, as: :select, collection: @devices%>
-                <%= p.input :purchases, as: :select, collection: @purchases%>
+                <%# pledge amount ($):
+                <input name="pledge" type="number"/> %>
+                <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end } %>
+                <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end %>
+                <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end%>
+                <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end%>
+                <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end%>
+                <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end%>
+                <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end%>
+                <%= p.input :games, as: :select, collection: @games , selected: if @answer then @answer.games  else nil end%>
+                <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end%>
+                <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end %>
+                <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end%>
+
               <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
               <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
               <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
@@ -48,6 +51,7 @@
               <%= p.button :submit, class: 'btn btn-primary' %>
               <%= p.button :submit, class: 'btn btn-primary' %>
             <% end %>
+
           </div>
         </li>
       </ul>

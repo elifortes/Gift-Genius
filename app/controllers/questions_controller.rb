@@ -12,14 +12,19 @@ class QuestionsController < ApplicationController
   def edit
     @occasion = Occasion.find(params[:occasion_id])
 
+    @answer = Answer.find_by(user: current_user, occasion: @occasion) #load the previous answer
+
     @question = @occasion.question
+
     @movies = [
+      "",
       "Action", "Adventure", "Animation", "Comedy", "Crime",
       "Documentary", "Drama", "Family", "Fantasy", "Horror",
       "Mystery", "Romance", "Sci-Fi", "Thriller", "War"
     ]
 
     @music = [
+      "",
       "Blues", "Classical", "Country", "Disco", "Electronic",
       "Folk", "Funk", "Hip Hop", "House", "Indie",
       "Jazz", "Metal", "Pop", "Punk", "R&B",
@@ -27,48 +32,56 @@ class QuestionsController < ApplicationController
     ]
 
     @books = [
+      "",
       "Biography", "Children's", "Contemporary Fiction", "Crime", "Fantasy",
       "Historical Fiction", "Horror", "Mystery", "Non-Fiction", "Poetry",
       "Romance", "Science Fiction", "Self-Help", "Thriller", "Young Adult"
     ]
 
     @hobbies = [
+      "",
       "Board Games", "Cooking", "Crafting", "Cycling", "Drawing", "Fishing",
-      "Gardening", "Hiking", "Painting", "Photography", "Playing Musical Instruments", "Reading",
-      "Running", "Traveling", "Yoga"
+      "Gardening", "Hiking", "Painting", "Photography", "Playing Musical Instruments",
+      "Reading","Running", "Traveling", "Yoga"
     ]
 
     @brands = [
+      "",
       "Adidas", "Amazon", "Apple", "Coca-Cola", "Gap",
       "H&M", "Levi's", "McDonald's", "Nike", "Puma",
       "Sony", "Starbucks", "Samsung", "Target", "Toyota"
     ]
 
     @places = [
+      "",
       "Amusement Park", "Beach", "Botanical Garden", "City Park", "Cave",
       "Countryside", "Desert", "Historical Site", "Island", "Lake",
       "Mountain", "National Park", "Rainforest", "Ski Resort", "Waterfall"
     ]
 
     @purchases = [
+      "",
       "Backpack", "Binoculars", "Bookmarks", "Camping Stove", "Camping Tent",
       "Climbing Gear", "Cooking Equipment", "E-books", "Hiking Boots", "Headlamp",
       "Map and Compass", "Outdoor Clothing", "Paperback Novels", "Travel Guides", "Water Bottles"
     ]
 
     @restaurant = [
+      "",
       "American (Burgers)", "Brazilian", "Chinese", "French", "Greek",
       "Indian", "Italian", "Japanese", "Korean", "Mediterranean",
       "Mexican", "Middle Eastern", "Spanish", "Thai", "Vietnamese"
     ]
 
     @devices = [
+      "",
       "Amazon Echo", "Apple Watch", "Canon EOS Camera", "DJI Mavic Drone", "Fitbit",
       "iPad", "iPhone", "MacBook", "Nintendo Switch", "PlayStation",
       "Samsung Galaxy S Series", "Smart TV", "Windows Laptop", "Xbox", "GoPro Camera"
     ]
 
     @games = [
+      "",
       "Adventure", "Arcade", "Educational", "Fighting", "First-Person Shooter (FPS)",
       "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
       "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy"
@@ -92,26 +105,33 @@ class QuestionsController < ApplicationController
     #                         books: params[:question][:books],restaurant: params[:question][:restaurant],
     #                           brands: params[:question][:brands],devices: params[:question][:devices],
     #                             places: params[:question][:places],purchases: params[:question][:purchases])
-    @answer = Answer.new(param_strong)
+
+    @answer = Answer.find_by(user: current_user, occasion: @question.occasion)
+    #instead of making new form every time this update the form to previous answers.
+    if @answer == nil then
+      @answer = Answer.new(param_strong)
+    end
     @answer.user = current_user
     @occasion = Occasion.find(@question.occasion_id)
     # update status in occasion questionnaire is done
     @answer.occasion = @occasion
     @occasion.status = true
     @occasion.save!
+
     @answer_values = params[:question].values
-    # @answer.hobbies = @answer_values[0]
-    # @answer.movies = @answer_values[1]
-    # @answer.music = @answer_values[2]
-    # @answer.books = @answer_values[3]
-    # @answer.brands = @answer_values[4]
-    # @answer.places = @answer_values[5]
-    # @answer.games = @answer_values[6]
-    # @answer.restaurant = @answer_values[7]
-    # @answer.devices = @answer_values[8]
-    # @answer.purchases = @answer_values[9]
 
-
+    @answer.pledge_amount = params[:question][:pledge_amount]
+    @answer.hobbies = params[:question][:hobbies]
+    @answer.movies = params[:question][:movies]
+    @answer.music = params[:question][:music]
+    @answer.books = params[:question][:books]
+    @answer.brands = [params[:question][:brands]]
+    @answer.places = [params[:question][:places]]
+    @answer.games = [params[:question][:games]]
+    @answer.restaurant = params[:question][:restaurant]
+    @answer.devices = [params[:question][:devices]]
+    @answer.purchases = [params[:question][:purchases]]
+# raise
     # @answer_values.each do |value|
     #   if value == ""
     #     redirect_to edit_occasion_question_path(@occasion, @question), alert: "Please answer all questions."
@@ -120,9 +140,9 @@ class QuestionsController < ApplicationController
     # end
 
     if @answer.save
-
+      # raise
       # @answer_values.save
-      redirect_to occasion_path(@occasion, answer_values: @answer_values), notice: "Questionnaire is answered."
+      redirect_to occasion_path(@occasion, answer: @answer.id), notice: "Questionnaire is answered."
     else
       render :new, alert: :unprocessable_entity
     end

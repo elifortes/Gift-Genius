@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_30_210227) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_03_022058) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +74,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_30_210227) do
     t.text "platforms", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "pledge_amount"
     t.index ["occasion_id"], name: "index_answers_on_occasion_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end
@@ -191,6 +192,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_30_210227) do
     t.text "platforms", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "pledge_amount"
     t.index ["occasion_id"], name: "index_questions_on_occasion_id"
     t.index ["user_id"], name: "index_questions_on_user_id"
   end

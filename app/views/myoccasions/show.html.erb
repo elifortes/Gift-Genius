@@ -5,7 +5,11 @@
   <ul class=" list-group">
     <% @myoccasion.groups.each do |g| %>
       <li class="list-group-item">
-        <%= User.find(g).personnal.name %><br>
+        <% u = User.find(g)%>
+        <%= u.personnal.name %><br>
+        <% o = @myoccasion.occasions.find_by({user:u}) %>
+        occ: <%= o.id %>
+        <% a = Answer.find_by({user:u, occasion:o})%><br>
         <!--
         # thisoccasion= @myoccasion.occasions.select { o| o.user = g } ||
         # thisoccasion = g.occasions.select { |o| o.myoccasion == @myoccasion.id}
@@ -16,7 +20,8 @@
         <% else %>
           <i class="fas fa-file-signature ms-4"></i> done
         <% end %>
-        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %> answer.pledge
+        <%# <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+        <i class="fas fa-coins ms-4"></i> <%= if a then a.pledge_amount else "Not pledged yet" end %>
         <!-- in thisoccasion but no field. -->
       </li>
     <% end %>
