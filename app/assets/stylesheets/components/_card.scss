@@ -26,8 +26,9 @@
 }
 
 .card-product {
+
   overflow: hidden;
-  height: 120px;
+  height: 140px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -35,8 +36,10 @@
 }
 
 .card-product img {
+
+  overflow: hidden;
   height: 100%;
-  width: 120px;
+  width: 135px;
   object-fit: cover;
 }
 
@@ -66,6 +69,7 @@
 }
 
 .card-trip>img {
+
   height: 200px;
   width: 100%;
   object-fit: cover;

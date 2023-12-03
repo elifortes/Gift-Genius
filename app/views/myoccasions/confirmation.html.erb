@@ -17,12 +17,12 @@
         </div>
       </div>
       <!-- navigation buttons -->
-      <div class="row p-0 my-4">
+      <div class="btn btn-group row p-0 my-4">
         <div class="col-6 ">
           <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-gradient" %>
         </div>
         <div class="col-4">
-          <ul class="list-group  p-0 m-0">
+          <ul class="btn-group list-group  p-0 m-0">
             <% @occasions.each do |o| %>
               <% if o.recipient == @myoccasion.recipient &&  @myoccasion.id==o.myoccasion.id %>
                 <li class="list-group-item p-0 m-0">

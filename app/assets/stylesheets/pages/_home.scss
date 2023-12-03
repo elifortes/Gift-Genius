@@ -55,6 +55,7 @@ $background: #0a2335;
 // Specific CSS for your home-page
 html {
   background-color: $background;
+  color: white;
 }
 
 body {
@@ -84,19 +85,23 @@ body {
 
 .bg-color {
   background-color: $c03;
+  color: white;
 }
 
 .bg-home {
   background-color: $c02;
+  color: white;
 }
 
 .bg {
   background-color: $c02;
+  color: white;
 }
 
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: #0a2335;
+  color: white;
 }
 
 
