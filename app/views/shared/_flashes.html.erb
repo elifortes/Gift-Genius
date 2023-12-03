@@ -7,16 +7,36 @@
       </button>
     </div>
   </div>   -->
-  <div class="alert alert-success alert-dismissible fade show mt-5 m-4" role="alert" style="height:300px;width:85%;">
-    <%= notice %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-    </button>
-  </div>
 <% end %>
 <% if alert %>
   <div class="alert alert-warning alert-dismissible fade show m-1" role="alert">
     <%= alert %>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
     </button>
+  </div>
+<% end %>
+<% if notice %>
+  <div class="flash flash-success alert alert-dismissible fade show col-11 m-2 h-25" role="alert">
+    <span><strong  class='mx-2'></strong> 🎉
+      <%= notice  %></span>
+    <a data-bs-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+<% end %>
+<% if alert %>
+  <div class="flash flash-warning alert alert-dismissible fade show  col-11 m-2 h-25" role="alert">
+    <span><strong>Mmh</strong> 🤔 seems like you don't have <a href="#">profile picture</a> yet.</span>
+    <a data-bs-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+<% end %>
+<% if alert && notice %>
+  <div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+    <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
+    <a data-bs-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
   </div>
 <% end %>

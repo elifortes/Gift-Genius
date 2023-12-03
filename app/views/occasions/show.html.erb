@@ -21,6 +21,17 @@
   <p></p>
   Pledge an ammout
   <%# <%=  @favorite.favorite %>
+<<<<<<< HEAD
+  <%=  simple_form_for @occasion do  |f|%>
+    <%= f.input :status %>
+    <%= f.button :submit %>
+  <% end %>
+  <p><%= @answer.answers if @answer %></p>
+  answer
+  <% if @answer %>
+    <%=  @answer.favorites %>
+  <% end %>
+=======
 
 
   <%# <%= link_to "Pledge", edit_occasion_question_path(@occasion),class: "btn btn-dark"  %>
@@ -30,6 +41,7 @@
      <%= ["hi"]%>
 
 
+>>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>
 <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

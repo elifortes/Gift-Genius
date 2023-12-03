@@ -1,3 +1,78 @@
+<<<<<<< HEAD
+<!-- New home page -->
+<div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="   ">
+    <div class="card p-2 m-1">
+      <h2 class="">Gift Genius</h2>
+    </div>
+    <!-- Notifications / Open space area -->
+    <div class="card h-75 overflow-auto p-2 m-1">
+      <h4><strong>Group Member Status</strong></h4>
+      <!-- notifications -->
+      <!--end notification avatar -->
+      <% @myoccasion.groups.each do |g| %>
+        <div class="notification">
+          <% if User.find(g).personnal.info != nil  %>
+            <%= image_tag User.find(g).personnal.info['picture'], alt: "",class: "avatar-square" %>
+          <% else %>
+            <%= image_tag 'option2.png', alt: "",class: "avatar-square" %>
+          <% end %>
+          <div class="notification-content">
+            <p><small><%= User.find(g).personnal.name %></small></p>
+            <p><strong></strong> </p>
+          </div>
+          <div class="notification-actions d-none">
+            <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+            <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+      <% end %>
+      <!-- notifications  occasions-->
+      <!--end notification occasions -->
+      <div class="none">
+      </div>
+      <!-- end Notifications / Open space area -->
+    </div>
+    <!-- Notifications / Open space area -->
+  </div>
+  <!-- navigation buttons -->
+  <div class="btn-group w-100 mt-1 p-1">
+    <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-gradient col-6 m-1" %>
+    <%= link_to "Create New", myoccasions_new_path,class: "btn btn-success btn-gradient col-6 m-1"  %>
+  </div>
+  <!-- end navigation buttons -->
+  <!-- footer -->
+</div>
+<div class="p-2 w-100 bg-body d-none" style="height:680px">
+  <div class="">
+    <h1>Creator of a Gift Group</h1>
+    <p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
+    <div class="card h-90 overflow-auto ">
+      <p>  Group members</p>
+      <ul class=" list-group">
+        <% @myoccasion.groups.each do |g| %>
+          <li class="list-group-item">
+            <%= User.find(g).personnal.name %><br>
+            <!-- 
+        # thisoccasion= @myoccasion.occasions.select { o| o.user = g } ||
+        # thisoccasion = g.occasions.select { |o| o.myoccasion == @myoccasion.id}
+        # thisoccasion.status
+        -->
+            <% if [true,false].sample %>
+              <i class="fas fa-file-circle-xmark ms-4"></i> no 
+            <% else %>
+              <i class="fas fa-file-signature ms-4"></i> done 
+            <% end %>
+            <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+            <!-- in thisoccasion but no field. -->
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
+    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+  </div>
+=======
 <h1>Creator of a Gift Group</h1>
 <p>Recipient: <%=User.find( @myoccasion.recipient).personnal.name %></p>
 <div class="card h-90 overflow-auto ">
@@ -51,6 +126,5 @@
       </li>
     <% end %>
   </ul>
+>>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
 </div>
-<%= link_to "back to myoccasions", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>

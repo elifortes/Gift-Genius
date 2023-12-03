@@ -18,8 +18,10 @@
   text-decoration: none;
   border: 2px solid transparent;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: #164863;
+    color: white;
     border-color: #0056b3;
   }
 }
@@ -30,10 +32,16 @@
 }
 
 .custom-primary-button {
-  background-color: rgb(155, 190, 200); /* Set your desired background color */
-  color: #fff; /* Set your desired text color */
-  padding: 05px 20px; /* Adjust padding as needed */
-  text-decoration: none; /* Remove underline for links */
-  border: none; /* Remove border */
-  cursor: pointer; /* Add a pointer cursor on hover */
+  background-color: rgb(155, 190, 200);
+  /* Set your desired background color */
+  color: #fff;
+  /* Set your desired text color */
+  padding: 05px 20px;
+  /* Adjust padding as needed */
+  text-decoration: none;
+  /* Remove underline for links */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer cursor on hover */
 }

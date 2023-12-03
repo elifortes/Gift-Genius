@@ -11,8 +11,12 @@ class ProductsController < ApplicationController
     raise
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
   def update
-    @product = Product.update(proposal_params)
+    @product = Product.update(params_strong)
     raise
   end
 
