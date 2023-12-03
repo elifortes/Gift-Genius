@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
       @question = @occasion.question
       @answer = @question.answer
     else
-      redirect_to root_path ,   notice: "Occasion not found."
+      redirect_to root_path ,   alert: "Occasion not found."
     end
   end
 
@@ -86,22 +86,43 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
-    # creating a new favorite
-    @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
-                          games: params[:question][:games], movies: params[:question][:movies],
-                            books: params[:question][:books],restaurant: params[:question][:restaurant],
-                              brands: params[:question][:brands],devices: params[:question][:devices],
-                                places: params[:question][:places],purchases: params[:question][:purchases])
+    # # creating a new favorite
+    # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
+    #                       games: params[:question][:games], movies: params[:question][:movies],
+    #                         books: params[:question][:books],restaurant: params[:question][:restaurant],
+    #                           brands: params[:question][:brands],devices: params[:question][:devices],
+    #                             places: params[:question][:places],purchases: params[:question][:purchases])
+    @answer = Answer.new(param_strong)
     @answer.user = current_user
     @occasion = Occasion.find(@question.occasion_id)
     # update status in occasion questionnaire is done
     @answer.occasion = @occasion
     @occasion.status = true
     @occasion.save!
+    @answer_values = params[:question].values
+    # @answer.hobbies = @answer_values[0]
+    # @answer.movies = @answer_values[1]
+    # @answer.music = @answer_values[2]
+    # @answer.books = @answer_values[3]
+    # @answer.brands = @answer_values[4]
+    # @answer.places = @answer_values[5]
+    # @answer.games = @answer_values[6]
+    # @answer.restaurant = @answer_values[7]
+    # @answer.devices = @answer_values[8]
+    # @answer.purchases = @answer_values[9]
+
+
+    # @answer_values.each do |value|
+    #   if value == ""
+    #     redirect_to edit_occasion_question_path(@occasion, @question), alert: "Please answer all questions."
+    #     return
+    #   end
+    # end
 
     if @answer.save
 
-      redirect_to @occasion, notice: "Questionnaire is saved."
+      # @answer_values.save
+      redirect_to occasion_path(@occasion, answer_values: @answer_values), notice: "Questionnaire is answered."
     else
       render :new, alert: :unprocessable_entity
     end
@@ -120,3 +141,36 @@ class QuestionsController < ApplicationController
                                         :recipient, :myoccasion, :gift)
   end
 end
+
+
+
+# def index
+#   @questions = Question.all
+# end
+
+# def show
+#   @question = Question.all
+
+# end
+
+# def new
+#   @question = Question.new
+# end
+
+# def create
+#   @question = Question.new(question_params)
+#   if @question.save!
+
+#   redirect_to myoccasions_path
+#   else
+#     render :new
+# end
+# end
+
+# private
+
+# def question_params
+#   params.require(:question).permit(:content)
+# end
+
+# end

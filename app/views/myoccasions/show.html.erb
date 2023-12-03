@@ -6,17 +6,17 @@
     <% @myoccasion.groups.each do |g| %>
       <li class="list-group-item">
         <%= User.find(g).personnal.name %><br>
-        <!-- 
+        <!--
         # thisoccasion= @myoccasion.occasions.select { o| o.user = g } ||
         # thisoccasion = g.occasions.select { |o| o.myoccasion == @myoccasion.id}
         # thisoccasion.status
         -->
         <% if [true,false].sample %>
-          <i class="fas fa-file-circle-xmark ms-4"></i> no 
+          <i class="fas fa-file-circle-xmark ms-4"></i> pending
         <% else %>
-          <i class="fas fa-file-signature ms-4"></i> done 
+          <i class="fas fa-file-signature ms-4"></i> done
         <% end %>
-        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %> answer.pledge
         <!-- in thisoccasion but no field. -->
       </li>
     <% end %>

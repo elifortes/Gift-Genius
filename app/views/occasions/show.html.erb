@@ -13,11 +13,14 @@
   <p></p>
   Pledge an ammout
   <%# <%=  @favorite.favorite %>
-  <p><%= @answer if @answer %></p>
-  answer
-  <% @answer.answers.each do |attribute, value| %>
-  <p><strong><%= attribute %>:</strong> <%= value %></p>
-<% end %>
+
+
+  <%# <%= link_to "Pledge", edit_occasion_question_path(@occasion),class: "btn btn-dark"  %>
+
+  answer: <%= @answer %>
+    <%= @answer_values%>
+     <%= ["hi"]%>
+
 
 </div>
 <%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>

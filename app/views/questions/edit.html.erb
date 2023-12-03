@@ -4,7 +4,7 @@
     <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF">
       <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
       <p>
-        the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>..
+        the recipient :  <%= User.find(@occasion.recipient).personnal.name %>..
       </p>
       <p>
         the Questionnaire: ...
@@ -17,6 +17,7 @@
         <li>
           <%= simple_form_for @question do |p| %>
             <div class="card h-25 overflow-auto p-1">
+                <%# <%= p.input :pledge , collection: @activities%> 
                 <%= p.input :hobbies, as: :select, collection: @hobbies%>
                 <%= p.input :movies, as: :select, collection: @movies%>
                 <%= p.input :music, as: :select, collection: @music%>
@@ -27,8 +28,6 @@
                 <%= p.input :restaurant, as: :select, collection: @restaurant%>
                 <%= p.input :devices, as: :select, collection: @devices%>
                 <%= p.input :purchases, as: :select, collection: @purchases%>
-
-
               <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
               <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
               <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
@@ -46,7 +45,6 @@
               p.label :favorites, 'Select  favorite music:'
               p.input :favorites, collection:@music, as: :check_boxes  %>
             <%#  p.input :hobbies, as: :check_boxes, collection:@question.hobbies
-
               <%= p.button :submit, class: 'btn btn-primary' %>
               <%= p.button :submit, class: 'btn btn-primary' %>
             <% end %>
