@@ -1,8 +1,6 @@
 <div class="p-2 bd-highlight text-dark w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
-  <h1>Confirmation page for Myoccasion:</h1>
-  <hr>
-  <br>
-  <h3>Congratulation GiftGenius has accepted your request.🥳</h3>
+
+  <h3>Congratulation GiftGenius has accepted your request <i class="fa-solid fa-check-double fa-fade fa-lg fa-bounce" style="color: #699dce;"></i></h3>
   <br>
   <hr>
   <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong>?</h5>
@@ -19,4 +17,10 @@
     <% end %>
   </ul>
 </div>
+
+
 <%= link_to "Skip to groups", myoccasions_path,class: "btn btn-dark" %>
+
+<!--
+
+-->

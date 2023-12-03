@@ -1,6 +1,7 @@
 <div class="d-flex align-items-start flex-column bd-highlight mb-3  background-img">
   <div class="p-2 bd-highlight w-100" style="height:650px">
     <h1>Gift Genius</h1>
+
     <h2 class="my-4">
       <% if  current_user %>
         Welcome back,   <%= current_user.personnal.name if current_user.personnal %></h2>
@@ -22,7 +23,7 @@
               <% if o.recipient %>
                 <li class="list-group-item ">
                   <%=User.find( o.recipient).personnal.name  %>
-                  <%= Gift.find(o.gift).occasion %>
+                  <%# <%= Gift.find(o.gift).occasion %>
                 </li>
               <% end %>
             <% end %>
@@ -30,7 +31,7 @@
         </ul>
       <% end %>
     </div>
-  </dir>
+  </div>
   <div class="btn-group w-100 mt-4 p-1">
     <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-dark col-6 m-1" %>
     <%= link_to "Create New", myoccasions_new_path,class: "btn btn-dark col-6 m-1"  %>
