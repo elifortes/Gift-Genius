@@ -2,14 +2,16 @@ class GiftsController < ApplicationController
   def create
     @gift = Gift.new(param_strong)
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
-    #@myoccasion.gift = @gift.id
-    #@myoccasion.save!
-    @max_price = 1000
-    @min_price = 0
-    @gift.price = (params[:gift][:price].to_f / 100 * 1000).to_i
+    @myoccasion.gift = @gift.id
+    @myoccasion.save!
+    # @max_price = 1000
+    # @min_price = 0
+    # @gift.price = (params[:gift][:price].to_f / 100 * 1000).to_i
     if @gift.save!
       @myoccasion.gift = @gift.id
+
       @myoccasion.save!
+
       if !@myoccasion.groups.include?(current_user.id) then
         @myoccasion.groups.push(current_user.id)
         @myoccasion.save!
@@ -27,6 +29,7 @@ class GiftsController < ApplicationController
           question.user = user
           question.occasion = occasion
           question.save!
+
       end
 
       redirect_to myoccasion_confirmation_path(@myoccasion)

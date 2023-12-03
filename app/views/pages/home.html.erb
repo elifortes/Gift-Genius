@@ -1,6 +1,7 @@
 <div class="d-flex align-items-start flex-column bd-highlight mb-3  background-img">
   <div class="p-2 bd-highlight w-100" style="height:650px">
     <h1>Gift Genius</h1>
+
     <h2 class="my-4">
       <% if  current_user %>
         Welcome back,   <%= current_user.personnal.name if current_user.personnal %></h2>
@@ -22,7 +23,11 @@
               <% if o.recipient %>
                 <li class="list-group-item ">
                   <%=User.find( o.recipient).personnal.name  %>
+
                   <%= if o.gift != nil then Gift.find(o.gift).occasion else nil end %>
+
+                  <%# <%= Gift.find(o.gift).occasion %>
+
                 </li>
               <% end %>
             <% end %>

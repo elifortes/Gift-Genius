@@ -1,0 +1,15 @@
+  .price-range-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-value {
+    flex: 0 0 auto; /* This ensures the values don't grow or shrink */
+    margin: 0 0px; /* Adjust the margin as needed */
+  }
+  /* Adjust the width of the slider */
+  .form-control-range {
+    flex-grow: 1; /* Allows the range input to grow and fill the space */
+    margin: 0 10px; /* Adds some space between the text and the slider */
+  }
