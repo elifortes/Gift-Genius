@@ -10,15 +10,15 @@
   <div class="card h-75 overflow-auto p-2 m-1">
     <!-- notifications -->
     <div class="images-wrapper" data-controller="sortable" >
-      <% @products.each do |product| %>
-        <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide">
-          <%= image_tag "product/product-#{rand(10..19)}.jpg", alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
-          <div class="card-product-infos">
-            <h2>  <%= product.title %></h2>
-            <p>Product description with <strong>relevant info</strong> only.</p>
+      <% @products.each do |product| %><%= link_to product_path(product) do %>
+          <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;text-decoration:none;">
+            <%= image_tag "product/product-#{rand(10..19)}.jpg", alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
+            <div class="card-product-infos" style="text-decoration:none">
+              <h2 style="text-decoration:none" >  <%= product.title %></h2>
+              <p style="text-decoration:none">Product description with <strong>relevant info</strong> only.</p>
+            </div>
           </div>
-        </div>
-      <% end %>     </div>
+        <% end %>    <% end %> </div>
     <!-- card separation -->
     <!--end notification avatar -->
     <div class="none">

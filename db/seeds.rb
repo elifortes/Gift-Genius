@@ -5,6 +5,7 @@
 require "faker"
 
 # clean database
+Product.destroy_all
 Gift.destroy_all
 UserContact.destroy_all
 Myoccasion.destroy_all
@@ -27,12 +28,24 @@ userE.save!
 
 # creating 30 users for login with userxx@me.com
 def users
-  30.times do |i|
-    user = User.new(email: "user#{i}@gmail.com")
+  10.times do |i|
+    user = User.new(email: "user0#{i}@gmail.com")
     user.password = "123456"
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
+      info: { sex: "man", picture: "man/man-0#{i}.jpg" },
+    )
+    user.personnal = personnal
+    print i, user.save!
+  end
+  10.times do |i|
+    user = User.new(email: "user1#{i}@gmail.com")
+    user.password = "123456"
+    personnal = Personnal.new(
+      name: Faker::Name.name,
+      birthday: Faker::Date.birthday,
+      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg" },
     )
     user.personnal = personnal
     print i, user.save!
