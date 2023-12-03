@@ -2,6 +2,7 @@ class AnswersController < ApplicationController
   def new
     @occasion = Occasion.find(params[:occasion_id])
     @question = @occasion.question
+     #testing
   end
 
   def update

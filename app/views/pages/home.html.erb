@@ -23,7 +23,11 @@
               <% if o.recipient %>
                 <li class="list-group-item ">
                   <%=User.find( o.recipient).personnal.name  %>
+
+                  <%= if o.gift != nil then Gift.find(o.gift).occasion else nil end %>
+
                   <%# <%= Gift.find(o.gift).occasion %>
+
                 </li>
               <% end %>
             <% end %>

@@ -101,12 +101,14 @@ def occasion(user, array, user1, user2)
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
-    occasion.user = userR
+    occasion.user = user # userR
     occasion.save!
+
 
     proposal = Proposal.new
     proposal.occasion = occasion
     proposal.myoccasion = myoccasion
+    proposal.user = userR
     proposal.save!
     5.times do |p|
       product = Product.new(title: p, price: rand(1..300))
