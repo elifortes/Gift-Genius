@@ -4,18 +4,25 @@
   <% @myoccasions.each do |g| %>
     <% if g.recipient %>
       recipient: <%= User.find(g.recipient).personnal.name %><br>
-      <%= link_to "see Group details", myoccasion_path(g),class: "btn btn-dark"  %>
+      <%= link_to "Group details", myoccasion_path(g),class: "btn btn-gradient"  %>
       <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
     </li>
   <% end %>
 <% end %>
 <hr>
 <h2>Questionnaires</h2>
-<% @occasions.each do |o| %>
-  <% if o.recipient %>
-    recipient: <%= User.find(o.recipient).personnal.name %><br>
-    <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
-    <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+<ul class="list-group">
+  <% @occasions.each do |occasion| %>
+    <li class="list-group-item list-group-flush">
+      <% if occasion.recipient %>
+        recipient: <%= User.find(occasion.recipient).personnal.name %>
+        <p>
+          <% if  occasion.proposal %>
+            <%= link_to "GiftGenius", proposal_path(occasion.proposal.id) ,class: "btn btn-sm btn-gradient" %>
+          <% end %>
+          <%= link_to "Recipient profile", occasion_path(occasion),class: "btn btn-sm btn-gradient"  %></p>
+      <% end %>
+    </li>
   <% end %>
-<% end %>
+</ul>
 </div>
