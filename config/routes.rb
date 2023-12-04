@@ -21,6 +21,17 @@ Rails.application.routes.draw do
     resources :questions
   end
 
+  resources :proposals do
+    resources :products
+  end
+
+  resources :products do
+    member do
+      patch :move_image
+    end
+  end
+
+
   get "questions/show", to: "questions#show"
   get "groups/gift", to: "groups#gift"
   post "groups/gift", to: "groups#gift"

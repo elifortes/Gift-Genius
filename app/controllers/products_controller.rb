@@ -6,17 +6,17 @@ class ProductsController < ApplicationController
   def sort
     @product = Product.find(params[:id])
     @product.update(row_order_position: params[:row_order_position])
-
-    head :no_content
   end
 
   def show
     @product = Product.find(params[:id])
+    @show_gift = true
+    @product = Product.find(params[:proposal_id])
   end
 
   def update
     @product = Product.update(params_strong)
-    raise
+
   end
 
   private
