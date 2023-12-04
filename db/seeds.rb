@@ -92,6 +92,10 @@ def occasion(user, array, user1, user2)
   )
   gift = Gift.new(
     price: 100,
+    title: ["Anniversary", "Baby_Shower", "Birthday", "Christmas", "Easter",
+            "Eid", "Engagement", "Father_s_Day", "Graduation", "Halloween",
+            "Housewarming", "Mother_s_Day", "New_Home", "New_Year_s_Eve",
+            "Retirement", "Thanksgiving", "Valentine_s_Day", "Wedding"].sample,
   )
   gift.save!
   myoccasion.user = user
