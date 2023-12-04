@@ -4,33 +4,16 @@ class ProposalsController < ApplicationController
     @proposals = current_user.occasions.map { |o| o.proposal }
   end
 
-  def new
-  end
-
-  def move_image
-    raise
-    @proposal = Proposal.find(params[:id])
-    @product = @proposal.products[params[:old_position].to_i - 1]
-    @product.insert_at(params[:new_position].to_i)
-    head :ok
-  end
-
   def show
     @proposal = Proposal.find(params[:id])
     @products = @proposal.products.rank(:row_order)
-  end
-
-  def update
-    @proposal = GeneralListing.find(params[:id])
-    @product = @proposal.products[params[:old_position].to_i - 1]
-    @product.insert_at(params[:new_position].to_i)
-    head :ok
+    @products.sort_by { |product| product.row_order }
+    @products.each_with_index { |product, index| product.position = index }
   end
 
   def create
     @proposal = Proposal.new(proposal_params)
     @proposal.user = current_user
-
     if @proposal.save
       redirect_to @proposal, notice: "Proposal was successfully created."
     else

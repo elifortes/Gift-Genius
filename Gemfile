@@ -56,7 +56,9 @@ gem "dotenv-rails"
 gem "faker"
 #  upload photo 'cloudinary'
 gem "cloudinary"
-gem "acts_as_list"
+gem "hotwire-livereload", "~> 1.3", group: :development
+gem "dotenv"
+gem "ranked-model", "~> 0.4.9"
 gem "requestjs-rails"
 
 group :development, :test do
@@ -82,8 +84,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "hotwire-livereload", "~> 1.3", group: :development
-gem "dotenv"
-
-gem "ranked-model", "~> 0.4.9"
