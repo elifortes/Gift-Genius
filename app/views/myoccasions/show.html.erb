@@ -53,11 +53,11 @@
             -->
         <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
         <% if member_occasion&.status %>
-          <i class=“fas fa-file-signature ms-4"></i> DONE
+          <i class="fas fa-file-signature ms-4"></i> DONE
         <% else %>
           <i class=“fas fa-file-circle-xmark ms-4”></i> NO
         <% end %>
-        <i class=“fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
+        <i class="fas fa-coins ms-4"></i> <%= [5,10,15,20,25,30].sample %>
         <!-- in thisoccasion but no field. -->
       </li>
     <% end %>
