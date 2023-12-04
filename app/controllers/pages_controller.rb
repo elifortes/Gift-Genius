@@ -7,7 +7,6 @@ class PagesController < ApplicationController
     # myoccasions
     # occasions
 
-
     return unless current_user
     # looking for events i created
     @myoccasions = current_user.myoccasions
@@ -17,10 +16,10 @@ class PagesController < ApplicationController
     @recipient = User.includes(:personnal).find(@myoccasion.recipient)
     @gift = Gift.find(@myoccasion.gift)
     # looking for product i choose for an existing event.
-    @occasions = current_user.occasions
-    @occasion = @occasion.first
-    @proposal = @occasion.proposal
-    @products = @proposal.products.where(position: 1)
+    #@occasions = current_user.occasions
+    #@occasion = @occasion.first
+    #@proposal = @occasion.proposal
+    #@products = @proposal.products.where(position: 1)
 
     # old code
     @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
@@ -32,6 +31,4 @@ class PagesController < ApplicationController
     end
     @mycontacts.sort_by! { |p| p.personnal.birthday }
   end
-
-
 end

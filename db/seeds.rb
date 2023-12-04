@@ -106,21 +106,15 @@ def occasion(user, array, user1, user2)
   myoccasion.groups.push(user.id).each do |p|
     occasion = Occasion.new(
       recipient: myoccasion.recipient,
-      # gift: myoccasion.gift,
+      gift: myoccasion.gift,
       # same gift for all occasions created in the loop
-
-      title: gift.title,
-      gift_id: gift.id,
+      #title: gift.title,
+      #gift_id: gift.id,
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
-<<<<<<< HEAD
-    occasion.user = user
-=======
-    occasion.user = user # userR
->>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
+    occasion.user = userR
     occasion.save!
-
 
     proposal = Proposal.new
     proposal.occasion = occasion
@@ -137,24 +131,7 @@ def occasion(user, array, user1, user2)
     question = Question.new(
       myoccasion: myoccasion.id,
       recipient: myoccasion.recipient,
-      gift: gift.id,
-      hobbies: ["Reading", "Photography", "Hiking"],
-      activities: ["Cooking", "Traveling"],
-      channels: ["Email", "Text Messages"],
-      contents: ["Articles", "Videos"],
-      brands: ["Nike", "Apple"],
-      places: ["Beach", "Mountain"],
-      socials: ["Twitter", "Instagram"],
-      onlines: ["Best hiking trails", "Photography tips"],
-      purchases: ["Books", "Outdoor gear"],
-      communications: ["Family gatherings", "Friends hangouts"],
-      apps: ["Fitness tracker app", "Recipe app"],
-      websites: ["National Geographic", "Cooking blogs"],
-      locations: ["Visited Paris", "Explored Grand Canyon"],
-      devices: ["iPhone", "MacBook"],
-      softwares: ["Adobe Lightroom", "Google Chrome"],
-      games: ["Adventure", "Puzzle"],
-      platforms: ["Nintendo Switch"],
+
     )
     question.occasion = occasion
     question.user = userR
@@ -164,5 +141,5 @@ def occasion(user, array, user1, user2)
 end
 
 occasion(userU, array, userM, userE)
-occasion(userM, array, userU, userE)
-occasion(userE, array, userU, userM)
+#occasion(userM, array, userU, userE)
+#occasion(userE, array, userU, userM)
