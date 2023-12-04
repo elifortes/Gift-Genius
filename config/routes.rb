@@ -39,6 +39,7 @@ Rails.application.routes.draw do
 
   resources :questions
 
+
   post "recommendations", to: "recommendations#create"
   get "question", to: "questions#show"
 

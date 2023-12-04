@@ -5,6 +5,7 @@
 require "faker"
 
 # clean database
+Product.destroy_all
 Gift.destroy_all
 UserContact.destroy_all
 Myoccasion.destroy_all
@@ -27,12 +28,24 @@ userE.save!
 
 # creating 30 users for login with userxx@me.com
 def users
-  30.times do |i|
-    user = User.new(email: "user#{i}@gmail.com")
+  10.times do |i|
+    user = User.new(email: "user0#{i}@gmail.com")
     user.password = "123456"
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
+      info: { sex: "man", picture: "man/man-0#{i}.jpg" },
+    )
+    user.personnal = personnal
+    print i, user.save!
+  end
+  10.times do |i|
+    user = User.new(email: "user1#{i}@gmail.com")
+    user.password = "123456"
+    personnal = Personnal.new(
+      name: Faker::Name.name,
+      birthday: Faker::Date.birthday,
+      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg" },
     )
     user.personnal = personnal
     print i, user.save!
@@ -78,7 +91,7 @@ def occasion(user, array, user1, user2)
     recipient: array.sample,
   )
   gift = Gift.new(
-    price: 200,
+    # price: 100,
     title: ["Anniversary", "Baby_Shower", "Birthday", "Christmas", "Easter",
             "Eid", "Engagement", "Father_s_Day", "Graduation", "Halloween",
             "Housewarming", "Mother_s_Day", "New_Home", "New_Year_s_Eve",
@@ -94,6 +107,9 @@ def occasion(user, array, user1, user2)
     occasion = Occasion.new(
       recipient: myoccasion.recipient,
       gift: myoccasion.gift,
+      # same gift for all occasions created in the loop
+      #title: gift.title,
+      #gift_id: gift.id,
     )
     occasion.myoccasion = myoccasion
     userR = User.find(p)
@@ -103,6 +119,7 @@ def occasion(user, array, user1, user2)
     proposal = Proposal.new
     proposal.occasion = occasion
     proposal.myoccasion = myoccasion
+    proposal.user = userR
     proposal.save!
     5.times do |p|
       product = Product.new(title: p, price: rand(1..300))
@@ -114,27 +131,7 @@ def occasion(user, array, user1, user2)
     question = Question.new(
       myoccasion: myoccasion.id,
       recipient: myoccasion.recipient,
-      gift: gift.id,
-      movies: ["Drama", "Adventure"],
-      music: ["Pop", "Indie"],
-      books: ["Mystery", "Science Fiction"],
-      hobbies: ["Reading", "Photography", "Hiking"],
-      activities: ["Cooking", "Traveling"],
-      channels: ["Email", "Text Messages"],
-      contents: ["Articles", "Videos"],
-      brands: ["Nike", "Apple"],
-      places: ["Beach", "Mountain"],
-      socials: ["Twitter", "Instagram"],
-      onlines: ["Best hiking trails", "Photography tips"],
-      purchases: ["Books", "Outdoor gear"],
-      communications: ["Family gatherings", "Friends hangouts"],
-      apps: ["Fitness tracker app", "Recipe app"],
-      websites: ["National Geographic", "Cooking blogs"],
-      locations: ["Visited Paris", "Explored Grand Canyon"],
-      devices: ["iPhone", "MacBook"],
-      softwares: ["Adobe Lightroom", "Google Chrome"],
-      games: ["Adventure", "Puzzle"],
-      platforms: ["Nintendo Switch"],
+
     )
     question.occasion = occasion
     question.user = userR
@@ -144,5 +141,5 @@ def occasion(user, array, user1, user2)
 end
 
 occasion(userU, array, userM, userE)
-occasion(userM, array, userU, userE)
-occasion(userE, array, userU, userM)
+#occasion(userM, array, userU, userE)
+#occasion(userE, array, userU, userM)

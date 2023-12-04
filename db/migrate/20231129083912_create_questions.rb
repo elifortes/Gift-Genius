@@ -7,9 +7,13 @@ class CreateQuestions < ActiveRecord::Migration[7.1]
       t.integer :recipient
       t.integer :gift
       t.integer :user
-      t.text :favorites
+      t.jsonb :favorites
       t.text :hobbies, array: true
       t.text :activities, array: true
+      t.text :movies, array: true
+      t.text :music, array: true
+      t.text :books, array: true
+      t.text :restaurant, array: true
       t.text :channels, array: true
       t.text :contents, array: true
       t.text :brands, array: true

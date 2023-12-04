@@ -1,45 +1,56 @@
-<div class="d-flex align-items-start flex-column bd-highlight mb-3">
-  <div class = "card h-25 w-100 overflow-auto p-1">
-    <h1>Questions#edit</h1>
-    <div class="p-2 bd-highlight w-100" style="height:650px;padding:-10px;background-color:#F7DDAF">
+<div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="">
+    <div class="card p-2 m-2 ">
+      <h2 class="">Gift Genius</h2>
+      <% if current_user %>
+        <h4 class="my-2">
+          Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
+      <% end %>
+    </div>
+    <!-- Notifications / Open space area -->
+    <div class="card h-75 overflow-auto p-2 m-1" >
       <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
       <p>
-        the recipient : .  <%= User.find(@occasion.recipient).personnal.name %>..
-      </p>
-      <p>
-        the Questionnaire: ...
-      </p>
-      <ul>
-        <li>
-        </li>
-      </ul>
-      <ul>
-        <li>
+        the recipient :  <%= User.find(@occasion.recipient).personnal.name %>..
+        <div class="card  overflow-auto p-1" style="height: 460px">
           <%= simple_form_for @question do |p| %>
-            <div class="card h-25 overflow-auto p-1">
-              <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
-              <%= p.input :hobbies, collection: @hobbies, as: :select, prompt: 'Select a hobby' %>
-              <%= p.input :music, collection: @music, as: :select, prompt: 'Select a music' %>
-              <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
-              <%# p.input :channels, collection: @question.channels, as: :check_boxes %>
-              <%# p.input :favorites, collection:@question.favorites, as: :check_boxes %>
-              <%# <% p.input :favorites, collection: @question.favorites.values, as: :grouped_select, group_method: @question.favorites %>
-              <%= p.label :favorites, 'Select  favorite movies:' %>
-              <%= p.input :favorites, collection:@movies,as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite channels:' %>
-              <%= p.input :favorites, collection:@channels, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite books:' %>
-              <%= p.input :favorites, collection:@books, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite hobbies:' %>
-              <%= p.input :favorites, collection:@hobbies, as: :check_boxes %>
-              <%= p.label :favorites, 'Select  favorite music:' %>
-              <%= p.input :favorites, collection:@music, as: :check_boxes %>
-              <%= p.input :hobbies, as: :check_boxes, collection:@question.hobbies%>%
+
+            <%# pledge amount ($):
+                <input name="pledge" type="number"/> %>
+            <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end } %>
+            <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end %>
+            <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end%>
+            <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end%>
+            <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end%>
+            <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end%>
+            <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end%>
+            <%= p.input :games, as: :select, collection: @games , selected: if @answer then @answer.games  else nil end%>
+            <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end%>
+            <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end %>
+            <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end%>
+            <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
+            <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
+            <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
+            <%# p.input :channels, collection: @question.channels, as: :check_boxes %>
+            <%# p.input :favorites, collection:@question.favorites, as: :check_boxes %>
+            <%# <% p.input :favorites, collection: @question.favorites.values, as: :grouped_select, group_method: @question.favorites %>
+            <%# p.label :favorites, 'Select  favorite movies:'
+              p.input :favorites, collection:@movies,as: :check_boxes
+              p.label :favorites, 'Select  favorite channels:'
+              p.input :favorites, collection:@channels, as: :check_boxes
+              p.label :favorites, 'Select  favorite books:'
+              p.input :favorites, collection:@books, as: :check_boxes
+              p.label :favorites, 'Select  favorite hobbies:'
+              p.input :favorites, collection:@hobbies, as: :check_boxes
+              p.label :favorites, 'Select  favorite music:'
+              p.input :favorites, collection:@music, as: :check_boxes  %>
+            <%#  p.input :hobbies, as: :check_boxes, collection:@question.hobbies
+>>>>>>> 5287742b24316cdb2c277148e82c321fa1973151
               <%= p.button :submit, class: 'btn btn-primary' %>
-            <% end %>
-          </div>
-        </li>
-      </ul>
+            <%= p.button :submit, class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

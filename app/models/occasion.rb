@@ -4,4 +4,6 @@ class Occasion < ApplicationRecord
   has_one :answer, dependent: :destroy
   has_one :question, dependent: :destroy
   has_one :proposal, dependent: :destroy
+  # has_one :gift
+
 end

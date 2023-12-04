@@ -20,6 +20,12 @@
               <% && current_user.photo.attached? %>
                 <%# cl_image_tag current_user.photo.key , class: "avatar", alt: "dropdown menu" %>
                 <%# elsif %>
+                <!--avatar  with kitt userame from personnal.kitt !->
+                <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar", alt: "avatar" %>
+                <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-large", alt: "avatar-large" %>
+                <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-bordered", alt: "avatar-bordered" %>
+                <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-square", alt: "avatar-square" %>
+                <!--icon -->
                 <i class="bi bi-person-bounding-box mx-1" style="font-size:2em;color:white"></i>
               <% end %>
             </a>
