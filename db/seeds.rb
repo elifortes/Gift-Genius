@@ -134,6 +134,7 @@ def occasion(user, array, user1, user2)
 
     5.times do |p|
       product = Product.new(title: p, price: rand(1..300), row_order: p, position: p)
+      product.url = "product/product-#{rand(10..19)}.jpg"
       product.title = Faker::Commerce.product_name
       product.proposal = proposal
 
