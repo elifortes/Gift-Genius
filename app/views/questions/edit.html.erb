@@ -12,14 +12,15 @@
       <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
       <p>
         the recipient :  <%= User.find(@occasion.recipient).personnal.name %>..
-        <div class="card  overflow-auto p-1" style="height: 500px">
+        <div class="card  overflow-auto p-1" style="height: 460px">
           <%= simple_form_for @question do |p| %>
+
             <%# pledge amount ($):
                 <input name="pledge" type="number"/> %>
             <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end } %>
             <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end %>
             <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end%>
-            <%= p.input :musics, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end%>
+            <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end%>
             <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end%>
             <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end%>
             <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end%>
@@ -44,6 +45,7 @@
               p.label :favorites, 'Select  favorite music:'
               p.input :favorites, collection:@music, as: :check_boxes  %>
             <%#  p.input :hobbies, as: :check_boxes, collection:@question.hobbies
+>>>>>>> 5287742b24316cdb2c277148e82c321fa1973151
               <%= p.button :submit, class: 'btn btn-primary' %>
             <%= p.button :submit, class: 'btn btn-primary' %>
           <% end %>
