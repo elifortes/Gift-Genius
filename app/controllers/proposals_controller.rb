@@ -21,7 +21,7 @@ class ProposalsController < ApplicationController
   end
 
   def update
-    raise
+
     @proposal = GeneralListing.find(params[:id])
     @product = @proposal.products[params[:old_position].to_i - 1]
     @product.insert_at(params[:new_position].to_i)
