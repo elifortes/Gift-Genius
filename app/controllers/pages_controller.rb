@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     # all information about this group
     @groups = @myoccasion.groups.map { |user_id| User.includes(:personnal).find(user_id) }
     @recipient = User.includes(:personnal).find(@myoccasion.recipient)
-    @gift = Gift.find(@myoccasion.gift)
+    #@gift = Gift.find(@myoccasion.gift)
     # looking for product i choose for an existing event.
     #@occasions = current_user.occasions
     #@occasion = @occasion.first
