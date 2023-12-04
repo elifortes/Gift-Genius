@@ -15,15 +15,15 @@ Answer.destroy_all
 User.destroy_all
 # creating userlogin for mains
 userU = User.create!(email: "nak@me.com", password: "kalvin")
-userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "option2.pgn" })
+userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "option2.png" })
 print userU, userU.save!
 
 userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
-userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "option3.pgn" })
+userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "option3.png" })
 userM.save!
 
 userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
-userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "option4.pgn" })
+userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "option4.png" })
 userE.save!
 
 # creating 30 users for login with userxx@me.com
@@ -133,9 +133,10 @@ def occasion(user, array, user1, user2)
     proposal.save!
 
     5.times do |p|
-      product = Product.new(title: p, price: rand(1..300))
+      product = Product.new(title: p, price: rand(1..300), row_order: p, position: p)
       product.title = Faker::Commerce.product_name
       product.proposal = proposal
+
       product.save!
     end
   end

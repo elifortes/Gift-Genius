@@ -7,20 +7,20 @@ class ProposalsController < ApplicationController
   def new
   end
 
-  def show
-    @proposals = Proposal.find(params[:id])
-    @products = @proposals.products
-  end
-
   def move_image
+    raise
     @proposal = Proposal.find(params[:id])
     @product = @proposal.products[params[:old_position].to_i - 1]
     @product.insert_at(params[:new_position].to_i)
     head :ok
   end
 
+  def show
+    @proposal = Proposal.find(params[:id])
+    @products = @proposal.products.rank(:row_order)
+  end
+
   def update
-    raise
     @proposal = GeneralListing.find(params[:id])
     @product = @proposal.products[params[:old_position].to_i - 1]
     @product.insert_at(params[:new_position].to_i)

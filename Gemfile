@@ -85,3 +85,5 @@ end
 
 gem "hotwire-livereload", "~> 1.3", group: :development
 gem "dotenv"
+
+gem "ranked-model", "~> 0.4.9"

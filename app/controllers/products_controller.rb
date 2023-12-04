@@ -1,6 +1,17 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.rank(:row_order).all
+  end
+
+  def sort
+    @product = Product.find(params[:id])
+    @product.update(row_order_position: params[:row_order_position])
+    raise
+    head :no_content
+  end
+
+  def list
+    @tasks = @list.products.rank(:row_order)
   end
 
   def move_image

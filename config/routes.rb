@@ -3,7 +3,19 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: "pages#home"
+  resources :proposals do
+    member do
+      patch :move_image
+      put :sort
+    end
+  end
 
+  resources :products do
+    member do
+      patch :move_image
+      put :sort
+    end
+  end
   get "myoccasions/new", to: "myoccasions#new"
   get "gifts/create"
   resources :myoccasions do
@@ -14,13 +26,6 @@ Rails.application.routes.draw do
   resources :gifts
   resources :occasions do
     resources :questions
-  end
-  resources :proposals
-
-  resources :products do
-    member do
-      patch :move_image
-    end
   end
 
   get "questions/show", to: "questions#show"
@@ -38,7 +43,6 @@ Rails.application.routes.draw do
   # get "products", to: "products#index"
 
   resources :questions
-
 
   post "recommendations", to: "recommendations#create"
   get "question", to: "questions#show"
