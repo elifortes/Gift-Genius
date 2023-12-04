@@ -3,8 +3,8 @@
   <h2>As Creator</h2>
   <% @myoccasions.each do |g| %>
     <div class="card-trip">
-      <% if Gift.find(g.gift) %>
-        <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "avatar-square" %>
+      <% if g.gift %>
+        <%= image_tag "occasion/#{Gift.find(g.gift).title}.jpg", alt: "",class: "avatar-square" %>
       <% end %>
       <div class="card-trip-infos">
         <div>
