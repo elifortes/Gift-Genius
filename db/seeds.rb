@@ -15,15 +15,15 @@ Answer.destroy_all
 User.destroy_all
 # creating userlogin for mains
 userU = User.create!(email: "nak@me.com", password: "kalvin")
-userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14))
+userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "option2.pgn" })
 print userU, userU.save!
 
 userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
-userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1))
+userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "option3.pgn" })
 userM.save!
 
 userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
-userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1))
+userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "option4.pgn" })
 userE.save!
 
 # creating 30 users for login with userxx@me.com
