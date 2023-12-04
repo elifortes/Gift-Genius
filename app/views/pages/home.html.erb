@@ -12,18 +12,19 @@
     <div class="card h-75 overflow-auto p-2 m-1">
       <h4><strong>Hightlights</strong></h4>
       <!-- notifications -->
-      <div class="card-trip">
-        <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "img" %>
-        <div class="card-trip-infos">
-
-          <div>
-            <h2><%= User.find(@myoccasion.recipient).personnal.name %></h2>
-            <p><% if @gift.title %> <%= @gift.title   %>
-            <% end %></p>
+      <% if current_user %>
+        <div class="card-trip">
+          <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "img" %>
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= User.find(@myoccasion.recipient).personnal.name %></h2>
+              <p><% if @gift.title %> <%= @gift.title   %>
+                <% end %></p>
+            </div>
+            <%= image_tag @recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
           </div>
-          <%= image_tag @recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
         </div>
-      </div>
+      <% end %>
       <!-- card separation -->
       <div class="card-product mt-4 d-none">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
