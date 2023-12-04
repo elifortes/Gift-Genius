@@ -12,7 +12,9 @@
   <body>
     <%= render "shared/navbar" %>
     <%= render "shared/flashes" %>
-    <%= yield %>
+    <div class="overflow-auto" style="height:680px" >
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </body>
 </html>
