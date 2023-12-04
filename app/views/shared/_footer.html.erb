@@ -9,16 +9,21 @@
       <span>Group</span>
     <% end %>
     <%= link_to myoccasions_new_path, class: 'footer-item' do %>
-    <i class="fa-solid fa-user-plus"></i>
+      <i class="fa-solid fa-user-plus"></i>
       <span>Add Group</span>
     <% end %>
-    <%# <% if @occasion && @occasion.proposal %>
-      <%# <% if current_page?(proposal_path(@occasion.proposal)) || current_page?(occasion_path(@occasion.id)) %>
-        <%= link_to products_path, class: 'footer-item' do %>
-          <i class="fa-solid fa-gifts"></i>
-          <span>Gifts</span>
-        <% end %>
-      <%# <% end %>
-    <%# <% end %> 
+
+    <%= link_to products_path, class: 'footer-item' do %>
+      <i class="fa-solid fa-gifts"></i>
+      <span>Gifts</span>
+      <%# if @occasion && @occasion.proposal %>
+      <%# if current_page?(proposal_path(@occasion.proposal)) || current_page?(occasion_path(@occasion.id)) %>
+      <%= link_to products_path, class: 'footer-item' do %>
+        <i class="fa-solid fa-gifts"></i>
+        <span>Gifts</span>
+      <% end %>
+    <% end %>
+    <%# end %>
+
   </nav>
 </footer>

@@ -2,12 +2,24 @@
   <h1>Gift genius Dashboard </h1>
   <h2>As Creator</h2>
   <% @myoccasions.each do |g| %>
-    <% if g.recipient %>
-      recipient: <%= User.find(g.recipient).personnal.name %><br>
-      <%= link_to "Group details", myoccasion_path(g),class: "btn btn-gradient"  %>
-      <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
-    </li>
-  <% end %>
+    <div class="card-trip">
+      <% if Gift.find(g.gift) %>
+        <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "avatar-square" %>
+      <% end %>
+      <div class="card-trip-infos">
+        <div>
+        </div>
+        <% if g.recipient %>
+          <%= image_tag User.find(g.recipient).personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
+        <% end %>
+      </div>
+      <% if g.recipient %>
+        recipient: <%= User.find(g.recipient).personnal.name %><br>
+        <%= link_to "Group details", myoccasion_path(g),class: "btn btn-gradient"  %>
+        <%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
+      </li>
+    <% end %>
+  </div>
 <% end %>
 <hr>
 <h2>Questionnaires</h2>
