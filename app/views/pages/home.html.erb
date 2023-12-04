@@ -32,13 +32,14 @@
       </div>
       <!--end notification avatar -->
       <div class="none">
+        <!-- display the next birthday -->
       </div>
       <!-- notifications  occasions-->
       <!--end notification occasions -->
       <div class="none">
       </div>
-      <!-- end Notifications / Open space area -->
     </div>
+    <!-- end Notifications / Open space area -->
   </div>
   <!-- navigation buttons -->
   <div class="btn-group w-100 mt-1 p-1">
@@ -47,58 +48,4 @@
   </div>
   <!-- end navigation buttons -->
   <!-- footer -->
-</div>
-<div class="d-flex align-items-start flex-column  mb-3  background-img d-none">
-  <div class="p-2  w-100" style="height:650px">
-    <h1>Gift Genius</h1>
-
-    <h2 class="my-4">
-      <% if current_user %>
-        Welcome back,   <%= current_user.personnal.name if current_user.personnal %></h2>
-      <div class="card h-75 overflow-auto p-1">
-        <ul class="list list-group ">
-          <% if current_user %>
-            <h4>Some upcoming birthday!</h4>
-            <% @mycontacts.last(2).each do |c| %>
-              <li class="list-group-item">
-                <%= c.personnal.name  %>
-                <%= c.personnal.birthday %>
-              </li>
-            <% end %>
-          </ul>
-          <hr>
-          <h4> Your current Gift Genius Projects</h4>
-          <ul class="list list-group ">
-            <% @myoccasions.each do |o| %>
-              <% if o.recipient %>
-                <li class="list-group-item ">
-                  <%=User.find( o.recipient).personnal.name  %>
-<<<<<<< HEAD
-                  <%# Gift.find(o.gift).occasion %>
-=======
-
-                  <%= if o.gift != nil then Gift.find(o.gift).occasion else nil end %>
-
-                  <%# <%= Gift.find(o.gift).occasion %>
-
->>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
-                </li>
-              <% end %>
-            <% end %>
-          <% end %>
-        </ul>
-      <% end %>
-    </div>
-<<<<<<< HEAD
-    <div class="btn-group w-100 mt-4 p-1">
-      <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-dark col-6 m-1" %>
-      <%= link_to "Create New", myoccasions_new_path,class: "btn btn-dark col-6 m-1"  %>
-    </div>
-=======
-  </div>
-  <div class="btn-group w-100 mt-4 p-1">
-    <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-dark col-6 m-1" %>
-    <%= link_to "Create New", myoccasions_new_path,class: "btn btn-dark col-6 m-1"  %>
->>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
-  </div>
 </div>

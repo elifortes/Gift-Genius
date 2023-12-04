@@ -15,11 +15,7 @@ class OccasionsController < ApplicationController
 
   end
 
-<<<<<<< HEAD
   def update
     raise
   end
-=======
-
->>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
 end

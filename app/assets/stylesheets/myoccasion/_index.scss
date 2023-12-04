@@ -1,2 +1,66 @@
 @import "gift";
 @import "confirmation";
+
+
+.centered-text {
+  text-align: center;
+  /* Centers text horizontally */
+  font-weight: bold;
+  /* Makes text bold */
+  color: #000000;
+  /* Strong black color */
+}
+
+.icon-and-label {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+  margin-left: 05px;
+  /* Adjust this value to move items to the right */
+}
+
+.icon-and-label i {
+  color: #164863;
+  margin-right: 10px;
+  /* Space between icon and label */
+  cursor: pointer;
+}
+
+.icon-and-label h4 {
+  color: #000000;
+  margin-bottom: 0;
+  /* Remove bottom margin from h4 */
+}
+
+.form-check .form-check-input {
+  float: right;
+  /* Move checkboxes to the right side */
+  margin-right: 1.5em;
+  /* Adjust as needed */
+}
+
+/* Additional styles for the checkboxes */
+.form-check-input {
+
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-form-check-bg);
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border: var(--bs-border-width) solid #324151;
+  -webkit-print-color-adjust: exact;
+
+}
+
+.checkbox-group label {
+  color: #000000;
+  /* Your desired color for checkbox labels */
+}

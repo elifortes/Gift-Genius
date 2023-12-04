@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- New home page -->
 <div class="p-2  bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="">
@@ -14,6 +13,7 @@
           <div>
             <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong></h5>
           </div>
+          rail
           <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
         </div>
       </div>
@@ -38,31 +38,3 @@
     </div>
   </div>
 </div>
-=======
-<div class="p-2 bd-highlight text-dark w-100" style="height:650px;padding:-10px;background-color:#E1F2FC;color:white">
-
-  <h3>Congratulation GiftGenius has accepted your request <i class="fa-solid fa-check-double fa-fade fa-lg fa-bounce" style="color: #699dce;"></i></h3>
-  <br>
-  <hr>
-  <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong>?</h5>
-  <h2>as Member</h2>
-  <ul>
-    <%= @myoccasion.id %>
-    <% @occasions.each do |o| %>
-      <% if o.recipient == @myoccasion.recipient &&  @myoccasion.id==o.myoccasion.id %>
-        <li>
-          <%= o.id %>|  <%= o.myoccasion.id %>|<%= o.recipient%>
-          recipient: <%= User.find(o.recipient).personnal.name %><br>
-          <%= link_to "see Group details", occasion_path(o),class: "btn btn-dark"  %>
-        <% end %>  </li>
-    <% end %>
-  </ul>
-</div>
-
-
-<%= link_to "Skip to groups", myoccasions_path,class: "btn btn-dark" %>
-
-<!--
-
--->
->>>>>>> 7f683b0e3c6d96f7a5fe8980db7bb82253f2641b
