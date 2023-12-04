@@ -112,11 +112,22 @@ def occasion(user, array, user1, user2)
     occasion.user = user
     occasion.save!
 
+    question = Question.new(
+      myoccasion: myoccasion.id,
+      recipient: myoccasion.recipient,
+      gift: gift.id,
+    )
+    question.occasion = occasion
+    question.user = userR
+    question.save!
+    p question
+
     proposal = Proposal.new
     proposal.occasion = occasion
     proposal.myoccasion = myoccasion
 
     proposal.save!
+
     5.times do |p|
       product = Product.new(title: p, price: rand(1..300))
       product.title = Faker::Commerce.product_name
@@ -127,5 +138,5 @@ def occasion(user, array, user1, user2)
 end
 
 occasion(userU, array, userM, userE)
-#occasion(userM, array, userU, userE)
-#occasion(userE, array, userU, userM)
+occasion(userM, array, userU, userE)
+occasion(userE, array, userU, userM)
