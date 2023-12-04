@@ -1,6 +1,20 @@
+// figma colors 
+$c01: #244861;
+$c02: #507C9A;
+$c03: #4aaae2;
+$c04: #7a8b8b;
+$c05: #566b7b;
+$c06: #F7DDAF;
+$c07: #F2A59E;
+$c08: #BB3261;
+
+
+$background: #0a2335;
+
 // Specific CSS for your home-page
 html {
-  background-color: rgba(0, 0, 0, 0.648);
+  background-color: $background;
+  color: white;
 }
 
 body {
@@ -12,6 +26,7 @@ body {
   margin: 0 auto;
   overflow: auto;
   color: gray;
+  background-color: white;
 }
 
 .shadow {
@@ -20,7 +35,7 @@ body {
 }
 
 .background-img {
-  background-image: url(https://www.figma.com/file/bQwm5ppXCmdAjqFNJslR6O/Gift-Genius---Relume-Components?type=design&node-id=4494-686&mode=design&t=vx5fqyKz4oj8581i-4);
+  background-image: url(https://res.cloudinary.com/df2nxg5o2/image/upload/v1701529292/orygnf7b2ifxeaq9x8ue.png);
 
   background-position: center;
   background-repeat: no-repeat;

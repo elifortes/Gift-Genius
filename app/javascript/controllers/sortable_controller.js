@@ -6,7 +6,6 @@ import { FetchRequest } from '@rails/request.js'
 // Connects to data-controller="sortable"
 export default class extends Controller {
 
-
   static values = {
     url: String,
     test: String
