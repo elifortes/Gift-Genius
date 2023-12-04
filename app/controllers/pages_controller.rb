@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
     return unless current_user
     # looking for events i created
-    #@myoccasions = current_user.myoccasions
+    @myoccasions = current_user.myoccasions
     @myoccasions = Myoccasion.all
     @myoccasion = @myoccasions.first
     # all information about this group
