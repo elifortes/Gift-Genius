@@ -10,17 +10,17 @@
     <div id="Products">
       <div data-controller="sortable" style="display:;">
         <ul data-controller="sortable" class="list-group list-group-flush rounded ">
-          <% @products.each do |product| %><%= link_to product_path(product) do %>
-              <li data-sortable-id="<%= product.id %>" data-sortable-group-value="tasks"  data-sortable-update-url="<%= sort_product_path(product) %>" class="list-group-item border-0">
-                <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;border-radius:10px">
-                  <%= image_tag product.url, alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
-                  <div class="card-product-infos">
-                    <h2 style="text-decoration:none" > <%= product.title %></h2>
-                    <p style="text-decoration:none">Product description with <strong><%= product.position %> position: <%= product.row_order %></strong></p>
-                  </div>
+          <% @products.each do |product| %>
+            <li data-sortable-id="<%= product.id %>" data-sortable-group-value="tasks"  data-sortable-update-url="<%= sort_product_path(product) %>" class="list-group-item border-0">
+              <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;border-radius:10px"><%= link_to product_path(product) do %>
+                  <%= image_tag product.url, alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %> <% end %>
+                <div class="card-product-infos">
+                  <h2 style="text-decoration:none" > <%= product.title %></h2>
+                  <p style="text-decoration:none">Product description with <strong><%= product.position %> position: <%= product.row_order %></strong></p>
                 </div>
-              </li>
-            <% end %> <% end %>
+              </div>
+            </li>
+          <% end %>
         </ul>
       </div>
       <!--end notification occasions -->
