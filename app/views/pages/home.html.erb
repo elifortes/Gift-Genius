@@ -14,6 +14,7 @@
       <!-- notifications -->
       <div class="card-trip">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <%# image_tag "occasion/#{@gift.occasion}.jpg", alt: "",class: "avatar-square" %>
         <div class="card-trip-infos">
           <div>
             <h2><%= User.find(@myoccasion.recipient).personnal.name %></h2>
