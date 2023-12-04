@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @show_gift = true
   end
 
   def update
