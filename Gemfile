@@ -60,6 +60,7 @@ gem "hotwire-livereload", "~> 1.3", group: :development
 gem "dotenv"
 gem "ranked-model", "~> 0.4.9"
 gem "requestjs-rails"
+gem "acts_as_list"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
