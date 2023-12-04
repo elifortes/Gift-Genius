@@ -9,7 +9,8 @@ class PagesController < ApplicationController
 
     return unless current_user
     # looking for events i created
-    @myoccasions = current_user.myoccasions
+    #@myoccasions = current_user.myoccasions
+    @myoccasions = Myoccasion.all
     @myoccasion = @myoccasions.first
     # all information about this group
     @groups = @myoccasion.groups.map { |user_id| User.includes(:personnal).find(user_id) }
@@ -17,7 +18,7 @@ class PagesController < ApplicationController
 
 
 
-    # @gift = Gift.find(@myoccasion.gift)
+    @gift = Gift.find(@myoccasion.gift)
 
     # looking for product i choose for an existing event.
     #@occasions = current_user.occasions
