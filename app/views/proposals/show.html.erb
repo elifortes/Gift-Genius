@@ -1,41 +1,30 @@
 <!-- New home page -->
-<div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+<div class="p-2 w-100 bg-body" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <!-- Notifications / Open space area -->
   <div class="card  p-2 m-1">
     <h2 class="">Gift Genius suggestion for:</h2>
     <% if current_user %>
-      <h4 class="my-2"><%= User.find(@proposals.occasion.myoccasion.recipient).personnal.name%></h4>
+      <h4 class="my-2"><%= User.find(@proposal.occasion.myoccasion.recipient).personnal.name%></h4>
     <% end %>
-  </div>
-  <div class="card h-75 overflow-auto p-2 m-1">
-    <!-- notifications -->
-    <div class="images-wrapper" data-controller="sortable" >
-      <% @products.each do |product| %><%= link_to proposal_product_path(product) do %>
-          <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;text-decoration:none;">
-            <%= image_tag "product/product-#{rand(10..19)}.jpg", alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
-            <div class="card-product-infos" style="text-decoration:none">
-              <h2 style="text-decoration:none" >  <%= product.title %></h2>
-              <p style="text-decoration:none">Product description with <strong>relevant info</strong> only.</p>
-            </div>
-          </div>
-        <% end %>    <% end %> </div>
-    <!-- card separation -->
-    <!--end notification avatar -->
-    <div class="none">
-    </div>
     <!-- notifications  occasions-->
-    <!--end notification occasions -->
-    <div class="none">
+    <div id="Products">
+      <div data-controller="sortable" style="display:;">
+        <ul data-controller="sortable" class="list-group list-group-flush rounded ">
+          <% @products.each do |product| %>
+            <li data-sortable-id="<%= product.id %>" data-sortable-group-value="tasks"  data-sortable-update-url="<%= sort_product_path(product) %>" class="list-group-item border-0">
+              <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;border-radius:10px">
+                <%= image_tag product.url, alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
+                <div class="card-product-infos">
+                  <h2 style="text-decoration:none" > <%= product.title %></h2>
+                  <p style="text-decoration:none">Product description with <strong><%= product.position %> position: <%= product.row_order %></strong></p>
+                </div>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <!--end notification occasions -->
+      <!-- navigation buttons -->
     </div>
-    <!-- end Notifications / Open space area -->
-    <!-- navigation buttons -->
   </div>
-  <div class="btn-group w-100 mt-1 p-1">
-    <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-gradient col-6 m-1" %>
-    <%= link_to "Create New", myoccasions_new_path,class: "btn btn-success btn-gradient col-6 m-1"  %>
-  </div>
-  <!-- end navigation buttons -->
-  <!-- footer -->
-</div>
-</div>
 </div>

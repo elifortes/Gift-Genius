@@ -24,7 +24,7 @@
             <p class = "pb-1"><small><%= User.find(g).personnal.name %></small></p>
               <p><strong>
                 <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
-                <% if member_occasion&.status %>
+                <% if member_occasion&.status %> 
                   <i class="bi bi-check-square-fill m-2" style="font-size:1em"></i>DONE
                 <% else %>
                   <i class="bi bi-question-square-fill m-2" style="font-size:1em"></i> NO

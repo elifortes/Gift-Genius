@@ -20,11 +20,12 @@ export default class extends Controller {
   onEnd(event) {
     var sortableUpdateUrl = event.item.dataset.sortableUpdateUrl
     var newIndex = event.newIndex
+    var sortableListId = event.to.dataset.sortableListId
     console.log(sortableUpdateUrl)
     console.log(newIndex)
-
+    console.log(sortableListId)
     put(sortableUpdateUrl, {
-      body: JSON.stringify({ row_order_position: newIndex }),
+      body: JSON.stringify({ row_order_position: newIndex, list_id: sortableListId }),
     })
   }
 }

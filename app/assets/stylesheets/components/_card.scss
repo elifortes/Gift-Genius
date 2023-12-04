@@ -4,10 +4,11 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: white;
   background-clip: border-box;
-  border: 1px solid #e3e6f0;
+  border: 2px solid #e3e6f0;
   border-radius: .35rem;
+  text-shadow: 1px solid white;
 }
 
 .card-category {
@@ -63,6 +64,7 @@
 
 
 .card-trip {
+  border-radius: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -70,7 +72,7 @@
 
 .card-trip>img {
 
-  height: 200px;
+  height: 120px;
   width: 100%;
   object-fit: cover;
 }

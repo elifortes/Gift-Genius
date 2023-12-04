@@ -43,6 +43,12 @@ body {
 }
 
 
+a {
+  text-decoration: none;
+  color: #0a2335
+}
+
+
 .welcome-back {
   display: flex;
   justify-content: center;
@@ -57,3 +63,4 @@ body {
   object-fit: cover; /* Ensures the image covers the area without distortion */
   margin-top: 10px; /* Adds some space between the text and the image */
 }
+
