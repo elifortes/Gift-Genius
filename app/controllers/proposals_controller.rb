@@ -5,10 +5,20 @@ class ProposalsController < ApplicationController
   end
 
   def show
+
     @proposal = Proposal.find(params[:id])
     @products = @proposal.products.rank(:row_order)
     @products.sort_by { |product| product.row_order }
     @products.each_with_index { |product, index| product.position = index }
+    @show_gift = true
+  end
+
+
+  def update
+    @proposal = GeneralListing.find(params[:id])
+    @product = @proposal.products[params[:old_position].to_i - 1]
+    @product.insert_at(params[:new_position].to_i)
+    head :ok
   end
 
   def create

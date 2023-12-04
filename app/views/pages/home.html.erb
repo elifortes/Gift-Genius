@@ -2,9 +2,9 @@
 <div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="">
     <div class="card p-2 m-1 ">
-      <h2 class="">Gift Genius</h2>
+      <%# <h2 class="">Gift Genius</h2> %>
       <% if current_user %>
-        <h4 class="my-2">
+        <h4 class="my-2", style="text-align: center;">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
       <% end %>
     </div>
@@ -17,9 +17,9 @@
           <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "img" %>
           <div class="card-trip-infos">
             <div>
-              <h2><%= User.find(@myoccasion.recipient).personnal.name %></h2>
-              <p><% if @gift.title %> <%= @gift.title   %>
-                <% end %></p>
+              <h2 style="text-align: center;"> Get Ready to Celebrate: </h2> <br>
+              <h2 style="text-align: center;"><%= User.find(@myoccasion.recipient).personnal.name %>'s <% if @gift.title %> <%= @gift.title %> is Coming Up!</h2>
+                <% end %>
             </div>
             <%= image_tag @recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
           </div>
