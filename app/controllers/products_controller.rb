@@ -8,16 +8,17 @@ class ProductsController < ApplicationController
     @product = @proposal.products[params[:old_position].to_i - 1]
     @product.insert_at(params[:new_position].to_i)
     head :ok
-    raise
+
   end
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.find(params[:proposal_id])
+
   end
 
   def update
     @product = Product.update(params_strong)
-    raise
+
   end
 
   private

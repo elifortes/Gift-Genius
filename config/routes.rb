@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   resources :occasions do
     resources :questions
   end
-  resources :proposals
+  resources :proposals do
+    resources :products
+  end
 
   resources :products do
     member do

@@ -10,7 +10,7 @@
   <div class="card h-75 overflow-auto p-2 m-1">
     <!-- notifications -->
     <div class="images-wrapper" data-controller="sortable" >
-      <% @products.each do |product| %><%= link_to product_path(product) do %>
+      <% @products.each do |product| %><%= link_to proposal_product_path(product) do %>
           <div class="card-product mt-4 form-image-card p-2" style="height:100px;overflow:hide;text-decoration:none;">
             <%= image_tag "product/product-#{rand(10..19)}.jpg", alt: "Product image", class: "card-product-infos form-image-card form-image p-2 m-1" %>
             <div class="card-product-infos" style="text-decoration:none">
