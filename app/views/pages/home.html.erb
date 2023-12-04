@@ -25,6 +25,9 @@
           </div>
         </div>
       <% end %>
+      <% unless current_user  %>
+        <%= image_tag "option1.png", alt: "",class: "img" %>
+      <% end %>
       <!-- card separation -->
       <div class="card-product mt-4 d-none">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
