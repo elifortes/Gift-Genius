@@ -50,7 +50,7 @@
         <% else %>
           <i class=“fas fa-file-signature ms-4”></i> done
         <% end %>
-           -->
+            -->
         <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
         <% if member_occasion&.status %>
           <i class=“fas fa-file-signature ms-4"></i> DONE

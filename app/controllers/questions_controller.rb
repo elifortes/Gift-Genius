@@ -11,9 +11,7 @@ class QuestionsController < ApplicationController
 
   def edit
     @occasion = Occasion.find(params[:occasion_id])
-
     @answer = Answer.find_by(user: current_user, occasion: @occasion) #load the previous answer
-
     @question = @occasion.question
 
     @movies = [
@@ -86,6 +84,7 @@ class QuestionsController < ApplicationController
       "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
       "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
     ]
+
   end
 
   def new
@@ -98,6 +97,11 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
+# <<<<<<< HEAD
+    # creating a new favorite
+    # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
+    # games: params[:question][:games])
+# =======
     # # creating a new favorite
     # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
     #                       games: params[:question][:games], movies: params[:question][:movies],
@@ -110,6 +114,7 @@ class QuestionsController < ApplicationController
     if @answer == nil
       @answer = Answer.new(param_strong)
     end
+
     @answer.user = current_user
     @occasion = Occasion.find(@question.occasion_id)
     # update status in occasion questionnaire is done
@@ -121,15 +126,15 @@ class QuestionsController < ApplicationController
 
     @answer.pledge_amount = params[:question][:pledge_amount]
     @answer.hobbies = params[:question][:hobbies]
-    @answer.movie = params[:question][:movies]
+    @answer.movies = params[:question][:movies]
     @answer.music = params[:question][:music]
     @answer.books = params[:question][:books]
-    @answer.brands = params[:question][:brands]
-    @answer.places = params[:question][:places]
-    @answer.games = params[:question][:games]
+    @answer.brands = [params[:question][:brands]]
+    @answer.places = [params[:question][:places]]
+    @answer.games =[ params[:question][:games]]
     @answer.restaurant = params[:question][:restaurant]
-    @answer.devices = params[:question][:devices]
-    @answer.purchases = params[:question][:purchases]
+    @answer.devices = [params[:question][:devices]]
+    @answer.purchases = [params[:question][:purchases]]
     # raise
     # @answer_values.each do |value|
     #   if value == ""
@@ -156,6 +161,7 @@ class QuestionsController < ApplicationController
 
   def param_strong
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
+
   end
 end
 
