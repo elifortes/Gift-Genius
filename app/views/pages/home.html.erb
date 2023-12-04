@@ -13,17 +13,19 @@
       <h4><strong>Hightlights</strong></h4>
       <!-- notifications -->
       <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "img" %>
         <div class="card-trip-infos">
+
           <div>
             <h2><%= User.find(@myoccasion.recipient).personnal.name %></h2>
-            <p>Short description here!</p>
+            <p><% if @gift.title %> <%= @gift.title   %>
+            <% end %></p>
           </div>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+          <%= image_tag @recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
         </div>
       </div>
       <!-- card separation -->
-      <div class="card-product mt-4">
+      <div class="card-product mt-4 d-none">
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
         <div class="card-product-infos">
           <h2>Product name</h2>
