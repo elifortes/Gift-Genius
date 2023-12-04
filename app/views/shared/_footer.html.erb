@@ -1,12 +1,21 @@
-<div class="footer ">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="footer-copyright">
-    <i class="fas fa-heart"></i>
-  </div>
-</div>
+<footer class="footer">
+  <nav class="footer-nav">
+    <%= link_to root_path, class: 'footer-item' do %>
+      <i class="fa-solid fa-house-chimney"></i>
+      <span>Home</span>
+    <% end %>
+    <%= link_to myoccasions_path, class: 'footer-item' do %>
+      <i class="fa-solid fa-user-group"></i>
+      <span>Group</span>
+    <% end %>
+    <%= link_to myoccasions_new_path, class: 'footer-item' do %>
+    <i class="fa-solid fa-user-plus"></i>
+      <span>Add Group</span>
+    <% end %>
+    <%= link_to products_path, class: 'footer-item' do %>
+    <i class="fa-solid fa-gifts"></i>
+      <span>Gifts</span>
+    <% end %>
+  </nav>
+</footer>
+
