@@ -1,32 +1,25 @@
-<h1>Member of a Gift Group</h1>
-<ul>
-  <%# <li><%= @occasion %></li>
-
-<li>Gift Title: <%= Gift.find(@occasion.gift).title %></li>
 
 
-  <li>Organizer: <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
-  <li>Group Member: <%= User.find(@occasion.user_id).personnal.name %></li>
-  <li>Recipient: <%=User.find(@occasion.recipient).personnal.name  %></li>
-  <li>Gift Price: $ <%=Gift.find(@occasion.gift).price %>.00</li>
+<div class="p-2 w-100 bg-body" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+  <h1 class="card p-2 m-1">Member of a Gift Group</h1>
+  <div class="card p-2 m-1">
+    <ul>
+      <li>Gift Title: <%= Gift.find(@occasion.gift).title %></li>
+      <li>Organizer: <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
+      <li>Group Member: <%= User.find(@occasion.user_id).personnal.name %></li>
+      <li>Recipient: <%=User.find(@occasion.recipient).personnal.name  %></li>
+      <li>Gift Price: $ <%=Gift.find(@occasion.gift).price %>.00</li>
 
+    </ul>
+  </div>
 
+  <div class="card h-50 p-2 m-1">
+    <p>Go to questionnaire</p>
+    <%= link_to "Questionnaire", edit_occasion_question_path(@occasion), class: "btn btn-gradient" %>
 
-
-</ul>
-<div class="card h-50">
-  <p></p>
-  Go to questionnaire
-  <%= link_to "Questionnaire", edit_occasion_question_path(@occasion),class: "btn btn-dark"  %>
-  <p></p>
-  Pledge an ammout
-  <%# <%=  @favorite.favorite %>
-
-  <%=  simple_form_for @occasion do  |f|%>
-    <%= f.input :status %>
-    <%= f.button :submit %>
-  <% end %>
-  <%# <p><%= @answer.answers if @answer %>
+    <%# <%= simple_form_for @occasion do |f| %>
+      <%# <%= f.input :status %>
+      <%# <%= f.button :submit, class: 'btn btn-gradient' %>
+    <%# <% end %>
+  </div>
 </div>
-<%= link_to "back to groups", myoccasions_path,class: "btn btn-dark" %>
-<%= link_to "go to genius results", proposals_path,class: "btn btn-dark" %>
