@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <%= link_to "/", class: "navbar-brand " do %>
-      <%= image_tag "logo.svg", alt: "GiftGenius", class: 'shadow' %>
+      <%= image_tag "option1.png", alt: "GiftGenius", class: 'shadow' %>
     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,7 +16,7 @@
           <li class="nav-item dropdown">
             <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <% if user_signed_in?  %>
-                <%# 
+                <%#
               <% && current_user.photo.attached? %>
                 <%# cl_image_tag current_user.photo.key , class: "avatar", alt: "dropdown menu" %>
                 <%# elsif %>
@@ -25,7 +25,7 @@
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-large", alt: "avatar-large" %>
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-bordered", alt: "avatar-bordered" %>
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-square", alt: "avatar-square" %>
-                <!--icon -->
+                  icon -->
                 <i class="bi bi-person-bounding-box mx-1" style="font-size:2em;color:white"></i>
               <% end %>
             </a>

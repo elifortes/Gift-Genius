@@ -1,6 +1,7 @@
 class QuestionsController < ApplicationController
   def show
     @occasion = Occasion.find_by(id: params[:occasion_id])
+    @show_gift = true
     if @occasion
       @question = @occasion.question
       @answer = @question.answer

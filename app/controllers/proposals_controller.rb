@@ -10,6 +10,7 @@ class ProposalsController < ApplicationController
   def show
     @proposals = Proposal.find(params[:id])
     @products = @proposals.products
+    @show_gift = true
   end
 
   def move_image

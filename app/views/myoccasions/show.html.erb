@@ -19,15 +19,27 @@
           <% else %>
             <%= image_tag 'option2.png', alt: "",class: "avatar-square" %>
           <% end %>
+
           <div class="notification-content">
-            <p><small><%= User.find(g).personnal.name %></small></p>
-            <p><strong>
+            <p class = "pb-1"><small><%= User.find(g).personnal.name %></small></p>
+              <p><strong>
                 <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
                 <% if member_occasion&.status %>
-                  <i class="bi bi-check2-square-fill mx-1" style="font-size:1em"></i>DONE
+                  <i class="bi bi-check-square-fill m-2" style="font-size:1em"></i>DONE
                 <% else %>
-                  <i class="bi bi-question-square-fill mx-1" style="font-size:1em"></i> NO
-                <% end %></strong></p>
+                  <i class="bi bi-question-square-fill m-2" style="font-size:1em"></i> NO
+                <% end %>
+                <!-- second icons sets-->
+                <% u = User.find(g) %>
+                <% o = @myoccasion.occasions.find_by({user: u}) %>
+                <% a = Answer.find_by({user: u, occasion: o}) %>
+                <% if a %>
+                  <i class="fas fa-coins ms-4"style="font-size:1em"></i> <%= a.pledge_amount %>
+                <% else %>
+                  <i class="fas fa-coins ms-4" style="font-size:1em"></i> Non-Pledger
+                <% end %>
+                <!-- end of second sets -->
+              </strong></p>
           </div>
           <div class="notification-actions d-none">
             <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
@@ -35,6 +47,7 @@
           </div>
         </div>
       <% end %>
+      <!-- notifications  occasions-->
       <!-- notifications  occasions-->
       <!--end notification occasions -->
       <div class="none">
@@ -50,5 +63,3 @@
   </div>
   <!-- end navigation buttons -->
 </div>
-
-
