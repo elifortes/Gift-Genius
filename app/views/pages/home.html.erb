@@ -8,50 +8,74 @@
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
       <% end %>
     </div>
-    <!-- Notifications / Open space area -->
+    <!-- Gift Occasion / Open space area -->
     <div class="card p-2 m-1" style="min-height:475px">
-      <h4><strong>Hightlights</strong></h4>
-      <!-- notifications -->
-      <% if current_user %>
-        <div class="card-trip">
-          <%= image_tag "occasion/#{@gift.title}.jpg", alt: "",class: "img" %>
-          <div class="card-trip-infos">
-            <div>
-              <h2 style="text-align: center;"> Get Ready to Celebrate: </h2> <br>
-              <h2 style="text-align: center;"><%= User.find(@myoccasion.recipient).personnal.name %>'s <% if @gift.title %> <%= @gift.title %> is Coming Up!</h2>
-                <% end %>
-            </div>
-            <%= image_tag @recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
-          </div>
-        </div>
-      <% end %>
+      <h4><strong>Gift Occasions</strong></h4>
+      <!-- if not logged in-->
       <% unless current_user  %>
         <%= image_tag "option1.png", alt: "",class: "img" %>
       <% end %>
+      <!-- end if not logged in-->
+      <!-- MyOccasions-->
       <!-- card separation -->
-      <div class="card-product mt-4 d-none">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-        <div class="card-product-infos">
-          <h2>Product name</h2>
-          <p>Product description with <strong>relevant info</strong> only.</p>
-        </div>
-      </div>
-      <!--end notification avatar -->
-      <div class="none">
-        <!-- display the next birthday -->
-      </div>
+      <% if current_user %>
+        <div class="">
+          <!--begin iteration on myoccasions-->
+          <% @myoccasions.each do |myoccasion| %>
+            <div class="card-trip">
+              <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+              <!--Link to Group members -->
+              <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
+                <i class="fa-solid fas fa-users"></i>
+                <span></span>
+              <% end %>
+              <!--Link to Questions --><%= myoccasion.id %>
+              <% myoccasion.occasions.each do |o| %>
+                <% if o.recipient == myoccasion.recipient &&  myoccasion.id==o.myoccasion.id %>
+                  <%= link_to occasion_path(o) , class: '.card-trip-question' do %>
+                    <i class="fas fa-file-lines"></i>
+                    <span></span>
+                  <% end %>
+                <% end %>
+              <% end %>
+              <!--Link to Gift -->
+              <% current_user.occasions.each do |o| %>
+                <% if o.recipient == myoccasion.recipient &&  myoccasion.id==o.myoccasion.id %>
+                  <% if  o.proposal %>
+                    <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                      <i class="fas fa-gifts"></i>
+                      <span></span>
+                    <% end %>
+                  <% end %>     <% end %>     <% end %>
+              <!-- My occasion info-->
+              <div class="card-trip-infos">
+                <div>
+                  <h2 style="text-align: left;font-size:1em"> Get Ready to Celebrate: </h2>
+                  <div style="text-align: left;font-size:.9em"><%= User.find(myoccasion.recipient).personnal.name %>'s <% if Gift.find(myoccasion.gift).title %> <%= Gift.find(myoccasion.gift).title %> is Coming Up!</>
+                  <% end %>
+                </div>
+                <%   recipient = User.includes(:personnal).find(myoccasion.recipient) %>
+                <%= image_tag recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <!--end iteration on myoccasions-->
+      <% end %>
+      <!-- End  MyOccasions-->
+      <!-- Occasions-->
+      <!-- card separation -->
+      <!-- End Occasions-->
+      <!-- EndGift Occasion / Open space area -->
       <!-- notifications  occasions-->
-      <!--end notification occasions -->
       <div class="none">
       </div>
+      <!--end notification occasions -->
     </div>
     <!-- end Notifications / Open space area -->
   </div>
   <!-- navigation buttons -->
-  <div class="btn-group w-100 mt-1 p-1">
-    <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-gradient col-6 m-1" %>
-    <%= link_to "Create New", myoccasions_new_path,class: "btn btn-success btn-gradient col-6 m-1"  %>
-  </div>
   <!-- end navigation buttons -->
   <!-- footer -->
+</div>
 </div>

@@ -87,7 +87,6 @@ class QuestionsController < ApplicationController
       "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
       "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
     ]
-
   end
 
   def new
@@ -101,11 +100,11 @@ class QuestionsController < ApplicationController
 
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
-# <<<<<<< HEAD
+    # <<<<<<< HEAD
     # creating a new favorite
     # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
     # games: params[:question][:games])
-# =======
+    # =======
     # # creating a new favorite
     # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
     #                       games: params[:question][:games], movies: params[:question][:movies],
@@ -136,7 +135,7 @@ class QuestionsController < ApplicationController
     @answer.books = params[:question][:books]
     @answer.brands = [params[:question][:brands]]
     @answer.places = [params[:question][:places]]
-    @answer.games =[ params[:question][:games]]
+    @answer.games = [params[:question][:games]]
     @answer.restaurant = params[:question][:restaurant]
     @answer.devices = [params[:question][:devices]]
     @answer.purchases = [params[:question][:purchases]]
@@ -149,12 +148,18 @@ class QuestionsController < ApplicationController
     # end
 
     if @answer.save
+
+      # raise
+
+      # @answer_values.save
+
       @answer_values
       
     # scrapping
 
 
       raise
+
 
       redirect_to occasion_path(@occasion, answer: @answer.id), notice: "Questionnaire is answered."
     else
@@ -171,7 +176,6 @@ class QuestionsController < ApplicationController
 
   def param_strong
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
-
   end
 
   # def merge_array
