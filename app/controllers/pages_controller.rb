@@ -11,8 +11,9 @@ class PagesController < ApplicationController
     # looking for events i created
     @myoccasions = current_user.myoccasions
 
+
     # looking for product i choose for an existing event.
-    @occasions = current_user.occasions
+    occasions = current_user.occasions
 
     # old code
     @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }

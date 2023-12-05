@@ -13,3 +13,4 @@ pin "application", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "stimulus-sortable", to: "https://ga.jspm.io/npm:stimulus-sortable@4.1.1/dist/stimulus-sortable.mjs"
 pin "@rails/request.js", to: "https://ga.jspm.io/npm:@rails/request.js@0.0.8/src/index.js"
+pin "sweetalert2", to: "https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.js"

@@ -26,5 +26,13 @@ export default class extends Controller {
     put(sortableUpdateUrl, {
       body: JSON.stringify({ row_order_position: newIndex }),
     })
+
+    this.updatePositions();
+  }
+
+  updatePositions() {
+    document.querySelectorAll('.position-indicator').forEach((element, index) => {
+      element.innerText = index + 1;
+    });
   }
 }
