@@ -22,6 +22,7 @@ class GiftsController < ApplicationController
             recipient: @myoccasion.recipient,
             gift: @gift.id
           )
+          # CHANGE HERE
           occasion.myoccasion = @myoccasion
           occasion.user = user
           occasion.save!

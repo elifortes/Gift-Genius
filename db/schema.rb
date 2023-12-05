@@ -52,10 +52,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_04_104850) do
     t.integer "user"
     t.text "favorites"
     t.text "hobbies"
+
     t.text "movies"
     t.text "music"
     t.text "books"
     t.text "restaurant"
+
     t.text "activities"
     t.text "channels"
     t.text "contents", array: true
@@ -176,10 +178,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_04_104850) do
     t.text "favorites"
     t.text "hobbies", array: true
     t.text "activities", array: true
-    t.text "movies", array: true
-    t.text "music", array: true
-    t.text "books", array: true
-    t.text "restaurant", array: true
     t.text "channels", array: true
     t.text "contents", array: true
     t.text "brands", array: true

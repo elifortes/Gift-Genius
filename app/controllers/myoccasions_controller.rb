@@ -38,6 +38,12 @@ class MyoccasionsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
 
+    # new_user_added = true
+    # if new_user_added
+    #   flash[:new_user_added] = true
+    # end
+
+
   end
 
   def gift
