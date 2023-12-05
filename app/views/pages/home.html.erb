@@ -1,7 +1,7 @@
 <!-- New home page -->
 <div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="">
-    <div class="card border-0 p-2 m-0 ">
+    <div class="card border-0 p-2 m-0">
       <%# <h2 class="">Gift Genius</h2> %>
       <% if current_user %>
         <h4 class="my-2", style="text-align: left;font-weight:800">
@@ -10,15 +10,16 @@
     </div>
     <!-- Gift Occasion / Open space area -->
     <div class="card border-0  p-2 m-0" style="">
-      <h4><strong>Gift Occasions</strong></h4>
       <!-- if not logged in-->
       <% unless current_user  %>
-        <%= image_tag "option1.png", alt: "",class: "img" %>
+        <%= image_tag "option1.png", alt: "",class: "img py-5" %>
+        <h1 class="text-center">Gift Genius!</h1>
       <% end %>
       <!-- end if not logged in-->
       <!-- MyOccasions-->
       <!-- card separation -->
       <% if current_user %>
+        <h4><strong>Gift Occasions</strong></h4>
         <div class="">
           <!--begin iteration on myoccasions-->
           <% @myoccasions.each do |myoccasion| %>
@@ -65,12 +66,12 @@
         <!--end iteration on myoccasions-->
       <% end %>
       <!-- End  MyOccasions-->
-      <div class="cards d-flex">
+      <div class="cards">
         <!-- Occasions-->
         <% if current_user %>
           <%  @occasions.each do  |occasion|%>
             <!-- card separation -->
-            <div class="card-trip card-trip-half" style="width:50%">
+            <div class="card-trip card-trip-half">
               <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
               <!--Link to Questions -->
               <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
@@ -101,7 +102,7 @@
             </div>
           </div>
         </div>
-  <% end %>
+      <% end %>
       <!-- card separation -->
     <% end %>
     <!-- End Occasions-->

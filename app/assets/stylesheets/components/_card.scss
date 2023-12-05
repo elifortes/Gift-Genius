@@ -70,7 +70,7 @@
 }
 
 .card-trip.card-trip-half {
-  width: 50%;
+
   margin: 10px 0px;
   border-radius: 10px;
   overflow: hidden;
@@ -183,14 +183,14 @@
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
