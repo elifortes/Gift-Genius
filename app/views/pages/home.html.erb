@@ -29,18 +29,20 @@
                 <i class="fa-solid fas fa-users"></i>
                 <span></span>
               <% end %>
-              <!--Link to Questions --><%= myoccasion.id %>
+              <!--Link to Questions --><%# myoccasion.id %>
               <% myoccasion.occasions.each do |o| %>
-                <% if o.recipient == myoccasion.recipient &&  myoccasion.id==o.myoccasion.id %>
-                  <%= link_to occasion_path(o) , class: '.card-trip-question' do %>
-                    <i class="fas fa-file-lines"></i>
-                    <span></span>
-                  <% end %>
-                <% end %>
+                <% if o.user_id == current_user.id %>
+                  <% if  o.proposal %>
+                    <%# o.id %>  <%# o.question.id %>
+                    <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
+                      <i class="fas fa-file-lines"></i>
+                      <span></span>
+                    <% end %>
+                  <% end %>       <% end %>
               <% end %>
               <!--Link to Gift -->
-              <% current_user.occasions.each do |o| %>
-                <% if o.recipient == myoccasion.recipient &&  myoccasion.id==o.myoccasion.id %>
+              <% myoccasion.occasions.each do |o| %>
+                <% if o.user_id == current_user.id %>
                   <% if  o.proposal %>
                     <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
                       <i class="fas fa-gifts"></i>
