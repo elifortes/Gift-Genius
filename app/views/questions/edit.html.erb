@@ -1,22 +1,25 @@
-<div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
-    <div class="card p-2 m-2 ">
-      <h2 class="">Gift Genius</h2>
-      <% if current_user %>
-        <h4 class="my-2">
-          Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
-      <% end %>
-    </div>
-    <!-- Notifications / Open space area -->
-    <div class="card h-75 overflow-auto p-2 m-1" >
-      <%= current_user.personnal.name if current_user.personnal %> is filling a questionnaire.
-      <p>
-        the recipient :  <%= User.find(@occasion.recipient).personnal.name %>..
-        <div class="card  overflow-auto p-1" style="height: 460px">
-          <%= simple_form_for @question do |p| %>
+<div class="p-2 w-100 bg-body" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'background_image_id', height: 300, crop: :fill %>'); height:1500px;">
 
-            <%# pledge amount ($):
-                <input name="pledge" type="number"/> %>
+  <!-- Gift Information Card -->
+  <div class="card p-2 m-1">
+    <h3>Gift Details</h3>
+    <ul>
+      <li>Title: <%= Gift.find(@occasion.gift).title %></li>
+      <li>Organizer: <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
+      <li>Group Member: <%= User.find(@occasion.user_id).personnal.name %></li>
+      <li>Recipient: <%= User.find(@occasion.recipient).personnal.name %></li>
+      <li>Price: $<%= Gift.find(@occasion.gift).price %></li>
+    </ul>
+  </div>
+
+  <!-- Questionnaire Section -->
+  <div>
+    <h1 class="card p-2 m-1">Questionnaire</h1>
+    <div class="card h-75 overflow-auto p-2 m-1">
+      <p><%= current_user.personnal.name if current_user.personnal %> is completing the questionnaire for <%= User.find(@occasion.recipient).personnal.name %>.</p>
+
+        <div class="card  overflow-auto p-1" style="height: 1000px">
+          <%= simple_form_for @question do |p| %>
             <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end } %>
             <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end %>
             <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end%>
@@ -28,30 +31,9 @@
             <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end%>
             <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end %>
             <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end%>
-            <%# p.input :favorites, as: :check_boxes, collection:@question.favorites %>
-            <%# p.input :hobbies, collection: @question.hobbies, as: :check_boxes %>
-            <%# p.input :activities, collection: @question.activities, as: :check_boxes %>
-            <%# p.input :channels, collection: @question.channels, as: :check_boxes %>
-            <%# p.input :favorites, collection:@question.favorites, as: :check_boxes %>
-            <%# <% p.input :favorites, collection: @question.favorites.values, as: :grouped_select, group_method: @question.favorites %>
-            <%# p.label :favorites, 'Select  favorite movies:'
-              p.input :favorites, collection:@movies,as: :check_boxes
-              p.label :favorites, 'Select  favorite channels:'
-              p.input :favorites, collection:@channels, as: :check_boxes
-              p.label :favorites, 'Select  favorite books:'
-              p.input :favorites, collection:@books, as: :check_boxes
-              p.label :favorites, 'Select  favorite hobbies:'
-              p.input :favorites, collection:@hobbies, as: :check_boxes
-              p.label :favorites, 'Select  favorite music:'
-              p.input :favorites, collection:@music, as: :check_boxes  %>
-            <%#  p.input :hobbies, as: :check_boxes, collection:@question.hobbies
->>>>>>> 5287742b24316cdb2c277148e82c321fa1973151
-              <%= p.button :submit, class: 'btn btn-primary' %>
             <%= p.button :submit, class: 'btn btn-primary' %>
           <% end %>
         </div>
       </div>
     </div>
   </div>
-</div>
-

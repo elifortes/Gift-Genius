@@ -14,6 +14,8 @@ class QuestionsController < ApplicationController
     @occasion = Occasion.find(params[:occasion_id])
     @answer = Answer.find_by(user: current_user, occasion: @occasion) #load the previous answer
     @question = @occasion.question
+    @gift = Gift.find(@occasion.gift)
+
 
     @movies = [
       "",
@@ -96,6 +98,7 @@ class QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
+
     # check if there is a favorite [occasion.question -> occasion.favorite]
     #       if exist? -> favorite[merge/update]
 # <<<<<<< HEAD
@@ -124,6 +127,7 @@ class QuestionsController < ApplicationController
     @occasion.save!
 
     @answer_values = params[:question].values
+    @without_pledge = @answer_values.delete_at(0)
 
     @answer.pledge_amount = params[:question][:pledge_amount]
     @answer.hobbies = params[:question][:hobbies]
@@ -145,8 +149,13 @@ class QuestionsController < ApplicationController
     # end
 
     if @answer.save
-      # raise
-      # @answer_values.save
+      @answer_values
+      
+    # scrapping
+
+
+      raise
+
       redirect_to occasion_path(@occasion, answer: @answer.id), notice: "Questionnaire is answered."
     else
       render :new, alert: :unprocessable_entity
@@ -164,35 +173,22 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
 
   end
+
+  # def merge_array
+  #   @myoccasion = Myoccasion.find(:myoccasion_id)
+  #   @x = []
+  #   @myoccasion.occasions.each do |occasion|
+  #     @y = occasion.question.values
+  #     @y.delete_at(0)
+  #     @x = (@y.concat(@x)).reject(&:empty?).uniq
+  #   end
+  #   return @x
+    # @y = @y.flatten
+    # @x = @y.delete_at(0)
+  # end
+  # @answers_for_occasion = Answer.where(occasion_id: @occasion)
+        # @y = @answers_for_occasion.map do |answer|
+        #   answer =  params[:question].values
+        #   answer
+
 end
-
-# def index
-#   @questions = Question.all
-# end
-
-# def show
-#   @question = Question.all
-
-# end
-
-# def new
-#   @question = Question.new
-# end
-
-# def create
-#   @question = Question.new(question_params)
-#   if @question.save!
-
-#   redirect_to myoccasions_path
-#   else
-#     render :new
-# end
-# end
-
-# private
-
-# def question_params
-#   params.require(:question).permit(:content)
-# end
-
-# end

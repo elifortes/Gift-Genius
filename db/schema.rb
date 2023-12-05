@@ -52,6 +52,12 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_04_104850) do
     t.integer "user"
     t.text "favorites"
     t.text "hobbies"
+
+    t.text "movies"
+    t.text "music"
+    t.text "books"
+    t.text "restaurant"
+
     t.text "activities"
     t.text "channels"
     t.text "contents", array: true
