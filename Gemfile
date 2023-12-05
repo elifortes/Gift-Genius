@@ -61,7 +61,7 @@ gem "dotenv"
 gem "ranked-model", "~> 0.4.9"
 gem "requestjs-rails"
 gem "acts_as_list"
-
+gem "ruby-openai"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows]

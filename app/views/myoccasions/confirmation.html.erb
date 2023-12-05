@@ -1,40 +1,62 @@
-<!-- New home page -->
-<div class="p-2  bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
-    <div class="card p-2 my-2 ">
-      <h2>Congratulation GiftGenius has accepted your request.🥳</h2>
+<div class="py-4" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="p-2">
+    <div class="card-trip p-2 mb-2">
+      <h3>Congratulation GiftGenius has accepted your request.🥳</h3>
     </div>
     <!-- Notifications / Open space area -->
-    <div class="card h-75 overflow-auto p-2">
-      <h4><strong>Hightlights</strong></h4>
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h5>Do you want to give some information about <strong><%= User.find(@myoccasion.recipient).personnal.name %> </strong></h5>
-          </div>
-          rail
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-        </div>
-      </div>
-      <!-- navigation buttons -->
-      <div class="btn btn-group row p-0 my-4">
-        <div class="col-6 ">
-          <%= link_to "Gift Genius",myoccasions_path,class: "btn btn-gradient" %>
-        </div>
-        <div class="col-4">
-          <ul class="btn-group list-group  p-0 m-0">
-            <% @occasions.each do |o| %>
-              <% if o.recipient == @myoccasion.recipient &&  @myoccasion.id==o.myoccasion.id %>
-                <li class="list-group-item p-0 m-0">
-                  <%= link_to "Questionnaire", occasion_path(o),class: "btn btn-gradient"  %>
-                <% end %>  </li>
+    <% myoccasion=Myoccasion.find(params[:myoccasion_id]) %>
+    <div class="card-trip border-0 ">
+      <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+      <!--Link to Group members -->
+      <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
+        <i class="fa-solid fas fa-users"></i>
+        <span></span>
+      <% end %>
+      <!--Link to Questions --><%# myoccasion.id %>
+      <% myoccasion.occasions.each do |o| %>
+        <% if o.user_id == current_user.id %>
+          <% if  !o.status %>
+            <%# o.id %>  <%# o.question.id %>
+            <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
+              <i class="fas fa-file-lines"></i>
+              <span></span>
             <% end %>
-          </ul>
+          <% end %>       <% end %>
+      <% end %>
+      <!--Link to Gift -->
+      <% myoccasion.occasions.each do |o| %>
+        <% if o.user_id == current_user.id %>
+          <% if  o.status %>
+            <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+              <i class="fas fa-gifts"></i>
+              <span></span>
+            <% end %>
+          <% end %>     <% end %>     <% end %>
+      <!-- My occasion info-->
+      <div class="card-trip-infos">
+        <div>
+          <h2 style="text-align: left;font-size:1em"> Get Ready to Celebrate: </h2>
+          <div style="text-align: left;font-size:.9em"><%= User.find(myoccasion.recipient).personnal.name %>'s <% if Gift.find(myoccasion.gift).title %> <%= Gift.find(myoccasion.gift).title %> is Coming Up!</>
+          <% end %>
         </div>
-        <!-- end navigation buttons -->
+        <%   recipient = User.includes(:personnal).find(myoccasion.recipient).personnal %>
+        <%= image_tag recipient.info['picture'], alt: "",class: "card-trip-user avatar-square" %>
       </div>
-      <!-- card separation -->
     </div>
   </div>
+  <!-- Notifications / Open space area -->
+  <div class="card-trip p-2 mt-4">
+    <h4>Please provide us some information about <%= recipient.name %></h4>
+    <ul class="btn-group list-group">
+      <% myoccasion.occasions.each do |o| %>
+        <% if o.user_id == current_user.id %>
+          <%# o.id %>  <%# o.question.id %>
+          <li class="list-group-item p-0  my-4">
+            <%= link_to  "Questionnaire",edit_occasion_question_path(o,o.question) ,class: " w-100 btn btn-outline-primary"  %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>
 </div>
