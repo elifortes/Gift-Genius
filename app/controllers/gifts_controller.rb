@@ -3,10 +3,6 @@ class GiftsController < ApplicationController
     @gift = Gift.new(param_strong)
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
     @myoccasion.gift = @gift.id
-    puts "----------sxklsmlxskl"
-    puts @gift
-    puts "======="
-    puts @myoccasion
     @myoccasion.save!
     # @max_price = 1000
     # @min_price = 0
