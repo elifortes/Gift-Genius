@@ -1,32 +1,32 @@
 import { Controller } from "@hotwired/stimulus"
-import Swal from "sweetalert2"
-
 
 export default class extends Controller {
   static values = {
-    icon: String,
-    alertTitle: String,
-    alertHtml: String,
-    confirmButtonText: String,
-    showCancelButton: Boolean,
-    cancelButtonText: String
+    uid: Number
   }
 
-  initSweetalert(event) {
-    event.preventDefault(); // Prevent the form to be submited after the submit button has been clicked
-
+  showNotification(event) {
+    const uid = this.uidValue;
     Swal.fire({
-      icon: this.iconValue,
-      title: this.titleValue,
-      html: this.htmlValue,
-      confirmButtonText: this.confirmButtonTextValue,
-      showCancelButton: this.showCancelButtonValue,
-      cancelButtonText: this.cancelButtonTextValue,
-      reverseButtons: true
-    }).then((action) => {
-        if (action.isConfirmed) {
-          event.target[event.type](); // "submit"
-        }
-      })
-      .catch(event.preventDefault())
+      title: 'New group alert!',
+      text: 'You have been added to a new group.',
+      icon: 'info',
+      confirmButtonText: 'OK'
+    })
+      if (uid) {
+        fetch(`/update_notification/?uid=${uid}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-Token': document.querySelector('[name="csrf-token"]').content
+          },
+          body: JSON.stringify({ notification: false })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Notification status updated:', data);
+        });
+      }
+
   }
+}

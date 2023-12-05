@@ -25,5 +25,8 @@ class PagesController < ApplicationController
       @mycontacts = []
     end
     @mycontacts.sort_by! { |p| p.personnal.birthday }
+
+    # @notify_user = current_user&.notification
+    @notify_user = true
   end
 end
