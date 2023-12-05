@@ -15,6 +15,7 @@ $background: #0a2335;
 html {
   background-color: $background;
   color: white;
+  overflow: hidden;
 }
 
 body {
@@ -27,6 +28,8 @@ body {
   overflow: auto;
   color: gray;
   background-color: white;
+  overflow: hidden;
+  /* Hide scrollbars */
 }
 
 .shadow {
@@ -57,10 +60,14 @@ a {
 }
 
 .avatar-round {
-  border-radius: 50%; /* Makes the avatar round */
-  width: 80px; /* Adjust width as needed */
-  height: 80px; /* Adjust height as needed */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  margin-top: 10px; /* Adds some space between the text and the image */
+  border-radius: 50%;
+  /* Makes the avatar round */
+  width: 80px;
+  /* Adjust width as needed */
+  height: 80px;
+  /* Adjust height as needed */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  margin-top: 10px;
+  /* Adds some space between the text and the image */
 }
-

@@ -1,0 +1,130 @@
+<!-- New home page -->
+<div class="p-2 w-100 bg-body"
+  style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="">
+    <div class="card p-2 m-1 ">
+      <%# <h2 class="">Gift Genius</h2> %>
+        <% if current_user %>
+          <h4 class="my-2" , style="text-align: center;">
+            Welcome back, <%= current_user.personnal.name if current_user.personnal %>
+          </h4>
+          <% end %>
+    </div>
+    <!-- Gift Occasion / Open space area -->
+    <div class="card p-2 m-1" style="min-height:475px">
+      <h4><strong>Gift Occasions</strong></h4>
+      <!-- if not logged in-->
+      <% unless current_user %>
+        <%= image_tag "option1.png" , alt: "" ,class: "img" %>
+          <% end %>
+            <!-- end if not logged in-->
+            <!-- MyOccasions-->
+            <!-- card separation -->
+            <% if current_user %>
+              <div class="cards">
+                <!--begin iteration on myoccasions-->
+                <% @myoccasions.each do |myoccasion| %>
+                  <div class="card-trip">
+                    <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+                      <!--Link to Group members -->
+                      <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
+                        <i class="fa-solid fas fa-users"></i>
+                        <span></span>
+                        <% end %>
+                          <!--Link to Questions -->
+                          <% current_user.occasions.each do |o| %>
+                            <% if o.recipient==myoccasion.recipient && myoccasion.id==o.myoccasion.id %>
+                              <%= link_to occasion_path(o) , class: 'card-trip-question' do %>
+                                <i class="fas fa-file-lines"></i>
+                                <span></span>
+                                <% end %>
+                                  <% end %>
+                                    <% end %>
+                                      <!--Link to Gift -->
+                                      <% current_user.occasions.each do |o| %>
+                                        <% if o.recipient==myoccasion.recipient && myoccasion.id==o.myoccasion.id %>
+                                          <% if o.proposal %>
+                                            <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                                              <i class="fas fa-gifts"></i>
+                                              <span></span>
+                                              <% end %>
+                                                <% end %>
+                                                  <% end %>
+                                                    <% end %>
+                                                      <!-- My occasion info-->
+                                                      <div class="card-trip-infos">
+                                                        <div>
+                                                          <h2 style="text-align: left;font-size:1em"> Get Ready to
+                                                            Celebrate: </h2>
+                                                          <div style="text-align: left;font-size:.9em">
+                                                            <%= User.find(myoccasion.recipient).personnal.name %>'s <%
+                                                                if Gift.find(myoccasion.gift).title %>
+                                                                <%= Gift.find(myoccasion.gift).title %> is Coming Up!</>
+                                                                  <% end %>
+                                                          </div>
+                                                          <% recipient=User.includes(:personnal).find(myoccasion.recipient)
+                                                            %>
+                                                            <%= image_tag recipient.personnal.info['picture'], alt: ""
+                                                              ,class: "card-trip-user avatar-square" %>
+                                                        </div>
+                                                      </div>
+                  </div>
+                  <% end %>
+                    <!--end iteration on myoccasions-->
+                    <% end %>
+                      <!-- End  MyOccasions-->
+                      </di>
+                      <!-- Occasions-->
+                      <% if current_user %>
+                        <div class="cards">
+                          <!--begin iteration on myoccasions-->
+                          <% @occasions.each do |occasion| %>
+                            <div class="card-trip-half">
+                              <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image"
+                                %>
+                                <!--Link to Group members -->
+                                <%= link_to occasion_path(occasion), class: 'card-trip-group' do %>
+                                  <i class="fa-solid fas fa-users"></i>
+                                  <span></span>
+                                  <% end %>
+                                    <!--Link to Questions -->
+                                    <%= link_to occasion_path(occasion) , class: 'card-trip-question' do %>
+                                      <i class="fas fa-file-lines"></i>
+                                      <span></span>
+                                      <% end %>
+                                        <!--Link to Gift -->
+                                        <% if occasion.proposal %>
+                                          <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift' do
+                                            %>
+                                            <i class="fas fa-gifts"></i>
+                                            <span></span>
+                                            <% end %>
+                                              <% end %>
+                                                <!-- My occasion info-->
+                                                <div class="card-trip-infos">
+                                                  <div>
+                                                    <h2 style="text-align: left;font-size:1em"> Get Ready to Celebrate:
+                                                    </h2>
+                                                    <div style="text-align: left;font-size:.9em">
+                                                      <%= User.find(occasion.recipient).personnal.name %>'s <% if
+                                                          Gift.find(occasion.gift).title %>
+                                                          <%= Gift.find(occasion.gift).title %> is Coming Up!</>
+                                                            <% end %>
+                                                    </div>
+                                                    <% recipient=User.includes(:personnal).find(occasion.recipient) %>
+                                                      <%= image_tag recipient.personnal.info['picture'], alt: ""
+                                                        ,class: "card-trip-user avatar-square" %>
+                                                  </div>
+                                                </div>
+                            </div>
+                            <% end %>
+                              <!-- End Occasions-->
+                              <% end %>
+                        </div>
+                        <!-- EndGift Occasion / Open space area -->
+                        <!-- notifications  occasions-->
+              </div>
+              <!--end notification occasions -->
+    </div>
+    <!-- end Notifications / Open space area -->
+    <!-- navigation buttons -->
