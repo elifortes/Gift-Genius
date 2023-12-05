@@ -1,15 +1,15 @@
 <!-- New home page -->
-<div class="p-2 w-100 bg-body" style="height:680px;background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="">
-    <div class="card p-2 m-1 ">
+    <div class="card border-0 p-2 m-0 ">
       <%# <h2 class="">Gift Genius</h2> %>
       <% if current_user %>
-        <h4 class="my-2", style="text-align: center;">
+        <h4 class="my-2", style="text-align: left;font-weight:800">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
       <% end %>
     </div>
     <!-- Gift Occasion / Open space area -->
-    <div class="card p-2 m-1" style="min-height:475px">
+    <div class="card border-0  p-2 m-0" style="">
       <h4><strong>Gift Occasions</strong></h4>
       <!-- if not logged in-->
       <% unless current_user  %>
@@ -22,7 +22,7 @@
         <div class="">
           <!--begin iteration on myoccasions-->
           <% @myoccasions.each do |myoccasion| %>
-            <div class="card-trip">
+            <div class="card-trip border-0 ">
               <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
               <!--Link to Group members -->
               <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
@@ -65,19 +65,53 @@
         <!--end iteration on myoccasions-->
       <% end %>
       <!-- End  MyOccasions-->
-      <!-- Occasions-->
-      <!-- card separation -->
-      <!-- End Occasions-->
-      <!-- EndGift Occasion / Open space area -->
-      <!-- notifications  occasions-->
-      <div class="none">
+      <div class="cards d-flex">
+        <!-- Occasions-->
+        <%  @occasions.each do  |occasion|%>
+          <!-- card separation -->
+          <div class="card-trip card-trip-half" style="width:50%">
+            <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+            <!--Link to Questions -->
+            <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
+              <i class="fas fa-file-lines"></i>
+              <span></span>
+            <% end %>
+            <!--Link to Gift -->
+            <% if occasion.proposal %>
+              <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
+                                            %>
+              <i class="fas fa-gifts"></i>
+              <span></span>
+            <% end %>
+          <% end %>
+          <!-- My occasion info-->
+          <div class="card-trip-infos">
+            <div>
+              <h2 style="text-align: left;font-size:1em">Member of:
+              </h2>
+              <div style="text-align: left;font-size:.9em">
+                <% recipient=User.includes(:personnal).find(occasion.recipient) %>
+                <% if Gift.find(occasion.gift).title %>
+                  <%= Gift.find(occasion.gift).title %> for <%= recipient.personnal.name %></>
+              <% end %>
+            </div>
+            <% recipient=User.includes(:personnal).find(occasion.recipient) %>
+            <%= image_tag recipient.personnal.info['picture'], alt: "" ,class: "card-trip-user avatar-square" %>
+          </div>
+        </div>
       </div>
-      <!--end notification occasions -->
-    </div>
-    <!-- end Notifications / Open space area -->
+      <!-- card separation -->
+    <% end %>
+    <!-- End Occasions-->
   </div>
-  <!-- navigation buttons -->
-  <!-- end navigation buttons -->
-  <!-- footer -->
+  <!-- EndGift Occasion / Open space area -->
+  <!-- notifications  occasions-->
+  <!--end notification occasions -->
+</div>
+<!-- end Notifications / Open space area -->
+</div>
+<!-- navigation buttons -->
+<!-- end navigation buttons -->
+<!-- footer -->
 </div>
 </div>

@@ -69,13 +69,16 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.card-trip-half {
+.card-trip.card-trip-half {
+  width: 50%;
   margin: 10px 0px;
   border-radius: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 .card-trip>img {
@@ -111,7 +114,32 @@
   text-shadow: 2px 2px 5px black;
   position: absolute;
   font-size: 2em;
-  left: 300px;
+  left: 320px;
+}
+
+.card-trip.card-trip-half>img {
+  position: static;
+  margin-bottom: -55px;
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip-question-half {
+  padding-top: -20px;
+  padding-left: 10px;
+  padding-right: 80px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 2em;
+
+}
+
+.card-trip-gift-half {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 2em;
+
 }
 
 .card-trip h2 {
@@ -128,7 +156,10 @@
 
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+  padding-top: 24px;
+  padding-bottom: 10px;
+  padding-righ: 10px;
+  padding-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -136,9 +167,10 @@
 }
 
 .card-trip-infos .card-trip-user {
+  padding-top: 4px;
   position: absolute;
   right: 16px;
-  top: -20px;
+  top: -5px;
   width: 40px;
 }
 
