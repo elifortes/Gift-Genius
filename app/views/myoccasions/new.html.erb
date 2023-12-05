@@ -16,15 +16,15 @@
         <div id="contactList" class="checkbox-group" style="display: none;">
           <%= f.input :groups, as: :check_boxes, collection: @mycontacts, label_method: :name, value_method: :id, label: false, item_wrapper_class: 'form-check' %>
         </div>
-
-        <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2', data: { action: 'click->your-controller-name#sweetAlertBtn' } %>
-
-        <%# <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2' %>
+        <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2'%>
       <% end %>
     </div>
   </div>
 </div>
 
+
+<div data-controller="alert" data-alert-url-value="/messages">
+</div>
 
 <script>
   // Function to toggle the contact list visibility
