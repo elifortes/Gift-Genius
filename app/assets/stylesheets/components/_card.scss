@@ -27,8 +27,9 @@
 }
 
 .card-product {
+  position: relative;
   overflow: hidden;
-  height: 140px;
+  height: vh-100;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -37,9 +38,17 @@
 
 .card-product img {
   overflow: hidden;
-  height: 100%;
+  height: 80%;
   width: 135px;
   object-fit: cover;
+}
+
+
+.position-indicator {
+  position: absolute;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 02);
+  top: 15px;
+  left: 15px
 }
 
 .card-product h2 {
@@ -125,6 +134,19 @@
   object-fit: cover;
 }
 
+.card-trip.product-img>img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-img {
+  height: 80%;
+  overflow: hidden;
+}
+
+
 .card-trip-question-half {
   position: absolute;
   color: white;
@@ -132,16 +154,6 @@
   font-size: 2em;
   top: 0px;
   left: 10px;
-}
-
-card-trip-question-half {
-  padding-top: -20px;
-  padding-left: 10px;
-  padding-right: 80px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  font-size: 2em;
-
 }
 
 .card-trip-gift-half {

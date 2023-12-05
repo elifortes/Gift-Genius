@@ -40,7 +40,7 @@
               <!--Link to Questions --><%# myoccasion.id %>
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <% if  o.proposal %>
+                  <% if  !o.status %>
                     <%# o.id %>  <%# o.question.id %>
                     <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
                       <i class="fas fa-file-lines"></i>
@@ -51,7 +51,7 @@
               <!--Link to Gift -->
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <% if  o.proposal %>
+                  <% if  o.status %>
                     <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
                       <i class="fas fa-gifts"></i>
                       <span></span>
@@ -81,12 +81,14 @@
             <div class="card-trip card-trip-half">
               <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
               <!--Link to Questions -->
-              <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
-                <i class="fas fa-file-lines"></i>
-                <span></span>
+              <% if  !occasion.status %>
+                <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
+                  <i class="fas fa-file-lines"></i>
+                  <span></span>
+                <% end %>
               <% end %>
               <!--Link to Gift -->
-              <% if occasion.proposal %>
+              <% if occasion.status %>
                 <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
                                             %>
                 <i class="fas fa-gifts"></i>

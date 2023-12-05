@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
+
+ActiveRecord::Schema[7.1].define(version: 2023_12_05_075833) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,6 +52,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
+
     t.text "favorites"
     t.text "hobbies"
     t.text "activities"
@@ -68,6 +71,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
     t.text "softwares", array: true
     t.text "games", array: true
     t.text "platforms", array: true
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.decimal "pledge_amount"
@@ -148,6 +152,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "row_order"
+    t.text "content"
+    t.jsonb "info"
     t.index ["proposal_id"], name: "index_products_on_proposal_id"
   end
 
@@ -158,6 +164,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "row_order"
     t.index ["myoccasion_id"], name: "index_proposals_on_myoccasion_id"
     t.index ["occasion_id"], name: "index_proposals_on_occasion_id"
   end
@@ -169,9 +176,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_082917) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.text "favorites"
+    t.jsonb "favorites"
     t.text "hobbies", array: true
     t.text "activities", array: true
+    t.text "movies", array: true
+    t.text "music", array: true
+    t.text "books", array: true
+    t.text "restaurant", array: true
     t.text "channels", array: true
     t.text "contents", array: true
     t.text "brands", array: true

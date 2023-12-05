@@ -16,7 +16,6 @@ class QuestionsController < ApplicationController
     @question = @occasion.question
     @gift = Gift.find(@occasion.gift)
 
-
     @movies = [
       "",
       "Action", "Adventure", "Animation", "Comedy", "Crime",
@@ -131,25 +130,23 @@ class QuestionsController < ApplicationController
     #     return
     #   end
     # end
-
     if @answer.save
       # raise
       scraped_products = gift_scrapper
 
-    proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
+      proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
+      scraped_products.each do |product_data|
+        product = Product.new(
+          title: product_data[:name],
+          price: product_data[:price],
+          url: product_data[:image_url] + ".jpg",
+          proposal: proposal,
+        )
+        product.save
+      end
 
-    scraped_products.each do |product_data|
-      product = Product.new(
-        title: product_data[:name],
-        price: product_data[:price],
-        url: product_data[:image_url],
-        proposal: proposal
-      )
-      product.save
-    end
-raise
+      redirect_to root_path, notice: "Questionnaire is answered."
 
-      redirect_to occasion_path(@occasion, answer: @answer.id), notice: "Questionnaire is answered."
     else
       render :new, alert: :unprocessable_entity
     end
@@ -165,6 +162,7 @@ raise
   def param_strong
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
+
 
 
 def gift_scrapper
@@ -197,6 +195,7 @@ def gift_scrapper
 end
 
 
+
   # def merge_array
   #   @myoccasion = Myoccasion.find(:myoccasion_id)
   #   @x = []
@@ -206,12 +205,11 @@ end
   #     @x = (@y.concat(@x)).reject(&:empty?).uniq
   #   end
   #   return @x
-    # @y = @y.flatten
-    # @x = @y.delete_at(0)
+  # @y = @y.flatten
+  # @x = @y.delete_at(0)
   # end
   # @answers_for_occasion = Answer.where(occasion_id: @occasion)
-        # @y = @answers_for_occasion.map do |answer|
-        #   answer =  params[:question].values
-        #   answer
-
+  # @y = @answers_for_occasion.map do |answer|
+  #   answer =  params[:question].values
+  #   answer
 end

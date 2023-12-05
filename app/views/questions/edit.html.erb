@@ -1,24 +1,20 @@
-<div class="p-2 w-100 bg-body" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path 'background_image_id', height: 300, crop: :fill %>'); height:1500px;">
-
-  <!-- Gift Information Card -->
-  <div class="card p-2 m-1">
-    <h3>Gift Details</h3>
-    <ul>
-      <li>Title: <%= Gift.find(@occasion.gift).title %></li>
-      <li>Organizer: <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
-      <li>Group Member: <%= User.find(@occasion.user_id).personnal.name %></li>
-      <li>Recipient: <%= User.find(@occasion.recipient).personnal.name %></li>
-      <li>Price: $<%= Gift.find(@occasion.gift).price %></li>
-    </ul>
-  </div>
-
-  <!-- Questionnaire Section -->
-  <div>
-    <h1 class="card p-2 m-1">Questionnaire</h1>
-    <div class="card h-75 overflow-auto p-2 m-1">
-      <p><%= current_user.personnal.name if current_user.personnal %> is completing the questionnaire for <%= User.find(@occasion.recipient).personnal.name %>.</p>
-
-        <div class="card  overflow-auto p-1" style="height: 1000px">
+<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="">
+    <div class="card-trip  p-2 m-1">
+      <h3>Gift Occasion Details</h3>
+      <ul>
+        <li> <%= Gift.find(@occasion.gift).title %></li>
+        <li>Organize by <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
+        <li>For <%= User.find(@occasion.recipient).personnal.name %></li>
+        <li>Target: $<%= Gift.find(@occasion.gift).price %></li>
+      </ul>
+    </div>
+    <!-- Questionnaire Section -->
+    <div>
+      <h1 class="card-trip p-2 m-1">Questionnaire</h1>
+      <div class="card border-0  p-2">
+        <p>Please provide some information about <%= User.find(@occasion.recipient).personnal.name %>.</p>
+        <div class="card-trip  overflow-auto p-2">
           <%= simple_form_for @question do |p| %>
             <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end } %>
             <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end %>
@@ -37,3 +33,4 @@
       </div>
     </div>
   </div>
+</div>

@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: "pages#home"
-
+  resources :proposals do
+    resources :products
+  end
   resources :products do
     member do
       put :sort
@@ -30,7 +32,6 @@ Rails.application.routes.draw do
       patch :move_image
     end
   end
-
 
   get "questions/show", to: "questions#show"
   get "groups/gift", to: "groups#gift"
