@@ -69,12 +69,20 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.card-trip-half {
+.card-trip.card-trip-half {
+  width: 50%;
   margin: 10px 0px;
   border-radius: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-trip.card-trip-half>img {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -111,7 +119,7 @@
   text-shadow: 2px 2px 5px black;
   position: absolute;
   font-size: 2em;
-  left: 300px;
+  left: 310px;
 }
 
 .card-trip h2 {
