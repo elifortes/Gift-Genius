@@ -6,7 +6,14 @@
       <% if current_user %>
         <h4 class="my-2", style="text-align: center;">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
+          <% if @notify_user %>
+              <i data-controller="alert"
+                data-action="click->alert#showNotification"
+                data-alert-uid-value="<%= current_user.id %>"
+                class="fa-regular fa-bell fa-shake fa-2xl" style="color: #000;"></i>
+          <% end %>
       <% end %>
+
     </div>
     <!-- Gift Occasion / Open space area -->
     <div class="card p-2 m-1" style="min-height:475px">

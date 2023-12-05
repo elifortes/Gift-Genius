@@ -3,6 +3,10 @@ class GiftsController < ApplicationController
     @gift = Gift.new(param_strong)
     @myoccasion = Myoccasion.find(params[:myoccasion_id])
     @myoccasion.gift = @gift.id
+    puts "----------sxklsmlxskl"
+    puts @gift
+    puts "======="
+    puts @myoccasion
     @myoccasion.save!
     # @max_price = 1000
     # @min_price = 0
@@ -20,6 +24,7 @@ class GiftsController < ApplicationController
           recipient: @myoccasion.recipient,
           gift: @gift.id,
         )
+
         occasion.myoccasion = @myoccasion
         occasion.user = user
         occasion.save!
@@ -28,7 +33,6 @@ class GiftsController < ApplicationController
         question.occasion = occasion
         question.save!
       end
-
       redirect_to myoccasion_confirmation_path(@myoccasion)
     else
       render :new, alert: :unprocessable_entity
