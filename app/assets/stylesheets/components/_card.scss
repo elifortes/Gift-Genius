@@ -27,7 +27,6 @@
 }
 
 .card-product {
-
   overflow: hidden;
   height: 140px;
   background: white;
@@ -37,7 +36,6 @@
 }
 
 .card-product img {
-
   overflow: hidden;
   height: 100%;
   width: 135px;
@@ -64,17 +62,50 @@
 
 
 .card-trip {
+  margin: 10px 0px;
   border-radius: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.card-trip>img {
+.card-trip-half {
+  margin: 10px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
+
+.card-trip>img {
+  position: relative;
   height: 120px;
   width: 100%;
   object-fit: cover;
+}
+
+.image {
+  position: relative;
+}
+
+.card-trip-group {
+  position: absolute;
+  font-size: 2em;
+  left: 20px;
+}
+
+.card-trip-question {
+  position: absolute;
+  font-size: 2em;
+  left: 20px;
+  padding-top: 60px;
+}
+
+.card-trip-gift {
+  position: absolute;
+  font-size: 2em;
+  left: 300px;
 }
 
 .card-trip h2 {
