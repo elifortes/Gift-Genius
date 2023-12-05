@@ -20,6 +20,7 @@ class GiftsController < ApplicationController
           recipient: @myoccasion.recipient,
           gift: @gift.id,
         )
+
         occasion.myoccasion = @myoccasion
         occasion.user = user
         occasion.save!
@@ -28,7 +29,6 @@ class GiftsController < ApplicationController
         question.occasion = occasion
         question.save!
       end
-
       redirect_to myoccasion_confirmation_path(@myoccasion)
     else
       render :new, alert: :unprocessable_entity

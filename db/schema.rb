@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema[7.1].define(version: 2023_12_05_075833) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,28 +52,26 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_075833) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.jsonb "favorites"
-    t.string "hobbies"
-    t.string "movies"
-    t.string "music"
-    t.string "books"
-    t.string "restaurant"
-    t.string "activities"
-    t.string "channels"
-    t.string "contents"
-    t.string "brands"
-    t.string "places"
-    t.string "socials"
-    t.string "onlines"
-    t.string "purchases"
-    t.string "communications"
-    t.string "apps"
-    t.string "websites"
-    t.string "locations"
-    t.string "devices"
-    t.string "softwares"
-    t.string "games"
-    t.string "platforms"
+
+    t.text "favorites"
+    t.text "hobbies"
+    t.text "activities"
+    t.text "channels"
+    t.text "contents", array: true
+    t.text "brands", array: true
+    t.text "places", array: true
+    t.text "socials", array: true
+    t.text "onlines", array: true
+    t.text "purchases", array: true
+    t.text "communications", array: true
+    t.text "apps", array: true
+    t.text "websites", array: true
+    t.text "locations", array: true
+    t.text "devices", array: true
+    t.text "softwares", array: true
+    t.text "games", array: true
+    t.text "platforms", array: true
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.decimal "pledge_amount"
@@ -220,6 +220,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_05_075833) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "notification"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

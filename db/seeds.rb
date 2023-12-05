@@ -14,16 +14,16 @@ Question.destroy_all
 Answer.destroy_all
 User.destroy_all
 # creating userlogin for mains
-userU = User.create!(email: "nak@me.com", password: "kalvin")
+userU = User.create!(email: "nak@me.com", password: "kalvin", notification: true)
 
 userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "Francois.png" })
 print userU, userU.save!
 
-userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
+userM = User.create!(email: "mena@gmail.com", password: "aaaaaa", notification: false)
 userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg" })
 userM.save!
 
-userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
+userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla", notification: false)
 userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg" })
 userE.save!
 

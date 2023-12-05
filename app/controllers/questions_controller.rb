@@ -96,21 +96,6 @@ class QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
-
-    # check if there is a favorite [occasion.question -> occasion.favorite]
-    #       if exist? -> favorite[merge/update]
-    # <<<<<<< HEAD
-    # creating a new favorite
-    # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
-    # games: params[:question][:games])
-    # =======
-    # # creating a new favorite
-    # @answer = Answer.new(music: params[:question][:music], hobbies: params[:question][:hobbies],
-    #                       games: params[:question][:games], movies: params[:question][:movies],
-    #                         books: params[:question][:books],restaurant: params[:question][:restaurant],
-    #                           brands: params[:question][:brands],devices: params[:question][:devices],
-    #                             places: params[:question][:places],purchases: params[:question][:purchases])
-
     @answer = Answer.find_by(user: current_user, occasion: @question.occasion)
     #instead of making new form every time this update the form to previous answers.
     if @answer == nil
@@ -148,6 +133,7 @@ class QuestionsController < ApplicationController
     if @answer.save
       # raise
       scraped_products = gift_scrapper
+
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
       scraped_products.each do |product_data|
         product = Product.new(
@@ -160,6 +146,7 @@ class QuestionsController < ApplicationController
       end
 
       redirect_to root_path, notice: "Questionnaire is answered."
+
     else
       render :new, alert: :unprocessable_entity
     end
@@ -176,29 +163,38 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
-  def gift_scrapper
-    require "open-uri"
-    require "nokogiri"
-    # answers = ["Cooking", "Animation", "Disco", "Contemporary Fiction", "Nike", "Cave", "Fighting", "French", "Canon EOS Camera", "Bookmarks"]
-    scraped_products = []
-    @answer_values.each do |answer|
-      url = "https://www.amazon.com.au/s?k=#{answer.gsub(" ", "+")}+for+adult&s=date-desc-rank&crid=1NPJG8DRL1OB5&qid=1701761808&sprefix=binoculars+for+adult%2Caps%2C263&ref=sr_st_date-desc-rank&ds=v1%3AXl0ZP7a2L%2Ff5BvRu%2FhDncNXfklqFiyXzl7pUoG6zS0A"
-      html_file = URI.open(url).read
-      html_doc = Nokogiri::HTML(html_file)
-      first_product_name_element = html_doc.css("h2").first
-      first_product_name = first_product_name_element ? first_product_name_element.content.strip : "Not found"
-      first_product_price_element = html_doc.css("span.a-price-whole").first
-      first_product_price = first_product_price_element ? first_product_price_element.content.strip : "Not found"
-      first_product_image_element = html_doc.css("div.a-section.aok-relative.s-image-square-aspect img").first
-      first_product_image_url = first_product_image_element ? first_product_image_element["src"] : "Not found"
-      scraped_products << {
-        name: first_product_name,
-        price: first_product_price,
-        image_url: first_product_image_url,
-      }
-    end
-    scraped_products
+
+
+def gift_scrapper
+  require "open-uri"
+  require "nokogiri"
+
+  # answers = ["Cooking", "Animation", "Disco", "Contemporary Fiction", "Nike", "Cave", "Fighting", "French", "Canon EOS Camera", "Bookmarks"]
+  scraped_products = []
+  @answer_values.each do |answer|
+    url = "https://www.amazon.com.au/s?k=#{answer.gsub(' ', '+')}+for+adult&s=date-desc-rank&crid=1NPJG8DRL1OB5&qid=1701761808&sprefix=binoculars+for+adult%2Caps%2C263&ref=sr_st_date-desc-rank&ds=v1%3AXl0ZP7a2L%2Ff5BvRu%2FhDncNXfklqFiyXzl7pUoG6zS0A"
+    html_file = URI.open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    first_product_name_element = html_doc.css('h2').first
+    first_product_name = first_product_name_element ? first_product_name_element.content.strip : 'Not found'
+
+    first_product_price_element = html_doc.css('span.a-price-whole').first
+    first_product_price = first_product_price_element ? first_product_price_element.content.strip : 'Not found'
+
+    first_product_image_element = html_doc.css('div.a-section.aok-relative.s-image-square-aspect img').first
+    first_product_image_url = first_product_image_element ? first_product_image_element['src'] : 'Not found'
+
+    scraped_products << {
+      name: first_product_name,
+      price: first_product_price,
+      image_url: first_product_image_url
+    }
   end
+  scraped_products
+end
+
+
 
   # def merge_array
   #   @myoccasion = Myoccasion.find(:myoccasion_id)

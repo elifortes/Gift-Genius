@@ -45,6 +45,8 @@ Rails.application.routes.draw do
   get "groups/gift", to: "groups#gift"
   get "questions/new", to: "questions#new"
 
+  post '/update_notification', to: 'application#update_notification'
+
   # get "products", to: "products#index"
 
   resources :questions
