@@ -69,16 +69,16 @@
         <!-- Occasions-->
         <%  @occasions.each do  |occasion|%>
           <!-- card separation -->
-          <div class="card-trip card-trip-half">
+          <div class="card-trip card-trip-half" style="width:50%">
             <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
             <!--Link to Questions -->
-            <%= link_to edit_occasion_question_path(occasion.myoccasion_id,occasion.question) , class: 'card-trip-question' do %>
-              <i class="fas fa-file-groups"></i>
+            <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
+              <i class="fas fa-file-lines"></i>
               <span></span>
             <% end %>
             <!--Link to Gift -->
             <% if occasion.proposal %>
-              <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift' do
+              <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
                                             %>
               <i class="fas fa-gifts"></i>
               <span></span>
@@ -87,7 +87,7 @@
           <!-- My occasion info-->
           <div class="card-trip-infos">
             <div>
-              <h2 style="text-align: left;font-size:1em">Gift Group.
+              <h2 style="text-align: left;font-size:1em">Member of:
               </h2>
               <div style="text-align: left;font-size:.9em">
                 <% recipient=User.includes(:personnal).find(occasion.recipient) %>
