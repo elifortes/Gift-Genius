@@ -1,6 +1,14 @@
 <footer class="footer" style="  display: flex;
   justify-content: space-around;">
   <nav class="footer-nav mx-3">
+
+    <% if @notify_user %>
+    <div data-controller="alert" data-action="click->alert#showNotification" data-alert-uid-value="<%= current_user.id %>">
+      <i class="fa-solid fa-bell fa-shake fa-2xl" style="color: #164863"></i>
+             <span>Notification</span> </div>
+
+<% end %>
+
     <%= link_to root_path, class: 'footer-item' do %>
       <i class="fa-solid fa-house-chimney"></i>
       <span>Home</span>

@@ -6,12 +6,6 @@
       <% if current_user %>
         <h4 class="my-2", style="text-align: left;font-weight:800">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
-          <% if @notify_user %>
-              <i data-controller="alert"
-                data-action="click->alert#showNotification"
-                data-alert-uid-value="<%= current_user.id %>"
-                class="fa-regular fa-bell fa-shake fa-2xl" style="color: #000;"></i>
-          <% end %>
       <% end %>
 
     </div>
