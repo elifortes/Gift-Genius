@@ -6,7 +6,11 @@
     <!-- Notifications / Open space area -->
     <% myoccasion=Myoccasion.find(params[:myoccasion_id]) %>
     <div class="card-trip border-0 ">
+       <% if Gift.find(myoccasion.gift).title != "" %>
       <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+      <% else %>
+      <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
+      <% end %>
       <!--Link to Group members -->
       <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
         <i class="fa-solid fas fa-users"></i>

@@ -23,9 +23,35 @@ userM = User.create!(email: "mena@gmail.com", password: "aaaaaa", notification: 
 userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg" })
 userM.save!
 
-userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla", notification: false)
+userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla", notification: true)
 userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg" })
 userE.save!
+
+man =  ["A chef with a flair for fusion cuisine, known for his weekend cycling trips through the countryside, often spotted in cycling gear on sunny mornings.",
+  "A professor with a love for antique books, spends his free time browsing through old bookstores, always with a rare find under his arm.",
+  "An architect who enjoys urban sketching, often seen in public parks with his sketchbook, capturing the essence of cityscapes.",
+  "A personal trainer with a passion for hiking, spends his weekends exploring mountain trails, equipped with a backpack and hiking boots.",
+  "A tech entrepreneur who relaxes by playing chess, frequently participating in local chess club tournaments, showcasing strategic thinking.",
+  "A musician who loves gardening, spends his afternoons tending to his backyard garden, creating a serene environment for his musical inspirations.",
+  "A graphic designer who is an avid skateboarder, often seen at skate parks performing tricks, blending his artistic style with his love for skateboarding.",
+  "A marine biologist dedicated to scuba diving, explores coral reefs and marine ecosystems during his diving expeditions.",
+  "A photographer with a penchant for star gazing, spends nights capturing the beauty of the night sky, combining his love for photography and astronomy.",
+  "A firefighter who unwinds by woodworking, creating handcrafted furniture and decor in his workshop, demonstrating skill and precision."
+]
+
+woman = [" A botanist with a fascination for exotic flowers, spends her weekends in botanical gardens, often found sketching rare plants and flowers.",
+  "A software developer who unwinds by rock climbing, challenging herself on steep climbs, often seen at local climbing gyms or outdoor crags.",
+  "A novelist who finds inspiration by the sea, frequently spotted at beachside cafes, deeply engrossed in writing her latest book.",
+  "A professional violinist with a love for salsa dancing, spends her evenings at dance studios, merging her musical talent with rhythmic dance steps.",
+  "An aerospace engineer with a passion for baking, known for creating elaborate cakes and pastries, often sharing her creations with colleagues.",
+  "A film director who enjoys urban exploration, often embarks on adventures to discover hidden gems in the city, seeking inspiration for her next film.",
+  "A veterinarian who loves horseback riding, spends her free time at a local stable, combining her love for animals with equestrian sports.",
+  "An interior designer with a knack for pottery, enjoys crafting unique ceramic pieces, often incorporating them into her design projects.",
+  "A yoga instructor with a passion for photography, captures serene landscapes and candid moments, reflecting the tranquility of her yoga practice.",
+  "A marine scientist dedicated to surfing, finds balance between her scientific pursuits and riding the ocean waves, often seen at the beach at dawn.",
+]
+
+
 
 # creating 30 users for login with userxx@me.com
 def users
@@ -35,7 +61,7 @@ def users
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
-      info: { sex: "man", picture: "man/man-0#{i}.jpg" },
+      info: { sex: "man", picture: "man/man-0#{i}.jpg", profile: man.sample },
     )
     user.personnal = personnal
     print i, user.save!
@@ -46,7 +72,7 @@ def users
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
-      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg" },
+      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg",profile: woman.sample },
     )
     user.personnal = personnal
     print i, user.save!

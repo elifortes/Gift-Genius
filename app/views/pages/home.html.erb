@@ -6,12 +6,6 @@
       <% if current_user %>
         <h4 class="my-2", style="text-align: left;font-weight:800">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
-          <% if @notify_user %>
-              <i data-controller="alert"
-                data-action="click->alert#showNotification"
-                data-alert-uid-value="<%= current_user.id %>"
-                class="fa-regular fa-bell fa-shake fa-2xl" style="color: #000;"></i>
-          <% end %>
       <% end %>
 
     </div>
@@ -31,7 +25,11 @@
           <!--begin iteration on myoccasions-->
           <% @myoccasions.each do |myoccasion| %>
             <div class="card-trip border-0 ">
-              <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+              <% if Gift.find(myoccasion.gift).title != "" %>
+                <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+              <% else %>
+                <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
+              <% end %>
               <!--Link to Group members -->
               <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
                 <i class="fa-solid fas fa-users"></i>
@@ -79,7 +77,11 @@
           <%  @occasions.each do  |occasion|%>
             <!-- card separation -->
             <div class="card-trip card-trip-half">
-              <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+              <% if Gift.find(occasion.gift).title != "" %>
+                <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+              <% else %>
+                <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
+              <% end %>
               <!--Link to Questions -->
               <% if  !occasion.status %>
                 <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
