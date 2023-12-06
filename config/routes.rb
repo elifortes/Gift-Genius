@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     get "confirmation", to: "myoccasions#confirmation"
     resources :gifts
   end
+  resources :mycontacts
   resources :gifts
   resources :occasions do
     resources :questions

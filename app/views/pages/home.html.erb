@@ -50,14 +50,15 @@
               <!--Link to Gift -->
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
-                    <% if  o.status %>
-                      <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
-                    <% else %>
-                      <i class="fas fa-gifts"></i>
-                    <% end %>
-                    <span></span>
-                  <% end %>     <% end %>     <% end %>
+                  <% unless o.proposal.nil? %>
+                    <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                      <% if  o.status %>
+                        <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
+                      <% else %>
+                        <i class="fas fa-gifts"></i>
+                      <% end %>
+                      <span></span>
+                    <% end %>     <% end %>     <% end %> <% end %>
               <!-- My occasion info-->
               <div class="card-trip-infos">
                 <div>
