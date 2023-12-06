@@ -10,7 +10,7 @@ url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZm
 p url
 url_serialized = URI.open(url).read
 results = JSON.parse(url_serialized)
-File.open("results.json", "w") do |f|
+File.open("results#{Date.new}.json", "w") do |f|
   f.write(results.to_json)
 end
 if results["total"] > 0
