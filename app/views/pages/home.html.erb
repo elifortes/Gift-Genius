@@ -39,7 +39,7 @@
                 <% if o.user_id == current_user.id %>
                   <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
                     <% if  !o.status %>
-                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
                     <% else %>
                       <i class="fas fa-file-lines"></i>
                     <% end %>
@@ -52,7 +52,7 @@
                 <% if o.user_id == current_user.id %>
                   <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
                     <% if  o.status %>
-                      <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                      <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
                     <% else %>
                       <i class="fas fa-gifts"></i>
                     <% end %>
@@ -88,7 +88,7 @@
               <!--Link to Questions -->
               <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
                 <% if  !occasion.status %>
-                  <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                  <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
                 <% else %>
                   <i class="fas fa-file-lines"></i>
                 <% end %>
@@ -98,7 +98,7 @@
               <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
                                             %>
               <% if occasion.status %>
-                <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 4.5s;"></i>
+                <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
               <% else %>
                 <i class="fas fa-gifts"></i>
               <% end %>
