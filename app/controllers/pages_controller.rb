@@ -11,14 +11,22 @@ class PagesController < ApplicationController
     @occasions = @occasions.map { |occasion| occasion unless @ids_to_reject.member?(occasion.myoccasion_id) }
     @occasions.compact!
 
-    # old code
-    @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
-    @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
-    if current_user.mycontact
+    if current_user.personnal.nil?
+      personnal = Personnal.new
+      personnal.user = current_user
+      personnal.save!
+      mycontact = Mycontact.new
+      mycontact.user = current_user
+
+      mycontact.save!
+    end
+
+    unless current_user.mycontact.contacts.nil?
       @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
     else
       @mycontacts = []
     end
+
     @mycontacts.sort_by! { |p| p.personnal.birthday }
 
 
@@ -33,5 +41,8 @@ class PagesController < ApplicationController
 
 
     #@notify_user = current_user&.notification
+
+    #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
+
   end
 end

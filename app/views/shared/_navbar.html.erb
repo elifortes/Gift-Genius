@@ -19,17 +19,17 @@
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <%#
-              <% && current_user.photo.attached? %>
-                <%# cl_image_tag current_user.photo.key , class: "avatar", alt: "dropdown menu" %>
-                <%# elsif %>
-                <!--avatar  with kitt userame from personnal.kitt !->
+              <% if  current_user.photo.attached? %>
+                <%= cl_image_tag current_user.photo.key , class: "avatar", alt: "dropdown menu" %>
+              <% else %>
+                <i class="bi bi-person-bounding-box fa-2xl" style="font-size:2em;color:white"></i>
+              <% end %>
+              <!--avatar  with kitt userame from personnal.kitt !->
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar", alt: "avatar" %>
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-large", alt: "avatar-large" %>
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-bordered", alt: "avatar-bordered" %>
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar-square", alt: "avatar-square" %>
                   icon -->
-                <i class="bi bi-person-bounding-box fa-2xl" style="font-size:2em;color:white"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Edit Profile", edit_user_registration_path, class: "dropdown-item" %>
