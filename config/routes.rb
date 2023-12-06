@@ -24,13 +24,12 @@ Rails.application.routes.draw do
   end
 
   resources :proposals do
-    resources :products
+    resources :products do
+      get "confirmation", to: "proposals#confirmation"
+    end
   end
 
   resources :products do
-    member do
-      patch :move_image
-    end
   end
 
   get "questions/show", to: "questions#show"
@@ -45,7 +44,7 @@ Rails.application.routes.draw do
   get "groups/gift", to: "groups#gift"
   get "questions/new", to: "questions#new"
 
-  post '/update_notification', to: 'application#update_notification'
+  post "/update_notification", to: "application#update_notification"
 
   # get "products", to: "products#index"
 

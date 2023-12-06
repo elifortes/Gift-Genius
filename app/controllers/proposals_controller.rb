@@ -62,7 +62,12 @@ class ProposalsController < ApplicationController
   end
 
   def confirmation
-    @proposal = Proposal.find(params[:id])
+    @proposal = Proposal.find(params[:proposal_id])
+    @product = Product.find(params[:product_id])
+    @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
+    @product.selected = true
+    @product.save!
+    #raise
   end
 
   private
