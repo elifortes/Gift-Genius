@@ -8,30 +8,40 @@
       <% end %>
     </div>
     <!-- notifications  occasions-->
-    <div id="Products">
-      <div data-controller="sortable" style="display:;">
-        <ul data-controller="sortable" class="list-group list-grouprounded">
-          <% @products.each_with_index do |product, index| %>
-            <li data-sortable-id="<%= product.id %>" data-sortable-group-value="tasks"  data-sortable-update-url="<%= sort_product_path(product) %>" class="list-group-item border-0">
-              <div class="card-product mt-4 form-image-card p-2" style="overflow:hide;border-radius:10px"><%= link_to  proposal_product_path(product) do %>
-                  <span class="position-indicator"><%= index + 1 %>
-                  </span>
-                  <% if product.url.include?('http') %>
-                    <%= image_tag product.url, alt: "Product image", class: "card-product-infos form-image-card form-image " %>
-                  <% else %>
-                    <%= image_tag 'option1.png', alt: "Product image", class: "card-product-infos form-image-card form-image" %>
+    <p>proposal   <%= @proposal %> <%= @proposal.id %></p>
+    <p>proposal.myoccasion   <%= @proposal.myoccasion_id %></p>
+    <p>organizer <%= @orginizer %>
+      <p>worktobedone = <%= @worktobedone %></p>
+      <p> pledge <%=  @pledge %></p>
+      <p></p>
+      <div id="Products">
+        <div data-controller="sortable" style="display:;">
+          <ul data-controller="sortable" class="list-group list-grouprounded">
+            <% @products.each_with_index do |product, index| %>
+              <li data-sortable-id="<%= product.id %>" data-sortable-group-value="tasks"  data-sortable-update-url="<%= sort_product_path(product) %>" class="list-group-item border-0">
+                <div class="card-product mt-4 form-image-card p-2" style="overflow:hide;border-radius:10px"><%= link_to  proposal_product_path(product) do %>
+                    <span class="position-indicator"><%= index + 1 %>
+                    </span>
+                    <% if product.description %>
+                      <span class="user-indicator"><%= product.description.scan(/\S+|\s{2,}/).first %>'s choice</span>
+                    <% end %>
+                    <% if product.url %>
+                      <%= image_tag product.url, alt: "Product image", class: "card-product-infos form-image-card form-image " %>
+                    <% else %>
+                      <%= image_tag 'option1.png', alt: "Product image", class: "card-product-infos form-image-card form-image" %>
+                    <% end %>
                   <% end %>
-                <% end %>
-                <div class="card-product-infos">
-                  <p > <strong></strong><%= product.title %></p>
+                  <div class="card-product-infos">
+                    <p ><strong></strong><%= product.title %></p>
+                    <%= product.row_order %>
+                  </div>
                 </div>
-              </div>
-            </li>
-          <% end %>
-        </ul>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <!--end notification occasions -->
+        <!-- navigation buttons -->
       </div>
-      <!--end notification occasions -->
-      <!-- navigation buttons -->
     </div>
   </div>
-</div>

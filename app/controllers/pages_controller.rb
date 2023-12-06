@@ -2,19 +2,14 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
 
   def home
-    # hightlights moments.
-    # mycontacts
-    # myoccasions
-    # occasions
-
     return unless current_user
     # looking for events i created
     @myoccasions = current_user.myoccasions
     # looking for product i choose for an existing event.
     @occasions = current_user.occasions
-    # @ids_to_reject = @myoccasions.map { |myoccasion| myoccasion.id }
-    # @occasions = @occasions.map { |occasion| occasion unless @ids_to_reject.member?(occasion.myoccasion_id) }
-    # @occasions.compact!
+    @ids_to_reject = @myoccasions.map { |myoccasion| myoccasion.id }
+    @occasions = @occasions.map { |occasion| occasion unless @ids_to_reject.member?(occasion.myoccasion_id) }
+    @occasions.compact!
 
     # old code
     @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
@@ -26,7 +21,11 @@ class PagesController < ApplicationController
     end
     @mycontacts.sort_by! { |p| p.personnal.birthday }
 
-    @notify_user = current_user&.notification
+
+    #@notify_user = true
+
+    #@notify_user = current_user&.notification
     # @notify_user = true
+
   end
 end
