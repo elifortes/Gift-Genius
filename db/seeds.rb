@@ -23,7 +23,7 @@ userM = User.create!(email: "mena@gmail.com", password: "aaaaaa", notification: 
 userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg" })
 userM.save!
 
-userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla", notification: false)
+userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla", notification: true)
 userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg" })
 userE.save!
 
