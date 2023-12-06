@@ -19,15 +19,6 @@ class ProductsController < ApplicationController
 
     @personnal = current_user.personnal
 
-    if @product.info
-      @suggestion = "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ? "
-
-      # "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ?
-
-
-     
-
-
     # "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ? "
 
 
@@ -38,7 +29,7 @@ class ProductsController < ApplicationController
       My budget is up to $150. The gift options I'm considering are: a portable camera tripod, a set of hiking gear,
        a classic rock vinyl collection, and a book on landscape photography. Which would be the best choice?"
 
-     
+
 
 
 
