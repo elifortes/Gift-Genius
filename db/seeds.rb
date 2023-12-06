@@ -61,7 +61,7 @@ def users
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
-      info: { sex: "man", picture: "man/man-0#{i}.jpg" },
+      info: { sex: "man", picture: "man/man-0#{i}.jpg", profile: man.sample },
     )
     user.personnal = personnal
     print i, user.save!
@@ -72,7 +72,7 @@ def users
     personnal = Personnal.new(
       name: Faker::Name.name,
       birthday: Faker::Date.birthday,
-      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg" },
+      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg",profile: woman.sample },
     )
     user.personnal = personnal
     print i, user.save!
