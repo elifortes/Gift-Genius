@@ -1,8 +1,4 @@
 
-class ApiService < ApplicationRecord
-
-end
-
 # install gem
 # gem 'httparty'
 
