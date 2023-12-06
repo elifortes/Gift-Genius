@@ -179,7 +179,7 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
-  def gift_scrapper
+
   require "open-uri"
   require "nokogiri"
 

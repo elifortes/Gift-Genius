@@ -54,7 +54,7 @@ woman = [" A botanist with a fascination for exotic flowers, spends her weekends
 
 
 # creating 30 users for login with userxx@me.com
-def users
+def users(man, woman)
   10.times do |i|
     user = User.new(email: "user0#{i}@gmail.com")
     user.password = "123456"
@@ -79,7 +79,7 @@ def users
   end
 end
 
-users
+users(man, woman)
 
 # creating a contacts group from User.all
 array = []
