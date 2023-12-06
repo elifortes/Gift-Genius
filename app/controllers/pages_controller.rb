@@ -22,10 +22,16 @@ class PagesController < ApplicationController
     @mycontacts.sort_by! { |p| p.personnal.birthday }
 
 
-    #@notify_user = true
+    def update
+      user = User.find(params[:uid])
+      user.personnal.update(notification: false)
+    end
+
+
+
+    @notify_user = current_user&.personnal&.notifications
+
 
     #@notify_user = current_user&.notification
-    # @notify_user = true
-
   end
 end

@@ -60,6 +60,9 @@ Rails.application.routes.draw do
     end
   end
 
+  post 'update_notification', to: 'pages#update'
+
+
   post "answers", to: "answers#create"
   resources :proposals do
     member do
