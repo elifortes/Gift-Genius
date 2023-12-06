@@ -5,14 +5,35 @@ class ProposalsController < ApplicationController
   end
 
   def show
-
     @proposal = Proposal.find(params[:id])
     @products = @proposal.products.rank(:row_order)
     @products.sort_by { |product| product.row_order }
     @products.each_with_index { |product, index| product.position = index }
-    @show_gift = true
-  end
 
+    # check if the user is the owner of the myproposal
+    @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
+    @orginizer = @myoccasion.user_id
+    @user = current_user
+    if @orginizer == @user.id
+      @worktobedone = true
+      products = []
+      @myoccasion.occasions.each do |occasion|
+        if occasion.proposal.products.first
+          product = occasion.proposal.products.rank(:row_order).first
+          info = { from: User.find(occasion.user.id).personnal.name }
+          product.description = User.find(occasion.user.id).personnal.name
+          products.push(product)
+        end
+      end
+      @proposal.products.destroy_all
+      products.each do |p|
+        product = Product.new(title: p.title, description: p.description, url: p.url, position: p.position, selected: p.selected, price: p.price, rating: p.rating)
+        product.proposal = @proposal
+        product.save!
+      end
+      @proposal.products
+    end
+  end
 
   def update
     @proposal = GeneralListing.find(params[:id])
