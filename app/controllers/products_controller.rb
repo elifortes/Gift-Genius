@@ -30,8 +30,14 @@ class ProductsController < ApplicationController
 
 
     if !@product.info
-      @suggestion = "We are creating a occasion for to give a gift #{@gift}, for this person #{@recipient}, based on this information #{@sex}, #{@picture} and #{@profile}, rate the scale from 1 to 10
-      and tell me if matches the info I gave to you, please"
+
+      @suggestion = "have a list of gifts #{gift} for my friend's #{occasion}, and I need help choosing the most suitable one.
+      Is an #{profile}, enjoys hiking, and is a fan of classic rock music.
+      My budget is up to $150. The gift options I'm considering are: a portable camera tripod, a set of hiking gear,
+       a classic rock vinyl collection, and a book on landscape photography. Which would be the best choice?"
+
+     
+
 
       client = OpenAI::Client.new
       client.add_headers("OpenAI-Beta" => "assistants=v1")
