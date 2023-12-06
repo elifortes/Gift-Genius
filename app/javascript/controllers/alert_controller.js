@@ -30,3 +30,16 @@ export default class extends Controller {
 
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const bellIcon = document.querySelector('.fa-bell');
+  let shakeCount = 0;
+  const desiredShakes = 2;
+
+  bellIcon.addEventListener('animationiteration', () => {
+      shakeCount++;
+      if (shakeCount >= desiredShakes) {
+          bellIcon.classList.remove('fa-shake');
+      }
+  });
+});
