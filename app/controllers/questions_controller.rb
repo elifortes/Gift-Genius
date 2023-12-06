@@ -91,7 +91,7 @@ class QuestionsController < ApplicationController
   def new
     @occasion = Occasion.find(params[:occasion_id])
     @question = @occasion.question
-    raise
+
   end
 
   def update
@@ -169,13 +169,12 @@ def gift_scrapper
   require "open-uri"
   require "nokogiri"
 
-  # answers = ["Cooking", "Animation", "Disco", "Contemporary Fiction", "Nike", "Cave", "Fighting", "French", "Canon EOS Camera", "Bookmarks"]
+
   scraped_products = []
   @answer_values.each do |answer|
-    url = "https://www.amazon.com.au/s?k=#{answer.gsub(' ', '+')}+for+adult&s=date-desc-rank&crid=1NPJG8DRL1OB5&qid=1701761808&sprefix=binoculars+for+adult%2Caps%2C263&ref=sr_st_date-desc-rank&ds=v1%3AXl0ZP7a2L%2Ff5BvRu%2FhDncNXfklqFiyXzl7pUoG6zS0A"
+    url = "https://www.amazon.com.au/s?k=#{answer.gsub(' ', '+')}+for+adult"
     html_file = URI.open(url).read
     html_doc = Nokogiri::HTML(html_file)
-
     first_product_name_element = html_doc.css('h2').first
     first_product_name = first_product_name_element ? first_product_name_element.content.strip : 'Not found'
 
