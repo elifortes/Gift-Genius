@@ -16,10 +16,17 @@ class MyoccasionsController < ApplicationController
   end
 
   def new
-    @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
-    @mycontacts = @mycontacts.map { |c| c.personnal }
+    unless current_user.mycontact.contacts.nil?
+      @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) unless c.nil? }
+    else
+      @mycontacts = []
+    end
+    @mycontacts.compact!
+    @mycontacts = @mycontacts.map { |c| c.personnal unless c.nil? }
     # @mycontacts.sort_by! { |p| p.personnal.birthday }
     @myoccasion = Myoccasion.new
+    @mycontact = current_user.mycontact
+    @users = User.all.map { |u| u.personnal unless u.nil? && u.id = current_user.id }
   end
 
   def create
@@ -42,7 +49,6 @@ class MyoccasionsController < ApplicationController
     # if new_user_added
     #   flash[:new_user_added] = true
     # end
-
 
   end
 

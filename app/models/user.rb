@@ -8,7 +8,7 @@ class User < ApplicationRecord
   # information about the recipient
   has_many :answers, dependent: :destroy
   has_many :questions, dependent: :destroy
-
+  has_one_attached :photo, dependent: :destroy
   # devise stuff
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
