@@ -51,7 +51,8 @@
 }
 
 .small-text {
-  font-size: 0.8em; /* Adjust the size as needed */
+  font-size: 0.8em;
+  /* Adjust the size as needed */
 }
 
 
@@ -59,18 +60,50 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 10px;
+  /* Adjust as needed */
   padding: 0.25em 0.6em;
-  font-size: 0.9em; /* Adjust as needed */
+  font-size: 0.9em;
+  /* Adjust as needed */
   font-weight: bold;
-  color: #fff; /* White text */
-  background-color: #263a4f; /* Blue background or any color you prefer */
-  border-radius: 50%; /* Circular badge */
-  width: 25px; /* Fixed width */
-  height: 25px; /* Fixed height */
+  color: #fff;
+  /* White text */
+  background-color: #263a4f;
+  /* Blue background or any color you prefer */
+  border-radius: 50%;
+  /* Circular badge */
+  width: 25px;
+  /* Fixed width */
+  height: 25px;
+  /* Fixed height */
   text-align: center;
 }
 
-.fa-solid fa-bars { /* Style for the list icon */
-  margin-right: 5px; /* Space between icon and number */
+.fa-solid fa-bars {
+  /* Style for the list icon */
+  margin-right: 5px;
+  /* Space between icon and number */
+}
+
+.user-indicator {
+  position: absolute;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  /* Adjust as needed */
+  padding: 0.5em 0.5em;
+  font-size: 0.6em;
+  /* Adjust as needed */
+  font-weight: bold;
+  color: #fff;
+  /* White text */
+  background-color: goldenrod;
+  /* Blue background or any color you prefer */
+  border-radius: 5px;
+  /* Circular badge */
+  /* Fixed width */
+  /* Fixed height */
+  text-align: center;
 }

@@ -163,7 +163,6 @@ class QuestionsController < ApplicationController
     end
 
       redirect_to root_path, notice: "Questionnaire is answered."
-
     else
       render :new, alert: :unprocessable_entity
     end
@@ -180,9 +179,7 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
-
-
-
+  def gift_scrapper
   require "open-uri"
   require "nokogiri"
 
@@ -210,10 +207,13 @@ class QuestionsController < ApplicationController
         name: first_product_name,
         price: first_product_price,
         image_url: first_product_image_url
+
       }
     end
     scraped_products
   end
+
+
 
 # def gift_scrapper
 #   require "open-uri"
@@ -242,6 +242,7 @@ class QuestionsController < ApplicationController
 #   end
 #   scraped_products
 # end
+
 
 
   # def merge_array
