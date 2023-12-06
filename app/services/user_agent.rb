@@ -1,7 +1,7 @@
 scraped_products = []
 answer_values = [["Comedy", "Canon EOS Camera"], ["Fantasy", "Country"], ["H&M", "French"], ["", "Botanical Garden"], ["Cycling", "Arcade"]]
 answer = answer_values.sample
-
+answer = ["Fantasy"]
 require "json"
 require "open-uri"
 scraped_products = []

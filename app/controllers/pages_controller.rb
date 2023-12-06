@@ -22,10 +22,10 @@ class PagesController < ApplicationController
     end
 
     unless current_user.mycontact.contacts.nil?
-      @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) unless c.nil }
+      @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
     else
       @mycontacts = []
     end
-    @mycontacts.sort_by! { |p| p.personnal.birthday }
+    #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
   end
 end
