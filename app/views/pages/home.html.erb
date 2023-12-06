@@ -7,7 +7,6 @@
         <h4 class="my-2", style="text-align: left;font-weight:800">
           Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
       <% end %>
-
     </div>
     <!-- Gift Occasion / Open space area -->
     <div class="card border-0  p-2 m-0" style="">
@@ -38,22 +37,26 @@
               <!--Link to Questions --><%# myoccasion.id %>
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <% if  !o.status %>
-                    <%# o.id %>  <%# o.question.id %>
-                    <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
+                  <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
+                    <% if  !o.status %>
+                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                    <% else %>
                       <i class="fas fa-file-lines"></i>
-                      <span></span>
                     <% end %>
-                  <% end %>       <% end %>
+                    <span></span>
+                  <% end %>
+                <% end %>
               <% end %>
               <!--Link to Gift -->
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <% if  o.status %>
-                    <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                  <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                    <% if  o.status %>
+                      <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                    <% else %>
                       <i class="fas fa-gifts"></i>
-                      <span></span>
                     <% end %>
+                    <span></span>
                   <% end %>     <% end %>     <% end %>
               <!-- My occasion info-->
               <div class="card-trip-infos">
@@ -83,19 +86,23 @@
                 <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
               <% end %>
               <!--Link to Questions -->
-              <% if  !occasion.status %>
-                <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
+              <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
+                <% if  !occasion.status %>
+                  <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 5s;"></i>
+                <% else %>
                   <i class="fas fa-file-lines"></i>
-                  <span></span>
                 <% end %>
-              <% end %>
-              <!--Link to Gift -->
-              <% if occasion.status %>
-                <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
-                                            %>
-                <i class="fas fa-gifts"></i>
                 <span></span>
               <% end %>
+              <!--Link to Gift -->
+              <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
+                                            %>
+              <% if occasion.status %>
+                <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 4.5s;"></i>
+              <% else %>
+                <i class="fas fa-gifts"></i>
+              <% end %>
+              <span></span>
             <% end %>
             <!-- My occasion info-->
             <div class="card-trip-infos">
