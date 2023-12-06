@@ -20,8 +20,21 @@
       </div>
     </div>
     <!-- end navigation buttons -->
-    <%= link_to  proposal_path, class: " mx-2 p-2" do %>
-      <i class="fa-solid fa-square-caret-left" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
-    <% end %>
+    <div class="row d-flex ">
+      <div class="col-6" style="text-align:start">
+        <%= link_to  proposal_path, class: " mx-2 p-2" do %>
+          <i class="fa-solid fa-square-caret-left" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+        <% end %>
+      </div>
+      <div class="col-6" style="text-align:end">
+        <% simple_form_for @product do |f| %>
+          <%= f.input :selected %>
+          <%= f.button :submit, class: 'btn btn-primary' %>
+        <% end %>
+        <%= link_to  proposal_path, class: " mx-2 p-2" do %>
+          <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

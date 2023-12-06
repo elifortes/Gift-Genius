@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
     @gift = Product.all.last.title.to_json
     @personnal = current_user.personnal
 
-    if !@product.info
+    if @product.info
       @suggestion = "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ? "
       client = OpenAI::Client.new
       client.add_headers("OpenAI-Beta" => "assistants=v1")
