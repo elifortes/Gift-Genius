@@ -31,7 +31,7 @@
           <%= f.input :selected %>
           <%= f.button :submit, class: 'btn btn-primary' %>
         <% end %>
-        <%= link_to  proposal_path, class: " mx-2 p-2" do %>
+        <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " mx-2 p-2" do %>
           <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
         <% end %>
       </div>
