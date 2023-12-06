@@ -11,7 +11,6 @@ class GiftsScraper
   def call
     html_file = URI.open(URL).read
     html_doc = Nokogiri::HTML.parse(html_file)
-
     scrape_data(html_doc)
   end
 
@@ -21,7 +20,7 @@ class GiftsScraper
     html_doc.search(".s-widget-container").map do |element|
       {
         text: element.text.strip,
-        href: element.attribute("href")&.value
+        href: element.attribute("href")&.value,
       }
     end
   end
