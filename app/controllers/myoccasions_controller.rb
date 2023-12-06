@@ -26,7 +26,7 @@ class MyoccasionsController < ApplicationController
     # @mycontacts.sort_by! { |p| p.personnal.birthday }
     @myoccasion = Myoccasion.new
     @mycontact = current_user.mycontact
-    @users = User.all.map { |u| u.personnal unless u.nil? }
+    @users = User.all.map { |u| u.personnal unless u.nil? && u.id = current_user.id }
   end
 
   def create
