@@ -31,7 +31,11 @@
           <!--begin iteration on myoccasions-->
           <% @myoccasions.each do |myoccasion| %>
             <div class="card-trip border-0 ">
-              <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+              <% if Gift.find(myoccasion.gift).title != "" %>
+                <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
+              <% else %>
+                <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
+              <% end %>
               <!--Link to Group members -->
               <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
                 <i class="fa-solid fas fa-users"></i>
@@ -79,7 +83,11 @@
           <%  @occasions.each do  |occasion|%>
             <!-- card separation -->
             <div class="card-trip card-trip-half">
-              <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+              <% if Gift.find(occasion.gift).title != "" %>
+                <%= image_tag "occasion/#{Gift.find(occasion.gift).title}.jpg" , alt: "" ,class: "image" %>
+              <% else %>
+                <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
+              <% end %>
               <!--Link to Questions -->
               <% if  !occasion.status %>
                 <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'card-trip-question-half' do %>
