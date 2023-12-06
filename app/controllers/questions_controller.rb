@@ -91,7 +91,6 @@ class QuestionsController < ApplicationController
   def new
     @occasion = Occasion.find(params[:occasion_id])
     @question = @occasion.question
-
   end
 
   def update
@@ -131,10 +130,9 @@ class QuestionsController < ApplicationController
     #   end
     # end
     if @answer.save
-
       @paired_answers = @answer_values.shuffle.each_slice(2).to_a
 
-      gift
+      #gift
       # raise
       # scraped_products = gift_scrapper
 
@@ -148,19 +146,21 @@ class QuestionsController < ApplicationController
       #   )
       #   product.save
       # end
-      scraped_products = gift_scrapper(@paired_answers)
+      def function
+        scraped_products = gift_scraper(@paired_answers)
 
-    proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
+        proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
 
-    scraped_products.each do |product_data|
-      product = Product.new(
-        title: product_data[:name],
-        url: product_data[:image_url] + ".jpg",
-        proposal: proposal,
-      )
+        scraped_products.each do |product_data|
+          product = Product.new(
+            title: product_data[:name],
+            url: product_data[:image_url] + ".jpg",
+            proposal: proposal,
+          )
 
-      product.save
-    end
+          product.save
+        end
+      end
 
       redirect_to root_path, notice: "Questionnaire is answered."
     else
@@ -179,7 +179,6 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
-  def gift_scrapper
   require "open-uri"
   require "nokogiri"
 
@@ -187,63 +186,57 @@ class QuestionsController < ApplicationController
     scraped_products = []
     answer_values.each do |answer|
       # Constructing the URL with the first two elements of 'answer' array
-      url = "https://www.etsy.com/au/search?q=#{answer[0].gsub(' ', '+')}+#{answer[1].gsub(' ', '+')}"
+      url = "https://www.etsy.com/au/search?q=#{answer[0].gsub(" ", "+")}+#{answer[1].gsub(" ", "+")}"
+
       html_file = URI.open(url).read
+
       html_doc = Nokogiri::HTML(html_file)
 
+      first_product_name_element = html_doc.css("h2").first
+      first_product_name = first_product_name_element ? first_product_name_element.content.strip : "Not found"
 
-      first_product_name_element = html_doc.css('h2').first
-      first_product_name = first_product_name_element ? first_product_name_element.content.strip : 'Not found'
+      first_product_image_element = html_doc.css("div.a-section.aok-relative.s-image-square-aspect img").first
+      first_product_image_url = first_product_image_element ? first_product_image_element["src"] : "Not found"
 
-
-      first_product_image_element = html_doc.css('div.a-section.aok-relative.s-image-square-aspect img').first
-      first_product_image_url = first_product_image_element ? first_product_image_element['src'] : 'Not found'
-
-
-      first_product_price_element = html_doc.css('span.a-price-whole').first
-      first_product_price = first_product_price_element ? first_product_price_element.content.strip : 'Not found'
+      first_product_price_element = html_doc.css("span.a-price-whole").first
+      first_product_price = first_product_price_element ? first_product_price_element.content.strip : "Not found"
 
       scraped_products << {
         name: first_product_name,
         price: first_product_price,
-        image_url: first_product_image_url
+        image_url: first_product_image_url,
 
       }
     end
     scraped_products
   end
 
+  # def gift_scrapper
+  #   require "open-uri"
+  #   require "nokogiri"
 
+  #   scraped_products = []
+  #   @answer_values.each do |answer|
+  #     url = "https://www.amazon.com.au/s?k=#{answer.gsub(' ', '+')}+for+adult"
+  #     html_file = URI.open(url).read
+  #     html_doc = Nokogiri::HTML(html_file)
+  #     first_product_name_element = html_doc.css('h2').first
+  #     first_product_name = first_product_name_element ? first_product_name_element.content.strip : 'Not found'
 
-# def gift_scrapper
-#   require "open-uri"
-#   require "nokogiri"
+  #     first_product_price_element = html_doc.css('span.a-price-whole').first
+  #     first_product_price = first_product_price_element ? first_product_price_element.content.strip : 'Not found'
 
+  #     first_product_image_element = html_doc.css('div.a-section.aok-relative.s-image-square-aspect img').first
+  #     first_product_image_url = first_product_image_element ? first_product_image_element['src'] : 'Not found'
 
-#   scraped_products = []
-#   @answer_values.each do |answer|
-#     url = "https://www.amazon.com.au/s?k=#{answer.gsub(' ', '+')}+for+adult"
-#     html_file = URI.open(url).read
-#     html_doc = Nokogiri::HTML(html_file)
-#     first_product_name_element = html_doc.css('h2').first
-#     first_product_name = first_product_name_element ? first_product_name_element.content.strip : 'Not found'
-
-#     first_product_price_element = html_doc.css('span.a-price-whole').first
-#     first_product_price = first_product_price_element ? first_product_price_element.content.strip : 'Not found'
-
-#     first_product_image_element = html_doc.css('div.a-section.aok-relative.s-image-square-aspect img').first
-#     first_product_image_url = first_product_image_element ? first_product_image_element['src'] : 'Not found'
-
-#     scraped_products << {
-#       name: first_product_name,
-#       price: first_product_price,
-#       image_url: first_product_image_url
-#     }
-#   end
-#   scraped_products
-# end
-
-
+  #     scraped_products << {
+  #       name: first_product_name,
+  #       price: first_product_price,
+  #       image_url: first_product_image_url
+  #     }
+  #   end
+  #   scraped_products
+  # end
 
   # def merge_array
   #   @myoccasion = Myoccasion.find(:myoccasion_id)
