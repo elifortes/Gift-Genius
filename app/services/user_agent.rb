@@ -1,15 +1,32 @@
-require "rubygems"
-require "nokogiri"
+scraped_products = []
+answer_values = [["Comedy", "Canon EOS Camera"], ["Fantasy", "Country"], ["H&M", "French"], ["", "Botanical Garden"], ["Cycling", "Arcade"]]
+answer = answer_values.sample
+
+require "json"
 require "open-uri"
-
-answer_values = ["ballon", "rpg", "mars", "helicopter"]
-
 scraped_products = []
 
-answer = answer_values.sample(2)
+url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
+p url
+url_serialized = URI.open(url).read
+results = JSON.parse(url_serialized)
+File.open("results.json", "w") do |f|
+  f.write(results.to_json)
+end
+if results["total"] > 0
+  p result = results["products"].first
+  scraped_products << {
+    name: result["name"],
+    price: result["regularPrice"],
+    image_url: result["image"],
+  }
+end
+p scraped_products
 
-html_content = URI.open("https://www.etsy.com/au/search?q=#{answer[0].gsub(" ", "+")}+#{answer[1].gsub(" ", "+")}", "User-Agent" => "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0").read
-# 2. We build a Nokogiri document from this file
-p html_content
-doc = Nokogiri::HTML.parse(html_content)
-p doc
+{
+  "regularPrice" => 4.49,
+  "shortDescription" => nil,
+  "name" => "Wizards of The Coast - Magic the Gathering March of the Machine The Aftermath Draft Booster Sleeve",
+  "image" => "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6539/6539367_sd.jpg",
+  "thumbnailImage" => "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6539/6539367_sd.jpg",
+}
