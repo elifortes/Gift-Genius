@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
 
   def sort
     @product = Product.find(params[:id])
-
     @product.update(row_order_position: params[:row_order_position])
     head :no_content
   end
@@ -17,6 +16,7 @@ class ProductsController < ApplicationController
     @recipient_id = @product.proposal.occasion.recipient
     @recipient = User.find(@recipient_id).personnal.to_json
     @gift = Product.all.last.title.to_json
+    @personnal = current_user.personnal
 
     if !@product.info
       @suggestion = "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ? "

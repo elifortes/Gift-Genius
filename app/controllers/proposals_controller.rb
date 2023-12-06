@@ -14,10 +14,16 @@ class ProposalsController < ApplicationController
     @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
     @orginizer = @myoccasion.user_id
     @user = current_user
+    # 17 to 36 consolidating groups #1 choices.
+    # when you are an organizer.
     if @orginizer == @user.id
       @worktobedone = true
       products = []
+      @pledge = 0
       @myoccasion.occasions.each do |occasion|
+        if occasion.answer
+          @pledge += occasion.answer.pledge_amount
+        end
         if occasion.proposal.products.first
           product = occasion.proposal.products.rank(:row_order).first
           info = { from: User.find(occasion.user.id).personnal.name }
@@ -31,8 +37,11 @@ class ProposalsController < ApplicationController
         product.proposal = @proposal
         product.save!
       end
-      @proposal.products
     end
+    @proposal = Proposal.find(params[:id])
+    @products = @proposal.products.rank(:row_order)
+    @products.sort_by { |product| product.row_order }
+    @products.each_with_index { |product, index| product.position = index }
   end
 
   def update

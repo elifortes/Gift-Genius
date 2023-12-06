@@ -12,6 +12,7 @@
     <p>proposal.myoccasion   <%= @proposal.myoccasion_id %></p>
     <p>organizer <%= @orginizer %>
       <p>worktobedone = <%= @worktobedone %></p>
+      <p> pledge <%=  @pledge %></p>
       <p></p>
       <div id="Products">
         <div data-controller="sortable" style="display:;">
@@ -32,6 +33,7 @@
                   <% end %>
                   <div class="card-product-infos">
                     <p ><strong></strong><%= product.title %></p>
+                    <%= product.row_order %>
                   </div>
                 </div>
               </li>
