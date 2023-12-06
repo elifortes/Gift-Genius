@@ -18,7 +18,11 @@ class ProductsController < ApplicationController
     @recipient = User.find(@recipient_id).personnal.to_json
     @gift = Product.all.last.title.to_json
 
+   
+
+
     # "Hello, we have this a gift#{@gift} ,for this person #{@recipient}, do you think he/she will love it, can you rate on the scale from 1 to 10 ? "
+
 
     if !@product.info
       @suggestion = "We are creating a occasion for to give a gift #{@gift}, for this person #{@recipient}, based on this information #{@sex}, #{@picture} and #{@profile}, rate the scale from 1 to 10
