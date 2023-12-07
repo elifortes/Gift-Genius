@@ -1,9 +1,10 @@
 <div class="py-4" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="p-2">
     <div class="card-trip p-2 mb-2">
-      <h3>Congratulation GiftGenius has accepted your request.🥳</h3>
+      <h3>Congrats GiftGenius has accepted your request.</h3>
     </div>
     <!-- Notifications / Open space area -->
+    <br>
     <% myoccasion=Myoccasion.find(params[:myoccasion_id]) %>
     <div class="card-trip border-0 ">
        <% if Gift.find(myoccasion.gift).title != "" %>
@@ -12,12 +13,13 @@
       <%= image_tag "occasion/Anniversary.jpg", alt: "",class: "image" %>
       <% end %>
       <!--Link to Group members -->
+
       <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
         <i class="fa-solid fas fa-users"></i>
         <span></span>
       <% end %>
       <!--Link to Questions --><%# myoccasion.id %>
-      <% myoccasion.occasions.each do |o| %>
+      <!--<% myoccasion.occasions.each do |o| %>
         <% if o.user_id == current_user.id %>
           <% if  !o.status %>
             <%# o.id %>  <%# o.question.id %>
@@ -26,7 +28,7 @@
               <span></span>
             <% end %>
           <% end %>       <% end %>
-      <% end %>
+      <% end %> -->
       <!--Link to Gift -->
       <% myoccasion.occasions.each do |o| %>
         <% if o.user_id == current_user.id %>
@@ -48,15 +50,20 @@
       </div>
     </div>
   </div>
+  <br>
   <!-- Notifications / Open space area -->
   <div class="card-trip p-2 mt-4">
-    <h4>Please provide us some information about <%= recipient.name %></h4>
+    <h4>Please provide us some information about <%= recipient.name %>!</h4>
     <ul class="btn-group list-group">
       <% myoccasion.occasions.each do |o| %>
         <% if o.user_id == current_user.id %>
-          <%# o.id %>  <%# o.question.id %>
-          <li class="list-group-item p-0  my-4">
-            <%= link_to  "Questionnaire",edit_occasion_question_path(o,o.question) ,class: " w-100 btn btn-outline-primary"  %>
+        <br>
+        <br>
+
+           <%# o.id %>  <%# o.question.id %>
+          <%# <li class="list-group-item p-0  my-4"> %>
+          <div class="btn-group btn-gradient">
+            <%= link_to  "Questionnaire",edit_occasion_question_path(o,o.question) ,class: " "  %>
           </li>
         <% end %>
       <% end %>

@@ -1,27 +1,33 @@
 <div class="py-4" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="p-2">
-    <div class="card-trip p-2 mb-2">
-      <h4>Organize a gift for this unique Occasion!</h4>
+    <div class="card-trip1 p-2 mb-2">
+      <h4 class="centered-text">Ready, Set, Gift!<br> Dial up the joy for this occasion!</h4></div>
     </div>
     <!-- card separation -->
-    <div class="card-product my-4 " style="border-radius:10px">
-      <% if @myoccasion.photo.present? %>
-        <%# cl_image_tag @myoccasion.photo.key, height: 90, width: 90, crop: :fill,  class: ""%>
-      <% elsif User.find(@myoccasion.recipient).personnal.info['picture'] %>
-        <%= image_tag  User.find(@myoccasion.recipient).personnal.info['picture'], height: 90, width: 90, class: "" %>
-      <% else %>
-        <%= image_tag 'profile_default.png', height: 90, width: 90, class: " avatar-square" %>
-      <% end %>
-      <div class="card-product-infos">
-        <p></p>
-        <h3><strong>   <%=  User.find(@myoccasion.recipient).personnal.name %></strong></h3>
-      </div>
+
+
+    <%# <div class="card-product my-4 "> %>
+ <div class="card-trip1 p-2 mb-2">
+  <div class="card-product-infos d-flex align-items-center justify-content-start">
+    <% if @myoccasion.photo.present? %>
+      <%# cl_image_tag @myoccasion.photo.key, height: 90, width: 90, crop: :fill,  class: "rounded-avatar2"%>
+    <% elsif User.find(@myoccasion.recipient).personnal.info['picture'] %>
+      <%= image_tag User.find(@myoccasion.recipient).personnal.info['picture'], height: 90, width: 90, class: "rounded-avatar2" %>
+    <% else %>
+      <%= image_tag 'profile_default.png', height: 90, width: 90, class: "rounded-avatar2" %>
+    <% end %>
+    <h3 class="ml-3">For: <strong> <%= User.find(@myoccasion.recipient).personnal.name %> </strong></h3>
+  </div>
+</div>
+
     </div>
     <!--end notification avatar -->
     <div class="card-trip my-4 p-2">
       <div class="">
         <%= simple_form_for [@myoccasion,@gift] do |f| %>
           <%= f.input :title, collection: Gift.occasions.keys, prompt: 'Select an Occasion'%>
+          <br>
+
           <%= f.input :price, as: :hidden, input_html: { id: "gift_price" } %>
           <div class="price-range-container my-2" data-controller="custom-range">
             <span data-custom-range-target="minPrice">0</span>
@@ -43,6 +49,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      color: #000000;
+
     }
 
     .price-value {
