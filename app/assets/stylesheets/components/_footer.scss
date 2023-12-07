@@ -1,62 +1,41 @@
-// .footer {
-//   background: $background;
-//   background-color: $blue ;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   height: 40px;
-//   padding: 0px -10px;
-//   color: rgba(0, 0, 0, 0.3);
-// }
-
-// .footer-links {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .footer-links a {
-//   color: black;
-//   opacity: 0.15;
-//   text-decoration: none;
-//   font-size: 24px;
-//   padding: 0px 10px;
-// }
-
-// .footer-links a:hover {
-//   opacity: 1;
-// }
-
-// .footer .fa-heart {
-//   color: #D23333;
-// }
-
 .footer {
-  background-color: $background;  /* Dark background for contrast */
-  padding: 15px 0;         /* Vertical padding */
-  text-align: center;      /* Center alignment */
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+  padding: 0px 0px;
+
 }
+
 
 .footer-nav {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  gap: 30px;               /* Space between items */
+  justify-content: center;
+  /* Center items horizontally */
+  gap: 30px;
+  /* Space between items */
+  justify-content: space-between;
 }
 
 .footer-item {
-  color: #164863;            /* Light color for text and icons */
-  text-decoration: none;   /* Remove underline from links */
+  font-size: 24px;
+  /* Larger icon size */
+  margin-bottom: 4px;
+  /* Space between icon and text */
+  color: #164863;
+  /* Light color for text and icons */
+  text-decoration: none;
+  /* Remove underline from links */
   display: flex;
-  flex-direction: column;  /* Stack icon and text vertically */
-  align-items: center;     /* Center align items */
-}
-
-.footer-item i {
-  font-size: 24px;         /* Larger icon size */
-  margin-bottom: 4px;      /* Space between icon and text */
+  flex-direction: column;
+  /* Stack icon and text vertically */
+  align-items: center;
+  /* Center align items */
 }
 
 .footer-item span {
-  font-size: 14px;         /* Text size */
+  font-size: 14px;
+  /* Text size */
 }
 
 .align-bell {
@@ -64,6 +43,23 @@
 }
 
 
-// .fa-bell {
-//   margin-bottom: 1px;
-// }
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer .fa-heart {
+  color: #D23333;
+}

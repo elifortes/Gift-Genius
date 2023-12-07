@@ -1,20 +1,6 @@
-<footer class="footer" style="  display: flex;
+<footer class="footer" style=" display: flex;
   justify-content: space-around;">
-  <nav class="footer-nav mx-3">
-
-<% if @notify_user %>
-<script type="text/javascript">
-    document.addEventListener('turbolinks:load', () => {
-        // Assuming `alert` is the correct controller name
-        const notificationElement = document.querySelector('[data-controller="alert"]');
-        if (notificationElement) {
-            notificationElement.dispatchEvent(new Event('click'));
-        }
-    });
-</script>
-<% end %>
-
-
+  <nav class="footer-nav">
     <%= link_to root_path, class: 'footer-item' do %>
       <i class="fa-solid fa-house-chimney"></i>
       <span>Home</span>
@@ -25,7 +11,15 @@
     <% end %>
   </nav>
 </footer>
-
-
-<footer>
-  <nav>
+<nav>
+  <% if @notify_user %>
+    <script type="text/javascript">
+      document.addEventListener('turbolinks:load', () => {
+          // Assuming `alert` is the correct controller name
+          const notificationElement = document.querySelector('[data-controller="alert"]');
+          if (notificationElement) {
+              notificationElement.dispatchEvent(new Event('click'));
+          }
+      });
+    </script>
+  <% end %>
