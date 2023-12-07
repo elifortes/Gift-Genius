@@ -1,14 +1,3 @@
-// figma colors
-$c01: #244861;
-$c02: #507C9A;
-$c03: #4aaae2;
-$c04: #7a8b8b;
-$c05: #566b7b;
-$c06: #F7DDAF;
-$c07: #F2A59E;
-$c08: #BB3261;
-
-
 $background: #0a2335;
 
 
@@ -20,7 +9,6 @@ html {
 }
 
 body {
-
   position: relative;
   top: 0;
   left: 0;
@@ -29,7 +17,8 @@ body {
   margin: 0 auto;
   overflow: auto;
   color: gray;
-  background: linear-gradient(#164863, #427D9D, #9BBEC8, #DDF2FD);
+  background: linear-gradient(#427D9D, #9BBEC8, #DDF2FD);
+  //background: linear-gradient(to bottom, #FF9BB3 0%, #FFC0A9 50%);
   overflow: hidden;
   /* Hide scrollbars */
 }
@@ -39,13 +28,6 @@ body {
   text-shadow: 4px 4px 4px white;
 }
 
-.background-img {
-  background-image: url(https://res.cloudinary.com/df2nxg5o2/image/upload/v1701529292/orygnf7b2ifxeaq9x8ue.png);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 a {

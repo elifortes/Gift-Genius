@@ -195,7 +195,7 @@ class QuestionsController < ApplicationController
     answer_values.each do |answer|
       filepath = "#{answer}.json"
       responses = %w[ Action.json Beach.json Amazon%20Echo.json Beach.json Biography.json Camping%20Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical%20Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
-      responses.include?(filepath) ? filepath : responses.sample
+      filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
       results = JSON.parse(serialized_beatles)

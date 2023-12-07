@@ -1,0 +1,403 @@
+//font for gift genius
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+
+
+// figma colors
+$c01: #0D3450;
+$c02: #0D3450;
+$c03: #32728A;
+$c04: #7DA9AF;
+$c05: #798187;
+$c06: #FFE3BB;
+$c07: #FEB99E;
+$c08: #FDAD9D;
+$gradiant-blue: linear-gradient(180deg, #558BA1 0%, #E9E4C9 100%);
+$gradiant-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #32728A 0%, #FE878D 100%);
+$gradiant-pink: linear-gradient(90deg, #F67C7B 3.35%, #FFC1A4 51.96%);
+$grandiant-blue: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
+$gradiant-green: linear-gradient(185deg, #FDEAC0 -8.78%, #4E8AA1 96.15%);
+
+
+.btn-gradiant-dark {
+  border-radius: 1.5625rem;
+  background: linear-gradient(185deg, #4D8B9F -8.78%, #0B2B46 96.15%);
+}
+
+.btn-gradiant-pink {
+  border-radius: 1.5625rem;
+  background: linear-gradient(90deg, #F67C7B 3.35%, #FFC1A4 51.96%);
+}
+
+.btn-grandiant-blue {
+  border-radius: 1.5625rem;
+  background: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
+}
+
+.btn-gradiant-green {
+  border-radius: 1.5625rem;
+  background: linear-gradient(185deg, #FDEAC0 -8.78%, #4E8AA1 96.15%);
+}
+
+
+
+/// logo on home page ///
+
+
+.logo-giftgenius {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $c01 ;
+  text-shadow: 2px 2px 6px $c07 ;
+  margin-left: -1em;
+
+}
+
+.logo-shadow {
+
+  box-shadow: 4px 4px 8px $c02;
+}
+
+
+// footer
+
+.cube {
+  padding: 2px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  background: $gradiant-green;
+  font-size: 1.2em;
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: white;
+  text-shadow: 2px 2px 4px $c06;
+  box-shadow: 1px 1px 8px $c04;
+
+}
+
+// avatar big on screen
+
+.avatar-bordered2 {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  /* Adjust width as needed for the size of the avatar */
+  height: 120px;
+  /* Make height equal to width for a perfect circle */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px $c07;
+  /* This shadow gives a nice depth effect */
+  border: 5px solid $c03;
+  /* Adjust border thickness and color as needed */
+  object-fit: cover;
+  /* This will make sure the image covers the area without stretching */
+  overflow: hidden;
+  /* Ensures the image stays within the border radius */
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  height: 80%;
+  /* Adjust as needed */
+
+}
+
+.welcome-container {
+  color: white;
+  text-shadow: $c08;
+  font-weight: 800;
+  position: absolute;
+  top: 100px;
+  box-shadow: 0 4px 8px $c06;
+  background-color: $c04;
+  width: 140px;
+  align-items: center;
+  border: 5px solid $c03;
+  /* Or any color you’d like */
+  border-radius: 45px;
+  /* Adjust this value to increase or decrease the roundness */
+  padding: 5px 20px;
+  /* Adjust for spacing inside the container */
+  width: fit-content;
+  /* This will make sure the container fits the content */
+  margin: auto;
+  /* This will center the container if it’s a block-level element */
+  /* Other styles for text, etc. */
+  font-size: .8em;
+  /* Example text styling */
+  text-align: center;
+  /* Example text styling */
+}
+
+//********************* */ cards on home page
+
+.card-trip-home {
+  border: 3px solid $c04;
+  margin: 10px 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px $c06;
+}
+
+.card-trip-home>img {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.card-trip-home.card-trip-half {
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px $c06;
+}
+
+.card-trip-home.card-trip-half>img {
+  position: relative;
+  height: 65px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip-home h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip-home p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip-home .card-trip-infos {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.cards-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+
+
+
+
+///***************icons colors on home */
+.icon-trip-group {
+  color: white;
+  text-shadow: 2px 2px 5px coral;
+  position: absolute;
+  font-size: 2em;
+  left: 20px;
+}
+
+
+.icon-trip-question {
+  color: white;
+  text-shadow: 2px 2px 5px $c04;
+  position: absolute;
+  font-size: 2em;
+  left: 24px;
+  padding-top: 50px;
+}
+
+.icon-trip-gift {
+  color: white;
+  text-shadow: 2px 2px 5px $c08;
+  position: absolute;
+  font-size: 2em;
+  right: 24px;
+
+}
+
+
+.icon-trip-home.product-img>img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-img {
+  height: 80%;
+  overflow: hidden;
+}
+
+
+.icon-trip-question-half {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 5px $c04;
+  font-size: 2em;
+  top: 0px;
+  left: 12px;
+}
+
+.icon-trip-gift-half {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 5px $c06;
+  font-size: 2em;
+  top: 0px;
+  right: 10px;
+}
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+///
+
+
+
+/////////////*************************** */
+
+
+
+
+.py-4 {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url('your-image-path.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Card Styling */
+.card-trip {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 2rem;
+}
+
+/* Button Styling */
+.btn-gradient {
+  background: linear-gradient(to right, #FF758C 0%, #FF7EB3 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to left, #FF758C 0%, #FF7EB3 100%);
+}
+
+/* Avatar Styling */
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url('your-avatar-path.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.avatar-round {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: url('your-avatar-path.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Badge Styling */
+.badge {
+  background: #FF758C;
+  color: white;
+  border-radius: 15px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Contact list with checkboxes */
+.checkbox-group .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-group .form-check input {
+  margin-right: 0.5rem;
+}
+
+/* H4 inside icon-and-label */
+.icon-and-label h4 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.icon-and-label i {
+  margin-right: 0.5rem;
+}

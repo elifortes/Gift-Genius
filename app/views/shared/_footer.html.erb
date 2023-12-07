@@ -2,12 +2,12 @@
   justify-content: space-around;">
   <nav class="footer-nav">
     <%= link_to root_path, class: 'footer-item' do %>
-      <i class="fa-solid fa-house-chimney"></i>
-      <span>Home</span>
+      <div class="cube">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span>Home</span></div>
     <% end %>
     <%= link_to myoccasions_new_path, class: 'footer-item' do %>
-      <i class="fa-solid fa-user-plus"></i>
-      <span>Organise Gift</span>
+      <div class="cube"> <i class="fa-solid fa-user-plus"></i> <span>Organise Gift</span></div>
     <% end %>
   </nav>
 </footer>
