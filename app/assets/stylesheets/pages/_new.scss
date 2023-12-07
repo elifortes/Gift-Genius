@@ -1,17 +1,169 @@
-// .form-check {
-//   display: block;
-//   min-height: 1.5rem;
-//   padding-left: 1.5em;
-//   margin-bottom: 0.125rem;
+// .rounded-avatar2 {
+//   border-radius: 50%;
+//   box-shadow: 0px 4px 8px #F78CA2;
+//   /* make sure width and height are equal for a perfect circle */
+//   width: 90px;
+//   height: 90px;
+//   object-fit: cover;
+// }
+
+// .card-product-infos {
+//   display: flex;
+//   align-items: center; /* This will vertically center the items */
+//   justify-content: start; /* This will align items to the start of the container */
+// }
+
+// .card-product-infos h3 {
+//   margin-left: 10px; /* Adjust spacing between the avatar and name as needed */
+//   /* if you want the name to be centered relative to the avatar vertically */
+//   display: flex;
+//   align-items: center;
+//   height: 90px; /* match the avatar height for vertical centering */
+// }
+
+// .card-trip1 {
+//   border: 2px solid goldenrod;
+//   border-radius: 50px;
+//   overflow: hidden;
+//   background: rgb(255, 255, 255);
+//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//   display: flex; /* Added for flexbox layout */
+//   align-items: center; /* Added to align children vertically */
+//   padding-left: 10px; /* Added space for the inside content */
+// }
+
+// .h3, h4{
+
+//   font-family: 'Josefin Sans';
+// }
+
+// body {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   height: 852px;
+//   max-width: 393px;
+//   margin: 0 auto;
+//   overflow: auto;
+//   /* color: gray; */
+//   background: linear-gradient(#164863, #427D9D, #9BBEC8, #DDF2FD);
+//   overflow: hidden;
 // }
 
 
-// .rounded-name {
-//   border: 1px solid #ccc; /* Light grey border */
-//   border-radius: 15px; /* This will give you rounded corners */
-//   padding: 5px 10px; /* Top/bottom padding of 5px, left/right padding of 10px */
-//   margin-bottom: 5px; /* Adds space between the list items */
-//   display: block; /* Makes sure the li takes the full width available */
-//   width: fit-content; /* Ensures the width is just enough for the content plus padding */
-//   box-sizing: border-box; /* Includes padding and border in the width */
+
+// .centered-text {
+//   text-align: center;
+//   /* font-weight: bold; */
+
+//   color: #000000;
 // }
+
+
+
+
+
+// CONFIRMATION PART
+
+body {
+
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 852px;
+  max-width: 393px;
+  margin: 0 auto;
+  overflow: auto;
+  color: rgb(4, 4, 4);
+  background: linear-gradient(#363062, #4D4C7D, #827397, #E9D5CA);
+  overflow: hidden;
+  /* Hide scrollbars */
+}
+
+
+
+
+.centered-text {
+  text-align: center;
+  /* font-weight: bold; */
+
+  color: #000000;
+}
+
+
+.avatar-square {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px #F78CA2;
+  border: white 2px solid;
+}
+
+
+
+.list-group-item {
+  /* position: relative; */
+  /* display: block; */
+  /* padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x); */
+  /* color: var(--bs-list-group-color); */
+  /* text-decoration: none; */
+  /* background-color: var(--bs-list-group-bg); */
+  /* border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color); */
+}
+
+
+.btn {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  /* border: var(--bs-btn-border-width) solid var(--bs-btn-border-color); */
+  border-radius: 50px;
+  background-color: blue($color: #000000);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.btn-gradient {
+  background: linear-gradient(to right, #FEA1A1 0%, #ff7eb3 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-group > .btn:nth-child(n + 3), .btn-group > :not(.btn-check) + .btn, .btn-group > .btn-group:not(:first-child) > .btn {
+  /* border-top-left-radius: 0; */
+  /* border-bottom-left-radius: 0; */
+}
