@@ -37,7 +37,7 @@ class PagesController < ApplicationController
 
 
 
-    @notify_user = current_user&.personnal&.notifications
+    # @notify_user = current_user&.personnal&.notifications
 
 
     #@notify_user = current_user&.notification
