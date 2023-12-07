@@ -106,7 +106,8 @@ a {
 
 //avatar on the main page
 .avatar-bordered2 {
-
+  justify-content: center;
+  align-items: center;
   width: 120px;
   /* Adjust width as needed for the size of the avatar */
   height: 120px;
@@ -136,10 +137,11 @@ a {
 
 .welcome-container {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 120px;
   position: absolute;
   left: 40px;
   bottom: -20px;
-  justify-content: end;
+  align-items: center;
   border: 3px solid goldenrod;
   background-color: white;
   /* Or any color you’d like */
@@ -157,4 +159,3 @@ a {
   text-align: center;
   /* Example text styling */
 }
->>>>>>> main
