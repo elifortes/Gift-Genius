@@ -4,6 +4,7 @@
       <h2 class="text-center">Group List</h2>
       <div class="h-50 overflow-auto" style="height:300px">
         <div data-controller="your-controller-name">
+
           <%= simple_form_for @myoccasion do |f| %>
             <%= f.input :recipient, collection: @mycontacts, input_html: { class: 'form-control mb-2' } %>
             <%# f.input :photo, as: :file, input_html: { class: 'form-control mb-2' } %>
