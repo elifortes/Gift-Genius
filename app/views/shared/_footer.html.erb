@@ -2,12 +2,18 @@
   justify-content: space-around;">
   <nav class="footer-nav mx-3">
 
-    <% if @notify_user %>
-    <div data-controller="alert" data-action="click->alert#showNotification" data-alert-uid-value="<%= current_user.id %>">
-      <i class="fa-solid fa-bell fa-shake fa-2xl" style="color: #164863"></i>
-             <span>Notification</span> </div>
-
+<% if @notify_user %>
+<script type="text/javascript">
+    document.addEventListener('turbolinks:load', () => {
+        // Assuming `alert` is the correct controller name
+        const notificationElement = document.querySelector('[data-controller="alert"]');
+        if (notificationElement) {
+            notificationElement.dispatchEvent(new Event('click'));
+        }
+    });
+</script>
 <% end %>
+
 
     <%= link_to root_path, class: 'footer-item' do %>
       <i class="fa-solid fa-house-chimney"></i>
@@ -19,3 +25,7 @@
     <% end %>
   </nav>
 </footer>
+
+
+<footer>
+  <nav>
