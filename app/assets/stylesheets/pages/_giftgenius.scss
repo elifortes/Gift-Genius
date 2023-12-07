@@ -124,6 +124,115 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 
+// Proposal 
+
+.card-product-proposal {
+  overflow: hidden;
+  height: 120px;
+  background: $gradiant-light;
+
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 15px $c04;
+  display: flex;
+  align-items: center;
+}
+
+/* line 39, app/assets/stylesheets/components/_card.scss */
+.card-product-proposal img {
+  height: 100%;
+  width: 140px;
+  object-fit: cover;
+
+
+}
+
+/* line 47, app/assets/stylesheets/components/_card.scss */
+
+
+/* line 54, app/assets/stylesheets/components/_card.scss */
+.card-product-proposal h2,
+.card-product-proposal .h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.list-group-proposal {
+  background: none;
+
+}
+
+.position-indicator {
+  font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  box-shadow: 1px 1px 15px $c04;
+  top: 15px;
+  left: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  /* Adjust as needed */
+  padding: 0.25em 0.6em;
+  font-size: 1.3em;
+  /* Adjust as needed */
+  font-weight: bold;
+  color: #fff;
+  /* White text */
+  background-color: $c07;
+  /* Blue background or any color you prefer */
+  border-radius: 50%;
+  /* Circular badge */
+  width: 30px;
+  /* Fixed width */
+  height: 30px;
+  /* Fixed height */
+  text-align: center;
+}
+
+
+.user-indicator {
+  font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  /* Adjust as needed */
+  padding: 0.1em 0.1em;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 2px 1px 2px $c01;
+  /* White text */
+  background-color: $c02;
+  box-shadow: 1px 1px 15px $c04;
+  box-shadow: 0 0 15px $c07;
+  /* Blue background or any color you prefer */
+  border-radius: 12px;
+  /* Circular badge */
+  /* Fixed width */
+  /* Fixed height */
+  text-align: center;
+}
+
+/* line 60, app/assets/stylesheets/components/_card.scss */
+.card-product-proposal p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+/* line 68, app/assets/stylesheets/components/_card.scss */
+.card-product-proposal .card-product-proposal-infos {
+  padding: 16px;
+}
+
+
+
 /// logo on home page ///
 
 .welcome {
@@ -139,13 +248,14 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   color: white;
   text-shadow: 4px 4px 14px $c08 ;
   margin-left: -1em;
-
 }
 
 .logo-shadow {
 
   box-shadow: 4px 4px 8px $c02;
 }
+
+
 
 
 // footer
@@ -273,7 +383,13 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   /* Example text styling */
 }
 
+.proposal-text {
+  font-family: 'Kaushan Script', cursive;
+  columns: $c01;
+  //  text-shadow: 2px 2px 4px $c06;
+  font-size: 1.6em;
 
+}
 
 //********************* */ cards on home page
 
@@ -346,7 +462,21 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 
+.card-trip-product {
+  border: 3px solid $c04;
+  margin: 10px 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px $c06;
+}
 
+.card-trip-product>img {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 
