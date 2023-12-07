@@ -50,28 +50,28 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.text "favorites"
-    t.text "hobbies"
-    t.text "movies"
-    t.text "music"
-    t.text "books"
-    t.text "restaurant"
-    t.text "activities"
-    t.text "channels"
-    t.text "contents", array: true
-    t.text "brands", array: true
-    t.text "places", array: true
-    t.text "socials", array: true
-    t.text "onlines", array: true
-    t.text "purchases", array: true
-    t.text "communications", array: true
-    t.text "apps", array: true
-    t.text "websites", array: true
-    t.text "locations", array: true
-    t.text "devices", array: true
-    t.text "softwares", array: true
-    t.text "games", array: true
-    t.text "platforms", array: true
+    t.jsonb "favorites"
+    t.string "hobbies"
+    t.string "movies"
+    t.string "music"
+    t.string "books"
+    t.string "restaurant"
+    t.string "activities"
+    t.string "channels"
+    t.string "contents"
+    t.string "brands"
+    t.string "places"
+    t.string "socials"
+    t.string "onlines"
+    t.string "purchases"
+    t.string "communications"
+    t.string "apps"
+    t.string "websites"
+    t.string "locations"
+    t.string "devices"
+    t.string "softwares"
+    t.string "games"
+    t.string "platforms"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.decimal "pledge_amount"
@@ -90,7 +90,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.jsonb "div"
     t.integer "price"
     t.string "occasion"
-    t.string "title"
+    t.string "title", null: false
     t.text "categories"
     t.string "name"
     t.datetime "created_at", null: false
@@ -165,7 +165,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "row_order"
     t.index ["myoccasion_id"], name: "index_proposals_on_myoccasion_id"
     t.index ["occasion_id"], name: "index_proposals_on_occasion_id"
   end
@@ -177,7 +176,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.text "favorites"
+    t.jsonb "favorites"
     t.text "hobbies", array: true
     t.text "activities", array: true
     t.text "movies", array: true
@@ -221,7 +220,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "notification"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

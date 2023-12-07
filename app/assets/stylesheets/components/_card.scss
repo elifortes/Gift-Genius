@@ -70,19 +70,7 @@
 }
 
 
-
 .card-trip {
-  border: 2px solid goldenrod;
-  margin: 10px 0px;
-  border-radius: 20px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-trip.card-trip-half {
-  border-radius: 20px;
-  position: relative;
   margin: 10px 0px;
   border-radius: 10px;
   overflow: hidden;
@@ -90,23 +78,14 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-// .card-trip {
-//   margin: 10px 0px;
-//   border-radius: 10px;
-//   overflow: hidden;
-//   background: white;
-//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-// }
-
-// .card-trip.card-trip-half {
-//   position: relative;
-//   margin: 10px 0px;
-//   border-radius: 10px;
-//   overflow: hidden;
-//   background: white;
-//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-// }
-
+.card-trip.card-trip-half {
+  position: relative;
+  margin: 10px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
 
 
