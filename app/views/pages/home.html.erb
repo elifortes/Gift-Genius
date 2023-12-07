@@ -1,4 +1,5 @@
 <!-- New home page -->
+
 <div class="p-1" style="height:vh-100;background-image: linear-gradient(rg), rgba(124,123,0,1)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
   <div class="card border-0 m-0"style="z-index: 1;">
     <%# <h2 class="">Gift Genius</h2> %>
@@ -53,6 +54,7 @@
                   <% end %>
                   <span></span>
                 <% end %>
+
               <% end %>
             <% end %>
             <!--Link to Gift -->
@@ -103,6 +105,7 @@
               <% end %>
               <span></span>
             <% end %>
+
             <!--Link to Gift -->
             <%= link_to proposal_path(occasion.proposal.id) , class: 'card-trip-gift-half' do
                                             %>
@@ -123,6 +126,21 @@
                 <% if Gift.find(occasion.gift).title %>
                   <%= Gift.find(occasion.gift).title %> for <%= recipient.personnal.name %></>
               <% end %>
+
+            <!-- My occasion info-->
+            <div class="card-trip-infos">
+              <div>
+                <h2 style="text-align: left;font-size:1em">Member of:
+                </h2>
+                <div style="text-align: left;font-size:.9em">
+                  <% recipient=User.includes(:personnal).find(occasion.recipient) %>
+                  <% if Gift.find(occasion.gift).title %>
+                    <%= recipient.personnal.name %>' <%= Gift.find(occasion.gift).title %>  </>
+                <% end %>
+              </div>
+              <% recipient=User.includes(:personnal).find(occasion.recipient) %>
+              <%= image_tag recipient.personnal.info['picture'], alt: "" ,class: "card-trip-user avatar-square" %>
+
             </div>
             <% recipient=User.includes(:personnal).find(occasion.recipient) %>
             <%= image_tag recipient.personnal.info['picture'], alt: "" ,class: "card-trip-user avatar-square" %>

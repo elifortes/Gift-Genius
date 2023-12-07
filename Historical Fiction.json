@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 48,
+  "totalPages": 3,
+  "queryTime": "0.322",
+  "totalTime": "0.336",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Historical+Fiction\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Dracula: Fiction and Reality",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f794ae05-de91-4906-8a10-472ef36b9fbc.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/f794ae05-de91-4906-8a10-472ef36b9fbc.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Dr. Martin Luther King, Jr.: A Historical Perspective [1994]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/37ffef86-186d-4875-83f8-0157faf92069.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/37ffef86-186d-4875-83f8-0157faf92069.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Science-less Fiction",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ba96cdd8-3c7d-44bd-a131-29e41146be28.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/ba96cdd8-3c7d-44bd-a131-29e41146be28.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Yesterday Machine/Destination Space: Lost Science Fiction Double Feature [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Masters of Science Fiction: The Complete Series [2 Discs] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8911/8911822_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8911/8911822_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Non-Fiction [12 inch Vinyl Single]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1814/18140174_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1814/18140174_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Pulp Fiction [2 Discs] [DVD] [1994]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426256_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426256_s.gif"
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "When You Are Close, I Am Gone [12 inch Vinyl Single]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2540/25408735_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2540/25408735_s.gif"
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3506/35065996_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3506/35065996_s.gif"
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Pulp Fiction [Blu-ray] [1994]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423449_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423449_s.gif"
+    },
+    {
+      "regularPrice": 16.99,
+      "shortDescription": null,
+      "name": "Fan Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3445/34454415_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3445/34454415_s.gif"
+    },
+    {
+      "regularPrice": 17.99,
+      "shortDescription": null,
+      "name": "5 Pointz: An Historical Journey",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/63ff7e07-ab3e-4b41-a0c8-5eebf8a77141.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/63ff7e07-ab3e-4b41-a0c8-5eebf8a77141.jpg"
+    },
+    {
+      "regularPrice": 17.99,
+      "shortDescription": null,
+      "name": "Paranoid Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3442/34424805_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3442/34424805_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "This Is Hope [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b02b0b97-8d23-4852-a818-8a0016b01853.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/b02b0b97-8d23-4852-a818-8a0016b01853.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Fictions: Made to Measure, Vol. 47 [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/34008bf7-e02c-4c11-b57f-61d86d1692e6.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/34008bf7-e02c-4c11-b57f-61d86d1692e6.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Actual Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2225/22252254_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2225/22252254_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Non Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3527/35277547_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3527/35277547_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Fictional Portrayals [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1e152449-6720-43ff-b19b-c945a128db2f.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1e152449-6720-43ff-b19b-c945a128db2f.jpg"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Science Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3409/34093305_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3409/34093305_s.gif"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Gimme Fiction [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3518/35181386_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3518/35181386_s.gif"
+    }
+  ]
+}

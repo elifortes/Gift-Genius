@@ -128,10 +128,15 @@ class QuestionsController < ApplicationController
     if @answer.save
       @answers = @answer_values.select { |a| a.size > 1 }
 
-      scraped_products = gift_scraper(@answers)
+     # @scraped_products = gift_scraper(@answers)
+     @scraped_products = backup_scrapper(@answers)
+
+      # if @scraped_products.empty?
+      #   @scraped_products = backup_scrapper(@answers)
+      # end
 
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
-      scraped_products.each do |product_data|
+      @scraped_products.each do |product_data|
         product = Product.new(
           title: product_data[:name],
           price: product_data[:price],
@@ -157,22 +162,56 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
+
   def gift_scraper(answer_values)
     scraped_products = []
-    answer_values.sample(2).each do |answer|
+
+    answer_values.each do |answer|
+      encoded_answer = answer.gsub(" ", "%20")
       url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
       url_serialized = URI.open(url).read
       results = JSON.parse(url_serialized)
-
+    #   File.open("results_#{Date.today}_#{ans}.json", "w") do |f|
+    #   f.write(results.to_json)
+    # end
       if results["total"] > 0
         p result = results["products"].first
-        scraped_products << {
-          name: result["name"],
-          price: result["regularPrice"],
-          image_url: result["image"],
-        }
+        if regularPrice <= @occasion.answer.pledge_amount
+          scraped_products << {
+            name: result["name"],
+            price: result["regularPrice"],
+            image_url: result["image"]
+          }
+        else
+          "No products found"
+        end
       end
     end
     scraped_products.uniq.compact
   end
+
+
+
+  def backup_scrapper(answer_values)
+    scraped_products = []
+    answer_values.each do |answer|
+      filepath = "#{answer}.json"
+      serialized_beatles = File.read(filepath)
+      results = JSON.parse(serialized_beatles)
+      if results["total"] > 0
+          result = results["products"].first
+        if result["regularPrice"].to_f <= @occasion.answer.pledge_amount
+          scraped_products << {
+            name: result["name"],
+            price: result["regularPrice"],
+            image_url: result["image"]
+          }
+        else
+          "No products found"
+        end
+      end
+    end
+    scraped_products.uniq.compact
+  end
+
 end

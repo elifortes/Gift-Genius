@@ -28,7 +28,7 @@
               <% if member_occasion&.status %>
                 <i class="fa-solid fa-clipboard-check" style="font-size:1.4em" title="Survey Completed"></i>DONE
               <% else %>
-                <i class="fa-regular fa-clipboard" style="font-size:1.4em"  title="Survey Pending"></i> NO
+                <i class="fa-regular fa-clipboard" style="font-size:1.4em"  title="Survey Pending"></i> Pending...
               <% end %>
               <!-- second icons sets-->
               <% u = User.find(g) %>
@@ -63,7 +63,7 @@
   <!-- end navigation buttons -->
 </div>
 
-<style>
+<%# <style>
   .tooltip-text {
   visibility: hidden;
   width: 120px;
@@ -82,4 +82,4 @@
 .fas:hover .tooltip-text {
   visibility: visible;
 }
-</style>
+</style> %>

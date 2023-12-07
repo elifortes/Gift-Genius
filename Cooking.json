@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 219,
+  "totalPages": 11,
+  "queryTime": "0.093",
+  "totalTime": "0.118",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Cooking\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Butterbean's Café: Let's Get Cooking! [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3483/34831836_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3483/34831836_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Pit Boss - 3-in I Burger Press - Silver",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6484/6484502_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6484/6484502_rd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Sesame Street: C Is for Cooking [2013]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/346c991c-02cd-4e73-9403-7aef00c9de40.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/346c991c-02cd-4e73-9403-7aef00c9de40.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Blackstone - 2-Pack 32oz Plastic Squeeze Bottles with Lockable Tops for Cooking Liquids - Clear",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6474/6474160cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "What's Cooking? [DVD] [2000]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6913/6913147_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6913/6913147_s.gif"
+    },
+    {
+      "regularPrice": 10.0,
+      "shortDescription": null,
+      "name": "DCS by Fisher & Paykel - Grease Management System Trough Scraper - Brown",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4909/4909632_ra.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/4909/4909632_ra.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Pit Boss - Marinade Injector - Silver",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6484/6484479_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6484/6484479_rd.jpg"
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Pit Boss - Meat Claws - Silver",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484499ld.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Pit Boss - All-In-One Tool - Silver",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484518ld.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 16.99,
+      "shortDescription": null,
+      "name": "Weber - BBQ Apron - Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6445/6445330_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6445/6445330_rd.jpg"
+    },
+    {
+      "regularPrice": 17.99,
+      "shortDescription": null,
+      "name": "Pit Boss - Ultimate Griddle Spatulas - Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6522/6522113_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6522/6522113_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Imusa - 8-Inch Painted Tortilla Press - Silver",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5375/5375203_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5375/5375203_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Traeger Grills - BBQ Mitt - Brown",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448225cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Kalorik - Mad Hungry Original 4-Piece Acacia Spurtle Set - Wood",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6471/6471655_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6471/6471655_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Pit Boss - Big Head Spatula - Silver",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484515ld.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Weber - Precision Grill Spatula - Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6489/6489718_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6489/6489718_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Cuisinart - Alfrescamore Pizza Spinners - Gray/Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504521_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504521_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "CRUX - Marshmello 6-pc. Shish Kebab Kit - Stainless Steel",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508208_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508208_rd.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Hallmark 3-Movie Collection: Sweet Autumn/Love On Harbor Island/Cooking with Love",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/47aa0296-34fc-470f-a297-56e97b045d5b.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/47aa0296-34fc-470f-a297-56e97b045d5b.jpg"
+    },
+    {
+      "regularPrice": 20.0,
+      "shortDescription": null,
+      "name": "Fisher & Paykel - Grill Multi-Tool - Brown/Silver",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6344/6344447_ra.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6344/6344447_ra.jpg"
+    }
+  ]
+}

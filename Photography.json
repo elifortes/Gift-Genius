@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 66,
+  "totalPages": 4,
+  "queryTime": "0.016",
+  "totalTime": "0.029",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Photography\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Sunpak - 6\" Heart-Shaped Rainbow Vlogging Kit",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452578_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6452/6452578_rd.jpg"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Directors of Photography [LP] [PA]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2543/25431839_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2543/25431839_s.gif"
+    },
+    {
+      "regularPrice": 24.99,
+      "shortDescription": null,
+      "name": "Platinum™ - 32\" Collapsible Light Reflector",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393448_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6393/6393448_rd.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Sunpak - 10\" Heart-Shaped Rainbow Vlogging Kit with Bluetooth Remote - Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6457/6457931_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6457/6457931_rd.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": "BOWER 55mm Variable Neutral-Density Filter: Compatible with most DSLR and SLR lenses with a 55mm filter thread; enables creative photography in bright outdoor conditions; up to 8-stop range",
+      "name": "Bower - 55mm Variable Neutral-Density Filter",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6800/6800163_ra.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6800/6800163_ra.jpg"
+    },
+    {
+      "regularPrice": 38.99,
+      "shortDescription": null,
+      "name": "Savage Universal - 5' x 7' Photo Backdrop - White",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353556_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353556_rd.jpg"
+    },
+    {
+      "regularPrice": 39.99,
+      "shortDescription": null,
+      "name": "Platinum™ - 5-in-1 42\" Collapsible Light Reflector",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393446_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6393/6393446_rd.jpg"
+    },
+    {
+      "regularPrice": 39.99,
+      "shortDescription": null,
+      "name": "Bower - 42-Inch Collapsible Light Reflector Kit",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557433_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6557/6557433_rd.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Pure White Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473524cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473524cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473525cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473525cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473526cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473526cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473528cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473528cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper - Mocha",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473529cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473529cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473530cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473530cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473532cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473532cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Bone Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473533cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473534cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473534cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473535cv13d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473535cv13d.jpg"
+    },
+    {
+      "regularPrice": 41.99,
+      "shortDescription": null,
+      "name": "Savage Universal - Seamless Background Paper",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473537cv13d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 49.99,
+      "shortDescription": null,
+      "name": "Sunpak - 12” Bi-Color Tabletop or Handheld Vlogging Kit with Bluetooth Remote for Smartphones and Compact Cameras - Black",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430959_rd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430959_rd.jpg"
+    }
+  ]
+}

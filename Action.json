@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 951,
+  "totalPages": 48,
+  "queryTime": "0.018",
+  "totalTime": "0.036",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Action\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 3.99,
+      "shortDescription": null,
+      "name": "Pokémon - Trading Card Game: Sword & Shield—Vivid Voltage Sleeved Booster",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437565_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6437/6437565_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Funko - POP! Keychain: Marvel Studios' Doctor Strange in the Multiverse of Madness - Sinister Strange",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504863_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504863_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Funko - POP! Keychain: Marvel Studios' Doctor Strange in the Multiverse of Madness - America Chavez",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504876_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504876_sd.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "TOMY - Kirby Mascots 2\" Blind Vinyl Figures",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6447/6447965_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6447/6447965_sd.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "TOMY - Kirby Plush Cuties",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540811_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540811_sd.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "TOMY - Mario Kart Pull Back Racers",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540812_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540812_sd.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Sid Meier's Covert Action Classic - Windows [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5956/5956900_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5956/5956900_sd.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Funko - Mystery Minis: The Nightmare Before Christmas - Blind Box",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6554/6554380_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6554/6554380_sd.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Funko - Mystery Minis: Demon Slayer - Blind Box",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558975_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558975_sd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "The Scorpion King: Action Pack [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Space Jam/Looney Tunes: Back in Action [2 Discs] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3132/31325368_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3132/31325368_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Funko - Premium POP Protector - Multi",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6228/6228308_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6228/6228308_sd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Funko - POP! Vinyl: G.I. Joe - Scarlett",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463025cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Funko - POP! Animation: Powerpuff Girls - Fuzzy Lumpkins",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480523cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.39,
+      "shortDescription": null,
+      "name": "Funko - POP! Marvel: Eternals- Ajak",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482171cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.49,
+      "shortDescription": null,
+      "name": "Jurassic World - Danger Pack Dinosaur Action Figure - Styles May Vary",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6530/6530161_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6530/6530161_sd.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Andy Griffith Action Double Feature [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Bandai - Demon Slayer Gashapon Suwarasetai Mini Figures",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540758_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540758_sd.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Bandai - Dragon Ball Versus Battle Figure Series",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540761_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540761_sd.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Jazwares - Pokemon Select - 3\" Metallic Figure - Charmander",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549982_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6549/6549982_sd.jpg"
+    }
+  ]
+}

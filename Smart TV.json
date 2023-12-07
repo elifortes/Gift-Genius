@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 13601,
+  "totalPages": 681,
+  "queryTime": "0.020",
+  "totalTime": "0.032",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Smart+TV\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "Apple - Free Apple TV+ for 3 months (new or qualified returning subscribers only)",
+      "name": "Apple - Free Apple TV+ for 3 months (new or qualified returning subscribers only)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6484/6484512cv11d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6484/6484512cv11d.jpg"
+    },
+    {
+      "regularPrice": 0.49,
+      "shortDescription": "Monthly Best Buy Protection (up to 24 mo.)",
+      "name": "Monthly Best Buy Protection (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420556_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420556_s.gif"
+    },
+    {
+      "regularPrice": 0.49,
+      "shortDescription": "Monthly Best Buy Protection Renewal",
+      "name": "BBY Protection - Monthly Best Buy Protection Renewal",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466083_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466083_s.gif"
+    },
+    {
+      "regularPrice": 1.0,
+      "shortDescription": null,
+      "name": "Total by Verizon - Keep Your Own Phone SIM Card Kit - Multi",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6554/6554830_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6554/6554830_sd.jpg"
+    },
+    {
+      "regularPrice": 1.0,
+      "shortDescription": null,
+      "name": "H2O Wireless - Smart SIM Starter Kit 3-in-1 SIM Card for Unlocked Phones",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6421/6421026_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6421/6421026_sd.jpg"
+    },
+    {
+      "regularPrice": 1.0,
+      "shortDescription": null,
+      "name": "H2O Wireless - Smart SIM Traveler Starter Kit 3-in-1 SIM Card for Unlocked Phones",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419068_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419068_sd.jpg"
+    },
+    {
+      "regularPrice": 1.49,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452475_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452475_s.gif"
+    },
+    {
+      "regularPrice": 1.49,
+      "shortDescription": "Monthly Best Buy Protection (up to 24 mo.)",
+      "name": "Monthly Best Buy Protection (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420557_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420557_s.gif"
+    },
+    {
+      "regularPrice": 1.49,
+      "shortDescription": "Monthly Best Buy Protection Renewal",
+      "name": "BBY Protection - Monthly Best Buy Protection Renewal",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466085_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466085_s.gif"
+    },
+    {
+      "regularPrice": 1.49,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452490_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452490_s.gif"
+    },
+    {
+      "regularPrice": 2.49,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452476_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452476_s.gif"
+    },
+    {
+      "regularPrice": 2.49,
+      "shortDescription": "Monthly Best Buy Protection (up to 24 mo.)",
+      "name": "Monthly Best Buy Protection (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420558_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420558_s.gif"
+    },
+    {
+      "regularPrice": 2.49,
+      "shortDescription": "Monthly Best Buy Protection Renewal",
+      "name": "BBY Protection - Monthly Best Buy Protection Renewal",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466086_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466086_s.gif"
+    },
+    {
+      "regularPrice": 2.49,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452491_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452491_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452477_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452477_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Best Buy Protection enhances the coverage of your manufacturer&#8217;s warranty and gives you extended coverage after your manufacturer&#8217;s warranty ends. During the coverage period, if your product has a covered failure that doesn&#8217;t fall under the manufacturer warranty, Best Buy will provide you with a repair, replacement or store credit.",
+      "name": "TV and Home Theater - Monthly Best Buy Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452479_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452479_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Monthly Best Buy Protection (up to 24 mo.)",
+      "name": "Monthly Best Buy Protection (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420559_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420559_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Monthly Best Buy Protection (up to 24 mo.)",
+      "name": "Monthly Best Buy Protection (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420560_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420560_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Monthly Best Buy Protection Renewal",
+      "name": "BBY Protection - Monthly Best Buy Protection Renewal",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466087_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466087_s.gif"
+    },
+    {
+      "regularPrice": 3.99,
+      "shortDescription": "Monthly Best Buy Protection Renewal",
+      "name": "BBY Protection - Monthly Best Buy Protection Renewal",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466088_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466088_s.gif"
+    }
+  ]
+}

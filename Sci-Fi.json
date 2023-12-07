@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 9329,
+  "totalPages": 467,
+  "queryTime": "0.019",
+  "totalTime": "0.036",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Sci\\-Fi\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "Apple - Free Apple Fitness+ for 2 months (new subscribers only)",
+      "name": "Apple - Free Apple Fitness+ for 2 months (new subscribers only)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6489/6489578cv11d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6489/6489578cv11d.jpg"
+    },
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "LifeLock - Standard Identity Theft Protection Individual Plan for 60 Days, auto-renews at $39.99 for first year",
+      "name": "LifeLock - Standard Identity Theft Protection Individual Plan for 60 Days, auto-renews at $39.99 for first year",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6536/6536547cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "LifeLock - Advantage Identity Theft Protection Individual Plan for 60 Days, auto-renews at $59.99 for first year",
+      "name": "LifeLock - Advantage Identity Theft Protection Individual Plan for 60 Days, auto-renews at $59.99 for first year",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6536/6536548cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "LifeLock - Ultimate Plus Identity Theft Protection Individual Plan for 60 Days, auto-renews at $99.99 for first year",
+      "name": "LifeLock - Ultimate Plus Identity Theft Protection Individual Plan for 60 Days, auto-renews at $99.99 for first year",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6536/6536549cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 0.0,
+      "shortDescription": "Keep your memories and files safe with 100GB of cloud storage from Google One. Enjoy the peace of mind of having extra cloud storage across Gmail, Google Drive, and Google Photos, plus seamless phone backup and advanced photo editing tools.",
+      "name": "3 months of Google One 100 GB (new subscribers only)",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509414_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509414_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Polaroid - Optics 52mm Multicoated UV Protective Lens Filter",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5208/5208969_ra.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5208/5208969_ra.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Super Smash Bros. Ultimate Piranha Plant Stand-Alone Fighter - Nintendo Switch [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6332/6332294_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6332/6332294_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "With a Geek Squad&#174; Product Replacement Plan, if your product stops working properly, we'll give you a replacement (if the product is available) or reimburse you. You'll be covered for:\n\nFailures from normal wear and tear.Wi-Fi connectivity issues due to mechanical failure.Power surge damage, including from lightning strikes.",
+      "name": "2-Year Geek Squad Product Replacement",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369276_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369276_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "Enhance your manufacturer warranty and get extended coverage when the warranty ends, including:\n\nIf there's a failure from normal wear and tear, we'll repair it.If your original remote control fails, we'll replace it.If your product won't work because of a power surge, we'll fix it.You won't pay for parts and labor on covered repairs.",
+      "name": "2-Year Standard Geek Squad Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369297_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369297_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "Enhance your manufacturer warranty and get extended coverage when the warranty ends, including:\n\n  If there's a failure from normal wear and tear, we'll repair it. If your product won't work because of a power surge, we'll fix it. If your original remote control fails, we'll replace it. You won't pay for parts and labor on covered repairs.",
+      "name": "4-Year Standard Geek Squad Protection",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428432_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428432_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Double Feature: Roddy Piper - Sci-Fighters/Terminal Rush [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2945/29457256_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2945/29457256_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Will Ferrell: 4-Film Collection [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3230/32309971_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3230/32309971_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "TOMY - Kirby Mascots 2\" Blind Vinyl Figures",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6447/6447965_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6447/6447965_sd.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Star Trek Generations/Star Trek: First Contact [2 Discs] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1737/1737919_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1737/1737919_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Disney - Lorcana: The First Chapter - Sleeved Booster - Styles May Vary",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6565/6565931_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6565/6565931_sd.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Star Trek V: The Final Frontier/Star Trek VI: The Undiscovered Country [2 Discs] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1737/1737928_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1737/1737928_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "Enhance your manufacturer warranty and get extended coverage when the warranty ends, including:\n\n  If there's a failure from normal wear and tear, we'll repair it. If your music equipment won't work because of a power surge, we'll fix it. You won't pay for parts and labor on covered repairs.",
+      "name": "2-Year Standard Geek Squad Protection",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9996/9996971_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9996/9996971_sa.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "Enhance your manufacturer warranty and get extended coverage when the warranty ends, including:\n\n  If there's a failure from normal wear and tear, we'll repair it. If your music equipment won't work because of a power surge, we'll fix it. You won't pay for parts and labor on covered repairs.",
+      "name": "2-Year Standard Geek Squad Protection",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9997/9997185_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9997/9997185_sa.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "With a Geek Squad&#174; Product Replacement Plan, if your printer or scanner stops working properly, we'll give you a replacement (if the product is available) or reimburse you. You'll be covered for:\n\nFailures from normal wear and tear.Issues with Wi-Fi and Bluetooth connectivity due to mechanical failure.Power surge damage, including from lightning strikes.",
+      "name": "2-Year Geek Squad Product Replacement",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6384/6384082_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6384/6384082_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Love at First Bark [2017]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a8b390f6-f6b1-44e7-8d95-34e8abc494e5.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/a8b390f6-f6b1-44e7-8d95-34e8abc494e5.jpg"
+    }
+  ]
+}
