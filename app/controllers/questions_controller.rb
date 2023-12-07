@@ -128,8 +128,8 @@ class QuestionsController < ApplicationController
     if @answer.save
       @answers = @answer_values.select { |a| a.size > 1 }
 
-     # @scraped_products = gift_scraper(@answers)
-     @scraped_products = backup_scrapper(@answers)
+      # @scraped_products = gift_scraper(@answers)
+      @scraped_products = backup_scrapper(@answers)
 
       # if @scraped_products.empty?
       #   @scraped_products = backup_scrapper(@answers)
@@ -141,10 +141,11 @@ class QuestionsController < ApplicationController
           title: product_data[:name],
           price: product_data[:price],
           url: product_data[:image_url],
-          proposal: proposal,
         )
-        product.save
+        product.proposal = proposal
+        product.save!
       end
+
       redirect_to root_path, notice: "Questionnaire is answered."
     else
       render :new, alert: :unprocessable_entity
@@ -162,7 +163,6 @@ class QuestionsController < ApplicationController
     params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
-
   def gift_scraper(answer_values)
     scraped_products = []
 
@@ -171,16 +171,16 @@ class QuestionsController < ApplicationController
       url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
       url_serialized = URI.open(url).read
       results = JSON.parse(url_serialized)
-    #   File.open("results_#{Date.today}_#{ans}.json", "w") do |f|
-    #   f.write(results.to_json)
-    # end
+      #   File.open("results_#{Date.today}_#{ans}.json", "w") do |f|
+      #   f.write(results.to_json)
+      # end
       if results["total"] > 0
         p result = results["products"].first
         if regularPrice <= @occasion.answer.pledge_amount
           scraped_products << {
             name: result["name"],
             price: result["regularPrice"],
-            image_url: result["image"]
+            image_url: result["image"],
           }
         else
           "No products found"
@@ -189,29 +189,31 @@ class QuestionsController < ApplicationController
     end
     scraped_products.uniq.compact
   end
-
-
 
   def backup_scrapper(answer_values)
     scraped_products = []
     answer_values.each do |answer|
       filepath = "#{answer}.json"
+      responses = %w[ Action.json Beach.json Amazon%20Echo.json Beach.json Biography.json Camping%20Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical%20Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
+      responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
+
       results = JSON.parse(serialized_beatles)
-      if results["total"] > 0
-          result = results["products"].first
-        if result["regularPrice"].to_f <= @occasion.answer.pledge_amount
-          scraped_products << {
+      number = results["total"].to_i
+      if number > 0
+        results = results["products"]
+        results = results.sample(number > 10 ? 10 : number)
+        results.each do |result|
+          #if result["regularPrice"].to_f <= @occasion.answer
+          scraped_products.push({
             name: result["name"],
             price: result["regularPrice"],
-            image_url: result["image"]
-          }
-        else
-          "No products found"
+            image_url: result["image"],
+          })
+          #end
         end
       end
     end
-    scraped_products.uniq.compact
+    scraped_products
   end
-
 end
