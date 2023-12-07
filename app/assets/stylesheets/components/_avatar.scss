@@ -10,7 +10,6 @@
 
 .avatar-bordered {
   width: 40px;
-
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border: white 1px solid;
@@ -26,3 +25,35 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border: white 2px solid;
 }
+
+
+
+
+// .avatar-bordered2 {
+//   width: 120px; /* Adjust width as needed for the size of the avatar */
+//   height: 120px; /* Make height equal to width for a perfect circle */
+//   border-radius: 50%;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This shadow gives a nice depth effect */
+//   border: 5px solid white; /* Adjust border thickness and color as needed */
+//   object-fit: cover; /* This will make sure the image covers the area without stretching */
+//   overflow: hidden; /* Ensures the image stays within the border radius */
+// }
+
+// .parent {
+//   display: flex;
+//   justify-content: center; /* Center horizontally */
+//   align-items: center; /* Center vertically */
+//   height: 80%; /* Adjust as needed */
+// }
+
+
+// .welcome-container {
+//   background-color: #DDF2FD; /* Or any color you'd like */
+//   border-radius: 20px; /* Adjust this value to increase or decrease the roundness */
+//   padding: 10px 20px; /* Adjust for spacing inside the container */
+//   width: fit-content; /* This will make sure the container fits the content */
+//   margin: auto; /* This will center the container if it's a block-level element */
+//   /* Other styles for text, etc. */
+//   font-size: 1em; /* Example text styling */
+//   text-align: center; /* Example text styling */
+// }
