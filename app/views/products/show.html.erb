@@ -1,40 +1,31 @@
-<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
-    <div class=" p-2 m-2 text-left">
-      <h4>
-        <span class="small-text">Thanks to everyone's input, we've chosen the perfect gift!</span>
-      </h4>
-      <!-- Notifications / Open space area -->
-      <div class="card-trip product-img" >
-        <%= image_tag  @product.url, alt: "",class: "" %>
-        <div class="card-trip-infos">
-          <div>
-            <h2></h2>
-            <p style="font-size:12"><%= @product.title %></p>
-          </div>
-        </div>
-      </div>
-      <!-- card separation -->
-      <div class="card-trip p-2 m-0 text-left ">
-        <%= @product.info %>
-      </div>
+<div class=" p-2 m-2">
+  <!-- Notifications / Open space area -->
+  <div class="card-trip-product  product-img">
+    <%= image_tag  @product.url,class: "image" %>
+    <div class="card-trip-proposal-infos p-2">
+      <p ><%= @product.title %></p>
+      <p ><%= @product.price %></p>
     </div>
-    <!-- end navigation buttons -->
-    <div class="row d-flex ">
-      <div class="col-6" style="text-align:start">
-        <%= link_to  proposal_path, class: " mx-2 p-2" do %>
-          <i class="fa-solid fa-square-caret-left" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
-        <% end %>
-      </div>
-      <div class="col-6" style="text-align:end">
-        <% simple_form_for @product do |f| %>
-          <%= f.input :selected %>
-          <%= f.button :submit, class: 'btn btn-primary' %>
-        <% end %>
-        <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " mx-2 p-2" do %>
-          <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
-        <% end %>
-      </div>
-    </div>
+  </div>
+</div>
+<!-- card separation -->
+<div class="card-trip p-2 m-3">
+  <div class="openai"><%= @product.info %></div>
+</div>
+<!-- end navigation buttons -->
+<div class="row d-flex p-2">
+  <div class="col-6" style="text-align:start">
+    <%= link_to  proposal_path, class: " me-2 p-2" do %>
+      <i class="fa-solid fa-square-caret-left me-2" style="font-size:2em;text-shadow:1px 1px 3px black"></i>Back
+    <% end %>
+  </div>
+  <div class="col-6" style="text-align:end">
+    <% simple_form_for @product do |f| %>
+      <%= f.input :selected %>
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    <% end %>
+    <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " ms-2 p-2" do %>
+      Select this gift <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+    <% end %>
   </div>
 </div>

@@ -167,7 +167,7 @@ class QuestionsController < ApplicationController
     scraped_products = []
 
     answer_values.each do |answer|
-      encoded_answer = answer.gsub(" ", "%20")
+      encoded_answer = answer.gsub(" ", "_")
       url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
       url_serialized = URI.open(url).read
       results = JSON.parse(url_serialized)
@@ -194,8 +194,8 @@ class QuestionsController < ApplicationController
     scraped_products = []
     answer_values.each do |answer|
       filepath = "#{answer}.json"
-      responses = %w[ Action.json Beach.json Amazon%20Echo.json Beach.json Biography.json Camping%20Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical%20Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
-      responses.include?(filepath) ? filepath : responses.sample
+      responses = %w[ Action.json Beach.json Amazon_Echo.json Beach.json Biography.json Camping_Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical_Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
+      filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
       results = JSON.parse(serialized_beatles)
