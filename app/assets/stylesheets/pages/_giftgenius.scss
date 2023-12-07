@@ -22,8 +22,14 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 .btn-gradiant-pink {
-
-  border-radius: 1.5625rem;
+  padding: 5px 25px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.3em;
+  border-radius: 1.2rem;
+  color: white;
+  text-shadow: 2px 2px 6px $c01;
+  border: 2px solid $c08;
+  box-shadow: 2px 2px 5px $c03;
   background: linear-gradient(90deg, #F67C7B 3.35%, #FFE3BB 51.96%);
 }
 
@@ -48,6 +54,18 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   overflow: hidden;
   box-shadow: 2px 2px 5px $c03;
   border: 3px solid $c08 ;
+}
+
+
+.avatar-confirmation {
+  min-width: 70px;
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px $c06;
+  border: 3px solid $c04 ;
 }
 
 /// list in myoccasion
@@ -385,10 +403,15 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 .proposal-text {
   font-family: 'Kaushan Script', cursive;
-  columns: $c01;
+  color: $c01;
   //  text-shadow: 2px 2px 4px $c06;
   font-size: 1.6em;
 
+}
+
+.openai {
+  font-weight: normal;
+  line-height: 90%;
 }
 
 //********************* */ cards on home page
@@ -575,93 +598,4 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-///
-
-
-
-/////////////*************************** */
-
-
-
-
-.py-4 {
-  height: 100vh;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url('your-image-path.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-/* Card Styling */
-.card-trip {
-  background: white;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 1rem;
-  padding: 2rem;
-}
-
-/* Button Styling */
-.btn-gradient {
-  background: linear-gradient(to right, #FF758C 0%, #FF7EB3 100%);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-gradient:hover {
-  background: linear-gradient(to left, #FF758C 0%, #FF7EB3 100%);
-}
-
-/* Avatar Styling */
-.avatar-large {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: url('your-avatar-path.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-.avatar-round {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background: url('your-avatar-path.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-/* Badge Styling */
-.badge {
-  background: #FF758C;
-  color: white;
-  border-radius: 15px;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-/* Contact list with checkboxes */
-.checkbox-group .form-check {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.checkbox-group .form-check input {
-  margin-right: 0.5rem;
-}
-
-/* H4 inside icon-and-label */
-.icon-and-label h4 {
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-}
-
-.icon-and-label i {
-  margin-right: 0.5rem;
 }

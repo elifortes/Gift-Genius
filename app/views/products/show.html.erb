@@ -1,24 +1,22 @@
-<div class=" p-2 m-2 text-center">
+<div class=" p-2 m-2">
   <!-- Notifications / Open space area -->
   <div class="card-trip-product  product-img">
-    <%= image_tag  @product.url,class: "" %>
-    <div class="card-trip-infos">
-      <div>
-        <h2></h2>
-        <p style="font-size:12"><%= @product.title %></p>
-      </div>
+    <%= image_tag  @product.url,class: "image" %>
+    <div class="card-trip-proposal-infos p-2">
+      <p ><%= @product.title %></p>
+      <p ><%= @product.price %></p>
     </div>
   </div>
-  <!-- card separation -->
-  <div class="card-trip p-2 m-0 text-left ">
-    <%= @product.info %>
-  </div>
+</div>
+<!-- card separation -->
+<div class="card-trip p-2 m-3">
+  <div class="openai"><%= @product.info %></div>
 </div>
 <!-- end navigation buttons -->
-<div class="row d-flex ">
+<div class="row d-flex p-2">
   <div class="col-6" style="text-align:start">
-    <%= link_to  proposal_path, class: " mx-2 p-2" do %>
-      <i class="fa-solid fa-square-caret-left" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+    <%= link_to  proposal_path, class: " me-2 p-2" do %>
+      <i class="fa-solid fa-square-caret-left me-2" style="font-size:2em;text-shadow:1px 1px 3px black"></i>Back
     <% end %>
   </div>
   <div class="col-6" style="text-align:end">
@@ -26,8 +24,8 @@
       <%= f.input :selected %>
       <%= f.button :submit, class: 'btn btn-primary' %>
     <% end %>
-    <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " mx-2 p-2" do %>
-      <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+    <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " ms-2 p-2" do %>
+      Select this gift <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
     <% end %>
   </div>
 </div>
