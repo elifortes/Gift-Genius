@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 384,
+  "totalPages": 20,
+  "queryTime": "0.013",
+  "totalTime": "0.034",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Jazz\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Jancin' at Jazzmania [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3465/34658185_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3465/34658185_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "The Jazz Singer [DVD] [1953]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1895/18954523_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1895/18954523_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Solos: The Jazz Sessions [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2032/20320937_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2032/20320937_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Dream Band Jazz America [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2596/2596526_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2596/2596526_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "The Art of Jazz Piano [Video] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1711/17116915_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1711/17116915_s.gif"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Jazz Upright Bass Featuring Ed Friedland",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/34c72726-0243-4134-accd-608be96a1af5.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/34c72726-0243-4134-accd-608be96a1af5.jpg"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Blue Flame: Portrait of a Jazz Legend [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2073/20738714_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2073/20738714_s.gif"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Mike Stern: Guitar Webinars - Jazz Notes [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2471/24718222_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2471/24718222_s.gif"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Diana Krall: Live at the Montreal Jazz Festival [2004]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0599e449-afb7-4340-8ca4-a9d9c84f8b2c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/0599e449-afb7-4340-8ca4-a9d9c84f8b2c.jpg"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Beautiful Noise [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9782/9782713_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9782/9782713_s.gif"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "The Toshiko Akiyoshi Jazz Orchestra: Strive for Jive [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1828/18285914_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1828/18285914_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Earrings Off! [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3109/31097437_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3109/31097437_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Solos: The Jazz Sessions [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1119/1119086_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1119/1119086_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Solos: The Jazz Sessions [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9982/9982966_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9982/9982966_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Jazzier Times, Vol. 1 [Single] [12 inch Vinyl Single]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Jazz of the Roaring Twenties [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1981/19817676_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1981/19817676_s.gif"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Buddy Rich: Jazz Legend",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/513e61d0-ae7f-425f-a0a2-03f9a7215f96.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/513e61d0-ae7f-425f-a0a2-03f9a7215f96.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Jamey Aebersold: Jazz - Anyone Can Improvise",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c506166d-11ab-43de-bd71-443ddfd4f330.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/c506166d-11ab-43de-bd71-443ddfd4f330.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Jazz on a Summer's Day [DVD] [1959]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3513/35136818_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3513/35136818_s.gif"
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Ital Corner [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/cdd9162c-5377-4ee7-9778-e99428404a36.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/cdd9162c-5377-4ee7-9778-e99428404a36.jpg"
+    }
+  ]
+}

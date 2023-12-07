@@ -5,7 +5,7 @@
       <%# <h2 class="">Gift Genius</h2> %>
       <% if current_user %>
         <h4 class="my-2", style="text-align: left;font-weight:800">
-          Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
+          Welcome, <%= current_user.personnal.name if current_user.personnal %>!</h4>
       <% end %>
     </div>
     <!-- Gift Occasion / Open space area -->
@@ -19,7 +19,7 @@
       <!-- MyOccasions-->
       <!-- card separation -->
       <% if current_user %>
-        <h4><strong>Gift Occasions</strong></h4>
+        <h4><strong>Upcoming Events</strong></h4>
         <div class="">
           <!--begin iteration on myoccasions-->
           <% @myoccasions.each do |myoccasion| %>
@@ -113,7 +113,7 @@
                 <div style="text-align: left;font-size:.9em">
                   <% recipient=User.includes(:personnal).find(occasion.recipient) %>
                   <% if Gift.find(occasion.gift).title %>
-                    <%= Gift.find(occasion.gift).title %> for <%= recipient.personnal.name %></>
+                    <%= recipient.personnal.name %>' <%= Gift.find(occasion.gift).title %>  </>
                 <% end %>
               </div>
               <% recipient=User.includes(:personnal).find(occasion.recipient) %>

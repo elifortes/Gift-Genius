@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 639,
+  "totalPages": 32,
+  "queryTime": "0.016",
+  "totalTime": "0.031",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Electronic\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 1.0,
+      "shortDescription": "ELECTRONICS RECYCLING",
+      "name": "INSTALLATION - ELECTRONICS RECYCLING",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "Get extra points to spending in Madden NFL 17 Ultimate Team",
+      "name": "Madden NFL 17 Ultimate Team 500 Points - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5579/5579429_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5579/5579429_sa.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 19 Ultimate Team Starter Pack [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6277/6277936_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6277/6277936_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 20 Ultimate Team Starter Pack - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6354/6354162_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6354/6354162_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 20 Ultimate Team Starter Pack - Windows [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6354/6354188_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6354/6354188_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Rocket Arena Standard Edition - Windows [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6415/6415575_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6415/6415575_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Rocket Arena Standard Edition - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6417/6417933_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6417/6417933_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 21 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423744_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423744_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 21 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423800_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423800_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "NHL 21 Hockey Ultimate Team 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6425/6425706_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6425/6425706_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 21 Ultimate Team Starter Pack - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6427/6427527_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6427/6427527_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 22 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476942_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6476/6476942_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Madden NFL 22 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476956_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6476/6476956_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "NHL 22 Hockey Ultimate Team 500 Points [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6481/6481682_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6481/6481682_sd.jpg"
+    },
+    {
+      "regularPrice": 5.0,
+      "shortDescription": null,
+      "name": "Mass Effect: Andromeda 500 Points - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5736/5736400_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5736/5736400_sa.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "Power up your electronic components with a long-lasting Energizer battery",
+      "name": "Energizer - 2450 Lithium Coin Battery, 1 Pack",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5867/5867859_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5867/5867859_sd.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": "Power up your electronic components with a long-lasting Energizer battery",
+      "name": "Energizer - 2032 Batteries (2 Pack), 3V Lithium Coin Batteries",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6818/6818713_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6818/6818713_sd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": "With a Geek Squad&#174; Product Replacement Plan, if your mobile electronics product stops working properly, we'll give you a replacement (if the product is available) or reimburse you. You'll be covered for:\n\nFailures from normal wear and tear.Issues with Bluetooth connectivity due to mechanical failure.Power surge damage, including from lightning strikes.",
+      "name": "2-Year Geek Squad Product Replacement",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6748/6748464_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6748/6748464_sa.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": "Bring new stories and challenges of two powerful civilizations in your game",
+      "name": "Sid Meier's Civilization VI - Khmer and Indonesia Civilization and Scenario Pack - Nintendo Switch [Digital]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6319/6319525cv11d.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "F1 2022 11,000 Pitcoins [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508465_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508465_sd.jpg"
+    }
+  ]
+}

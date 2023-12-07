@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 569,
+  "totalPages": 29,
+  "queryTime": "0.012",
+  "totalTime": "0.025",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"MacBook\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 0.63,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543394_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543394_s.gif"
+    },
+    {
+      "regularPrice": 0.75,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543406_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543406_s.gif"
+    },
+    {
+      "regularPrice": 0.81,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543405_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543405_s.gif"
+    },
+    {
+      "regularPrice": 1.21,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543359_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543359_s.gif"
+    },
+    {
+      "regularPrice": 1.21,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543360_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543360_s.gif"
+    },
+    {
+      "regularPrice": 1.21,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543366_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543366_s.gif"
+    },
+    {
+      "regularPrice": 1.63,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543368_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543368_s.gif"
+    },
+    {
+      "regularPrice": 2.46,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543362_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543362_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "AppleCare+ for Macbook extends your coverage with additional service and post-purchase support.Includes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair at Best BuyBattery coverage on included accessories",
+      "name": "AppleCare+ for MacBook - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538974_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538974_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543408_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543408_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "AppleCare for iPod (up to 24 mo.)",
+      "name": "AppleCare (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6420/6420791_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6420/6420791_sa.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": "AppleCare+ extends your technical support and repair coverage for Mac and includes unlimited incidents of accidental damage protection. Each incident is subject to a service fee, plus applicable tax.* In addition, you&#8217;ll get 24/7 priority access to",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6542/6542860_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6542/6542860_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "AppleCare+ for Macbook extends your coverage with additional service and post-purchase support.Includes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair at Best BuyBattery coverage on included accessories",
+      "name": "AppleCare+ for Macbook Air - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538984_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538984_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "AppleCare+ for Macbook extends your coverage with additional service and post-purchase support.Includes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair at Best BuyBattery coverage on included accessories",
+      "name": "AppleCare+ for Macbook Air - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538979_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6538/6538979_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "Monthly AppleCare+ (up to 24 mo.)",
+      "name": "Monthly AppleCare+ (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6469/6469174_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6469/6469174_sa.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "AppleCare+ (up to 24 mo.)",
+      "name": "AppleCare+ (up to 24 mo.)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6509/6509638_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6509/6509638_sa.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ Macbook Pro 15\"- Annual Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420753_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420753_s.gif"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543414_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543414_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": "AppleCare+ extends your technical support and repair coverage for MacBook and includes unlimited incidents of accidental damage protection. Each incident is subject to a service fee, plus applicable tax.* In addition, you&#8217;ll get 24/7 priority access to",
+      "name": "AppleCare+ for MacBook - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545288_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545288_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": "AppleCare+ for Macbook extends your coverage with additional service and post-purchase support.Includes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair at Best BuyBattery coverage on included accessories",
+      "name": "AppleCare+ for Macbook - Monthly Plan",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545607_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545607_s.gif"
+    }
+  ]
+}

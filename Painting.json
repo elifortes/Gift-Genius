@@ -1,0 +1,146 @@
+{
+  "from": 1,
+  "to": 19,
+  "currentPage": 1,
+  "total": 19,
+  "totalPages": 1,
+  "queryTime": "0.012",
+  "totalTime": "0.028",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Painting\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Painting the Clouds with Sunshine [1951]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/407d01de-26da-4f75-a025-253c538fe40c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/407d01de-26da-4f75-a025-253c538fe40c.jpg"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "PopSockets - PlantCore Cell Phone Grip & Stand - Painting the Perfect Impression",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6526/6526934ld.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 14.99,
+      "shortDescription": null,
+      "name": "Live at Third Man Records [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3134/31346236_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3134/31346236_s.gif"
+    },
+    {
+      "regularPrice": 17.99,
+      "shortDescription": null,
+      "name": "Painting the Roses [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3509/35096172_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3509/35096172_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Trial Cuts [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3417/34175806_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3417/34175806_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Haunted Painting [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3504/35048704_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3504/35048704_s.gif"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Epic Fantasy Painting in Oils with Mike Sass",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/63ca1883-489d-4c72-85e6-c1d90382a963.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/63ca1883-489d-4c72-85e6-c1d90382a963.jpg"
+    },
+    {
+      "regularPrice": 20.99,
+      "shortDescription": null,
+      "name": "Simply Painting: Using Watercolors - Introduction to Landscapes",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/08c53af2-c0f4-4450-ba8f-7c6f6bc3dbaf.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/08c53af2-c0f4-4450-ba8f-7c6f6bc3dbaf.jpg"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Apparition Paintings [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3502/35028075_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3502/35028075_s.gif"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Great American Painting [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3538/35389167_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3538/35389167_s.gif"
+    },
+    {
+      "regularPrice": 22.99,
+      "shortDescription": null,
+      "name": "Painting by Numbers [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/14caf0d5-bb21-4ea7-9b8e-1a90042201ab.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/14caf0d5-bb21-4ea7-9b8e-1a90042201ab.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Painting on Silence [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/fe215f02-57ad-4c3a-a8c2-22934a8cd316.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/fe215f02-57ad-4c3a-a8c2-22934a8cd316.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Painting [180g White Viny] [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3529/35299745_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3529/35299745_s.gif"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Simply Painting: Using Watercolors - Introduction to Seascapes",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3cfd2492-3079-48f0-87e4-093ec71df7fd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3cfd2492-3079-48f0-87e4-093ec71df7fd.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Simply Painting: Using Acrylics - Introduction to Seascapes",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/810f54b3-ab96-421a-a04d-879176a5ec0e.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/810f54b3-ab96-421a-a04d-879176a5ec0e.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Simply Painting: Using Acrylics - Introduction to Still Life",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6c805dc8-9d84-46a4-a615-fa3ae29922ad.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6c805dc8-9d84-46a4-a615-fa3ae29922ad.jpg"
+    },
+    {
+      "regularPrice": 29.99,
+      "shortDescription": null,
+      "name": "Simply Painting: Using Watercolors - Introduction to Still Life",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7c50738f-f06b-4cbb-b86f-e0f6b98c0013.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7c50738f-f06b-4cbb-b86f-e0f6b98c0013.jpg"
+    },
+    {
+      "regularPrice": 39.99,
+      "shortDescription": null,
+      "name": "Painting of My Time [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/682dca7c-0bef-4178-af76-6705be850720.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/682dca7c-0bef-4178-af76-6705be850720.jpg"
+    },
+    {
+      "regularPrice": 39.99,
+      "shortDescription": null,
+      "name": "Painting of a Panic Attack [LP] [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/dfcf18d2-8e56-4584-9463-a195cc8a97eb.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/dfcf18d2-8e56-4584-9463-a195cc8a97eb.jpg"
+    }
+  ]
+}
