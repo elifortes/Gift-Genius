@@ -129,6 +129,7 @@ class QuestionsController < ApplicationController
       @answers = @answer_values.select { |a| a.size > 1 }
 
       scraped_products = gift_scraper(@answers)
+
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
       scraped_products.each do |product_data|
         product = Product.new(
@@ -158,7 +159,7 @@ class QuestionsController < ApplicationController
 
   def gift_scraper(answer_values)
     scraped_products = []
-    answer_values.each do |answer|
+    answer_values.sample(2).each do |answer|
       url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
       url_serialized = URI.open(url).read
       results = JSON.parse(url_serialized)

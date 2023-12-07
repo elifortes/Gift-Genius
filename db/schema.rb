@@ -90,7 +90,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.jsonb "div"
     t.integer "price"
     t.string "occasion"
-    t.string "title", null: false
+    t.string "title"
     t.text "categories"
     t.string "name"
     t.datetime "created_at", null: false
@@ -137,7 +137,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.jsonb "info"
-    t.boolean "notifications"
+    t.boolean "notifications", default: false
     t.index ["user_id"], name: "index_personnals_on_user_id"
   end
 
@@ -165,6 +165,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "row_order"
     t.index ["myoccasion_id"], name: "index_proposals_on_myoccasion_id"
     t.index ["occasion_id"], name: "index_proposals_on_occasion_id"
   end

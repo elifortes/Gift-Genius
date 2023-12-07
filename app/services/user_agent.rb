@@ -1,16 +1,16 @@
 scraped_products = []
 answer_values = [["Comedy", "Canon EOS Camera"], ["Fantasy", "Country"], ["H&M", "French"], ["", "Botanical Garden"], ["Cycling", "Arcade"]]
 answer = answer_values.sample
-answer = ["Fantasy"]
+
 require "json"
 require "open-uri"
 scraped_products = []
 
-url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
+url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=20&format=json"
 p url
 url_serialized = URI.open(url).read
 results = JSON.parse(url_serialized)
-File.open("results.json", "w") do |f|
+File.open("results#{Date.new}.json", "w") do |f|
   f.write(results.to_json)
 end
 if results["total"] > 0

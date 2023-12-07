@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: #195869;
+  background: white;
 
 }
 
@@ -22,16 +22,25 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 50px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
 }
 
 .gift-genius {
   // font-family: 'Grechen Fuemen', cursive;
+  font-family: 'Gochi Hand', cursive; //
+  padding-top: 0em;
   color: white;
   font-size: 2.5em;
-  font-family: 'Grechen Fuemen', cursive;
+  //font-family: 'Grechen Fuemen', cursive;
   // font-family: 'Glory', sans-serif;
   // font-family: 'Sometype Mono', monospace;
   // font-family: 'Varela Round', sans-serif;
+}
+
+.logo-img {
+  height: 40px;
+  width: 200px;
+  overflow: hidden;
+
 }
