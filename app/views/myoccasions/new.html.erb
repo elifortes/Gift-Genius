@@ -13,6 +13,7 @@
               <h4>   <i class="fa-solid fa-user"></i> Contacts</h4>
             </div>
             <!-- Toggleable contact list -->
+
             <%= f.input :groups, as: :check_boxes, collection: @mycontacts, label_method: :name, value_method: :id, label: false, item_wrapper_class: 'form-check' %>
             <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2'%>
           <% end %>
@@ -40,3 +41,40 @@
     contactList.style.display = contactList.style.display === 'none' ? 'block' : 'none';
   }
 </script>
+
+<style>
+ .py-4 {
+  height: 1500px;
+  background: #DDF2FD; /* Lightest color from the palette for a soft, neutral background */
+}
+
+  .card-trip {
+  background: linear-gradient(to bottom, #88e1f2 0%, #35d0ba 100%);
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+  padding: 2rem;
+  color: #333; /* You may need to adjust the text color for better readability */
+}
+  .btn-gradient {
+  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to left, #ff758c 0%, #ff7eb3 100%);
+}
+/* /* .checkbox-group .form-check {
+  display: flex;
+  align-items: rigt;
+  margin-bottom: 1rem; */
+/* } */
+/* .checkbox-group .form-check input { */
+  /* margin-right: 0.5rem;
+} */ */
+</style>
