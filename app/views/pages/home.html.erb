@@ -1,23 +1,32 @@
 <!-- New home page -->
 <div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
+
     <div class="card border-0 p-2 m-0">
       <%# <h2 class="">Gift Genius</h2> %>
-      <% if current_user %>
-        <h4 class="my-2", style="text-align: left;font-weight:800">
-          Welcome back, <%= current_user.personnal.name if current_user.personnal %></h4>
-      <% end %>
-    </div>
-    <!-- Gift Occasion / Open space area -->
-    <div class="card border-0  p-2 m-0" style="">
-      <!-- if not logged in-->
-      <% unless current_user  %>
-        <%= image_tag "option1.png", alt: "",class: "img py-5" %>
-        <h1 class="text-center">Gift Genius!</h1>
-      <% end %>
-      <!-- end if not logged in-->
-      <!-- MyOccasions-->
-      <!-- card separation -->
+<div class="parent">
+<%= image_tag "Eli.jpeg", alt: "GiftGenius", class: 'avatar-bordered2' %>
+</div>
+
+<div class="welcome-container">
+  <% if current_user %>
+    <h4 class="my-2" style="text-align: left;font-weight:800">
+      Welcome back, <%= current_user.personnal.name if current_user.personnal %>
+    </h4>
+
+  <% end %> <!-- Removed extra 'end' here -->
+</div><br>
+
+        <h4><strong>Gift Occasions</strong></h4>
+        <div class="">
+          <!--begin iteration on myoccasions-->
+
+<%= image_tag "Giftgenius.png" %>
+
+<!-- New home page -->
+<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+  <div class="">
+
+
       <% if current_user %>
         <h4><strong>Gift Occasions</strong></h4>
         <div class="">
