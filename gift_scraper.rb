@@ -1,3 +1,7 @@
+class GiftScraper
+ 
+end
+
 require "open-uri"
 require "nokogiri"
 
