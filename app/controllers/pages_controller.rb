@@ -26,6 +26,7 @@ class PagesController < ApplicationController
     else
       @mycontacts = []
     end
+<<<<<<< HEAD
 
     # @mycontacts.sort_by! { |p| p.personnal.birthday }
 
@@ -44,5 +45,7 @@ class PagesController < ApplicationController
 
     #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
 
+=======
+>>>>>>> main
   end
 end

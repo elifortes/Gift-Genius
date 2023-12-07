@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 1160,
+  "totalPages": 58,
+  "queryTime": "0.015",
+  "totalTime": "0.029",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Rock\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Hollywood Rocks! [Video] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3347/33474386_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3347/33474386_s.gif"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Rocket Arena Standard Edition - Windows [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6415/6415575_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6415/6415575_sd.jpg"
+    },
+    {
+      "regularPrice": 4.99,
+      "shortDescription": null,
+      "name": "Rocket Arena Standard Edition - Xbox One [Digital]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6417/6417933_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6417/6417933_sd.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Rocketfish™ - Coaxial Cable Couplers (2 Pack) - Gold",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6412/6412590_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6412/6412590_sd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rocketfish™ - 90-degree Coax Adapter (2 Pack) - Gold",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6412/6412593_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6412/6412593_sd.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rocky/Rocky II [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rocky III/Rocky IV [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Sesame Street: Learning Rocks [2014]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/85b032a0-01ca-40a0-b101-ca0992cec9b6.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/85b032a0-01ca-40a0-b101-ca0992cec9b6.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Brighton Rock [1947]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/10ae0233-70d1-4e9b-a7f4-e6c5024b883c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/10ae0233-70d1-4e9b-a7f4-e6c5024b883c.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Let's Rock [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2281/22814407_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2281/22814407_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rock Steady [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2486/24866618_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2486/24866618_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "It's a Rockabilly World! [2015]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a4497a8d-5ca7-4f2e-adff-a268c1862744.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/a4497a8d-5ca7-4f2e-adff-a268c1862744.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Kid Brainiac: Rockin' Reptiles",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5af514dd-9876-40bd-9bb7-da50fd21c778.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5af514dd-9876-40bd-9bb7-da50fd21c778.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rocky V [DVD] [1990]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6973/6973554_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6973/6973554_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rock N Roll Space Patrol",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c422aa77-8e44-4627-953f-a93d634c7fc5.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/c422aa77-8e44-4627-953f-a93d634c7fc5.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rockin' Road Trip [DVD] [1985]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1567/15677313_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1567/15677313_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Drop Dead Rock [DVD] [1996]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1828/18283907_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1828/18283907_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Jailhouse Rock [Deluxe Edition] [1957]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/86b37c84-8187-48ad-bc8c-a4891aa826b2.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/86b37c84-8187-48ad-bc8c-a4891aa826b2.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Graffiti Rock and Other Hip Hop Delights",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/66f2639e-13ab-46de-8b10-8117a7f2196d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/66f2639e-13ab-46de-8b10-8117a7f2196d.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Rock Your World [12 inch Vinyl Single]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1582/15826439_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1582/15826439_s.gif"
+    }
+  ]
+}

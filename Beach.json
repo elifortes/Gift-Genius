@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 318,
+  "totalPages": 16,
+  "queryTime": "0.014",
+  "totalTime": "0.031",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Beach\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "D-Day: Battle of Omaha Beach [2019]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/44f8ffb0-48f2-4f0f-9c72-58e22fcdd0a2.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/44f8ffb0-48f2-4f0f-9c72-58e22fcdd0a2.jpg"
+    },
+    {
+      "regularPrice": 5.99,
+      "shortDescription": null,
+      "name": "Shaquille O'Neal Presents: All Star Comedy Jam - Live from South Beach [2009]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3bf4efa1-f193-4378-8c2b-9d65859e8443.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3bf4efa1-f193-4378-8c2b-9d65859e8443.jpg"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Beaches [Blu-ray] [1988]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6907/6907351_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6907/6907351_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Sizzle Beach, USA [DVD] [1986]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3522/3522575_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3522/3522575_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "The Beachcomber [1938]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/730a2fb5-88a7-4db8-9344-60af74263696.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/730a2fb5-88a7-4db8-9344-60af74263696.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Insignia™ - Mouse Pad - Beach",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7536/7536061_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7536/7536061_sa.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Eve's Beach Fantasy [DVD] [1997]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1331/13316075_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1331/13316075_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Brighton Beach Memoirs [DVD] [1986]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/7148/7148099_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/7148/7148099_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Maggie and the Ferocious Beast: Beach Party [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8850/8850969_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8850/8850969_s.gif"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Beachhead [1954]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/26424c5a-468a-403d-8994-2af873062dd2.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/26424c5a-468a-403d-8994-2af873062dd2.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Good Vibrations Tour [Video] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9312/9312252_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9312/9312252_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Beaches [2017]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/88aa961e-0da7-4469-bcad-d507d8c34ae6.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/88aa961e-0da7-4469-bcad-d507d8c34ae6.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Slaughter Beach",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/30db2b5e-a98c-4544-84d4-c8469e067d16.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/30db2b5e-a98c-4544-84d4-c8469e067d16.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Zuma Beach [1978]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/166ee1b6-4c6e-42d5-8a0c-df1a842707c5.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/166ee1b6-4c6e-42d5-8a0c-df1a842707c5.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Teen Beach  2 [2015]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5d30d660-cb70-43a3-af4b-c8dc7854642c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5d30d660-cb70-43a3-af4b-c8dc7854642c.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Teen Beach Movie [2013]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d9e459b9-e363-43e9-bd1c-729677a40a4c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/d9e459b9-e363-43e9-bd1c-729677a40a4c.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "The Woman on the Beach [1947]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/fed7d737-2763-4322-ab02-d25534d3bf89.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/fed7d737-2763-4322-ab02-d25534d3bf89.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "The Girl From Jones Beach [1949]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e5d5cd7a-8c95-426f-afba-cde0c1c0cafc.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/e5d5cd7a-8c95-426f-afba-cde0c1c0cafc.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "LEGO Scooby-Doo!: Blowout Beach Bash [2017]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8f9d8fba-8a3e-4f17-9630-439fd81dbc80.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/8f9d8fba-8a3e-4f17-9630-439fd81dbc80.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Disney's Sing-Along Songs: Beach Party at Walt Disney World",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a9d8422c-a787-4dbe-b8fb-1347385de654.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/a9d8422c-a787-4dbe-b8fb-1347385de654.jpg"
+    }
+  ]
+}
