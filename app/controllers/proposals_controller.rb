@@ -25,7 +25,7 @@ class ProposalsController < ApplicationController
           @pledge += occasion.answer.pledge_amount
         end
 
-        if occasion.proposal.products.first
+        if occasion.proposal
           product = occasion.proposal.products.rank(:row_order).first
           info = { from: User.find(occasion.user.id).personnal.name }
           product.description = User.find(occasion.user.id).personnal.name
