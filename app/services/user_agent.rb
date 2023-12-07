@@ -1,8 +1,10 @@
+
 require "json"
 require "open-uri"
 
 answer =  ["Horror", "Pop", "Fantasy", "Painting", "MacBook"]
 scraped_products = []
+
 
 answer.each do |ans|
   encoded_answer = ans.gsub(" ", "%20")
@@ -26,6 +28,7 @@ answer.each do |ans|
       ans: ans  # Added to track which search term resulted in this product
     }
   end
+
 end
 
 p scraped_products

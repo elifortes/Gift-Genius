@@ -165,6 +165,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "row_order"
     t.index ["myoccasion_id"], name: "index_proposals_on_myoccasion_id"
     t.index ["occasion_id"], name: "index_proposals_on_occasion_id"
   end

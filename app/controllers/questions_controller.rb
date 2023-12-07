@@ -128,7 +128,7 @@ class QuestionsController < ApplicationController
     if @answer.save
       @answers = @answer_values.select { |a| a.size > 1 }
 
-      # @scraped_products = gift_scraper(@answers)
+     # @scraped_products = gift_scraper(@answers)
      @scraped_products = backup_scrapper(@answers)
 
       # if @scraped_products.empty?
@@ -165,6 +165,7 @@ class QuestionsController < ApplicationController
 
   def gift_scraper(answer_values)
     scraped_products = []
+
     answer_values.each do |answer|
       encoded_answer = answer.gsub(" ", "%20")
       url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
