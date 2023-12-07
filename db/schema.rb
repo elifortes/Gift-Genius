@@ -50,28 +50,28 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.jsonb "favorites"
-    t.string "hobbies"
-    t.string "movies"
-    t.string "music"
-    t.string "books"
-    t.string "restaurant"
-    t.string "activities"
-    t.string "channels"
-    t.string "contents"
-    t.string "brands"
-    t.string "places"
-    t.string "socials"
-    t.string "onlines"
-    t.string "purchases"
-    t.string "communications"
-    t.string "apps"
-    t.string "websites"
-    t.string "locations"
-    t.string "devices"
-    t.string "softwares"
-    t.string "games"
-    t.string "platforms"
+    t.text "favorites"
+    t.text "hobbies"
+    t.text "movies"
+    t.text "music"
+    t.text "books"
+    t.text "restaurant"
+    t.text "activities"
+    t.text "channels"
+    t.text "contents", array: true
+    t.text "brands", array: true
+    t.text "places", array: true
+    t.text "socials", array: true
+    t.text "onlines", array: true
+    t.text "purchases", array: true
+    t.text "communications", array: true
+    t.text "apps", array: true
+    t.text "websites", array: true
+    t.text "locations", array: true
+    t.text "devices", array: true
+    t.text "softwares", array: true
+    t.text "games", array: true
+    t.text "platforms", array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.decimal "pledge_amount"
@@ -90,7 +90,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.jsonb "div"
     t.integer "price"
     t.string "occasion"
-    t.string "title", null: false
+    t.string "title"
     t.text "categories"
     t.string "name"
     t.datetime "created_at", null: false
@@ -137,7 +137,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.jsonb "info"
-    t.boolean "notifications"
+    t.boolean "notifications", default: false
     t.index ["user_id"], name: "index_personnals_on_user_id"
   end
 
@@ -176,7 +176,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_112703) do
     t.integer "recipient"
     t.integer "gift"
     t.integer "user"
-    t.jsonb "favorites"
+    t.text "favorites"
     t.text "hobbies", array: true
     t.text "activities", array: true
     t.text "movies", array: true

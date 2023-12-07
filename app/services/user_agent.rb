@@ -1,32 +1,31 @@
-scraped_products = []
-answer_values = [["Comedy", "Canon EOS Camera"], ["Fantasy", "Country"], ["H&M", "French"], ["", "Botanical Garden"], ["Cycling", "Arcade"]]
-answer = answer_values.sample
-answer = ["Fantasy"]
 require "json"
 require "open-uri"
+
+answer =  ["Horror", "Pop", "Fantasy", "Painting", "MacBook"]
 scraped_products = []
 
-url = "https://api.bestbuy.com/v1/products((search=#{answer[0]}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=5&format=json"
-p url
-url_serialized = URI.open(url).read
-results = JSON.parse(url_serialized)
-File.open("results#{Date.new}.json", "w") do |f|
-  f.write(results.to_json)
-end
-if results["total"] > 0
-  p result = results["products"].first
-  scraped_products << {
-    name: result["name"],
-    price: result["regularPrice"],
-    image_url: result["image"],
-  }
-end
-p scraped_products
+answer.each do |ans|
+  encoded_answer = ans.gsub(" ", "%20")
 
-{
-  "regularPrice" => 4.49,
-  "shortDescription" => nil,
-  "name" => "Wizards of The Coast - Magic the Gathering March of the Machine The Aftermath Draft Booster Sleeve",
-  "image" => "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6539/6539367_sd.jpg",
-  "thumbnailImage" => "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6539/6539367_sd.jpg",
-}
+  url = "https://api.bestbuy.com/v1/products((search=#{encoded_answer}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=20&format=json"
+  p url
+  url_serialized = URI.open(url).read
+  results = JSON.parse(url_serialized)
+
+  # Save the results to a JSON file named with the current date and search term
+  File.open("results_#{Date.today}_#{ans}.json", "w") do |f|
+    f.write(results.to_json)
+  end
+
+  if results["total"] > 0
+    result = results["products"].first
+    scraped_products << {
+      name: result["name"],
+      price: result["regularPrice"],
+      image_url: result["image"],
+      ans: ans  # Added to track which search term resulted in this product
+    }
+  end
+end
+
+p scraped_products

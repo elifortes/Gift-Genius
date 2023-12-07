@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 450,
+  "totalPages": 23,
+  "queryTime": "0.013",
+  "totalTime": "0.028",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Amazon+Echo\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Amazon - Adjustable Car Vent Mount for Echo Auto (2nd Gen)",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6530/6530255_rd.jpg",
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Battle of the Amazons [1973]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/377deead-600e-460f-8443-4a71e695c6cf.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/377deead-600e-460f-8443-4a71e695c6cf.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Echo of Murder [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4223/4223726_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4223/4223726_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Thor and the Amazon Women [1963]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/08b3bbae-d809-496b-be18-a7d00c8f513c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/08b3bbae-d809-496b-be18-a7d00c8f513c.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Colossus and the Amazon Queen [DVD] [1960]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2884/28848015_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2884/28848015_s.gif"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Queen of the Amazons [1947]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Amazon Women on the Moon [Collector's Edition] [DVD] [1987]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5745/5745429_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5745/5745429_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Sengled - Smart A19 LED 60W Bulb Bluetooth Mesh Works with Amazon Alexa - Soft White",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6429/6429535_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6429/6429535_sd.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Sengled - Smart A19 LED 60W Bulb Works with Amazon Alexa, Google Assistant, SmartThings & Wink - White",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6238/6238509_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6238/6238509_sd.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Sengled - Smart A19 LED 60W Add-on Bulb Works with Amazon Alexa, Google Assistant, SmartThings & Wink - Daylight",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353931_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353931_sd.jpg"
+    },
+    {
+      "regularPrice": 10.99,
+      "shortDescription": null,
+      "name": "Echo Boomers [Includes Digital Copy] [DVD] [2020]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437402_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6437/6437402_s.gif"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Funko - POP! Games: Overwatch 2 - Echo",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6531/6531163_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6531/6531163_sd.jpg"
+    },
+    {
+      "regularPrice": 11.99,
+      "shortDescription": null,
+      "name": "Sengled - Smart A19 LED 60W Bulb Wi-Fi Works with Amazon Alexa & Google Assistant - Daylight",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353934_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353934_sd.jpg"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "1.2’ Analog-to-GXE Camera Adapter for Select EchoMaster AHD Monitors - Multi",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423220_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423220_sd.jpg"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Echos [LP] - VINYL",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3377/33772217_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3377/33772217_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "The Echo [Blu-ray] [2008]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1807/18072425_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1807/18072425_s.gif"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Mount Genie - The Easy Outlet Mount for NEW Amazon eero 6 and Amazon eero Mesh Wi-Fi (2nd Gen 2019) - White",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6411/6411987_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6411/6411987_sd.jpg"
+    },
+    {
+      "regularPrice": 12.99,
+      "shortDescription": null,
+      "name": "Sanus - 6-Foot Extension Cable for Echo Show 15 - White",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6497/6497973_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6497/6497973_sd.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Amazon",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/098b70ec-9658-4f6a-bcc0-80ee9d39612c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/098b70ec-9658-4f6a-bcc0-80ee9d39612c.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Ainbo: Spirit of the Amazon [2021]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7963efd8-455b-4867-a73b-b7c4b347720c.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7963efd8-455b-4867-a73b-b7c4b347720c.jpg"
+    }
+  ]
+}
