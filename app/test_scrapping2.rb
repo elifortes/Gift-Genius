@@ -50,7 +50,7 @@ def gift_scraper(answer_values)
     first_product_image_element = html_doc.css('div.a-section.aok-relative.s-image-square-aspect img').first
     first_product_image_url = first_product_image_element ? first_product_image_element['src'] : 'Not found'
 
-    
+
     first_product_price_element = html_doc.css('span.a-price-whole').first
     first_product_price = first_product_price_element ? first_product_price_element.content.strip : 'Not found'
 
@@ -62,7 +62,7 @@ def gift_scraper(answer_values)
   end
   scraped_products
 end
-=======
+
 # gifts_categories = [
 #   {
 #       "id": 1,
@@ -103,4 +103,3 @@ end
 # user_id: who filled the questionnaire
 # category_id: gifts_categories
 # product_id: product selected (sku)
-

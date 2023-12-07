@@ -1,0 +1,118 @@
+{
+  "from": 1,
+  "to": 15,
+  "currentPage": 1,
+  "total": 15,
+  "totalPages": 1,
+  "queryTime": "0.013",
+  "totalTime": "0.022",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Biography\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Biography: J. Pierpont Morgan [1996]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1b8fd065-d004-46d9-967d-5457745bd54a.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1b8fd065-d004-46d9-967d-5457745bd54a.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Biography: Audie Murphy - Great American Hero [2005]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9642d899-c509-4031-bde9-c645abd09165.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9642d899-c509-4031-bde9-c645abd09165.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Biography: Kenny Rogers [2020]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/338c3a54-59b0-468a-8bed-dcb7b43157e1.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/338c3a54-59b0-468a-8bed-dcb7b43157e1.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Elon Musk: Unauthorized Biography",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ae38bbad-4968-4c59-8e67-a1c55b20b0ac.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/ae38bbad-4968-4c59-8e67-a1c55b20b0ac.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Biography: The Harlem Globetrotters [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1477/14777627_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1477/14777627_s.gif"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Stephen Hawking: Unauthorized Biography",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0ca75bb1-f58c-4e79-8403-a4357c5f5d11.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/0ca75bb1-f58c-4e79-8403-a4357c5f5d11.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Biography: Mary of Nazareth [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1439/14399126_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1439/14399126_s.gif"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Biography: WWE Legends, Vol. 1 [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3533/35332583_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3533/35332583_s.gif"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Biography: WWE Legends, Vol. 2 [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3533/35332592_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3533/35332592_s.gif"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Miley Cyrus: Unauthorized Biography - Life of a Legend",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5b8a3ac4-a41b-461d-8bc0-da610d723244.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5b8a3ac4-a41b-461d-8bc0-da610d723244.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Biography: The Mystery of Edgar Allan Poe [1994]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7ab72c08-4813-468b-82e2-2d24a9b65fab.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7ab72c08-4813-468b-82e2-2d24a9b65fab.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Biography: Donald Trump - Master of the Deal [2006]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1b146183-8910-4452-97b4-4aa00cc714af.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1b146183-8910-4452-97b4-4aa00cc714af.jpg"
+    },
+    {
+      "regularPrice": 13.99,
+      "shortDescription": null,
+      "name": "Justin Bieber: Unauthorized Biography - The Legend that Wouldn't Stop",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/75cbb6b0-c8f8-4e3e-8cd5-0ebb64db1d12.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/75cbb6b0-c8f8-4e3e-8cd5-0ebb64db1d12.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Biography: WWE Legends, Vol. 3",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/23e5977a-0914-460b-8bdf-3a13e647c0ae.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/23e5977a-0914-460b-8bdf-3a13e647c0ae.jpg"
+    },
+    {
+      "regularPrice": 19.99,
+      "shortDescription": null,
+      "name": "Cristiano Ronaldo: Unauthorized Biography - The Ballad of El Bicho",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/976af290-681a-43e0-b7d8-3641a6fb1a02.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/976af290-681a-43e0-b7d8-3641a6fb1a02.jpg"
+    }
+  ]
+}

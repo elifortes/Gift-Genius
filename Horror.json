@@ -1,0 +1,153 @@
+{
+  "from": 1,
+  "to": 20,
+  "currentPage": 1,
+  "total": 168,
+  "totalPages": 9,
+  "queryTime": "0.014",
+  "totalTime": "0.029",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Horror\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Amityville Horror [Blu-ray] [2005]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6439/6439928_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6439/6439928_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "Masters of Horror: The Washingtonians [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8472/8472869_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8472/8472869_s.gif"
+    },
+    {
+      "regularPrice": 6.99,
+      "shortDescription": null,
+      "name": "The Amityville Horror [Blu-ray] [1979]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9014/9014951_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9014/9014951_s.gif"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Horror Rises from the Tomb [1970]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8eedd902-11fd-4af9-a34a-65c6885716ac.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/8eedd902-11fd-4af9-a34a-65c6885716ac.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "4 Movie Marathon: Horror Collection [DVD]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Penny Pinchers: The Kings of No-Budget Horror",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/085e750b-a368-482b-9bd1-f79351ec9a49.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/085e750b-a368-482b-9bd1-f79351ec9a49.jpg"
+    },
+    {
+      "regularPrice": 7.99,
+      "shortDescription": null,
+      "name": "Horror Collection Extravaganza: 6 Terrifying Movies [2 Discs] [DVD]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2051/20510161_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2051/20510161_s.gif"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Horrors of Spider Island [1960]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "The Little Shop of Horrors [1960]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "Coming Attractions: Classic Horror & Sci-Fi",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/66829e83-9ea1-4352-8b73-2884cc483544.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/66829e83-9ea1-4352-8b73-2884cc483544.jpg"
+    },
+    {
+      "regularPrice": 8.99,
+      "shortDescription": null,
+      "name": "The Eerie Midnight Horror Show [1974]",
+      "image": null,
+      "thumbnailImage": null
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Little Shop of Horrors [DVD] [1986]",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3873/3873838_sa.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3873/3873838_s.gif"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Coming Attractions: Classic Horror",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b828fed4-0e4a-4ba2-8b48-e409d31ae849.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/b828fed4-0e4a-4ba2-8b48-e409d31ae849.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Extreme Horror Video Vault",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6e0bcb36-d54c-45a2-8970-cd1bca37d977.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6e0bcb36-d54c-45a2-8970-cd1bca37d977.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Horror of Blackwood Castle",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7ee4021c-d6b3-46af-8b8e-0a24807da4a3.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7ee4021c-d6b3-46af-8b8e-0a24807da4a3.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Coming Attractions: Horror, Vol. 1",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f8ca212e-902a-42f6-b9f3-5d228c638103.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/f8ca212e-902a-42f6-b9f3-5d228c638103.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Coming Attractions: Horror, Vol. 2",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d4ce92ab-bade-4dae-a70e-cc91765d75e7.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/d4ce92ab-bade-4dae-a70e-cc91765d75e7.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "NECA - Sci-Fi and Horror Blind Bag",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6530/6530483_sd.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6530/6530483_sd.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Masters of Horror: Season 1 [4 Discs]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/078fd7ad-bf34-40e3-bf6f-0bf27cce243d.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/078fd7ad-bf34-40e3-bf6f-0bf27cce243d.jpg"
+    },
+    {
+      "regularPrice": 9.99,
+      "shortDescription": null,
+      "name": "Icons of Horror: Hammer Films [2 Discs]",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/804ee86c-7927-4e15-bcbc-8adeb3dc2151.jpg",
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/804ee86c-7927-4e15-bcbc-8adeb3dc2151.jpg"
+    }
+  ]
+}
