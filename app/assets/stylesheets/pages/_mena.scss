@@ -1,0 +1,36 @@
+.py-4 {
+  height: 1500px;
+  background: #DDF2FD; /* Lightest color from the palette for a soft, neutral background */
+}
+
+  .card-trip.p-2.m-1 {
+    background: linear-gradient(to bottom, #7FDBFF 0%, #39CCCC 100%);
+    // background: linear-gradient(to bottom, #F67C7B 0%, #ff7eb3 100%);
+
+
+  // background: linear-gradient(to bottom, #7FDBFF 0%, #2C3E50 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+  padding: 2rem;
+  color: #333;
+  // color: #FFFFFF; /* You may need to adjust the text color for better readability */
+}
+  .btn-gradient {
+  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to left, #ff758c 0%, #ff7eb3 100%);
+}
+
+.rounded-input {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adjust the value as per your design needs */
+}

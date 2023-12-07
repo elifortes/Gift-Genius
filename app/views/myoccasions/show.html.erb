@@ -1,85 +1,56 @@
-<!-- New home page -->
-<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
-    <div class="card border-0 p-2 m-0">
-      <%# <h2 class="">Gift Genius</h2> %>
-      <% if current_user %>
-        <h4 class="my-2", style="text-align: left;font-weight:800">
-          <%= Gift.find( @myoccasion.gift).title %> of <%=User.find(@myoccasion.recipient).personnal.name %>
-        </h4>
-      <% end %>
+<!-- New  page -->
+<div class="card border-0 p-2 m-0">
+  <% if current_user %>
+    <div class="proposal-text text-center">
+      <%= Gift.find( @myoccasion.gift).title %> of <%=User.find(@myoccasion.recipient).personnal.name %>
     </div>
-    <!-- Notifications / Open space area -->
-    <div class="card border-0 p-2 m-1">
-      <h4><strong>Group Member Status</strong></h4>
-      <!-- notifications -->
-      <!--end notification avatar -->
-      <% @myoccasion.groups.each do |g| %>
-        <div class="notification">
-          <% if User.find(g).personnal.info != nil  %>
-            <%= image_tag User.find(g).personnal.info['picture'], alt: "",class: "avatar-square me-2" %>
-          <% else %>
-            <%= image_tag 'option2.png', alt: "",class: "avatar-square ms-2" %>
-          <% end %>
-          <div class="notification-content">
-            <p class = "pb-1"><small><%= User.find(g).personnal.name %></small></p>
-            <p>
-              <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
-              <% if member_occasion&.status %>
-                <i class="fa-solid fa-clipboard-check" style="font-size:1.4em" title="Survey Completed"></i>DONE
-              <% else %>
-                <i class="fa-regular fa-clipboard" style="font-size:1.4em"  title="Survey Pending"></i> Pending...
-              <% end %>
-              <!-- second icons sets-->
-              <% u = User.find(g) %>
-              <% o = @myoccasion.occasions.find_by({user: u}) %>
-              <% a = Answer.find_by({user: u, occasion: o}) %>
-              <% if a %>
-                <i class="fas fa-money-bill-1-wave mx-2"style="font-size:1.4em" title="Pledged Amount"></i> <%= a.pledge_amount %>
-              <% else %>
-                <i class="fas fa-comments-dollar mx-2" style="font-size:1.4em" title="Pledged Amount"></i> Non-Pledger
-              <% end %>
-              <!-- end of second sets -->
-            </p>
-          </div>
-          <div class="notification-actions d-none">
-            <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
-            <a href="#">Delete <i class="far fa-trash-alt"></i></a>
-          </div>
-        </div>
-      <% end %>
-      <!-- notifications  occasions-->
-      <!-- notifications  occasions-->
-      <!--end notification occasions -->
-      <div class="none">
-      </div>
-      <!-- end Notifications / Open space area -->
-    </div>
-    <!-- Notifications / Open space area -->
-  </div>
-  <!-- navigation buttons -->
-  <div class="btn-group w-100 mt-1 p-1">
-  </div>
-  <!-- end navigation buttons -->
+  <% end %>
 </div>
-
-<%# <style>
-  .tooltip-text {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.fas:hover .tooltip-text {
-  visibility: visible;
-}
-</style> %>
+<!-- Notifications / Open space area -->
+<div class="card border-0 p-2 m-1">
+  <h4 class="myoccasion-text">Organize Gift Members</h4>
+  <!-- notifications -->
+  <!--end notification avatar -->
+  <% @myoccasion.groups.each do |g| %>
+    <div class="myoccasion">
+      <% if User.find(g).personnal.info != nil  %>
+        <%= image_tag User.find(g).personnal.info['picture'], alt: "",class: "avatar-home me-2" %>
+      <% else %>
+        <%= image_tag 'option2.png', alt: "",class: "avatar-home" %>
+      <% end %>
+      <div class="myoccasion-content">
+        <p class = "pb-1"><small><%= User.find(g).personnal.name %></small></p>
+        <p>
+          <% member_occasion = @myoccasion.occasions.find { |o| o.user_id == g } %>
+          <% if member_occasion&.status %>
+            <i class="fa-solid fa-clipboard-check" style="font-size:1.4em" title="Survey Completed"></i> done.
+          <% else %>
+            <i class="fa-regular fa-clipboard" style="font-size:1.4em"  title="Survey Pending"></i>pending
+          <% end %>
+          <!-- second icons sets-->
+          <% u = User.find(g) %>
+          <% o = @myoccasion.occasions.find_by({user: u}) %>
+          <% a = Answer.find_by({user: u, occasion: o}) %>
+          <% if a %>
+            <i class="fas fa-money-bill-1-wave mx-2"style="font-size:1.4em" title="Pledged Amount"></i> <%= a.pledge_amount %>
+          <% else %>
+            <i class="fas fa-comments-dollar mx-2" style="font-size:1.4em" title="Pledged Amount"></i>
+          <% end %>
+          <!-- end of second sets -->
+        </p>
+      </div>
+      <div class="myoccasion-actions d-none">
+        <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+        <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+      </div>
+    </div>
+  <% end %>
+  <!-- notifications  occasions-->
+  <!-- notifications  occasions-->
+  <!--end notification occasions -->
+  <div class="none">
+  </div>
+  <!-- end Notifications / Open space area -->
+</div>
+<!-- Notifications / Open space area -->
+</div>

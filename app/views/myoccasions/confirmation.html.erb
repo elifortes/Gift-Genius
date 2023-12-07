@@ -1,8 +1,13 @@
-<div class="py-4" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+<div class="py-4">
   <div class="p-2">
+
     <div class="card-trip p-2 mb-2">
       <h3>Congrats GiftGenius has accepted your request.</h3>
     </div>
+
+    <div class="card-trip p-2 mb-2 py-2">
+      <h3 class = "text-center"><small>Great news! Your group has been formed on GiftGenius. Time to bring the celebration to life! 🎈</small></h3
+ </div>
     <!-- Notifications / Open space area -->
     <br>
     <% myoccasion=Myoccasion.find(params[:myoccasion_id]) %>
@@ -50,6 +55,7 @@
       </div>
     </div>
   </div>
+<!-- option on -->
   <br>
   <!-- Notifications / Open space area -->
   <div class="card-trip p-2 mt-4">
@@ -64,6 +70,19 @@
           <%# <li class="list-group-item p-0  my-4"> %>
           <div class="btn-group btn-gradient">
             <%= link_to  "Questionnaire",edit_occasion_question_path(o,o.question) ,class: " "  %>
+<!-- option on -->
+</div>
+  <!-- Notifications / Open space area -->
+  <div class="card-trip p-2 mt-4">
+    <h4 class =  "mx-2 my-2"><h4><small>🌟 Let's make <%= recipient.name %>'s experience unforgettable! Take a moment to fill in some details about him/her. </small></h4>
+</h4>
+    <ul class="btn-group list-group">
+      <% myoccasion.occasions.each do |o| %>
+        <% if o.user_id == current_user.id %>
+          <%# o.id %>  <%# o.question.id %>
+          <li class="list-group-item p-0  my-4">
+            <%= link_to  "Questionnaire",edit_occasion_question_path(o,o.question) ,class: " w-100 btn btn-gradient "  %>
+<!-- option end -->
           </li>
         <% end %>
       <% end %>
@@ -71,3 +90,28 @@
   </div>
 </div>
 </div>
+
+<style>
+.py-4 {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.avatar-square {
+  border-radius: 50%;
+  border: 2px solid #fda085;
+}
+.card-trip {
+  /* : #164863 #427D9D #9BBEC8 #DDF2FD - Color Hunt */
+  background: #DDF2FD ;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: #ffffff; /* Or use gradient */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+</style>

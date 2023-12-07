@@ -1,12 +1,12 @@
-<div class="py-4" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
+<div class="py-4" style="background-color: #f5f5f5">
   <div class="p-1">
     <div class="card-trip p-2 m-1">
-      <h2 class="text-center">Group List</h2>
+      <h2 class="text-center mt-2 ">Build Your Gift Group 🎁 </h2> <br>
       <div class="h-50 overflow-auto" style="height:300px">
         <div data-controller="your-controller-name">
 
           <%= simple_form_for @myoccasion do |f| %>
-            <%= f.input :recipient, collection: @mycontacts, input_html: { class: 'form-control mb-2' } %>
+            <%= f.input :recipient, collection: @mycontacts, input_html: { class: 'form-control mb-2 rounded-input' } %>
             <%# f.input :photo, as: :file, input_html: { class: 'form-control mb-2' } %>
             <%# <div class="icon-and-label text-center" onclick="toggleContactList();" style="cursor: pointer;"> %>
             <div class="icon-and-label">
@@ -14,25 +14,32 @@
             </div>
             <!-- Toggleable contact list -->
 
-            <%= f.input :groups, as: :check_boxes, collection: @mycontacts, label_method: :name, value_method: :id, label: false, item_wrapper_class: 'form-check' %>
+            <%= f.input :groups, as: :check_boxes, collection: @mycontacts, label_method: :name, value_method: :id, label: "", item_wrapper_class: 'form-check' %>
+          <div class = "d-flex justify-content-between mx-4">
+             <div>
             <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2'%>
+            </div>
+          <div class="icon-and-label" onclick="toggleContactList();" style="cursor: pointer;">
+                <h4>   <i class="fa-solid fa-user-plus" style="color:black"></i></h4>
+              </div>
+
+            </div>
           <% end %>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card border-0 p-1 m-2" style="height: 300px">
-    <div class="icon-and-label" onclick="toggleContactList();" style="cursor: pointer;">
-      <h4>   <i class="fa-solid fa-user-plus" style="color:gray"></i></h4>
-    </div>
+    <br>
+
+  <%# <div class="card border-0 p-1 m-2" style="height: 300px"> %>
+
     <!-- Toggleable contact list -->
-    <div id="contactList" class="checkbox-group" style="display: none;">
+    <div id="contactList" class="checkbox-group " style="display: none;">
       <%= simple_form_for  @mycontact do |f| %>
-        <%= f.input :contacts,  as: :check_boxes,collection: @users %>
-        <%= f.button :submit, 'Submit', class: 'btn btn-outline-success mt-2'%>
+        <%= f.input :contacts,  as: :check_boxes,collection: @users, label: "Add Users:"%>
+        <%= f.button :submit, 'Add Contacts', class: 'btn btn-gradient mt-2 mx-4'%>
       <% end %>
     </div>
   </div>
+</div>
 </div>
 <script>
   // Function to toggle the contact list visibility
@@ -43,32 +50,6 @@
 </script>
 
 <style>
- .py-4 {
-  height: 1500px;
-  background: #DDF2FD; /* Lightest color from the palette for a soft, neutral background */
-}
-
-  .card-trip {
-  background: linear-gradient(to bottom, #88e1f2 0%, #35d0ba 100%);
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin: 1rem;
-  padding: 2rem;
-  color: #333; /* You may need to adjust the text color for better readability */
-}
-  .btn-gradient {
-  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-gradient:hover {
-  background: linear-gradient(to left, #ff758c 0%, #ff7eb3 100%);
-}
 /* /* .checkbox-group .form-check {
   display: flex;
   align-items: rigt;
