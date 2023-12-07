@@ -16,7 +16,6 @@ $background: #0a2335;
 // Specific CSS for your home-page
 html {
   background-color: $background;
-  color: white;
   overflow: hidden;
 }
 
@@ -30,7 +29,7 @@ body {
   margin: 0 auto;
   overflow: auto;
   color: gray;
-  background-color: white;
+  background: linear-gradient(#164863, #427D9D, #9BBEC8, #DDF2FD);
   overflow: hidden;
   /* Hide scrollbars */
 }
@@ -106,6 +105,7 @@ a {
 
 //avatar on the main page
 .avatar-bordered2 {
+  z-index: 1;
   justify-content: center;
   align-items: center;
   width: 120px;
@@ -115,7 +115,7 @@ a {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* This shadow gives a nice depth effect */
-  border: 5px solid white;
+  border: 5px solid goldenrod;
   /* Adjust border thickness and color as needed */
   object-fit: cover;
   /* This will make sure the image covers the area without stretching */
@@ -132,18 +132,17 @@ a {
   /* Center vertically */
   height: 80%;
   /* Adjust as needed */
-  z-index: 1;
+
 }
 
 .welcome-container {
+  position: absolute;
+  background-color: white;
+  top: 110px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 120px;
-  position: absolute;
-  left: 40px;
-  bottom: -20px;
   align-items: center;
   border: 3px solid goldenrod;
-  background-color: white;
   /* Or any color you’d like */
   border-radius: 45px;
   /* Adjust this value to increase or decrease the roundness */
