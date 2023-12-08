@@ -1,0 +1,76 @@
+{
+  "from": 1,
+  "to": 9,
+  "currentPage": 1,
+  "total": 9,
+  "totalPages": 1,
+  "queryTime": "0.037",
+  "totalTime": "0.047",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Adventure\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": null,
+      "image": null,
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "The Adventures of Ozzie and Harriet: The Complete Series"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6527/6527582cv11d.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Monster - Adventurer Max Wireless Bluetooth Speaker - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "WB 100th Anniversary 25-Film Collection: Volume Three - Fantasy, Action & Adventure [Blu-ray]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536736_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536736_sd.jpg",
+      "regularPrice": 229.99,
+      "shortDescription": null,
+      "name": "Rocksolar - Adventurer 100W Lithium Ion Battery Portable Power Station - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3538/35383337_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3538/35383337_sa.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "Brilliant Adventure (1992-2001) [LP] - VINYL"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6459/6459544_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459544_sd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": "The Navigator Carry-On 37L is a two wheeled roller bag designed to maximize space for your next adventure. Built to hold both clothing and technology, this carry-on can easily pack up to 5 days&#8217; worth of clothing and a 17&#8221; laptop. The front section is dedicated to organizing your tech, cords, and other small items with multiple mesh and zipper pockets including an RFID safe pocket.",
+      "name": "Nomatic - CARRY-ON (37L) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6459/6459543_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459543_sd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": "The Navigator Travel Backpack 32L was built to maximize how and what you carry on your back. Giving you maximum carry on space but comfort and support to lighten the load. The front section is dedicated to organizing your tech, cords, and other small items with multiple mesh and zipper pockets including an RFID safe pocket. This bag was built to last, and is the perfect go bag for any adventure.",
+      "name": "Nomatic - TRAVEL BACKPACK (32L) - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6517/6517959cv11d.jpg",
+      "regularPrice": 439.99,
+      "shortDescription": null,
+      "name": "DJI - Osmo Action 3 Adventure Combo 4K Action Camera - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6546/6546634_r.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6546/6546634_ra.jpg",
+      "regularPrice": 499.99,
+      "shortDescription": null,
+      "name": "DJI - Osmo Action 4 4K Action Camera Adventure Bundle - Gray"
+    }
+  ]
+}

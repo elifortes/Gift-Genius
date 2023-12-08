@@ -1,153 +1,34 @@
 {
   "from": 1,
-  "to": 20,
+  "to": 3,
   "currentPage": 1,
-  "total": 117,
-  "totalPages": 6,
-  "queryTime": "0.013",
-  "totalTime": "0.025",
+  "total": 3,
+  "totalPages": 1,
+  "queryTime": "0.035",
+  "totalTime": "0.041",
   "partial": false,
-  "canonicalUrl": "/v1/products((search=\"Fantasy\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "canonicalUrl": "/v1/products((search=\"fantasy\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
   "products": [
     {
-      "regularPrice": 7.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6557/6557655_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557655_sd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Eve's Beach Fantasy [DVD] [1997]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1331/13316075_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1331/13316075_s.gif"
+      "name": "Disney - Princess Magical Castle"
     },
     {
-      "regularPrice": 7.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6560/6560672_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560672_sd.jpg",
+      "regularPrice": 179.99,
       "shortDescription": null,
-      "name": "SEGA AGES Fantasy Zone - Nintendo Switch [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6400/6400996_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6400/6400996_sd.jpg"
+      "name": "Granblue Fantasy: Relink Collector's Edition - PlayStation 5"
     },
     {
-      "regularPrice": 9.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "regularPrice": 199.99,
       "shortDescription": null,
-      "name": "Final Fantasy: The Spirits Within [Blu-ray] [2001]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5577/5577375_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5577/5577375_s.gif"
-    },
-    {
-      "regularPrice": 9.99,
-      "shortDescription": null,
-      "name": "Final Fantasy VII: Advent Children [Blu-ray] [2005]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5577/5577384_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5577/5577384_s.gif"
-    },
-    {
-      "regularPrice": 9.99,
-      "shortDescription": null,
-      "name": "Final Fantasy: The Spirits Within [Blu-ray] [2001]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8460/8460569_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8460/8460569_s.gif"
-    },
-    {
-      "regularPrice": 11.99,
-      "shortDescription": null,
-      "name": "Magic: Fantasy Bellydance",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c05e3424-f307-4340-9727-cd1864354830.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/c05e3424-f307-4340-9727-cd1864354830.jpg"
-    },
-    {
-      "regularPrice": 13.99,
-      "shortDescription": null,
-      "name": "Keyboard Fantasies [2019]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2e1c4852-44db-4679-8ddf-34ed420d329a.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/2e1c4852-44db-4679-8ddf-34ed420d329a.jpg"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "Flying Fantasy [LP] - VINYL",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2514/25144052_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2514/25144052_s.gif"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "Oceans of Fantasy [LP] - VINYL",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3315/33157455_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3315/33157455_s.gif"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "Blumhouse's Fantasy Island [DVD] [2020]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403044_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403044_s.gif"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "Kingsglaive: Final Fantasy XV [DVD] [2016]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5498/5498302_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5498/5498302_s.gif"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "LEGO - Creator 3in1 Fantasy Forest Creatures 31125",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6485/6485724_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6485/6485724_sd.jpg"
-    },
-    {
-      "regularPrice": 14.99,
-      "shortDescription": null,
-      "name": "Final Fantasy XV Season Pass - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5656/5656070_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5656/5656070_sa.jpg"
-    },
-    {
-      "regularPrice": 15.99,
-      "shortDescription": null,
-      "name": "Family Fantasy Collection [DVD]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426112_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426112_s.gif"
-    },
-    {
-      "regularPrice": 16.99,
-      "shortDescription": null,
-      "name": "Keyboard Fantasies [LP] - VINYL",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3517/35177143_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3517/35177143_s.gif"
-    },
-    {
-      "regularPrice": 16.99,
-      "shortDescription": null,
-      "name": "Blumhouse's Fantasy Island [Includes Digital Copy] [Blu-ray/DVD] [2020]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403048_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403048_s.gif"
-    },
-    {
-      "regularPrice": 18.99,
-      "shortDescription": null,
-      "name": "Kingsglaive: Final Fantasy XV [Blu-ray] [2016]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5498/5498308_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5498/5498308_s.gif"
-    },
-    {
-      "regularPrice": 19.99,
-      "shortDescription": null,
-      "name": "The Bear...and Other Stories [LP] - VINYL",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3487/34876455_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3487/34876455_s.gif"
-    },
-    {
-      "regularPrice": 19.99,
-      "shortDescription": null,
-      "name": "Casual Intimacy [LP] - VINYL",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9123e0ba-b6c9-454b-9434-c74d67ede9fb.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9123e0ba-b6c9-454b-9434-c74d67ede9fb.jpg"
-    },
-    {
-      "regularPrice": 19.99,
-      "shortDescription": "Save and explore unique fantasy environment",
-      "name": "Ori and the Blind Forest Definitive Edition - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5964/5964004_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5964/5964004_sd.jpg"
+      "name": "WB 100th Anniversary 25-Film Collection: Volume Three - Fantasy, Action & Adventure [Blu-ray]"
     }
   ]
 }

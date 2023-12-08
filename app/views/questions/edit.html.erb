@@ -19,7 +19,7 @@
             <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end }, input_html: { class: 'form-control mb-2 rounded-input' } %>
             <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end,  input_html: { class: 'form-control mb-2 rounded-input' }%>
             <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+            <%# <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
             <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
             <%# <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
             <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end, input_html: { class: 'form-control mb-2 rounded-input' } %>

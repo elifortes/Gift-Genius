@@ -1,0 +1,363 @@
+{
+  "from": 1,
+  "to": 50,
+  "currentPage": 1,
+  "total": 151,
+  "totalPages": 4,
+  "queryTime": "0.092",
+  "totalTime": "0.128",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"backpack\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6263/6263000_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6263/6263000_sd.jpg",
+      "regularPrice": 102.99,
+      "shortDescription": null,
+      "name": "Solo New York - Varsity Collection All-Star Duffel Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505566_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505566_sd.jpg",
+      "regularPrice": 104.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 60L Backpack - BLACK"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505582_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505582_sd.jpg",
+      "regularPrice": 104.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 60L Backpack - ARCTIC BLUE"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505599_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505599_sd.jpg",
+      "regularPrice": 104.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 60L Backpack - FOREST GREEN/BLACK"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505571_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505571_sd.jpg",
+      "regularPrice": 104.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 Women's 60L Backpack - WHITE CRACKED ICE/GREY BLUE"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6437/6437080_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437080_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway Series 60L Backpack - Pine/Slate/Chartreuse"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6437/6437049_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437049_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway Series 70L Backpack - Grey Blue/Mercury/Blue Haze"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6437/6437077_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437077_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway Series 60L Backpack - Grey Blue/Mercury/Blue Haze"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5371/5371003_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5371/5371003_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Samsonite - Tectonic Backpack for 17\" Laptop - Black/Orange"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5370/5370504_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5370/5370504_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Samsonite - Tectonic 2 Large Laptop Backpack for 17\" Laptop - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5229/5229126_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5229/5229126_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Solo New York - Active Laptop Backpack for 17.3\" Laptop - Black/Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505573_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505573_sd.jpg",
+      "regularPrice": 114.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 75L Backpack - BLACK"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505583_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505583_sd.jpg",
+      "regularPrice": 114.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 75L Backpack - ARCTIC BLUE"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505591_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505591_sd.jpg",
+      "regularPrice": 114.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway 2.0 75L Backpack - FOREST GREEN/BLACK"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504336_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504336_sd.jpg",
+      "regularPrice": 119.95,
+      "shortDescription": null,
+      "name": "Thule - Contract 15.6\" Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6549/6549746_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549746_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Samsonite - Mobile Solution Convertible Backpack - Silver Shadow"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6491/6491304_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6491/6491304_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Targus - 15-17.3” 2 Office Antimicrobial Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6383/6383620_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6383/6383620_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Samsonite - Mobile Solution Convertible Backpack for 15.6\" Laptop - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6383/6383627_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6383/6383627_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Samsonite - Mobile Solution Convertible Backpack for 15.6\" Laptop - Navy Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6451/6451342_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6451/6451342_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "GoPro - Daytripper Backpack for 15\" Laptop - Volcanic Gray/Atomic Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6549/6549748_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549748_sd.jpg",
+      "regularPrice": 124.99,
+      "shortDescription": null,
+      "name": "Samsonite - Tectonic Nutech Backpack for 17\" Laptop - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6413/6413631_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6413/6413631_rd.jpg",
+      "regularPrice": 124.99,
+      "shortDescription": null,
+      "name": "Nomatic - Mckinnon Camera Backpack 21L - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6483/6483588_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6483/6483588_sd.jpg",
+      "regularPrice": 129.95,
+      "shortDescription": null,
+      "name": "Thule - Construct Backpack for 15.6\" laptop and 10.1\" table - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6296/6296126_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6296/6296126_sd.jpg",
+      "regularPrice": 129.95,
+      "shortDescription": null,
+      "name": "Thule - Accent Backpack 23L Bundle for 15.6\" Laptop w/ Subterra PowerShuttle, 10\" Tablet Sleeve, SafeZone, & Water Bottle Holder - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6557/6557009cv11d.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "SwissGear - 5358 USB ScanSmart Laptop Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6438/6438818_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6438/6438818_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Swissdigital Design - Anti Bacterial Travel Backpack - Red and Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562232_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562232_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Swissdigital Design - Pixel Pro Notebook Backpack with Integrated USB Charging Port/RFID Protection - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6545/6545667_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6545/6545667_sd.jpg",
+      "regularPrice": 130,
+      "shortDescription": null,
+      "name": "Bugatti - Contrast Backpack - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6545/6545766_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6545/6545766_sd.jpg",
+      "regularPrice": 130,
+      "shortDescription": null,
+      "name": "Bugatti - Contrast Backpack - Navy"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6368/6368461_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6368/6368461_sd.jpg",
+      "regularPrice": 134.99,
+      "shortDescription": null,
+      "name": "Samsonite - Tectonic Backpack for 17\" Laptop - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468414cv11d.jpg",
+      "regularPrice": 139,
+      "shortDescription": null,
+      "name": "Bellroy - Classic Backpack (Second Edition) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6437/6437058_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437058_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "High Sierra - Pathway Series 90L Backpack - Pine/Slate/Chartreuse"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562231_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562231_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Swissdigital Design - Circuit Pro Notebook Backpack with Integrated USB Charging Port/RFID Protection - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6545/6545690_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6545/6545690_sd.jpg",
+      "regularPrice": 140,
+      "shortDescription": null,
+      "name": "Bugatti - Central Backpack - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521250cv11d.jpg",
+      "regularPrice": 140,
+      "shortDescription": null,
+      "name": "SwissGear - Speed-run Gamer Backpack fits up to 17.3\" laptops"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468418cv11d.jpg",
+      "regularPrice": 149,
+      "shortDescription": null,
+      "name": "Bellroy - Melbourne Backpack - Limestone"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468447cv11d.jpg",
+      "regularPrice": 149,
+      "shortDescription": null,
+      "name": "Bellroy - Melbourne Backpack - Melbourne Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6543/6543895_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6543/6543895_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Paramount Expandable Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547676_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547676_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Chasm Backpack 26L - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547678_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547678_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Chasm Backpack 26L - Olivine"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547681_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547681_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Chasm Backpack 26L - Autumnal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547696_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547696_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Chasm Backpack 26L - Poseidon"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6483/6483593_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6483/6483593_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - Construct Backpack for 15.6\" laptop and 10.1\" table - Carbon Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5096/5096201_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5096/5096201_sd.jpg",
+      "regularPrice": 149.95,
+      "shortDescription": null,
+      "name": "Thule - EnRoute 27L Escort 2 Backpack for 15.6\" Laptop w/ 10.1\" Padded Tablet Sleeve, Crushproof SafeZone, & Water Bottle Holder - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6509/6509818_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6509/6509818_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Hyperice - Normatec Backpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6476/6476682_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476682_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Razer - Concourse Pro Backpack for 17\" Laptops - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6561/6561631_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6561/6561631_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Predator M Utility Backpack Carrying Case for 17\" Notebooks - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6509/6509819_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6509/6509819_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Hyperice - Normatec Carry Case - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6452/6452762_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452762_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Lowepro - Flipside BP 300 AW III Backpack - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6545/6545692_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6545/6545692_sd.jpg",
+      "regularPrice": 150,
+      "shortDescription": null,
+      "name": "Bugatti - Mile End Backpack - Black"
+    }
+  ]
+}

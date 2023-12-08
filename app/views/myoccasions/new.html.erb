@@ -49,13 +49,37 @@
   }
 </script>
 
-<style>
-/* /* .checkbox-group .form-check {
-  display: flex;
-  align-items: rigt;
-  margin-bottom: 1rem; */
-/* } */
-/* .checkbox-group .form-check input { */
-  /* margin-right: 0.5rem;
-} */ */
+<%# <style>
+.icon-group {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust the size of the main (gift) icon */
+}
+
+.icon-group .fa-solid {
+  color: #000000; /* Set a color for the icons */
+}
+
+.icon-group .fa-gift {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-group .fa-plus {
+  position: absolute;
+  top: 0px; /* Position the plus icon at the top of the gift icon */
+  right: -5px; /* Position the plus icon at the right of the gift icon */
+  font-size: 0.6rem; /* Make the plus icon smaller */
+  transform: translate(50%, 0%); /* Adjust for precise positioning */
+  z-index: 2;
+}
+
+
+
+
 </style>
+
+<div class="icon-group">
+  <i class="fa-solid fa-gift"></i>
+  <i class="fa-solid fa-plus"></i>
+</div> %>

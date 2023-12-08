@@ -1,0 +1,363 @@
+{
+  "from": 1,
+  "to": 50,
+  "currentPage": 1,
+  "total": 125,
+  "totalPages": 3,
+  "queryTime": "0.052",
+  "totalTime": "0.094",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Xbox\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6549/6549598_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549598_sd.jpg",
+      "regularPrice": 104.99,
+      "shortDescription": null,
+      "name": "Street Fighter 6 Ultimate Edition - Xbox Series X, Xbox Series S [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6537/6537043_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537043_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Atomic Heart Premium Edition - Xbox One, Xbox Series X, Xbox Series S [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6350/6350732_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6350/6350732_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Watch Dogs: Legion Gold Edition SteelBook - Xbox One, Xbox Series X"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6561/6561922_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6561/6561922_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Mortal Kombat 1 Premium Edition - Xbox Series S, Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6546/6546109_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6546/6546109_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Mortal Kombat 1 Premium Edition - Xbox Series X"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6568/6568322_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6568/6568322_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Avatar: Frontiers of Pandora Gold Edition - Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547406_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547406_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Seagate - Starfield Special Edition Game Drive for Xbox 2TB External USB 3.2 Gen 1 Portable Hard Drive - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1618/1618392_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1618/1618392_sa.jpg",
+      "regularPrice": 119.98,
+      "shortDescription": "4-Year Standard Geek Squad Protection",
+      "name": "4-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9973/9973965_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9973/9973965_sa.jpg",
+      "regularPrice": 119.98,
+      "shortDescription": "4-Year Standard Geek Squad Protection",
+      "name": "4-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6537/6537117_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537117_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "WWE 2K23 Icon Edition - Xbox One, Xbox Series X, Xbox Series S [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6352/6352881_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6352/6352881_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Watch Dogs: Legion Ultimate Edition - Xbox One, Xbox Series S, Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562344_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562344_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "The Crew Motorfest Ultimate Edition - Xbox One, Xbox Series S, Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6519/6519818_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519818_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "PGA Tour 2K23 Tiger Woods Edition - Xbox One, Xbox Series X, Xbox Series S [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6549/6549574_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549574_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "LEGO 2K Drive Awesome Rivals Edition - Xbox One, Xbox Series X, Xbox Series S [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6557/6557690_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557690_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Persona 5 Royal 1 More Edition - Xbox Series X, Xbox One"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6525/6525700_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6525/6525700_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Flight Simulator: 40th Anniversary Premium Deluxe Edition - Xbox Series X, Xbox Series S, Windows [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6406/6406954_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6406/6406954_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Flight Simulator Game of the Year Premium Deluxe Edition - Windows, Xbox Series S, Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423471_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423471_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Astro Gaming - A20 Gen 2 Wireless Gaming Headset for Xbox One, Xbox Series X|S, PC - White/Green"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6260/6260699_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6260/6260699_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Assassin's Creed Odyssey Ultimate Edition - Xbox One [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6568/6568744_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6568/6568744_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "HORI Racing Wheel Overdrive for Xbox Series X|S - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6500/6500885_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6500/6500885_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Turtle Beach - Stealth 600 Gen 2 MAX Wireless Gaming Headset for Xbox, PS5, PS4, Nintendo Switch and PC - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6535/6535760_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6535/6535760_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Turtle Beach - Stealth 600 Gen 2 MAX Wireless Multiplatform Gaming Headset for Xbox, PS5, PS4, Nintendo Switch and PC - 48 Hour Battery - Pink"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6535/6535763_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6535/6535763_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Turtle Beach - Stealth 600 Gen 2 MAX Wireless Multiplatform Gaming Headset for Xbox, PS5, PS4, Nintendo Switch and PC - 48 Hour Battery - Teal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6543/6543667_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6543/6543667_sd.jpg",
+      "regularPrice": 124.99,
+      "shortDescription": null,
+      "name": "Microsoft - Xbox Wireless Gaming Headset for Xbox Series X|S, Xbox One, and Windows 10|11 - Starfield Edition"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6514/6514400_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6514/6514400_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Microsoft - Elite Series 2 Core Wireless Controller for Xbox Series X, Xbox Series S, Xbox One, and Windows PCs - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6554/6554824cv11d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6554/6554824cv11d.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "PDP - Victrix Pro AF Wired Gaming Headset For Xbox Series X|S, Xbox One, and Windows 10/11 - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547918_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547918_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "PAYDAY 3 Collector's Edition - Xbox Series X"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562027_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562027_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Unicorn Overlord Collector's Edition - Xbox Series X"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6334/6334792cv11d.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Far Cry New Dawn Ultimate Edition - Xbox One [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6398/6398080_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6398/6398080_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Pillars of Eternity II: Deadfire Ultimate Collector's Edition - Xbox One"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6568/6568324_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6568/6568324_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Avatar: Frontiers of Pandora Ultimate Edition - Xbox Series X [Digital]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/4750/4750200_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4750/4750200_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Thrustmaster - Ferrari 458 Spider Racing Wheel for Xbox One - Black/Red/Yellow"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6524/6524106_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6524/6524106_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Turtle Beach - VelocityOne Flightstick Universal Simulation Controller for Xbox Series X and Windows PCs - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6551/6551143_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6551/6551143_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "WD - D30 Game Drive for Xbox 1TB External USB Type C Portable SSD - Summer Collection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6544/6544436_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6544/6544436_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "PowerA - MOGA XP-ULTRA Multi-Platform Wireless Controller for Xbox Series X|S, Mobile, PC - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473670cv11d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473670cv11d.jpg",
+      "regularPrice": 134.99,
+      "shortDescription": null,
+      "name": "Seagate - Game Drive for Xbox 4TB External USB 3.2 Gen 1 Portable Hard Drive Xbox Certified with Green LED Bar - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1618/1618407_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1618/1618407_sa.jpg",
+      "regularPrice": 139.98,
+      "shortDescription": "4-Year Standard Geek Squad Protection",
+      "name": "4-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/9973/9973974_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9973/9973974_sa.jpg",
+      "regularPrice": 139.98,
+      "shortDescription": "4-Year Standard Geek Squad Protection",
+      "name": "4-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6537/6537446_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537446_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Microsoft - Elite Series 2 Core Wireless Controller for Xbox Series X, Xbox Series S, Xbox One, and Windows PCs - Red"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6537/6537448_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537448_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Microsoft - Elite Series 2 Core Wireless Controller for Xbox Series X, Xbox Series S, Xbox One, and Windows PCs - Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5655/5655932_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5655/5655932_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Microsoft - Geek Squad Certified Refurbished Xbox Elite Wireless Controller for Xbox One - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6498/6498242_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6498/6498242_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Razer - Kaira Pro Wireless Gaming Headset for Xbox Series X|S and Xbox One - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461612_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461612_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "EPOS - GSP 600 Wired Gaming Headset for PC, PS5, PS4, Xbox Series X, Xbox One, Nintendo Switch, Mac - Black/Red"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504533_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504533_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "MX vs ATV Legends Collector's Edition - Xbox Series X"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6563/6563247_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6563/6563247_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Razer - Kishi V2 Pro for Android (Xbox Edition) - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6498/6498667_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6498/6498667_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "RIG - 800 Pro HX Wireless Gaming Headset for Xbox - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6389/6389328_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6389/6389328_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated Shiny Edition - Xbox One"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6505/6505862_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6505/6505862_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Teenage Mutant Ninja Turtles: The Cowabunga Collection Limited Edition - Xbox Series X"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6462/6462013_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6462/6462013_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "WD - D30 1TB Game Drive for PlayStation and Xbox External USB Type-C Portable SSD - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540752_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540752_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "WD - BLACK C50 1TB Expansion Card for Xbox Series X|S Gaming Console SSD Storage - Black"
+    }
+  ]
+}
