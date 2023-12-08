@@ -19,7 +19,7 @@ class ProductsController < ApplicationController
     @personnal = current_user.personnal
     @profile = @personnal.info[:profile]
 
-    if !@product.info
+    if @product.info
       @suggestion = "have a list of gifts #{@gift} for my friend's #{@recipient} and the occasion #{@occasion}, and I need help choosing the most suitable one.
       Is an #{@profile}, tell me if its a good choice for present, pls"
 
@@ -30,9 +30,7 @@ class ProductsController < ApplicationController
                                         messages: [{ role: "user", content: @suggestion }]
                                       })
       @content = chaptgpt_response["choices"][0]["message"]["content"]
-      regex_pattern = /\{"content-\d{4}-\d{2}-\d{2}"=>|}\z/
-      @content.gsub!(regex_pattern, '')
-      @product.info = { "content#{Date.new}".to_s => @content }
+      @product.info = @content
       @product.save!
     end
   end
