@@ -20,7 +20,7 @@
               <% if  current_user.photo.attached? %>
                 <%= cl_image_tag current_user.photo.key , class: "avatar", alt: "dropdown menu" %>
               <% else %>
-                <i class="bi bi-person-bounding-box fa-2xl" style="font-size:2em;color:white"></i>
+                <i class="bi bi-person-bounding-box fa-2xl" style="font-size:2em;"></i>
               <% end %>
               <!--avatar  with kitt userame from personnal.kitt !->
                 <%# image_tag "https://kitt.lewagon.com/placeholder/users/#{current_user.personnal.kitt}", class: "avatar", alt: "avatar" %>

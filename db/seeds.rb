@@ -12,20 +12,8 @@ Myoccasion.destroy_all
 Occasion.destroy_all
 Question.destroy_all
 Answer.destroy_all
+Mycontact.destroy_all
 User.destroy_all
-# creating userlogin for mains
-userU = User.create!(email: "nak@me.com", password: "kalvin")
-
-userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "Francois.png" }, notifications: true)
-print userU, userU.save!
-
-userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
-userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg" }, notifications: false)
-userM.save!
-
-userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
-userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg" }, notifications: true)
-userE.save!
 
 man = ["This chef's passion for fusion cuisine is complemented by his love for cycling. He's also a wine enthusiast, often organizing wine and dine events. His kitchen at home is a testament to his culinary adventures, filled with cookbooks and exotic spices. On weekends, he enjoys long cycling trips, exploring rural landscapes and enjoying the tranquility of nature.",
        "Apart from his love for antique books, this professor is deeply interested in history and linguistics. He often spends evenings giving lectures at local history clubs. His home is a mini-museum, adorned with historical artifacts and rare manuscripts, reflecting his academic interests.",
@@ -48,6 +36,20 @@ woman = [" This woman is a true plant enthusiast. Not only does she love exotic 
          "Her artistic talents extend to painting and sculpting. She's a DIY enthusiast, often undertaking home decoration projects. She participates in local art and craft fairs, displaying her pottery and handmade home decor items.",
          "Besides her yoga and photography hobbies, she's a keen gardener, growing her own herbs and flowers. She loves watercolor painting, often depicting scenes from nature and her travels. She also practices mindfulness meditation, which she incorporates into her yoga teaching.",
          "Her enthusiasm for the ocean is matched by her interest in marine biology and environmental activism. She enjoys kayaking and paddle boarding, exploring different coastal areas. She's also an amateur marine photographer, capturing the diverse beauty of sea life."]
+
+# creating userlogin for mains
+userU = User.create!(email: "nak@me.com", password: "kalvin")
+
+userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "Francois.png", profile: man.sample }, notifications: true)
+print userU, userU.save!
+
+userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
+userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg", profile: woman.sample }, notifications: false)
+userM.save!
+
+userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
+userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg", profile: woman.sample }, notifications: true)
+userE.save!
 
 # creating 30 users for login with userxx@me.com
 def users(man, woman)
@@ -91,28 +93,12 @@ User.all.each do |u|
   end
 end
 
-# assign the contacts to main
-#array << userU.id
-#array << userM.id
-#array << userE.id
-
-p array
-
-mycontacts = Mycontact.new
-mycontacts.user = userU
-mycontacts.contacts = array
-p mycontacts.save!
-
-array << userM.id
-contacts = Mycontact.new
-contacts.user = userM
-contacts.contacts = array
-p contacts.save!
-
-contacts = Mycontact.new
-contacts.user = userE
-contacts.contacts = array
-p contacts.save!
+User.all.each do |u|
+  mycontacts = Mycontact.new
+  mycontacts.user = u
+  mycontacts.contacts = array
+  mycontacts.save!
+end
 
 def occasion(user, array, user1, user2)
   myoccasion = Myoccasion.new(
@@ -172,6 +158,7 @@ def occasion(user, array, user1, user2)
   end
 end
 
-occasion(userU, array, userM, userE)
-occasion(userM, array, userU, userE)
-occasion(userE, array, userU, userM)
+# only_on_dev uncomment.
+#  occasion(userU, array, userM, userE)
+#  occasion(userM, array, userU, userE)
+#  occasion(userE, array, userU, userM)

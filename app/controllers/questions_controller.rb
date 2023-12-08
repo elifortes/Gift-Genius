@@ -195,7 +195,7 @@ class QuestionsController < ApplicationController
     scraped_products = []
     answer_values.each do |answer|
       filepath = "#{answer}"
-      responses = %w[ Action.json Adventure.json Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Playing_Musical_Instruments.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json SmartTV.json Thriller.json Traveling.json Xbox.json ]
+      responses = %w[ Action.json Adventure.json Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json SmartTV.json Thriller.json Traveling.json Xbox.json ]
       filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
@@ -204,8 +204,14 @@ class QuestionsController < ApplicationController
       if number > 0
         results = results["products"]
         results = results.sample(number > 30 ? 10 : number)
+        result = results.sample
+        scraped_products.push({
+          name: result["name"],
+          price: result["regularPrice"],
+          image_url: result["image"],
+        })
         results.each do |result|
-          if result["regularPrice"].to_f >= 150
+          if result["regularPrice"].to_f >= 120
             scraped_products.push({
               name: result["name"],
               price: result["regularPrice"],
