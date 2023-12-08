@@ -19,9 +19,9 @@ class ProductsController < ApplicationController
     @personnal = current_user.personnal
     @profile = @personnal.info[:profile]
 
-    if @product.info
+    if !@product.info
       @suggestion = "have a list of gifts #{@gift} for my friend's #{@recipient} and the occasion #{@occasion}, and I need help choosing the most suitable one.
-      Is an #{@profile}, tell me if its a good choice for present, pls"
+      Is an #{@profile}, tell me if its a good choice for present, keep simple, no much text, max 150 letters."
 
       client = OpenAI::Client.new
       client.add_headers("OpenAI-Beta" => "assistants=v1")
