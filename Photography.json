@@ -1,153 +1,216 @@
 {
   "from": 1,
-  "to": 20,
+  "to": 29,
   "currentPage": 1,
-  "total": 66,
-  "totalPages": 4,
-  "queryTime": "0.016",
-  "totalTime": "0.029",
+  "total": 29,
+  "totalPages": 1,
+  "queryTime": "0.033",
+  "totalTime": "0.052",
   "partial": false,
-  "canonicalUrl": "/v1/products((search=\"Photography\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "canonicalUrl": "/v1/products((search=\"photography\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
   "products": [
     {
-      "regularPrice": 19.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6393/6393550_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393550_rd.jpg",
+      "regularPrice": 114.99,
       "shortDescription": null,
-      "name": "Sunpak - 6\" Heart-Shaped Rainbow Vlogging Kit",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452578_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6452/6452578_rd.jpg"
+      "name": "Savage Universal - Port-A-Stand Background Support Kit with Savage #50 White Paper Backdrop - Matte Black"
     },
     {
-      "regularPrice": 22.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6475/6475175_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6475/6475175_sd.jpg",
+      "regularPrice": 119.88,
       "shortDescription": null,
-      "name": "Directors of Photography [LP] [PA]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2543/25431839_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2543/25431839_s.gif"
+      "name": "Adobe - Creative Cloud Photography Plan 20GB (1-Year Subscription) - Mac OS, Windows"
     },
     {
-      "regularPrice": 24.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6475/6475624_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6475/6475624_sd.jpg",
+      "regularPrice": 119.88,
       "shortDescription": null,
-      "name": "Platinum™ - 32\" Collapsible Light Reflector",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393448_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6393/6393448_rd.jpg"
+      "name": "Adobe - Creative Cloud Photography Plan 20GB (1-Year Subscription) - Mac OS, Windows [Digital]"
     },
     {
-      "regularPrice": 29.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6398/6398936_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6398/6398936_rd.jpg",
+      "regularPrice": 139.99,
       "shortDescription": null,
-      "name": "Sunpak - 10\" Heart-Shaped Rainbow Vlogging Kit with Bluetooth Remote - Black",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6457/6457931_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6457/6457931_rd.jpg"
+      "name": "Sony - Shooting Grip with Wireless Remote Commander - Black"
     },
     {
-      "regularPrice": 29.99,
-      "shortDescription": "BOWER 55mm Variable Neutral-Density Filter: Compatible with most DSLR and SLR lenses with a 55mm filter thread; enables creative photography in bright outdoor conditions; up to 8-stop range",
-      "name": "Bower - 55mm Variable Neutral-Density Filter",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6800/6800163_ra.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6800/6800163_ra.jpg"
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536987cv15d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536987cv15d.jpg",
+      "regularPrice": 146.99,
+      "shortDescription": null,
+      "name": "Insta360 - Flow Standard 3-axis Gimbal Stabilizer for Smartphones with built-in Tripod - White"
     },
     {
-      "regularPrice": 38.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6541/6541695cv18d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6541/6541695cv18d.jpg",
+      "regularPrice": 146.99,
       "shortDescription": null,
-      "name": "Savage Universal - 5' x 7' Photo Backdrop - White",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353556_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353556_rd.jpg"
+      "name": "Insta360 - Flow Standard 3-axis Gimbal Stabilizer for Smartphones with built-in Tripod - Gray"
     },
     {
-      "regularPrice": 39.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353557_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353557_rd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Platinum™ - 5-in-1 42\" Collapsible Light Reflector",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393446_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6393/6393446_rd.jpg"
+      "name": "Savage Universal - 5' x 12' Travel Photo Backdrop Kit - White"
     },
     {
-      "regularPrice": 39.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6415/6415934_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6415/6415934_rd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Bower - 42-Inch Collapsible Light Reflector Kit",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557433_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6557/6557433_rd.jpg"
+      "name": "Sony - Vlogger Accessory Kit - Black"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461314_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461314_rd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Savage Universal - Pure White Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473524cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473524cv13d.jpg"
+      "name": "Sunpak - 20\" Star-Shaped Rainbow Vlogging Kit with Bluetooth Remote"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461316_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461316_rd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473525cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473525cv13d.jpg"
+      "name": "Sunpak - 19\" Heart-Shaped Rainbow Vlogging Kit with Bluetooth Remote"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519450cv11d.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473526cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473526cv13d.jpg"
+      "name": "DJI - Osmo Mobile 6 Smartphone 3-Axis Gimbal Stabilizer - Gray"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6549/6549918cv11d.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473528cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473528cv13d.jpg"
+      "name": "DJI - Osmo Mobile 6 3-Axis Gimbal Stabilizer for Smartphones - Platinum Gray"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6298/6298650cv11a.jpg",
+      "regularPrice": 159.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper - Mocha",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473529cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473529cv13d.jpg"
+      "name": "Elgato - Green Screen Collapsible Chroma Key Panel"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538396cv11d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538396cv11d.jpg",
+      "regularPrice": 169.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473530cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473530cv13d.jpg"
+      "name": "Zhiyun - Smooth 5S 3-Axis Gimbal Stabilizer Standard for Smartphones with detachable tri-pod stand - Gray"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461313_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461313_rd.jpg",
+      "regularPrice": 179.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473532cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473532cv13d.jpg"
+      "name": "Sunpak - 25\" Bi-Color Ring Light Vlogging Kit with Bluetooth Remote"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6543/6543583_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6543/6543583_rd.jpg",
+      "regularPrice": 183.99,
       "shortDescription": null,
-      "name": "Savage Universal - Bone Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473533cv11d.jpg",
-      "thumbnailImage": null
+      "name": "Insta360 - Flow Creator Kit - Axis Gimbal Stabilizer for Smartphones - Gray"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5884/5884348cv11d.jpg",
+      "regularPrice": 209.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473534cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473534cv13d.jpg"
+      "name": "Lastolite - 5' x 6' Collapsible Chromakey"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6510/6510272_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510272_rd.jpg",
+      "regularPrice": 209.99,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473535cv13d.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473535cv13d.jpg"
+      "name": "Zhiyun - Crane M2S Handheld 3-Axis Gimbal Stabilizer for Camera and Smartphones with detachable tri-pod stand - Gray"
     },
     {
-      "regularPrice": 41.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6475/6475625_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6475/6475625_sd.jpg",
+      "regularPrice": 239.88,
       "shortDescription": null,
-      "name": "Savage Universal - Seamless Background Paper",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473537cv13d.jpg",
-      "thumbnailImage": null
+      "name": "Adobe - Creative Cloud Photography Plan 1TB (1-Year Subscription) - Mac OS, Windows [Digital]"
     },
     {
-      "regularPrice": 49.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547258_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547258_rd.jpg",
+      "regularPrice": 299.99,
       "shortDescription": null,
-      "name": "Sunpak - 12” Bi-Color Tabletop or Handheld Vlogging Kit with Bluetooth Remote for Smartphones and Compact Cameras - Black",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430959_rd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430959_rd.jpg"
+      "name": "Zhiyun - Crane-M 3S 3-Axis Gimbal Stabilizer for Smartphone, Action, or Mirrorless Cameras with Detachable Tri-pod Stand - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6491/6491894ld.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6491/6491894ld.jpg",
+      "regularPrice": 369.99,
+      "shortDescription": null,
+      "name": "Zhiyun - Crane M3 3-Axis Gimbal Stabilizer for Smartphones, Action Cameras, and Mirrorless Cameras with detachable tri-pod stand - White"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6529/6529291cv12d.jpg",
+      "regularPrice": 369.99,
+      "shortDescription": null,
+      "name": "DJI - RS 3 Mini 3-Axis Gimbal Stabilizer - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507773cv11d.jpg",
+      "regularPrice": 549.99,
+      "shortDescription": null,
+      "name": "DJI - RS 3 3-Axis Gimbal Stabilizer - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6458/6458609_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6458/6458609_sd.jpg",
+      "regularPrice": 699.99,
+      "shortDescription": "The Tamron 17-70mm F/2.8 (AFB070) is a fast, sharp, quiet, and small APS-C zoom lens. It is perfect for everyday photography with its excellent image quality.  The lens is equipped with Tamron&#8217;s RXD AF drive system and proprietary Vibration Compensation. It is built with Moisture-Resistant Construction and Fluorine Coating for added durability.",
+      "name": "Tamron - 17-70mm F/2.8 Di III-A VC RXD Standard Zoom Lens for Sony E-Mount"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507774cv11d.jpg",
+      "regularPrice": 719.99,
+      "shortDescription": null,
+      "name": "DJI - RS 3 Combo 3-Axis Gimbal Stabilizer - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6424/6424998_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6424/6424998_rd.jpg",
+      "regularPrice": 759.99,
+      "shortDescription": null,
+      "name": "DJI - RS 2 3-Axis Gimbal Stabilizer"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507771cv11d.jpg",
+      "regularPrice": 869.99,
+      "shortDescription": null,
+      "name": "DJI - RS 3 Pro 3-Axis Gimbal Stabilizer - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6459/6459460_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459460_sd.jpg",
+      "regularPrice": 999.95,
+      "shortDescription": "An incredibly lightweight lens for image makers needing a weather-resistant, autofocus lens for use in all types of photography and filmmaking.",
+      "name": "Fujifilm - GF50mm3.5 R LM WR Lens - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507772cv17d.jpg",
+      "regularPrice": 1099.99,
+      "shortDescription": null,
+      "name": "DJI - RS 3 Pro Combo 3-Axis Gimbal Stabilizer - Black"
     }
   ]
 }
