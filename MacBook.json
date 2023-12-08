@@ -1,0 +1,363 @@
+{
+  "from": 1,
+  "to": 50,
+  "currentPage": 1,
+  "total": 297,
+  "totalPages": 6,
+  "queryTime": "0.031",
+  "totalTime": "0.096",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"macbook\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508457cv12d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508457cv12d.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 140W Dual Port USB-C Compact Wall Charger Kit for MacBook Pro 16”, Smartphone, and Tablet - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508458cv12d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508458cv12d.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 140W 4-Port USB and USB-C Desktop Charger Kit for MacBook Pro 16”, Laptops, Smartphone, Tablet, and More - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6452/6452575_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452575_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Belkin - 11-in-1 USB C Hub with 4K HDMI, DP, VGA, 100W PD Docking Station for MacBook Pro, Air, and more - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6481/6481383_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6481/6481383_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Satechi - USB-C Multimedia Adapter for M1/M2 with 2 4K HDMI, USB C PD (85W), USB-C, 2 USB-A for MacBook, iPad, Mac & Windows - Space Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5887/5887001_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5887/5887001_sa.jpg",
+      "regularPrice": 169,
+      "shortDescription": "AppleCare+ for iMac extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for iMac - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5930/5930009_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5930/5930009_sa.jpg",
+      "regularPrice": 169,
+      "shortDescription": "AppleCare+ for iMac extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare Protection Plan for Mac  - 3-year plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430389_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430389_sa.jpg",
+      "regularPrice": 179,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509623_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509623_sa.jpg",
+      "regularPrice": 199,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539674_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539674_sa.jpg",
+      "regularPrice": 199,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5886/5886510_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5886/5886510_sa.jpg",
+      "regularPrice": 199,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for MacBook - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547723_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547723_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Hyper - HyperDrive Next 10 Port USB-C Dock, dual 4K HDMI, Ethernet, 1 USB-C, 2 USB-A, SD, for MacBook and Windows PC - Midnight Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6493/6493177_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6493/6493177_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Hyper - HyperDrive Dual 10 Port USB-C Hub, 4K HDMI, Ethernet, 1 USB-C, 2 USB-A, microSD/SD, travel dock for M1/M2/M3 MacBook - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545433_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545433_sa.jpg",
+      "regularPrice": 229,
+      "shortDescription": "AppleCare+ for MacBook extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539706_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539706_sa.jpg",
+      "regularPrice": 229,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545435_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545435_sa.jpg",
+      "regularPrice": 229,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for Macbook Air – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5933/5933015_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5933/5933015_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare Protection Plan for MacBook  - 3-year plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6485/6485108_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6485/6485108_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430390_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430390_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ Macbook Pro 13\"- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539678_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539678_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ Macbook Pro 13\"- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6350/6350973_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6350/6350973_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "Get up to three years of accidental damage coverage and 24/7 expert telephone technical support from Apple, the people who know your Mac best.",
+      "name": "AppleCare+ for MacBook- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5934/5934156_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5934/5934156_sa.jpg",
+      "regularPrice": 249,
+      "shortDescription": "AppleCare+ for Mac Pro extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare Protection Plan for Mac Pro  - 3-year plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6113/6113615_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6113/6113615_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Apple MacBook Air 11.6\" Certified Refurbished - Intel Core i5 with 4GB Memory - 128GB Flash Storage (2015) - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6113/6113606_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6113/6113606_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Apple MacBook Air 13.3\" Certified Refurbished - Intel Core i5 with 4GB Memory - 128GB Flash Storage SSD (2015) - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6348/6348973_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6348/6348973_sd.jpg",
+      "regularPrice": 259.99,
+      "shortDescription": null,
+      "name": "Apple MacBook Air 13.3\" Certified Refurbished - Intel Core i5 with 8GB Memory - 128GB Flash Storage SSD (2015) - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539688_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539688_sa.jpg",
+      "regularPrice": 269,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ Macbook Pro 13\" – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5886/5886512_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5886/5886512_sa.jpg",
+      "regularPrice": 269,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for MacBook - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6350/6350974_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6350/6350974_sa.jpg",
+      "regularPrice": 269,
+      "shortDescription": "Get up to three years of accidental damage coverage and 24/7 expert telephone technical support from Apple, the people who know your Mac best.",
+      "name": "AppleCare+ for MacBook- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430391_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430391_sa.jpg",
+      "regularPrice": 269,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ Macbook Pro 13\" – 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558179_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558179_sd.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for MacBook extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6480/6480486_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6480/6480486_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539704_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539704_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519119_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519119_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539707_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539707_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6558/6558157_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6558/6558157_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558184_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558184_sd.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for MacBook extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6558/6558161_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6558/6558161_sa.jpg",
+      "regularPrice": 279,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6513/6513607_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6513/6513607_sd.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Apple - Pre-Owned MacBook Air 13-inch 2015 Laptop MJVG2LL/A, 1.6GHz Core i5, 4GB RAM, 256GB SSD - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420850_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420850_sa.jpg",
+      "regularPrice": 299,
+      "shortDescription": "AC+ Macbook Service Fee",
+      "name": "AC+ Macbook Service Fee"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5887/5887003_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5887/5887003_sa.jpg",
+      "regularPrice": 299,
+      "shortDescription": "AppleCare+ for Mac Pro extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for Mac Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5936/5936067_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5936/5936067_sa.jpg",
+      "regularPrice": 349,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare Protection Plan for MacBook  - 3-year plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6441/6441209_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6441/6441209_sd.jpg",
+      "regularPrice": 349.99,
+      "shortDescription": null,
+      "name": "Apple MacBook Air 13.3\" Certified Refurbished - Intel Core i5 with 8GB Memory - 128GB SSD (2017) - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6534/6534975_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6534/6534975_sd.jpg",
+      "regularPrice": 349.99,
+      "shortDescription": null,
+      "name": "Belkin - Thunderbolt 4 Docking Station, USB-C Hub Docking Station for MacBook & Window, 90W PD, Thunderbolt 4 Cable Included - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6526/6526114_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6526/6526114_sd.jpg",
+      "regularPrice": 349.99,
+      "shortDescription": null,
+      "name": "BenQ - PD2506Q DesignVue 25\" IPS LED QHD 60Hz Monitor MacBook Ready with HDR (USB-C 65W/ HDMI/ DP/ DP Out) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6299/6299692_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6299/6299692_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare Protection Plan for MacBook  - 3-year plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430379_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430379_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6429/6429562_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6429/6429562_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539698_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539698_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ for Mac extends your coverage with additional service and post-purchase support \nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5886/5886513_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5886/5886513_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ for MacBook extends your repair coverage and technical support to three years from the original purchase date of your MacBook. It also adds coverage for up to two incidents of accidental damage from handling every 12 months, service fee plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone.",
+      "name": "AppleCare+ for MacBook- 3 Year Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539701_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539701_sa.jpg",
+      "regularPrice": 379,
+      "shortDescription": "AppleCare+ extends your technical support and repair coverage for Mac and includes unlimited incidents of accidental damage protection. Each incident is subject to a service fee, plus applicable tax.* In addition, you&#8217;ll get 24/7 priority access to",
+      "name": "AppleCare+ for Mac - 3YR Plan"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558178_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558178_sd.jpg",
+      "regularPrice": 399,
+      "shortDescription": "AppleCare+ for MacBook extends your coverage with additional service and post-purchase support.\nIncludes unlimited incidents of accidental damage protection, each subject to a service fee plus tax24/7 priority access to Apple expertsApple Authorized Repair available at Best Buy storesBattery coverage",
+      "name": "AppleCare+ for MacBook Pro - 3 Year Plan"
+    }
+  ]
+}

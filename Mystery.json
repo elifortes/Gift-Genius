@@ -1,0 +1,69 @@
+{
+  "from": 1,
+  "to": 8,
+  "currentPage": 1,
+  "total": 8,
+  "totalPages": 1,
+  "queryTime": "0.029",
+  "totalTime": "0.034",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Mystery\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3463/34632537_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3463/34632537_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries: Series 9-12 Collection [DVD]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3463/34632546_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3463/34632546_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries: Series 9-12 Collection [Blu-ray]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2092/20926399_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2092/20926399_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries Collection: Seasons 1-4 [12 Discs] [Blu-ray]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3150/31506171_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3150/31506171_sa.jpg",
+      "regularPrice": 114.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries: Seasons 5-8 [Blu-ray]"
+    },
+    {
+      "thumbnailImage": null,
+      "image": null,
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Miss Fisher's Murder Mysteries: The Complete Collection [DVD]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/55fde107-d913-44df-a167-d7489a281f3d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/55fde107-d913-44df-a167-d7489a281f3d.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Profound Mysteries [LP] - VINYL"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3150/31506162_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3150/31506162_sa.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries: Seasons 5-8 [DVD]"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2092/20926371_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2092/20926371_sa.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Murdoch Mysteries Collection: Seasons 1-4 [16 Discs] [DVD]"
+    }
+  ]
+}

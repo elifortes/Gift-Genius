@@ -1,0 +1,244 @@
+{
+  "from": 1,
+  "to": 33,
+  "currentPage": 1,
+  "total": 33,
+  "totalPages": 1,
+  "queryTime": "0.038",
+  "totalTime": "0.063",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Garden\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6540/6540678_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540678_sd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": null,
+      "name": "LEGO - Icons Tranquil Garden Adult Building Kit 10315"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558710_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558710_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "WORX - WG545.1 20V AIR 120 MPH Cordless Handheld Blower (1 x 2.0 Ah Battery and 1 x Charger) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508626_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508626_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Skil - PWR CORE 20 Brushless 20V 400 CFM Leaf Blower with 4.0Ah Battery and Charger - Red/black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427595cv11d.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Greenworks - 24-Volt 110 MPH 450 CFM Cordless Handheld Blower (1 x 4.0Ah Battery and 1 x  Charger) - Black/Green"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5228/5228520_ra.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5228/5228520_ra.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": null,
+      "name": "Nesco - Gardenmaster Digital Pro Food Dehydrator and Jerky Maker - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3461/34619371_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3461/34619371_sa.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": null,
+      "name": "Woodstock: Back to the Garden [50th Anniversary Collection] [LP] - VINYL"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558713_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558713_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "WORX - WG543 20V 125MPH 410CFM Cordless Handheld Blower (1 x 4.0 Ah Battery and 1 x Charger) - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422302cv11d.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Pure Garden - Fire Pit Set, Wood Burning Pit - Includes Spark Screen and Log Poker, 26” Round Metal Firepit - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422299_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422299_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Pure Garden - Fire Pit Set, Wood Burning Pit With Spark Screen, Cover and Log Poker,  26\" Woven Metal Square Firepit - Bronze"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7771/7771242_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7771/7771242_sa.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": "Thermostat temperature control; 1000W of power; Converga-Flow fan; wide temperature range; holds up to 30 trays",
+      "name": "Nesco - Gardenmaster Food Dehydrator - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422311_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422311_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "The 30&#8221; Outdoor Fire Pit by Pure Garden has a chic copper colored bowl that is attractive to match any outdoor living space d&#233;cor. The round steel bowl is designed for wood burning and features a 22.5&#8221; diameter cooking grate, a mesh spark screen for safety and an 18&#8221; log poker.",
+      "name": "Pure Garden - Portable Fire Pit 30\" Round Copper Colored Fire Bowl, Spark Screen, Log Poker and Grill Grate – Patio Bonfire Pit - Copper and Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422307_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422307_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "The 32&#8221; Round Metal wood burning fire pit with 18.5&#8221; Fire Bowl by Pure Garden has a simple finish that is attractive to match any outdoor living space d&#233;cor. Relax by the warmth of an inviting fire on a cool summer night or crisp fall evening. Enjoy the warm glow on your patio and set the ambiance for a relaxing outdoor experience.",
+      "name": "Pure Garden - Fire Pit Set, Wood Burning Pit - Includes Spark Screen and Log Poker, 32” Round Metal Firepit - Black and Copper"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422298_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422298_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Pure Garden - Fire Pit Set, Wood Burning Pit With Spark Screen, Cover and Log Poker,  32\" Marble Tile Square Firepit - Bronze, orange marbled"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422306_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422306_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Pure Garden - 32” Outdoor Deep Fire Pit- Square Large Steel Bowl with Star Design, Mesh Spark Screen, Log Poker & Storage Cover - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422309_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422309_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Pure Garden - 32\" Round Outdoor Fire Pit with Steel Bowl, Star Cutouts Spark Screen, Log Poker, Storage Cover for Patio Wood Burning - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422301_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422301_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Pure Garden - Fire Pit Set, Wood Burning Pit Includes Spark Screen and Log Poker Great for Outdoor and Patio, 32” Square Tile Firepit - Black and Orange Marbled"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6514/6514911_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6514/6514911_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Greenworks - 80-Volt 170 MPH 730 CFM Cordless Handheld Blower (1 x 2.5Ah Battery and 1 x Charger) - Green"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558714_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558714_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "WORX - WG585 40V 165 MPH 620 CFM Cordless Blower (2 x 4.0 Ah Batteries and 1 x Charger) - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6488/6488744cv11d.jpg",
+      "regularPrice": 259.95,
+      "shortDescription": null,
+      "name": "Hastings Home - Folding Bistro Set Outdoor Furniture for Garden, Patio, Porch with Lattice & Leaf Design 3PC Table and Chairs - Antique White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448884_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448884_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Patio Outdoor Cypress Acacia Wood Garden Bench - Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448797_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448797_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Patio Outdoor Windsor Acacia Wood Garden Bench - Dark Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448859_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448859_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Patio Outdoor Cypress Acacia Wood Garden Bench - Dark Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448914_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448914_sd.jpg",
+      "regularPrice": 289.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Patio Outdoor Hunter Acacia Wood Garden Bench - Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6417/6417150_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6417/6417150_sd.jpg",
+      "regularPrice": 419.99,
+      "shortDescription": null,
+      "name": "Sauder - Garden Villa Desk - Orchard Oak"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6449/6449172_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6449/6449172_sd.jpg",
+      "regularPrice": 419.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Modern Patio Outdoor Garden Metal Loveseat Bench - Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448728_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448728_sd.jpg",
+      "regularPrice": 439.99,
+      "shortDescription": null,
+      "name": "Walker Edison - Canyon Acacia Wood Patio Garden Bench - Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6546/6546857_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6546/6546857_sd.jpg",
+      "regularPrice": 699.99,
+      "shortDescription": null,
+      "name": "Greenworks - 80V 690 CFM 165 MPH Cordless Backpack Leaf Blower with (2) 4.0 Ah Battery and Dual-Port Charger - Green"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6427/6427702_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6427/6427702_sd.jpg",
+      "regularPrice": 819.95,
+      "shortDescription": null,
+      "name": "AeroGarden - Farm 12XL with Salad Bar Seed Pod Kit - Hydroponic Indoor Garden - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6427/6427704_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6427/6427704_sd.jpg",
+      "regularPrice": 1049.95,
+      "shortDescription": null,
+      "name": "AeroGarden - Farm 24XL with Salad Bar Seed Pod Kit - Hydroponic Indoor Garden - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6341/6341797_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6341/6341797_sd.jpg",
+      "regularPrice": 1099.98,
+      "shortDescription": null,
+      "name": "Sonance - SGS SUB - Garden Series 10\" Passive In-Ground Subwoofer (Each) - Dark Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6341/6341800_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6341/6341800_sd.jpg",
+      "regularPrice": 1374.98,
+      "shortDescription": null,
+      "name": "Sonance - SGS 4 SAT PACK - Garden Series 3-1/2\" 2-Way Outdoor Satellite  Speaker (4-Pack) - Dark Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6341/6341803_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6341/6341803_sd.jpg",
+      "regularPrice": 3799.98,
+      "shortDescription": null,
+      "name": "Sonance - SGS 8.1 SYSTEM - Garden Series 8.1-Ch. Outdoor Speaker System with In-Ground Subwoofer (Each) - Dark Brown/Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6341/6341804_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6341/6341804_sd.jpg",
+      "regularPrice": 4399.98,
+      "shortDescription": null,
+      "name": "Sonance - SGS 8.1 SYSTEM W/SR 2-125 AMP - Garden Series 8.1-Ch. Outdoor Speaker System with 2-Ch. Amplifier (Each) - Dark Brown/Black"
+    }
+  ]
+}

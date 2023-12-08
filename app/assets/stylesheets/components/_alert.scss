@@ -34,13 +34,19 @@
 }
 
 .flash-success {
-  border: 2px solid #1EDD88;
+  top: 200px;
+  height: 50px;
+  border: 3px solid #1EDD88;
 }
 
 .flash-warning {
-  border: 2px solid #FFC65A;
+  top: 200px;
+  height: 100px;
+  border: 3px solid #FFC65A;
 }
 
 .flash-danger {
-  border: 2px solid #FD1015;
+  top: 200px;
+  height: 70px;
+  border: 3px solid #FD1015;
 }

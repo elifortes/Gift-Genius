@@ -14,44 +14,40 @@ Question.destroy_all
 Answer.destroy_all
 User.destroy_all
 # creating userlogin for mains
-userU = User.create!(email: "nak@me.com", password: "kalvin" )
+userU = User.create!(email: "nak@me.com", password: "kalvin")
 
 userU.personnal = Personnal.new(name: "Francois", birthday: Date.new(1971, 01, 14), info: { picture: "Francois.png" }, notifications: true)
 print userU, userU.save!
 
-userM = User.create!(email: "mena@gmail.com", password: "aaaaaa" )
+userM = User.create!(email: "mena@gmail.com", password: "aaaaaa")
 userM.personnal = Personnal.new(name: "Menahil", birthday: Date.new(1994, 01, 1), info: { picture: "Mena.jpeg" }, notifications: false)
 userM.save!
 
-userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla" )
+userE = User.create!(email: "elimrfortes@gmail.com", password: "blabla")
 userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), info: { picture: "Eli.jpeg" }, notifications: true)
 userE.save!
 
-man =  ["A chef with a flair for fusion cuisine, known for his weekend cycling trips through the countryside, often spotted in cycling gear on sunny mornings.",
-  "A professor with a love for antique books, spends his free time browsing through old bookstores, always with a rare find under his arm.",
-  "An architect who enjoys urban sketching, often seen in public parks with his sketchbook, capturing the essence of cityscapes.",
-  "A personal trainer with a passion for hiking, spends his weekends exploring mountain trails, equipped with a backpack and hiking boots.",
-  "A tech entrepreneur who relaxes by playing chess, frequently participating in local chess club tournaments, showcasing strategic thinking.",
-  "A musician who loves gardening, spends his afternoons tending to his backyard garden, creating a serene environment for his musical inspirations.",
-  "A graphic designer who is an avid skateboarder, often seen at skate parks performing tricks, blending his artistic style with his love for skateboarding.",
-  "A marine biologist dedicated to scuba diving, explores coral reefs and marine ecosystems during his diving expeditions.",
-  "A photographer with a penchant for star gazing, spends nights capturing the beauty of the night sky, combining his love for photography and astronomy.",
-  "A firefighter who unwinds by woodworking, creating handcrafted furniture and decor in his workshop, demonstrating skill and precision."
-]
+man = ["This chef's passion for fusion cuisine is complemented by his love for cycling. He's also a wine enthusiast, often organizing wine and dine events. His kitchen at home is a testament to his culinary adventures, filled with cookbooks and exotic spices. On weekends, he enjoys long cycling trips, exploring rural landscapes and enjoying the tranquility of nature.",
+       "Apart from his love for antique books, this professor is deeply interested in history and linguistics. He often spends evenings giving lectures at local history clubs. His home is a mini-museum, adorned with historical artifacts and rare manuscripts, reflecting his academic interests.",
+       "His architectural work is just one aspect of his artistic talent. He also enjoys model building and 3D printing, often creating miniatures of his designs. His love for cityscapes is evident in his detailed sketches, capturing the dynamic nature of urban life.",
+       "In addition to his fitness career, he's an outdoor enthusiast, often participating in adventure races. He also practices yoga, finding it a perfect balance to his more intense physical activities. His weekends are spent on hiking trails, embracing the challenge and serenity of the mountains.",
+       "His strategic mind is not just for business but also for chess. He has a keen interest in artificial intelligence and enjoys attending tech conferences. At home, he has a dedicated space for his chess practice, often hosting friendly matches with fellow enthusiasts.",
+       "This musician finds his creative muse in his garden. He's also an amateur cook, often hosting backyard barbecues where he shares both his culinary creations and musical talents. His garden is his sanctuary, a place where he composes and rehearses his music.",
+       "His artistic skills extend to digital art and animation. He enjoys creating street art, often participating in local mural projects. His home is a canvas of his own design, showcasing his artistic works and skateboard collection.",
+       "His dedication to marine biology is matched by his passion for underwater photography. He's involved in ocean conservation efforts and often speaks at environmental workshops. His home is filled with marine artifacts and his stunning underwater photographs.",
+       "Besides photography, he's fascinated by space and astrophysics, often attending stargazing events and astronomy clubs. His photography studio is a blend of camera equipment and telescopes, reflecting his dual passions for photography and star gazing.",
+       "His woodworking hobby is an outlet for his creativity and precision. He's also a motorcycle enthusiast, often going on rides to unwind. His workshop is a haven of handcrafted projects, from intricate furniture pieces to artistic wooden sculptures."]
 
-woman = [" A botanist with a fascination for exotic flowers, spends her weekends in botanical gardens, often found sketching rare plants and flowers.",
-  "A software developer who unwinds by rock climbing, challenging herself on steep climbs, often seen at local climbing gyms or outdoor crags.",
-  "A novelist who finds inspiration by the sea, frequently spotted at beachside cafes, deeply engrossed in writing her latest book.",
-  "A professional violinist with a love for salsa dancing, spends her evenings at dance studios, merging her musical talent with rhythmic dance steps.",
-  "An aerospace engineer with a passion for baking, known for creating elaborate cakes and pastries, often sharing her creations with colleagues.",
-  "A film director who enjoys urban exploration, often embarks on adventures to discover hidden gems in the city, seeking inspiration for her next film.",
-  "A veterinarian who loves horseback riding, spends her free time at a local stable, combining her love for animals with equestrian sports.",
-  "An interior designer with a knack for pottery, enjoys crafting unique ceramic pieces, often incorporating them into her design projects.",
-  "A yoga instructor with a passion for photography, captures serene landscapes and candid moments, reflecting the tranquility of her yoga practice.",
-  "A marine scientist dedicated to surfing, finds balance between her scientific pursuits and riding the ocean waves, often seen at the beach at dawn.",
-]
-
-
+woman = [" This woman is a true plant enthusiast. Not only does she love exotic flowers and birdwatching, but she also has a passion for herbalism, creating her own herbal remedies and teas. She's a regular at local plant fairs and enjoys giving talks on sustainable gardening practices. Her home resembles a greenhouse, filled with a variety of plant species and DIY hydroponic systems.",
+         "Beyond her career in tech and rock climbing, she has a keen interest in robotics and often participates in hackathons. She enjoys hiking and geocaching on weekends, combining her love for technology and nature. Her living space is a blend of high-tech gadgets and climbing gear, reflecting her diverse interests.",
+         "Apart from writing, she is an avid reader, with a personal library that spans many genres. She enjoys journaling and blogging about her travels and experiences by the sea. She's also a fan of classical music and often attends concerts and operas, finding inspiration in the melodies.",
+         "Her love for the arts doesn't stop at music and dance. She's also an accomplished sketch artist, often drawing scenes from her travels and experiences. She enjoys teaching violin to children in her community, sharing her passion for music with the next generation.",
+         "She's fascinated by astrophysics and enjoys attending star-gazing events and space-themed workshops. Her baking skills are complemented by her interest in molecular gastronomy, often experimenting with new culinary techniques. She also enjoys creating baking tutorial videos for her online followers.",
+         "This woman is not just a filmmaker but also a keen photographer, capturing candid moments and street photography. She loves vintage cinema and collects old film posters and memorabilia. Her home is decorated with her own photography and film-inspired art.",
+         "She is also a passionate advocate for wildlife conservation. In her downtime, she enjoys birdwatching and nature hikes. She often volunteers for animal rescue missions and writes a blog about veterinary care and animal welfare.",
+         "Her artistic talents extend to painting and sculpting. She's a DIY enthusiast, often undertaking home decoration projects. She participates in local art and craft fairs, displaying her pottery and handmade home decor items.",
+         "Besides her yoga and photography hobbies, she's a keen gardener, growing her own herbs and flowers. She loves watercolor painting, often depicting scenes from nature and her travels. She also practices mindfulness meditation, which she incorporates into her yoga teaching.",
+         "Her enthusiasm for the ocean is matched by her interest in marine biology and environmental activism. She enjoys kayaking and paddle boarding, exploring different coastal areas. She's also an amateur marine photographer, capturing the diverse beauty of sea life."]
 
 # creating 30 users for login with userxx@me.com
 def users(man, woman)
@@ -63,6 +59,9 @@ def users(man, woman)
       birthday: Faker::Date.birthday,
       info: { sex: "man", picture: "man/man-0#{i}.jpg", profile: man.sample },
     )
+    mycontacts = Mycontact.new
+    mycontacts.user = user
+    mycontacts.save!
     user.personnal = personnal
     print i, user.save!
   end
@@ -74,6 +73,9 @@ def users(man, woman)
       birthday: Faker::Date.birthday,
       info: { sex: "woman", picture: "woman/woman-0#{i}.jpg", profile: woman.sample },
     )
+    mycontacts = Mycontact.new
+    mycontacts.user = user
+    mycontacts.save!
     user.personnal = personnal
     print i, user.save!
   end

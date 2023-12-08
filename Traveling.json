@@ -1,0 +1,363 @@
+{
+  "from": 1,
+  "to": 50,
+  "currentPage": 1,
+  "total": 64,
+  "totalPages": 2,
+  "queryTime": "0.032",
+  "totalTime": "0.064",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Travel\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3244/3244721_ra.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3244/3244721_ra.jpg",
+      "regularPrice": 109.95,
+      "shortDescription": null,
+      "name": "Celestron - Travel Scope 70 Portable Telescope - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5310/5310001_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5310/5310001_rd.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": "Compatible with most camcorders and cameras up to 6.6 lbs.; 63\" maximum extension height; 14.3\" minimum extension height; reverse folding legs; removable professional ball head with quick release plate; rubber feet",
+      "name": "Sunpak - TravelLite Pro Reverse Folding 63\" Tripod - Black with red accents"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6436/6436658_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6436/6436658_sd.jpg",
+      "regularPrice": 118.99,
+      "shortDescription": null,
+      "name": "Yogasleep - Dohm Connect & Rohm Travel Bundle - White & Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6387/6387417_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6387/6387417_rd.jpg",
+      "regularPrice": 119.95,
+      "shortDescription": null,
+      "name": "Celestron - TRAVEL SCOPE™ 70 DX PORTABLE TELESCOPE - Gray/Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547722_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547722_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Hyper - HyperDrive Next​ 11 Port USB-C Hub, dual 4K HDMI, Ethernet, 2 USB-C, 2 USB-A, microSD/SD, travel dock for PC/Chromebook - Midnight Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6315/6315940_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6315/6315940_rd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Blendtec - Go 30-Oz. Travel Bottle - Clear/Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6438/6438818_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6438/6438818_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Swissdigital Design - Anti Bacterial Travel Backpack - Red and Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6491/6491331_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6491/6491331_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Targus - 15\" to 17.3” CityGear Overnight Travel Roller - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5869/5869204_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5869/5869204_rd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Celestron - Eclipsmart Travel Solar Scope 50 Refractor Telescope - White/black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6351/6351412_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6351/6351412_rd.jpg",
+      "regularPrice": 139.95,
+      "shortDescription": null,
+      "name": "Peak Design - 24\" Travel Duffel Bag - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6352/6352835_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6352/6352835_rd.jpg",
+      "regularPrice": 139.95,
+      "shortDescription": null,
+      "name": "Peak Design - 24\" Travel Duffel Bag - Sage"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6353/6353557_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6353/6353557_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Savage Universal - 5' x 12' Travel Photo Backdrop Kit - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6553/6553414cv12d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6553/6553414cv12d.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "mophie - 3-in-1 Travel Charger with MagSafe for Apple iPhone, AirPods Pro/AirPods, and Apple Watch - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6524/6524231cv11d.jpg",
+      "regularPrice": 169.95,
+      "shortDescription": null,
+      "name": "Peak Design - Travel 65L Duffel Bag - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6551/6551425_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6551/6551425_sd.jpg",
+      "regularPrice": 175,
+      "shortDescription": null,
+      "name": "TUMI - Hanging Travel Kit - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6523/6523365_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6523/6523365_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "T3 - Afar Lightweight Travel-Size Hair Dryer - Satin Blush"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6503/6503274_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6503/6503274_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Romp & Roost - LUXE Hatch 3-in-1 Travel Bassinet and Lounger - Multi"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504193_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504193_sd.jpg",
+      "regularPrice": 195,
+      "shortDescription": null,
+      "name": "TUMI - Response Travel Kit - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6504/6504195_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504195_sd.jpg",
+      "regularPrice": 195,
+      "shortDescription": null,
+      "name": "TUMI - Response Travel Kit - Navy"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547673_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547673_sd.jpg",
+      "regularPrice": 199.95,
+      "shortDescription": null,
+      "name": "Thule - Aion Travel Backpack 40L - Nutria"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6541/6541580_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6541/6541580_rd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Ember - Travel Mug 2+, 12 oz, Temperature Control Smart Travel Mug - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6471/6471977_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6471/6471977_rd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Ember - Temperature Control Smart Travel Mug 2 - 12 oz - (RED)"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6400/6400567_rd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Therabody - Theragun mini (1st Gen) Handheld Portable Massage Gun Device, 150 Minute Battery + Travel Pouch - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6493/6493177_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6493/6493177_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Hyper - HyperDrive Dual 10 Port USB-C Hub, 4K HDMI, Ethernet, 1 USB-C, 2 USB-A, microSD/SD, travel dock for M1/M2/M3 MacBook - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6351/6351416_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6351/6351416_rd.jpg",
+      "regularPrice": 219.95,
+      "shortDescription": null,
+      "name": "Peak Design - Travel Duffelpack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547646_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547646_sd.jpg",
+      "regularPrice": 219.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 40L Men's Travel Pack - Obsidian"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547650_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547650_sd.jpg",
+      "regularPrice": 219.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 40L Men's Travel Pack - Dark Forest"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547651_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547651_sd.jpg",
+      "regularPrice": 219.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 40L Women's Travel Pack - Dark Bordeaux"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6351/6351428_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6351/6351428_rd.jpg",
+      "regularPrice": 219.99,
+      "shortDescription": null,
+      "name": "Peak Design - Travel Duffelpack - Sage"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6489/6489963cv11d.jpg",
+      "regularPrice": 229.95,
+      "shortDescription": "Rugged, expandable, and beautiful carry-on travel backpack",
+      "name": "Peak Design - Travel Backpack 30L - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6489/6489983cv11d.jpg",
+      "regularPrice": 229.95,
+      "shortDescription": "Rugged, expandable, and beautiful carry-on travel backpack",
+      "name": "Peak Design - Travel Backpack 30L - Midnight"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547657_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547657_sd.jpg",
+      "regularPrice": 239.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 60L Men's Travel Pack - Obsidian"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547685_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547685_sd.jpg",
+      "regularPrice": 239.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 60L Men's Travel Pack - Dark Forest"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6470/6470651_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6470/6470651_rd.jpg",
+      "regularPrice": 239.99,
+      "shortDescription": null,
+      "name": "Philips Norelco - 9500 Rechargeable Wet/Dry Electric Shaver with Quick Clean, Travel Case, and Pop up Trimmer - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547680_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547680_sd.jpg",
+      "regularPrice": 259.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 70L Men's Travel Pack - Obsidian"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547667_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547667_sd.jpg",
+      "regularPrice": 259.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 70L Women's Travel Pack - Dark Bordeaux"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547675_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547675_sd.jpg",
+      "regularPrice": 259.95,
+      "shortDescription": null,
+      "name": "Thule - Landmark 70L Men's Travel Pack - Dark Forest"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398534ld.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Nomatic - 30L Travel Pack - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398536ld.jpg",
+      "regularPrice": 289.99,
+      "shortDescription": null,
+      "name": "Nomatic - 40L Travel Pack - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6527/6527782cv11d.jpg",
+      "regularPrice": 299,
+      "shortDescription": null,
+      "name": "Napoleon - TravelQ 285 Portable Propane Gas Grill - Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6337/6337950_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6337/6337950_rd.jpg",
+      "regularPrice": 299.99,
+      "shortDescription": null,
+      "name": "Peak Design - Travel Backpack 45L - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6370/6370231_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6370/6370231_sd.jpg",
+      "regularPrice": 329.99,
+      "shortDescription": null,
+      "name": "Samsonite - Pro Travel 20\" Expandable Spinner Suitcase - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6364/6364717_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6364/6364717_rd.jpg",
+      "regularPrice": 379.99,
+      "shortDescription": null,
+      "name": "Peak Design - Travel 60\" Tripod Aluminum"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6462/6462329_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6462/6462329_rd.jpg",
+      "regularPrice": 399,
+      "shortDescription": null,
+      "name": "Weber - Traveler Portable Gas Grill - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6528/6528778cv11d.jpg",
+      "regularPrice": 399,
+      "shortDescription": null,
+      "name": "Napoleon - TravelQ PRO285E Portable Indoor and Outdoor Electric Grill - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6527/6527783cv11d.jpg",
+      "regularPrice": 399,
+      "shortDescription": null,
+      "name": "Napoleon - TravelQ 285X Portable Propane Gas Grill with Cart - Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6459/6459543_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459543_sd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": "The Navigator Travel Backpack 32L was built to maximize how and what you carry on your back. Giving you maximum carry on space but comfort and support to lighten the load. The front section is dedicated to organizing your tech, cords, and other small items with multiple mesh and zipper pockets including an RFID safe pocket. This bag was built to last, and is the perfect go bag for any adventure.",
+      "name": "Nomatic - TRAVEL BACKPACK (32L) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423282_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423282_sd.jpg",
+      "regularPrice": 429.99,
+      "shortDescription": null,
+      "name": "Acer - TravelMate Spin B3 B311RN-31 11.6\" Laptop - Intel Celeron - 4 GB Memory - 128 GB eMMC - Shale Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6566/6566211_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6566/6566211_sd.jpg",
+      "regularPrice": 499.99,
+      "shortDescription": null,
+      "name": "Maxi-Cosi Zelia Luxe 5-in-1 Modular Travel System - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6364/6364718_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6364/6364718_rd.jpg",
+      "regularPrice": 599.95,
+      "shortDescription": "Compatible with most cameras up to 20 lbs.; 60\" maximum extension height; 5.5\" minimum extension height; 5 leg sections; ergonomic ball head",
+      "name": "Peak Design - Travel 60\" Tripod Carbon Fiber"
+    }
+  ]
+}

@@ -27,13 +27,14 @@ class PagesController < ApplicationController
       @mycontacts = []
     end
 
+
     @mycontacts.sort_by! { |p| p.personnal.birthday }
 
 
-    def update
-      user = User.find(params[:uid])
-      user.personnal.update(notification: false)
-    end
+    # def update
+    #   user = User.find(params[:uid])
+    #   user.personnal.update(notification: false)
+    # end
 
 
 
@@ -43,6 +44,7 @@ class PagesController < ApplicationController
     #@notify_user = current_user&.notification
 
     #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
+
 
   end
 end

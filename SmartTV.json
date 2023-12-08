@@ -1,0 +1,363 @@
+{
+  "from": 1,
+  "to": 50,
+  "currentPage": 1,
+  "total": 360,
+  "totalPages": 8,
+  "queryTime": "0.034",
+  "totalTime": "0.085",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"smart\"&search=\"tv\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6507/6507095_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6507/6507095_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Weather Resistant TV Cover for Furrion 55\" Aurora Smart Outdoor TV - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6489/6489040_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6489/6489040_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Westinghouse - 32\" HD Smart Roku TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6512/6512148_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6512/6512148_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Sengled - Smart LED Wi-Fi TV Light Strip with Video Sync for 70\" to 80\" TV's - Multicolor"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6491/6491295_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6491/6491295_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 24\" Class F20 Series LED HD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6542/6542601_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6542/6542601_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Hisense - 32\" Class A4 Series LED HD Smart Vidaa TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538140_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538140_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "TCL - 32\" Class S2 S-Class 720p HD LED Smart TV with Roku TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1112/1112866_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1112/1112866_sa.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Peerless-AV - SmartMount Tilt TV Display Wall Mount For Most 39\" - 80\" TVs,Flat Panel Displays - Semi-gloss Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6544/6544757_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6544/6544757_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Toshiba - 32\" Class V35 Series LED HD Smart VIDAA TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538121_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538121_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "TCL - 32\" Class S3 S-Class 1080p FHD HDR LED Smart TV with Google TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6510/6510151_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510151_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "VIZIO - 24\" Class D-Series Full HD Smart TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6490/6490138_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6490/6490138_sd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 24\" Class F20 Series LED Full HD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6507/6507093_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6507/6507093_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Weather Resistant TV Cover for Furrion 65\" Aurora Smart Outdoor TV - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/4415/4415403_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4415/4415403_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": "For computers, smartphones, tablets, gaming consoles and TVs; 120W peak power (60W RMS); front-facing subwoofer; 3.5mm auxiliary and RCA inputs",
+      "name": "Logitech - Z533 Multimedia Speakers (3-Piece) - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6482/6482022_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6482/6482022_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 32\" Class F20 Series LED HD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6541/6541863_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6541/6541863_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Hisense - 40\" Class A4 Series LED Full HD Smart Vidaa TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6457/6457663_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6457/6457663_sa.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": "Moving into or out of a home with smart home technology? We can reset up to 10 devices of all types (TVs, smart thermostats, monitoring systems, etc.), so you don't have to worry about a different owner being able to get access.\nNote: Service does not include Wi-Fi setup/troubleshooting or the installation, uninstallation, removal, setup or configuration of any devices.",
+      "name": "Technology Reset Service"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6527/6527055_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6527/6527055_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Hisense - 32\" Class A4 Series LED Full HD 1080p Smart Android TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6411/6411908_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6411/6411908_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Wireless Surround Speakers (Pair) for Roku TV, Roku Smart Soundbar, Roku Streambar or Streambar Pro - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538126_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538126_sd.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": null,
+      "name": "TCL - 40\" Class S3 S-Class 1080p FHD HDR LED Smart TV with Google TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6501/6501780_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6501/6501780_sd.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": null,
+      "name": "Hisense - 40\" Class A4 Series LED Full HD 1080P Smart Android TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6506/6506779_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6506/6506779_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "LG - 24” Class LED HD Smart TV with webOS"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6510/6510121_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510121_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "VIZIO - 32\" Class D-Series Full HD Smart TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6495/6495086_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6495/6495086_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 32\" Class F20 Series LED Full HD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6541/6541870_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6541/6541870_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Hisense - 43\" Class A4 Series LED Full HD 1080P Smart Vidaa TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6501/6501941_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6501/6501941_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "LG - 32\" Class LED HD Smart webOS TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6510/6510122_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510122_sd.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "VIZIO - 40\" Class D-Series Full HD Smart TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6544/6544756_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6544/6544756_sd.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "Toshiba - 43\" Class V35 Series LED Full HD Smart VIDAA TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6501/6501781_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6501/6501781_sd.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "Hisense - 43\" Class A4 Series LED Full HD 1080P Smart Android TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1262/1262778_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1262/1262778_sa.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "Services include:Programming your cable box or satellite remoteConnecting the TV to your video devicesConnecting TV and video devices to your Wi-FiConfiguring smart TV or smart Blu-ray player apps for media streaming",
+      "name": "TV/Display Setup, 56” or Larger"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/4996/4996164_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4996/4996164_sa.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "Services include:Programming your cable box or satellite remoteConnecting the TV to your video devicesConnecting TV and video devices to your Wi-FiConfiguring smart TV or smart Blu-ray player apps for media streaming",
+      "name": "TV/Display Setup, up to 55”"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6548/6548362_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6548/6548362_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Weather Resistant TV Cover for Furrion 75\" Aurora Smart Outdoor TV - Gray"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6489/6489182_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6489/6489182_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Westinghouse - 43\" FHD Smart Roku TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538139_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538139_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "TCL - 43\" Class S3 S-Class 1080p FHD HDR LED Smart TV with Google TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6202/6202105_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6202/6202105_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Samsung - 32\" Class M4500 Series LED HD Smart Tizen TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6506/6506780_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6506/6506780_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "LG - 27\" Class LED Full HD Smart TV with webOS"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6495/6495088_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6495/6495088_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 42\" Class F20 Series LED Full HD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508872_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508872_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "TCL - 40\" Class 3-Series Full HD 1080p Smart Roku TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6506/6506776_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6506/6506776_sd.jpg",
+      "regularPrice": 209.99,
+      "shortDescription": null,
+      "name": "LG - 27\" Class LED Full HD Smart webOS TV with Countertop Design"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6551/6551176_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6551/6551176_sd.jpg",
+      "regularPrice": 229.99,
+      "shortDescription": null,
+      "name": "TCL - 40\" Class S3 S-Class 1080p FHD LED Smart TV with Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6202/6202106_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6202/6202106_sd.jpg",
+      "regularPrice": 229.99,
+      "shortDescription": null,
+      "name": "Samsung - 32\" Class N5300 Series LED Full HD Smart Tizen TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538141_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538141_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "TCL - 43\" Class S4 S-Class 4K UHD HDR LED Smart TV with Google TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6510/6510144_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510144_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "VIZIO - 43\" Class V-Series 4K LED HDR Smart TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6360/6360291_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6360/6360291_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Samsung - 40\" Class 5 Series LED Full HD Smart Tizen TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6553/6553345_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6553/6553345_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Kodak - FLIK HD9 Smart Projector, 1080p Portable Movie Projector with Android TV, Wi-Fi, Bluetooth & Built-In Speakers - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6543/6543645_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6543/6543645_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Pioneer - 43\" Class LED 4K UHD Smart Xumo TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448758_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448758_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Insignia™ - 43\" Class F30 Series LED 4K UHD Smart Fire TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6492/6492216_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6492/6492216_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Hisense - 50\" Class R6G Series LED 4K UHD Smart Roku TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6553/6553346_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6553/6553346_sd.jpg",
+      "regularPrice": 269.99,
+      "shortDescription": null,
+      "name": "Kodak - FLIK HD10 Smart Projector, 1080p Bluetooth & Wifi Projector with Android TV & Built-In 5W Speakers - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538120_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538120_sd.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "TCL - 50\" Class S4 S-Class 4K UHD HDR LED Smart TV with Google TV"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6537/6537422_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537422_sd.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Samsung - 43” Class CU7000 Crystal UHD 4K Smart Tizen TV"
+    }
+  ]
+}

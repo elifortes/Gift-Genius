@@ -1,0 +1,49 @@
+
+{
+  "from": 1,
+  "to": 5,
+  "currentPage": 1,
+  "total": 5,
+  "totalPages": 1,
+  "queryTime": "0.032",
+  "totalTime": "0.036",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Documentary\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Hood Life: Uncensored Documentary"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "regularPrice": 299.99,
+      "shortDescription": null,
+      "name": "Hood Life: Uncensored Documentary"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "regularPrice": 349.99,
+      "shortDescription": null,
+      "name": "Hood Life: Uncensored Documentary"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "Hood Life: Uncensored Documentary"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
+      "regularPrice": 449.99,
+      "shortDescription": null,
+      "name": "Hood Life: Uncensored Documentary"
+    }
+  ]
+}

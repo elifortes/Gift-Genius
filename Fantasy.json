@@ -1,0 +1,34 @@
+{
+  "from": 1,
+  "to": 3,
+  "currentPage": 1,
+  "total": 3,
+  "totalPages": 1,
+  "queryTime": "0.035",
+  "totalTime": "0.041",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"fantasy\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6557/6557655_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557655_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Disney - Princess Magical Castle"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6560/6560672_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560672_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Granblue Fantasy: Relink Collector's Edition - PlayStation 5"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/895ba55b-5723-4a19-a5b2-441e8934ab1c.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "WB 100th Anniversary 25-Film Collection: Volume Three - Fantasy, Action & Adventure [Blu-ray]"
+    }
+  ]
+}

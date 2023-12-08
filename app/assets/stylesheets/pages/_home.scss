@@ -1,20 +1,6 @@
-// figma colors
-$c01: #244861;
-$c02: #507C9A;
-$c03: #4aaae2;
-$c04: #7a8b8b;
-$c05: #566b7b;
-$c06: #F7DDAF;
-$c07: #F2A59E;
-$c08: #BB3261;
-
-
-$background: #0a2335;
-
 // Specific CSS for your home-page
 html {
   background-color: $background;
-  color: white;
   overflow: hidden;
 }
 
@@ -27,7 +13,11 @@ body {
   margin: 0 auto;
   overflow: auto;
   color: gray;
-  background-color: white;
+  //background: linear-gradient(#427D9D, #9BBEC8, #DDF2FD);
+  //background: linear-gradient(to bottom, #FF9BB3 0%, #FFC0A9 50%);
+  //background: linear-gradient(180deg, #5690AB 0.12%, #FFA79B 47.12%, #FEEDC4 89.73%);
+  background: #FFFFE6;
+  //background: linear-gradient(0deg, #5690AB 0%, #FFA79B 48.08%, #FEEDC4 91.67%);
   overflow: hidden;
   /* Hide scrollbars */
 }
@@ -37,13 +27,6 @@ body {
   text-shadow: 4px 4px 4px white;
 }
 
-.background-img {
-  background-image: url(https://res.cloudinary.com/df2nxg5o2/image/upload/v1701529292/orygnf7b2ifxeaq9x8ue.png);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 a {
@@ -74,9 +57,26 @@ a {
 
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .fa-shake {

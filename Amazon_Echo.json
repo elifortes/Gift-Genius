@@ -1,0 +1,90 @@
+{
+  "from": 1,
+  "to": 11,
+  "currentPage": 1,
+  "total": 11,
+  "totalPages": 1,
+  "queryTime": "0.070",
+  "totalTime": "0.083",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Amazon\"&search=\"Echo\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6460/6460246_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6460/6460246_sd.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Buds (2nd Gen) True Wireless Noise Cancelling In-Ear Headphones - BLACK"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6287/6287970_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6287/6287970_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Sub 100W Subwoofer - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461328_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461328_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 8 (2nd Gen, 2021 release) | HD smart display with Alexa and 13 MP camera - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6461/6461324_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6461/6461324_sd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 8 (2nd Gen, 2021 release) | HD smart display with Alexa and 13 MP camera - Glacier White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562249_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562249_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 8 (3rd Generation) 8-inch Smart Display with Alexa - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6562/6562248_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562248_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Hub Smart Home Control Panel with Alexa - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6347/6347267_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6347/6347267_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Studio Hi-Res 330W Smart Speaker with Dolby Atmos and Spatial Audio Processing Technology and Alexa - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6522/6522274_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6522/6522274_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Studio Hi-Res 330W Smart Speaker with Dolby Atmos and Spatial Audio Processing Technology and Alexa - Glacier White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430066_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430066_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 10 (3rd Generation) 10-inch Smart Display with Alexa - Charcoal"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6430/6430068_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430068_sd.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 10 (3rd Generation) 10-inch Smart Display with Alexa - Glacier White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6544/6544037cv14d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6544/6544037cv14d.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Amazon - Echo Show 15 15.6 inch Smart Display with Alexa and Fire TV - Black"
+    }
+  ]
+}

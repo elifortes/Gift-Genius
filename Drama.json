@@ -1,0 +1,27 @@
+{
+  "from": 1,
+  "to": 2,
+  "currentPage": 1,
+  "total": 2,
+  "totalPages": 1,
+  "queryTime": "0.152",
+  "totalTime": "0.158",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"drama\")&regularPrice>50)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3358/33583926_s.gif",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3358/33583926_sa.jpg",
+      "regularPrice": 58.99,
+      "shortDescription": null,
+      "name": "Topographic Drama: Live Across America [LP] - VINYL"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/472c7df1-0ed8-4e49-a920-d915ab36cd7d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/472c7df1-0ed8-4e49-a920-d915ab36cd7d.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "WB 100th Anniversary 25-Film Collection: Volume Two - Comedies, Dramas & Musicals [Blu-ray]"
+    }
+  ]
+}

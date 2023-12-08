@@ -25,7 +25,7 @@ class ProposalsController < ApplicationController
           @pledge += occasion.answer.pledge_amount
         end
 
-        if occasion.proposal.products.first
+        if occasion.proposal
           product = occasion.proposal.products.rank(:row_order).first
           info = { from: User.find(occasion.user.id).personnal.name }
           product.description = User.find(occasion.user.id).personnal.name
@@ -68,7 +68,7 @@ class ProposalsController < ApplicationController
     @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
     @product.selected = true
     @product.save!
-    #raise
+    @friends = @myoccasion.groups.map { |id| User.find(id).personnal unless id.nil? }
   end
 
   private
