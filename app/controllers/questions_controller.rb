@@ -118,12 +118,12 @@ class QuestionsController < ApplicationController
     @answer.movies = params[:question][:movies]
     @answer.music = params[:question][:music]
     @answer.books = params[:question][:books]
-    @answer.brands = [params[:question][:brands]]
-    @answer.places = [params[:question][:places]]
-    @answer.games = [params[:question][:games]]
+    @answer.brands = params[:question][:brands]
+    @answer.places = params[:question][:places]
+    @answer.games = params[:question][:games]
     @answer.restaurant = params[:question][:restaurant]
-    @answer.devices = [params[:question][:devices]]
-    @answer.purchases = [params[:question][:purchases]]
+    @answer.devices = params[:question][:devices]
+    @answer.purchases = params[:question][:purchases]
 
     if @answer.save
       @answers = @answer_values.select { |a| a.size > 1 }
