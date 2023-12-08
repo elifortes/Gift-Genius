@@ -11,8 +11,8 @@
           <h5 class="my-2 welcome"">
             Welcome back, <%= current_user.personnal.name if current_user.personnal %></h5>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
     <!-- Gift Occasion / Open space area -->
     <div class="card border-0  p-2 m-0" style="">
       <!-- if not logged in-->
@@ -37,16 +37,16 @@
                 <%= image_tag "occasion/occasion.jpg", alt: "",class: "image" %>
               <% end %>
               <!--Link to Group members -->
-              <%= link_to myoccasion_path(myoccasion), class: 'card-trip-group' do %>
+              <%= link_to myoccasion_path(myoccasion), class: 'icon-trip-group' do %>
                 <i class="fa-solid fas fa-users"></i>
                 <span></span>
               <% end %>
               <!--Link to Questions --><%# myoccasion.id %>
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
-                  <%= link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
+                  <%= link_to edit_occasion_question_path(o,o.question) , class: 'icon-trip-question' do %>
                     <% if  !o.status %>
-                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
+                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
                     <% else %>
                       <i class="fas fa-file-lines"></i>
                     <% end %>
@@ -58,9 +58,9 @@
               <% myoccasion.occasions.each do |o| %>
                 <% if o.user_id == current_user.id %>
                   <% unless o.proposal.nil? %>
-                    <%= link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
+                    <%= link_to proposal_path(o.proposal.id) , class: 'icon-trip-gift' do %>
                       <% if  o.status %>
-                        <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
+                        <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
                       <% else %>
                         <i class="fas fa-gifts"></i>
                       <% end %>
@@ -100,7 +100,7 @@
         <!--Link to Questions -->
         <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'icon-trip-question-half' do %>
           <% if  !occasion.status %>
-            <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
+            <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
           <% else %>
             <i class="fas fa-file-lines"></i>
           <% end %>
@@ -110,7 +110,7 @@
         <%= link_to proposal_path(occasion.proposal.id) , class: 'icon-trip-gift-half' do
                                             %>
         <% if occasion.status %>
-          <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
+          <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
         <% else %>
           <i class="fas fa-gifts"></i>
         <% end %>

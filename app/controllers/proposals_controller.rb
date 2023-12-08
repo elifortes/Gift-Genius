@@ -68,7 +68,7 @@ class ProposalsController < ApplicationController
     @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
     @product.selected = true
     @product.save!
-    @friends = current_user.mycontact.contacts.map { |id| User.find(id).personnal unless id.nil? }
+    @friends = @myoccasion.groups.map { |id| User.find(id).personnal unless id.nil? }
   end
 
   private

@@ -1,45 +1,41 @@
-<div class="py-4" style="background-color: #f5f5f5">
+<div class="py-4">
   <div class="p-1">
-    <div class="card-trip p-2 m-1">
-      <h2 class="text-center mt-2 ">Build Your Gift Group 🎁 </h2> <br>
+    <div class=" p-2 m-1">
+      <h2 class="text-center mt-2 proposal-text">Organize your Gift Group!&nbsp;&nbsp; 🎁 </h2>
+      <br>
       <div class="h-50 overflow-auto" style="height:300px">
         <div data-controller="your-controller-name">
-
           <%= simple_form_for @myoccasion do |f| %>
             <%= f.input :recipient, collection: @mycontacts, input_html: { class: 'form-control mb-2 rounded-input' } %>
             <%# f.input :photo, as: :file, input_html: { class: 'form-control mb-2' } %>
             <%# <div class="icon-and-label text-center" onclick="toggleContactList();" style="cursor: pointer;"> %>
             <div class="icon-and-label">
-              <h4>   <i class="fa-solid fa-user"></i> Contacts</h4>
+              <h4><i class="fa-solid fa-user"></i> Contacts</h4>
             </div>
             <!-- Toggleable contact list -->
-
             <%= f.input :groups, as: :check_boxes, collection: @mycontacts, label_method: :name, value_method: :id, label: "", item_wrapper_class: 'form-check' %>
-          <div class = "d-flex justify-content-between mx-4">
-             <div>
-            <%= f.button :submit, 'Submit', class: 'btn btn-gradient mt-2'%>
-            </div>
-          <div class="icon-and-label" onclick="toggleContactList();" style="cursor: pointer;">
+            <div class = "d-flex justify-content-between mx-4 mb-2">
+              <div>
+                <%= f.button :submit, 'Submit', class: 'btn btn-gradiant-pink mt-2'%>
+              </div>
+              <div class="icon-and-label" onclick="toggleContactList();" style="cursor: pointer;">
                 <h4>   <i class="fa-solid fa-user-plus" style="color:black"></i></h4>
               </div>
-
             </div>
           <% end %>
         </div>
       </div>
-    <br>
-
-  <%# <div class="card border-0 p-1 m-2" style="height: 300px"> %>
-
-    <!-- Toggleable contact list -->
-    <div id="contactList" class="checkbox-group " style="display: none;">
-      <%= simple_form_for  @mycontact do |f| %>
-        <%= f.input :contacts,  as: :check_boxes,collection: @users, label: "Add Users:"%>
-        <%= f.button :submit, 'Add Contacts', class: 'btn btn-gradient mt-2 mx-4'%>
-      <% end %>
+      <br>
+      <%# <div class="card border-0 p-1 m-2" style="height: 300px"> %>
+      <!-- Toggleable contact list -->
+      <div id="contactList" class="checkbox-group " style="display: none;">
+        <%= simple_form_for  @mycontact do |f| %>
+          <%= f.input :contacts,  as: :check_boxes,collection: @users, label: "Add Users:"%>
+          <%= f.button :submit, 'Add Contacts', class: 'btn btn-gradiant-pink mt-2 mx-4 black'%>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
 </div>
 <script>
   // Function to toggle the contact list visibility
@@ -48,14 +44,13 @@
     contactList.style.display = contactList.style.display === 'none' ? 'block' : 'none';
   }
 </script>
-
 <style>
-/* /* .checkbox-group .form-check {
-  display: flex;
-  align-items: rigt;
-  margin-bottom: 1rem; */
-/* } */
-/* .checkbox-group .form-check input { */
-  /* margin-right: 0.5rem;
-} */ */
+  /* /* .checkbox-group .form-check {
+    display: flex;
+    align-items: rigt;
+    margin-bottom: 1rem; */
+  /* } */
+  /* .checkbox-group .form-check input { */
+    /* margin-right: 0.5rem;
+  } */ */
 </style>

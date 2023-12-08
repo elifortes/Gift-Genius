@@ -1,53 +1,3 @@
-$background: #0a2335;
-$c01: #0D3450;
-$c02: #0D3450;
-$c03: #32728A;
-$c04: #7DA9AF;
-$c05: #798187;
-$c06: #FFE3BB;
-$c07: #FEB99E;
-$c08: #FDAD9D;
-$gradiant-blue: linear-gradient(180deg, #558BA1 0%, #E9E4C9 100%);
-$gradiant-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #32728A 0%, #FE878D 100%);
-$gradiant-pink: linear-gradient(90deg, #F67C7B 3.35%, #FFC1A4 51.96%);
-$grandiant-blue: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
-$gradiant-green: linear-gradient(185deg, #FDEAC0 -8.78%, #4E8AA1 96.15%);
-
-.btn-gradiant-dark {
-border-radius: 1.5625rem;
-background: linear-gradient(185deg, #4D8B9F -8.78%, #0B2B46 96.15%);
-}
-
-.btn-gradiant-pink {
-border-radius: 1.5625rem;
-background: linear-gradient(90deg, #F67C7B 3.35%, #FFC1A4 51.96%);
-}
-
-.btn-grandiant-blue {
-border-radius: 1.5625rem;
-background: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
-}
-
-.btn-gradiant-green {
-border-radius: 1.5625rem;
-background: linear-gradient(185deg, #FDEAC0 -8.78%, #4E8AA1 96.15%);
-}
-
-.welcome {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.5em;
-  font-weight: 400;
-  }
-
-  .logo-giftgenius {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 2.5em;
-  font-weight: 600;
-  color: white;
-  text-shadow: 4px 4px 14px $c08 ;
-  margin-left: -1em;
-  }
-
 // Specific CSS for your home-page
 html {
   background-color: $background;
@@ -64,7 +14,10 @@ body {
   overflow: auto;
   color: gray;
   //background: linear-gradient(#427D9D, #9BBEC8, #DDF2FD);
-  background: linear-gradient(to bottom, #FF9BB3 0%, #FFC0A9 50%);
+  //background: linear-gradient(to bottom, #FF9BB3 0%, #FFC0A9 50%);
+  //background: linear-gradient(180deg, #5690AB 0.12%, #FFA79B 47.12%, #FEEDC4 89.73%);
+  background: #FFFFE6;
+  //background: linear-gradient(0deg, #5690AB 0%, #FFA79B 48.08%, #FEEDC4 91.67%);
   overflow: hidden;
   /* Hide scrollbars */
 }
@@ -128,61 +81,4 @@ a {
 
 .fa-shake {
   animation: shake 0.5s ease-in-out 2;
-}
-
-
-//avatar on the main page
-.avatar-bordered2 {
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  /* Adjust width as needed for the size of the avatar */
-  height: 120px;
-  /* Make height equal to width for a perfect circle */
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* This shadow gives a nice depth effect */
-  border: 5px solid goldenrod;
-  /* Adjust border thickness and color as needed */
-  object-fit: cover;
-  /* This will make sure the image covers the area without stretching */
-  overflow: hidden;
-  /* Ensures the image stays within the border radius */
-}
-
-.parent {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  /* Center horizontally */
-  align-items: center;
-  /* Center vertically */
-  height: 80%;
-  /* Adjust as needed */
-
-}
-
-.welcome-container {
-  position: absolute;
-  background-color: white;
-  top: 110px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 120px;
-  align-items: center;
-  border: 3px solid goldenrod;
-  /* Or any color you’d like */
-  border-radius: 45px;
-  /* Adjust this value to increase or decrease the roundness */
-  padding: 5px 20px;
-  /* Adjust for spacing inside the container */
-  width: fit-content;
-  /* This will make sure the container fits the content */
-  margin: auto;
-  /* This will center the container if it’s a block-level element */
-  /* Other styles for text, etc. */
-  font-size: .8em;
-  /* Example text styling */
-  text-align: center;
-  /* Example text styling */
 }
