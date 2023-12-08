@@ -413,8 +413,19 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 .openai {
+  position: relative;
   font-weight: normal;
-  line-height: 90%;
+  //line-height: 90%;
+  padding: 10px;
+}
+
+.openai-icon {
+  z-index: 2;
+  top: 450px;
+  left: 25px;
+  position: absolute;
+  font-size: 2em;
+
 }
 
 //********************* */ cards on home page
@@ -544,7 +555,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   object-fit: cover;
 }
 
-.product-img {
+.card-trip-product.product-img {
   height: 80%;
   overflow: hidden;
 }

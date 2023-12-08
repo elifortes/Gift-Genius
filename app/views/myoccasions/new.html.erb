@@ -4,7 +4,7 @@
       <h2 class="text-center mt-2 proposal-text">Organize your Gift Group!&nbsp;&nbsp; 🎁 </h2>
       <br>
       <div class="h-50 overflow-auto" style="height:300px">
-        <div data-controller="your-controller-name">
+        <div >
           <%= simple_form_for @myoccasion do |f| %>
             <%= f.input :recipient, collection: @mycontacts, input_html: { class: 'form-control mb-2 rounded-input' } %>
             <%# f.input :photo, as: :file, input_html: { class: 'form-control mb-2' } %>
@@ -19,7 +19,7 @@
                 <%= f.button :submit, 'Submit', class: 'btn btn-gradiant-pink mt-2'%>
               </div>
               <div class="icon-and-label" onclick="toggleContactList();" style="cursor: pointer;">
-                <h4>   <i class="fa-solid fa-user-plus" style="color:black"></i></h4>
+                <h4>     <i class="fa-solid fa-user-plus fa-beat" style="--fa-beat-scale: 1.1;--fa-animation-duration: 3s;color:black"></i></h4>
               </div>
             </div>
           <% end %>

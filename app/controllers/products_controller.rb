@@ -10,24 +10,33 @@ class ProductsController < ApplicationController
   end
 
   def show
+
+    # am i the creator of the occasion
     @product = Product.find(params[:proposal_id])
     @proposal = Proposal.find(params[:id])
-    #condition 1: @product.proposal.occasion.answer
-    @recipient_id = @product.proposal.occasion.recipient
-    @recipient = User.find(@recipient_id).personnal.to_json
-    @gift = Product.all.last.title.to_json
-    @personnal = current_user.personnal
-    @profile = @personnal.info[:profile]
+    @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
+    @gift = Gift.find(@myoccasion.gift)
 
-    if !@product.info
-      @suggestion = "have a list of gifts #{@gift} for my friend's #{@recipient} and the occasion #{@occasion}, and I need help choosing the most suitable one.
-      Is an #{@profile}, tell me if its a good choice for present, keep simple, no much text, max 150 letters."
+    @owner_id = @myoccasion.user_id
+    # am i the creator of the occasion
+    @ownership = (@owner_id == current_user.id)
+    # show the stuff now
+    @recipient_id = @product.proposal.occasion.recipient
+    @recipient = User.find(@recipient_id).personnal
+    @sex = @recipient.info["sex"]
+    @birthday = @recipient.birthday
+    @name = @recipient.name
+    @party = @gift.title
+    @profile = @recipient.info["profile"]
+
+    if rand <= 0.25
+      @suggestion = "I have this gift: #{@product.title}, costing #{@product.price.to_f} for my friend's #{@name},a #{@sex} the birthday is on #{@birthday}, and the occasion is #{@party}, and I need help choosing the most suitable one.  We know that as  #{@profile}, tell me if its a good choice for present, keep simple, no much text, max 150 letters."
 
       client = OpenAI::Client.new
       client.add_headers("OpenAI-Beta" => "assistants=v1")
       chaptgpt_response = client.chat(parameters: {
                                         model: "gpt-3.5-turbo",
-                                        messages: [{ role: "user", content: @suggestion }]
+                                        messages: [{ role: "user", content: @suggestion }],
                                       })
       @content = chaptgpt_response["choices"][0]["message"]["content"]
       @product.info = @content

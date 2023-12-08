@@ -9,46 +9,40 @@
   </div>
 </div>
 <!-- card separation -->
-
-
-<div class="">
-  <button onclick="toggleInfo()">
-     <i class="bi bi-gem"></i>
-  </button>
+<div class="genie-button" style="height:200px">
+  <a class="openai-icon" onclick="toggleInfo()">
+    <i class="fas fa-gem fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
+  </a>
   <div class="openai" id="productInfo" style="display: none;">
-    <%= @product.info %>
-  </div>
-
-
-
-
-<!-- end navigation buttons -->
-<div class="row d-flex p-2">
-  <div class="col-6" style="text-align:start">
-    <%= link_to  proposal_path, class: " me-2 p-2" do %>
-      <i class="fa-solid fa-square-caret-left me-2" style="font-size:2em;text-shadow:1px 1px 3px black"></i>Back
-    <% end %>
-  </div>
-  <div class="col-6" style="text-align:end">
-    <% simple_form_for @product do |f| %>
-      <%= f.input :selected %>
-      <%= f.button :submit, class: 'btn btn-primary' %>
-    <% end %>
-    <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " ms-2 p-2" do %>
-      Select this gift <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
-    <% end %>
+    <div class="card-trip-product mx-2">
+      <div class="openai"><%= @product.info %></div>
+    </div>
   </div>
 </div>
-
-
-
+<!-- end navigation buttons -->
+<div class="p-2">
+  <div class="row d-flex p-2 justify-content-end ">
+    <div class="col-6" style="text-align:start">
+      <%= link_to  proposal_path, class: " me-2 p-2" do %>
+        <i class="fa-solid fa-square-caret-left me-2" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+      <% end %>
+    </div>
+    <div class="col-6" style="text-align:end">
+      <% if @ownership %>
+        <%= link_to  proposal_product_confirmation_path(@product.proposal_id,@product.id), class: " ms-2 p-2" do %>
+          Select this gift <i class="fa-solid fas fa-thumbs-up" style="font-size:2em;text-shadow:1px 1px 3px black"></i>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
 <script>
-function toggleInfo() {
-  var info = document.getElementById("productInfo");
-  if (info.style.display === "none") {
-    info.style.display = "block";
-  } else {
-    info.style.display = "none";
+  function toggleInfo() {
+    var info = document.getElementById("productInfo");
+    if (info.style.display === "none") {
+      info.style.display = "block";
+    } else {
+      info.style.display = "none";
+    }
   }
-}
 </script>
