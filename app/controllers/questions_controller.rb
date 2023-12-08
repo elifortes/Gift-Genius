@@ -130,13 +130,9 @@ class QuestionsController < ApplicationController
 
       # @scraped_products = gift_scraper(@answers)
       @scraped_products = backup_scrapper(@answers)
-
-      # if @scraped_products.empty?
-      #   @scraped_products = backup_scrapper(@answers)
-      # end
-
+      @scraped_products_ = backup_scrapper(@answers)
+      @scraped_products + @scraped_products_
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
-
       @scraped_products.each do |product_data|
         product = Product.new(
           title: product_data[:name],
@@ -198,7 +194,6 @@ class QuestionsController < ApplicationController
       responses = %w[ Action.json Adventure.json Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json SmartTV.json Thriller.json Traveling.json Xbox.json ]
       filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
-
       results = JSON.parse(serialized_beatles)
       number = results["total"].to_i
       if number > 0

@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
     @profile = @recipient.info["profile"]
 
     if !@product.info || rand <= 0.25
-      @suggestion = "I have this gift: #{@product.title}, costing #{@product.price.to_f} for my friend's #{@name},a #{@sex} the birthday is on #{@birthday}, and the occasion is #{@party}, and I need help choosing the most suitable one.  We know that as  #{@profile}, tell me if its a good choice for present, keep simple, no much text, max 150 letters."
+      @suggestion = "I have this gift: #{@product.title}, costing #{@product.price.to_f} for my friend's #{@name},a #{@sex} the birthday is on #{@birthday}, and the occasion is #{@party}, and I need help choosing the most suitable one.  We know that as  #{@profile}, tell me if its a good choice for present,why?, keep simple, no much text, max 200 letters."
 
       client = OpenAI::Client.new
       client.add_headers("OpenAI-Beta" => "assistants=v1")
