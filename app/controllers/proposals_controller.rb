@@ -32,7 +32,7 @@ class ProposalsController < ApplicationController
           products.push(product)
         end
       end
-      @proposal.products.destroy_all
+      #@proposal.products.destroy_all
       products.each do |p|
         product = Product.new(title: p.title, description: p.description, url: p.url, position: p.position, selected: p.selected, price: p.price, rating: p.rating)
         product.proposal = @proposal
