@@ -29,7 +29,7 @@ class ProductsController < ApplicationController
     @party = @gift.title
     @profile = @recipient.info["profile"]
 
-    if rand <= 0.25
+    if !@product.info || rand <= 0.25
       @suggestion = "I have this gift: #{@product.title}, costing #{@product.price.to_f} for my friend's #{@name},a #{@sex} the birthday is on #{@birthday}, and the occasion is #{@party}, and I need help choosing the most suitable one.  We know that as  #{@profile}, tell me if its a good choice for present, keep simple, no much text, max 150 letters."
 
       client = OpenAI::Client.new
