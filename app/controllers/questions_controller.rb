@@ -26,13 +26,13 @@ class QuestionsController < ApplicationController
       "Mystery", "Romance", "Sci-Fi", "Thriller", "War",
     ]
 
-    @music = [
-      "",
-      "Blues", "Classical", "Country", "Disco", "Electronic",
-      "Folk", "Funk", "Hip Hop", "House", "Indie",
-      "Jazz", "Metal", "Pop", "Punk", "R&B",
-      "Reggae", "Rock", "Soul", "Techno",
-    ]
+    # @music = [
+    #   "",
+    #   "Blues", "Classical", "Country", "Disco", "Electronic",
+    #   "Folk", "Funk", "Hip Hop", "House", "Indie",
+    #   "Jazz", "Metal", "Pop", "Punk", "R&B",
+    #   "Reggae", "Rock", "Soul", "Techno",
+    # ]
 
     @books = [
       "",
@@ -48,12 +48,6 @@ class QuestionsController < ApplicationController
       "Reading", "Running", "Traveling", "Yoga",
     ]
 
-    @brands = [
-      "",
-      "Adidas", "Amazon", "Apple", "Coca-Cola", "Gap",
-      "H&M", "Levi's", "McDonald's", "Nike", "Puma",
-      "Sony", "Starbucks", "Samsung", "Target", "Toyota",
-    ]
 
     @places = [
       "",
@@ -69,12 +63,7 @@ class QuestionsController < ApplicationController
       "Map and Compass", "Outdoor Clothing", "Paperback Novels", "Travel Guides", "Water Bottles",
     ]
 
-    @restaurant = [
-      "",
-      "American (Burgers)", "Brazilian", "Chinese", "French", "Greek",
-      "Indian", "Italian", "Japanese", "Korean", "Mediterranean",
-      "Mexican", "Middle Eastern", "Spanish", "Thai", "Vietnamese",
-    ]
+
 
     @devices = [
       "",
@@ -82,13 +71,26 @@ class QuestionsController < ApplicationController
       "iPad", "iPhone", "MacBook", "Nintendo Switch", "PlayStation",
       "Samsung Galaxy S Series", "Smart TV", "Windows Laptop", "Xbox", "GoPro Camera",
     ]
+    # @restaurant = [
+    #   "",
+    #   "American (Burgers)", "Brazilian", "Chinese", "French", "Greek",
+    #   "Indian", "Italian", "Japanese", "Korean", "Mediterranean",
+    #   "Mexican", "Middle Eastern", "Spanish", "Thai", "Vietnamese",
+    # ]
 
-    @games = [
-      "",
-      "Adventure", "Arcade", "Educational", "Fighting", "First-Person Shooter (FPS)",
-      "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
-      "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
-    ]
+    # @games = [
+    #   "",
+    #   "Adventure", "Arcade", "Educational", "Fighting", "First-Person Shooter (FPS)",
+    #   "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
+    #   "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
+    # ]
+
+    # @brands = [
+    #   "",
+    #   "Adidas", "Amazon", "Apple", "Coca-Cola", "Gap",
+    #   "H&M", "Levi's", "McDonald's", "Nike", "Puma",
+    #   "Sony", "Starbucks", "Samsung", "Target", "Toyota",
+    # ]
   end
 
   def new
@@ -194,7 +196,7 @@ class QuestionsController < ApplicationController
     scraped_products = []
     answer_values.each do |answer|
       filepath = "#{answer}.json"
-      responses = %w[ Action.json Beach.json Amazon_Echo.json Beach.json Biography.json Camping_Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical_Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
+      responses = %w[ Action.json Adventure.json  Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Playing_Musical_Instruments.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json  SmartTV.json Thriller.json Traveling.json Xbox.json]
       filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
@@ -202,9 +204,9 @@ class QuestionsController < ApplicationController
       number = results["total"].to_i
       if number > 0
         results = results["products"]
-        results = results.sample(number > 10 ? 10 : number)
+        results = results.sample(number > 30 ? 10 : number)
         results.each do |result|
-          #if result["regularPrice"].to_f <= @occasion.answer
+          if result["regularPrice"].to_f >= 150
           scraped_products.push({
             name: result["name"],
             price: result["regularPrice"],

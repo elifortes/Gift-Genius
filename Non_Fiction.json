@@ -1,0 +1,335 @@
+{
+  "from": 1,
+  "to": 46,
+  "currentPage": 1,
+  "total": 46,
+  "totalPages": 1,
+  "queryTime": "0.184",
+  "totalTime": "0.240",
+  "partial": false,
+  "canonicalUrl": "/v1/products((search=\"Non\\-Fiction\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "products": [
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461482cv11d.jpg",
+      "regularPrice": 119.95,
+      "shortDescription": null,
+      "name": "Cuisinart - Ceramica XT Nonstick 11 Piece Cookware Set - Red"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461485cv11d.jpg",
+      "regularPrice": 119.95,
+      "shortDescription": null,
+      "name": "Cuisinart - Ceramica XT Nonstick 11 Piece Cookware Set - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410949_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410949_rd.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": null,
+      "name": "Viking - Hard Anodized Double Burner Nonstick Griddle - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410971_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410971_rd.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": null,
+      "name": "Viking - Contemporary 3 Ply 12\" Nonstick Fry Pan - Mirror"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6445/6445744_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6445/6445744_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Granitestone - 15-Piece Non Stick Aluminum Cookware Set - Blue"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410956_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410956_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Viking - Hard Anodized Non-Stick 2 Piece Fry Pan Set, 10\" & 12\" - Black/Gray/Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/2866/2866274_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2866/2866274_rd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": "SIMPLEHUMAN 46L Rectangular Recycler: Lid shox technology; 2 inner buckets; stay-open lid; steel pedal; nonskid base; bucket park position; fingerprint-proof finish; space-efficient shape",
+      "name": "simplehuman - 46 Liter Dual Compartment Rectangular Step Can - Stainless-Steel"
+    },
+    {
+      "thumbnailImage": null,
+      "image": null,
+      "regularPrice": 159.99,
+      "shortDescription": "2Y GSP NonIP Drops,Spills,Defects wFee M",
+      "name": "2Y GSP NonIP Drops,Spills,Defects wFee M"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5588/5588008ld.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": null,
+      "name": "Apollo Enclosures - Non-articulating Wall Mount for TV Enclosure - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6433/6433090_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6433/6433090_rd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "GreenPan - Rio Ceramic Non-Stick 16-Piece Cookware Set - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6433/6433129_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6433/6433129_rd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "GreenPan - Rio Ceramic Non-Stick 16-Piece Cookware Set - Turquoise"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6433/6433132_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6433/6433132_rd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "GreenPan - Rio Ceramic Non-Stick 16-Piece Cookware Set - Red"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7745/7745204_ra.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7745/7745204_ra.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "Rachael Ray - 10-Piece Nonstick Cookware Set - Gray/Orange"
+    },
+    {
+      "thumbnailImage": null,
+      "image": null,
+      "regularPrice": 199.99,
+      "shortDescription": "2YR Exch OTP NON-IPHONE W FEE GSP",
+      "name": "2YR Exch OTP NON-IPHONE W FEE GSP"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/1455/1455002_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1455/1455002_sa.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "Have your remote start with T-harness installed the easy way: neatly, reliably and professionally by a Geek Squad Autotech.",
+      "name": "Remote Start Installation with T-Harness"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6466/6466345cv11d.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Cuisinart - Aluminum Nonstick 11 Piece Cookware Set - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410872_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410872_rd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Viking - Professional 5 Ply 8\" Nonstick Fry Pan - Satin"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6433/6433105_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6433/6433105_rd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "GreenPan - Chatham Ceramic Non-Stick 10-Piece Cookware Set - Grey"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410894_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410894_rd.jpg",
+      "regularPrice": 219.99,
+      "shortDescription": null,
+      "name": "Viking - Professional 5 Ply 10\" Nonstick Fry Pan - Satin"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5680/5680400_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5680/5680400_sd.jpg",
+      "regularPrice": 229.99,
+      "shortDescription": null,
+      "name": "BenQ - BL2420PT 24\" IPS QHD Monitor 100% sRGB AQCOLOR Technology - Black/Non-Glossy Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6566/6566180_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6566/6566180_sd.jpg",
+      "regularPrice": 239.99,
+      "shortDescription": null,
+      "name": "Baird Mounts - Starlink Non Penetrating Roof Mount - Galvanized Steel"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3008/3008009_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3008/3008009_sa.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": "We strongly recommend pro delivery and install due to the size and weight of this TV. We&#8217;ll deliver it to a 3rd floor or any level serviced by an elevator. We&#8217;ll mount and secure your TV to drywall, connect the TV to video devices, connect them all to your existing Wi-Fi and more. Mount sold separately. Extra fee for non-drywall or above fireplace.",
+      "name": "TV/Display Setup & Mounting, up to 55”"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3008/3008018_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3008/3008018_sa.jpg",
+      "regularPrice": 249.99,
+      "shortDescription": "We strongly recommend pro delivery and install due to the size and weight of this TV. We&#8217;ll deliver it to a 3rd floor or any level serviced by an elevator. We&#8217;ll mount and secure your TV to drywall, connect the TV to video devices, connect them all to your existing Wi-Fi and more. Mount sold separately. Extra fee for non-drywall or above fireplace.",
+      "name": "TV/Display Setup & Mounting, 56” or Larger"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485987cv11d.jpg",
+      "regularPrice": 259,
+      "shortDescription": null,
+      "name": "Fisher & Paykel - Non-Stick Ridged Griddle Plate & Hybrid Roast Dish - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485994cv11d.jpg",
+      "regularPrice": 259,
+      "shortDescription": null,
+      "name": "Fisher & Paykel - Non-Stick Flat Griddle Plate & Hybrid Roast Dish - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6447/6447406_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6447/6447406_rd.jpg",
+      "regularPrice": 259.99,
+      "shortDescription": null,
+      "name": "KitchenAid - Hard-Anodized Induction Nonstick Cookware Set, 10-Piece - Matte Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6410/6410890_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6410/6410890_rd.jpg",
+      "regularPrice": 279,
+      "shortDescription": null,
+      "name": "Viking - Professional 12\" Nonstick  Fry Pan - Satin"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6422/6422602_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6422/6422602_rd.jpg",
+      "regularPrice": 279.99,
+      "shortDescription": null,
+      "name": "Ballarini - Parma Forged Aluminum 10-pc Nonstick Cookware Set - Grey"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6433/6433099_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6433/6433099_rd.jpg",
+      "regularPrice": 299.99,
+      "shortDescription": null,
+      "name": "GreenPan - Padova Ceramic Non-Stick 10-Piece Cookware Set - Blue"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6551/6551402cv11d.jpg",
+      "regularPrice": 350,
+      "shortDescription": null,
+      "name": "Cuisinart - Ceramic Nonstick 11 PC Cookware Set - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525844cv11d.jpg",
+      "regularPrice": 380,
+      "shortDescription": null,
+      "name": "Cuisinart - SmartNest Nonstick Aluminum 9 Piece Set - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508400_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508400_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "GreenPan - Reserve Ceramic Nonstick 10-Piece Cookware Set - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508423_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508423_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "GreenPan - Reserve Ceramic Nonstick 10-Piece Cookware Set - Merlot"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508424_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508424_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "GreenPan - Reserve Ceramic Nonstick 10-Piece Cookware Set - Julep"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508426_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508426_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "GreenPan - Reserve Ceramic Nonstick 10-Piece Cookware Set - Twilight"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508427_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508427_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "GreenPan - Reserve Ceramic Nonstick 10-Piece Cookware Set - Taupe"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6421/6421364_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6421/6421364_rd.jpg",
+      "regularPrice": 399.99,
+      "shortDescription": null,
+      "name": "ZWILLING - Clad CFX 10-pc Stainless Steel Ceramic Nonstick Cookware Set - Silver"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6559/6559369_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6559/6559369_sd.jpg",
+      "regularPrice": 459.95,
+      "shortDescription": null,
+      "name": "AudioQuest - PowerQuest 303 12-Outlet Unlimited Joules Non-Sacrificial Surge Protector and Linear Power Conditioner - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6452/6452733_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452733_sd.jpg",
+      "regularPrice": 499.99,
+      "shortDescription": "Compatible with 2015-2016 Porsche Macan (95B) non amplified vehicles; double-DIN mount style; wiring harness, antenna adapter, steering wheel control interface included",
+      "name": "Metra - Dash Kit for Select Porsche Vehicles - Matte Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/8031/8031194_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8031/8031194_sa.jpg",
+      "regularPrice": 649.98,
+      "shortDescription": "Class AB power amplification section; FET buffered relays; nonconductive, low-resonance ABS casing; Bluetooth interface; USB port; trigger input; subwoofer and record output",
+      "name": "Micromega - MyAmp 60W 2-Ch. Power Amplifier - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6560/6560154_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560154_sd.jpg",
+      "regularPrice": 699.95,
+      "shortDescription": null,
+      "name": "AudioQuest - PowerQuest 505 12-Outlet Unlimited Joules Non-Sacrificial Surge Protector and Linear Power Conditioner - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6424/6424109_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6424/6424109_sd.jpg",
+      "regularPrice": 1009.99,
+      "shortDescription": "Dell Latitude 3000 3510 15.6\" Notebook, Full HD 1920 x 1080, Non-Touch, Intel Core i7 (10th Gen) i7-10510U Quad-core (4 Core) 1.80 GHz - 8 GB RAM - 256 GB SSD, Intel UHD Graphics",
+      "name": "Dell - Latitude 3000 3510 15.6\" Notebook Full HD - Intel(10th Gen) i7-10510U Quad-core - 8 GB RAM - Intel UHD - 256 GB SSD"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6559/6559951_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6559/6559951_sd.jpg",
+      "regularPrice": 1299.95,
+      "shortDescription": null,
+      "name": "AudioQuest - PowerQuest 707 12-Outlet Unlimited Joules Non-Sacrificial Surge Protector and Linear Power Conditioner - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/3815/3815142_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3815/3815142_sd.jpg",
+      "regularPrice": 2749.98,
+      "shortDescription": "125W peak power; 8\" subwoofer; 85dB sensitivity (speaker) and 89dB sensitivity (subwoofer); 8 ohms impedance; 40Hz - 20kHz frequency response; noncorrosive sealed enclosure",
+      "name": "Sonance - SR1 - Sonarray 8.1-Ch. Outdoor Speaker System with In-Ground Subwoofer (Each) - Black/Brown"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6455/6455043_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455043_rd.jpg",
+      "regularPrice": 2999,
+      "shortDescription": null,
+      "name": "DCS by Fisher & Paykel - 30\" Series 7 Grill Non Rotis, LP Gas - Brushed Stainless Steel"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6455/6455060_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6455/6455060_rd.jpg",
+      "regularPrice": 2999,
+      "shortDescription": null,
+      "name": "DCS by Fisher & Paykel - 30\" Series 7 Grill, Non Rotis, Natural Gas - Brushed Stainless Steel"
+    }
+  ]
+}
