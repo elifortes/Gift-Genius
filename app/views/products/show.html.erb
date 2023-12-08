@@ -9,9 +9,19 @@
   </div>
 </div>
 <!-- card separation -->
-<div class="card-trip p-2 m-3">
-  <div class="openai"><%= @product.info %></div>
-</div>
+
+
+<div class="">
+  <button onclick="toggleInfo()">
+     <i class="bi bi-gem"></i>
+  </button>
+  <div class="openai" id="productInfo" style="display: none;">
+    <%= @product.info %>
+  </div>
+
+
+
+
 <!-- end navigation buttons -->
 <div class="row d-flex p-2">
   <div class="col-6" style="text-align:start">
@@ -29,3 +39,16 @@
     <% end %>
   </div>
 </div>
+
+
+
+<script>
+function toggleInfo() {
+  var info = document.getElementById("productInfo");
+  if (info.style.display === "none") {
+    info.style.display = "block";
+  } else {
+    info.style.display = "none";
+  }
+}
+</script>
