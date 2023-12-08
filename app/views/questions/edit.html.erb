@@ -1,36 +1,27 @@
-<div class="p-1" style="height:vh-100;background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= cl_image_path 'e989fd2b0040ce13ddab2f9b98075435', height: 300, crop: :fill %>')">
-  <div class="">
-    <div class="card-trip  p-2 m-1">
-      <h3>Gift Occasion Details</h3>
-      <ul>
-        <li> <%= Gift.find(@occasion.gift).title %></li>
-        <li>Organize by <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %></li>
-        <li>For <%= User.find(@occasion.recipient).personnal.name %></li>
-        <li>Target: $<%= Gift.find(@occasion.gift).price %></li>
-      </ul>
-    </div>
-    <!-- Questionnaire Section -->
-    <div>
-      <h1 class="card-trip p-2 m-1">Questionnaire</h1>
-      <div class="card border-0  p-2">
-        <p><strong>Please provide some information about <%= User.find(@occasion.recipient).personnal.name %>.</strong></p>
-        <div class="card-trip  overflow-auto p-2 ">
-          <%= simple_form_for @question do |p| %>
-            <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end }, input_html: { class: 'form-control mb-2 rounded-input' } %>
-            <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end,  input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%# <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%# <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end, input_html: { class: 'form-control mb-2 rounded-input' } %>
-            <%# <%= p.input :games, as: :select, collection: @games , selected: if @answer then @answer.games  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%# <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end , input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-            <%= p.button :submit, class: 'btn btn-primary' %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="proposal-text text-center">
+  <div style="proposal-text"> <%= User.find(Myoccasion.find(@occasion.myoccasion_id).user_id).personnal.name %> is organizing <%= User.find(@occasion.recipient).personnal.name %>'s  <%= Gift.find(@occasion.gift).title %>!</div>
+</div>
+<div class="proposal-text text-center" style="font-size:1em">
+  Target: $<%= Gift.find(@occasion.gift).price %>
+</div>
+<!-- Questionnaire Section -->
+<div class="proposal-text text-center p-2 pt-4" style="font-size:1.2em">
+  Please provide some information about <%= User.find(@occasion.recipient).personnal.name %>.
+</div>
+<div class="p-4">
+  <%= simple_form_for @question do |p| %>
+    <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end }, input_html: { class: 'form-control mb-2 rounded-input' } %>
+    <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end,  input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :movies, as: :select, collection: @movies , selected: if @answer then @answer.movies  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%# <%= p.input :music, as: :select, collection: @music , selected: if @answer then @answer.music  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :books, as: :select, collection: @books , selected: if @answer then @answer.books  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%# <%= p.input :brands, as: :select, collection: @brands , selected: if @answer then @answer.brands  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :places, as: :select, collection: @places , selected: if @answer then @answer.places  else nil end, input_html: { class: 'form-control mb-2 rounded-input' } %>
+    <%# <%= p.input :games, as: :select, collection: @games , selected: if @answer then @answer.games  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%# <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end , input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
+    <%= p.input :favorites %>
+    <%= p.button :submit, class: 'pt-2 btn-gradiant-pink' %>
+  <% end %>
 </div>
