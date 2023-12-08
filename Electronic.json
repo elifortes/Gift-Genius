@@ -1,153 +1,363 @@
 {
   "from": 1,
-  "to": 20,
+  "to": 50,
   "currentPage": 1,
-  "total": 639,
-  "totalPages": 32,
-  "queryTime": "0.016",
-  "totalTime": "0.031",
+  "total": 151,
+  "totalPages": 4,
+  "queryTime": "0.115",
+  "totalTime": "0.149",
   "partial": false,
-  "canonicalUrl": "/v1/products((search=\"Electronic\"))?show=regularPrice,shortDescription,name,image,thumbnailImage&sort=regularPrice&pageSize=20&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
+  "canonicalUrl": "/v1/products((search=\"electronic\")&regularPrice>100)?show=thumbnailImage,image,regularPrice,shortDescription,name&sort=regularPrice&pageSize=50&format=json&apiKey=TEaoEZmvBDYZWr2hHVcHOZHY",
   "products": [
     {
-      "regularPrice": 1.0,
-      "shortDescription": "ELECTRONICS RECYCLING",
-      "name": "INSTALLATION - ELECTRONICS RECYCLING",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_l.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/nonsku/default_hardlines_s.gif"
-    },
-    {
-      "regularPrice": 4.99,
-      "shortDescription": "Get extra points to spending in Madden NFL 17 Ultimate Team",
-      "name": "Madden NFL 17 Ultimate Team 500 Points - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5579/5579429_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5579/5579429_sa.jpg"
-    },
-    {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6558/6558573_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558573_sd.jpg",
+      "regularPrice": 109.99,
       "shortDescription": null,
-      "name": "Madden NFL 19 Ultimate Team Starter Pack [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6277/6277936_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6277/6277936_sd.jpg"
+      "name": "Voxx Electronics - Viper T-Harness for 2013-16 Acura/Honda - Black"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6473/6473841cv11d.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6473/6473841cv11d.jpg",
+      "regularPrice": 109.99,
       "shortDescription": null,
-      "name": "Madden NFL 20 Ultimate Team Starter Pack - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6354/6354162_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6354/6354162_sd.jpg"
+      "name": "Beurer - Digital TENS Device w/ Heat - Black"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097388_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097388_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6467/6467270_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6467/6467270_sd.jpg",
+      "regularPrice": 109.99,
       "shortDescription": null,
-      "name": "Madden NFL 20 Ultimate Team Starter Pack - Windows [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6354/6354188_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6354/6354188_sd.jpg"
+      "name": "Battlefield 2042 Ultimate Edition - Windows [Digital]"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814101_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814101_sa.jpg",
+      "regularPrice": 109.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5446/5446028_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5446/5446028_sa.jpg",
+      "regularPrice": 118.99,
       "shortDescription": null,
-      "name": "Rocket Arena Standard Edition - Windows [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6415/6415575_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6415/6415575_sd.jpg"
+      "name": "Barska - Safe with Electronic Keypad Lock - Black"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097402_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097402_sa.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6250/6250909_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6250/6250909_sd.jpg",
+      "regularPrice": 119.99,
       "shortDescription": null,
-      "name": "Rocket Arena Standard Edition - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6417/6417933_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6417/6417933_sd.jpg"
+      "name": "Honeywell - 0.51 Cu. Ft. Security Safe with Electronic Lock - Black"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536826_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536826_sd.jpg",
+      "regularPrice": 119.99,
       "shortDescription": null,
-      "name": "Madden NFL 21 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423744_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423744_sd.jpg"
+      "name": "Amazon - Kindle Kids E-Reader (2022 release) 6\" display with cover - 16GB - 2022 - 2023 - Space Whale"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536828_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536828_sd.jpg",
+      "regularPrice": 119.99,
       "shortDescription": null,
-      "name": "Madden NFL 21 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423800_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6423/6423800_sd.jpg"
+      "name": "Amazon - Kindle Kids E-Reader (2022 release) 6\" display with cover - 16GB - 2022 - 2023 - Ocean Explorer"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536834_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536834_sd.jpg",
+      "regularPrice": 119.99,
       "shortDescription": null,
-      "name": "NHL 21 Hockey Ultimate Team 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6425/6425706_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6425/6425706_sd.jpg"
+      "name": "Amazon - Kindle Kids E-Reader (2022 release) 6\" display with cover - 16GB - 2022 - 2023 - Unicorn Valley"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814200_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814200_sa.jpg",
+      "regularPrice": 119.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5391/5391933_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5391/5391933_sd.jpg",
+      "regularPrice": 126.99,
       "shortDescription": null,
-      "name": "Madden NFL 21 Ultimate Team Starter Pack - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6427/6427527_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6427/6427527_sd.jpg"
+      "name": "Barska - Safe with Electronic Keypad Lock - Black"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097448_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097448_sa.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814300_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814300_sa.jpg",
+      "regularPrice": 129.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5947/5947341_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5947/5947341_sd.jpg",
+      "regularPrice": 131.99,
       "shortDescription": null,
-      "name": "Madden NFL 22 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476942_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6476/6476942_sd.jpg"
+      "name": "Hasbro - Legends Mjolnir Electronic Hammer - Multi"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6506/6506264_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6506/6506264_sd.jpg",
+      "regularPrice": 131.99,
       "shortDescription": null,
-      "name": "Madden NFL 22 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476956_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6476/6476956_sd.jpg"
+      "name": "Star Wars - The Black Series Artillery Stormtrooper Premium Electronic Helmet"
     },
     {
-      "regularPrice": 4.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6487/6487742_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6487/6487742_sd.jpg",
+      "regularPrice": 139.99,
       "shortDescription": null,
-      "name": "NHL 22 Hockey Ultimate Team 500 Points [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6481/6481682_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6481/6481682_sd.jpg"
+      "name": "Casio - CS46 Stand for CDPS Models - Black"
     },
     {
-      "regularPrice": 5.0,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097484_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097484_sa.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097509_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097509_sa.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097457_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097457_sa.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": "2-Year Standard Geek Squad Protection",
+      "name": "2-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814301_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814301_sa.jpg",
+      "regularPrice": 139.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6407/6407967ld.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "Mass Effect: Andromeda 500 Points - Xbox One [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5736/5736400_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5736/5736400_sa.jpg"
+      "name": "Omron - Focus TENS Therapy for Knee - White"
     },
     {
-      "regularPrice": 5.99,
-      "shortDescription": "Power up your electronic components with a long-lasting Energizer battery",
-      "name": "Energizer - 2450 Lithium Coin Battery, 1 Pack",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5867/5867859_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5867/5867859_sd.jpg"
-    },
-    {
-      "regularPrice": 6.99,
-      "shortDescription": "Power up your electronic components with a long-lasting Energizer battery",
-      "name": "Energizer - 2032 Batteries (2 Pack), 3V Lithium Coin Batteries",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6818/6818713_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6818/6818713_sd.jpg"
-    },
-    {
-      "regularPrice": 7.99,
-      "shortDescription": "With a Geek Squad&#174; Product Replacement Plan, if your mobile electronics product stops working properly, we'll give you a replacement (if the product is available) or reimburse you. You'll be covered for:\n\nFailures from normal wear and tear.Issues with Bluetooth connectivity due to mechanical failure.Power surge damage, including from lightning strikes.",
-      "name": "2-Year Geek Squad Product Replacement",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6748/6748464_sa.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6748/6748464_sa.jpg"
-    },
-    {
-      "regularPrice": 8.99,
-      "shortDescription": "Bring new stories and challenges of two powerful civilizations in your game",
-      "name": "Sid Meier's Civilization VI - Khmer and Indonesia Civilization and Scenario Pack - Nintendo Switch [Digital]",
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6319/6319525cv11d.jpg",
-      "thumbnailImage": null
-    },
-    {
-      "regularPrice": 8.99,
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6524/6524070_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6524/6524070_sd.jpg",
+      "regularPrice": 149.99,
       "shortDescription": null,
-      "name": "F1 2022 11,000 Pitcoins [Digital]",
-      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6508/6508465_sd.jpg",
-      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6508/6508465_sd.jpg"
+      "name": "Hal Leonard - Portable Learn to Play Keyboard Kit with 61 Keys - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6395/6395970_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6395/6395970_sd.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": null,
+      "name": "Motorola - Safe for Medications and Everyday Items with Electronic Keypad Lock - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814302_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814302_sa.jpg",
+      "regularPrice": 149.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6098/6098875_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6098/6098875_sd.jpg",
+      "regularPrice": 159.95,
+      "shortDescription": null,
+      "name": "Casio - Portable Keyboard with 61 Velocity-Sensitive Keys - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/5814/5814303_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5814/5814303_sa.jpg",
+      "regularPrice": 159.99,
+      "shortDescription": "With Geek Squad&#174; Product Replacement, if your e-reader stops working properly, we'll give you a replacement (if available) or reimburse you. You'll be covered for:\n\n Accidental damage while handling your e-reader. At least three bad pixels on your screen. An original battery that won't hold a charge. Failures from normal wear and tear.",
+      "name": "2-Year Accidental Geek Squad Replacement"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6538/6538260_rd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6538/6538260_rd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Element Electronics - Element 14” 1080p FHD Touchscreen Portable Monitor - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419178_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419178_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S300 61-Key Premium Keyboard Package - Red"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419182_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419182_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S250 61-Key Premium Keyboard Package - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419183_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419183_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S200BK 61-Key Premium Keyboard Package - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097536_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097536_sa.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097572_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097572_sa.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6547/6547589_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547589_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "BOOX - 6\" Poke5 E-Reader - 2023"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6347/6347620_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6347/6347620_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "3M - Peltor Sport Tactical 500 Electronic Hearing Protector - Black"
+    },
+    {
+      "thumbnailImage": null,
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536824_rd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Amazon - Kindle Paperwhite Kids E-Reader 6.8\" display with kid-friendly cover - 16GB - 2022 - 2023 - Robot Dreams"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6536/6536833_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6536/6536833_sd.jpg",
+      "regularPrice": 169.99,
+      "shortDescription": null,
+      "name": "Amazon - Kindle Paperwhite Kids E-Reader 6.8\" display with kid-friendly cover - 16GB - 2022 - 2023 - Emerald Forest"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419173_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419173_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S200RD 61-Key Premium Keyboard Package - Red"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419179_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419179_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S200BK 61-Key Premium Keyboard Package - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097706_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097706_sa.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6418/6418277_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6418/6418277_sd.jpg",
+      "regularPrice": 179.99,
+      "shortDescription": null,
+      "name": "Keystone - 22-Pint Dehumidifier with Electronic Controls - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6487/6487733_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6487/6487733_sd.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S200BK 61-Key Premium Keyboard Package - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097715_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097715_sa.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6418/6418268_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6418/6418268_sd.jpg",
+      "regularPrice": 189.99,
+      "shortDescription": null,
+      "name": "Keystone - 35 Pint Dehumidifier with Electronic Controls - White"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097724_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097724_sa.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6448/6448420_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448420_sd.jpg",
+      "regularPrice": 199.99,
+      "shortDescription": null,
+      "name": "Rexing - Woodlens H3 Trail Camera with Electronic Animal Caller and Night Vision Recording - Green"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/6419/6419176_sd.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6419/6419176_sd.jpg",
+      "regularPrice": 209.99,
+      "shortDescription": null,
+      "name": "Casio - CT-S300 PPK 61-Key Premium Keyboard Pack - Black"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097779_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097779_sa.jpg",
+      "regularPrice": 209.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
+    },
+    {
+      "thumbnailImage": "https://pisces.bbystatic.com/prescaled/108/54/image2/BestBuy_US/images/products/7097/7097733_sa.jpg",
+      "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7097/7097733_sa.jpg",
+      "regularPrice": 209.99,
+      "shortDescription": "3-Year Standard Geek Squad Protection",
+      "name": "3-Year Standard Geek Squad Protection"
     }
   ]
 }

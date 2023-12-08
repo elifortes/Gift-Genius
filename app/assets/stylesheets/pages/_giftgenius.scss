@@ -9,12 +9,20 @@ $c05: #798187;
 $c06: #FFE3BB;
 $c07: #FEB99E;
 $c08: #FDAD9D;
-$gradiant-blue: linear-gradient(180deg, #558BA1 0%, #E9E4C9 100%);
+$s1: rgba(255, 255, 255, 0.5);
+$s2: rgba(0, 0, 0, 0.5);
+$s3: rgba(0, 0, 0, 0.75);
+$gradiant-black: linear-gradient(3deg, #02172F 3.11%, #477D8F 98.07%);
+$gradiant-red: linear-gradient(180deg, #558BA1 0%, #E9E4C9 100%);
 $gradiant-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #32728A 0%, #FE878D 100%);
-$gradiant-pink: linear-gradient(90deg, #F67C7B .35%, #FFE3BB 51.96%);
-$grandiant-blue: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
+$gradiant-pink: linear-gradient(357deg, #F4636E 2.63%, #FDEDC7 95.53%);
+$gradiant-blue: linear-gradient(90deg, #D4AC8A 3.35%, #4E8AA1 51.96%);
 $gradiant-green: linear-gradient(185deg, #FDEAC0 -8.78%, #4E8AA1 96.15%);
 $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
+
+.black {
+  color: black;
+}
 
 .btn-gradiant-dark {
   border-radius: 1.5625rem;
@@ -30,7 +38,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   text-shadow: 2px 2px 6px $c01;
   border: 2px solid $c08;
   box-shadow: 2px 2px 5px $c03;
-  background: linear-gradient(90deg, #F67C7B 3.35%, #FFE3BB 51.96%);
+  background: $gradiant-pink;
 }
 
 .btn-grandiant-blue {
@@ -53,7 +61,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   object-fit: cover;
   overflow: hidden;
   box-shadow: 2px 2px 5px $c03;
-  border: 3px solid $c08 ;
+  //border: 3px solid $c08 ;
 }
 
 
@@ -70,21 +78,22 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 /// list in myoccasion
 .myoccasion {
-  background: $gradiant-light;
+  //  background: $gradiant-light;
+  background: white;
   display: flex;
   align-items: center;
   margin-bottom: 8px;
   border-radius: 35px;
   padding: 5px 5px;
-  border: 2px solid $c07;
-  box-shadow: 2px 2px 5px $c06;
+  border: 1px solid $c05;
+  box-shadow: 1px 1px 2px $c08;
 }
 
 .myoccasion-text {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.5em;
   font-weight: 400;
-  text-shadow: 2px 2px 5px $c06
+  //text-shadow: 1px 1px 2px $c07;
 }
 
 .myoccasion-category {
@@ -97,8 +106,8 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   align-items: center;
   color: white;
   font-size: 18px;
-  background: $gradiant-green;
-  border: 2px solid $c08;
+  //background: $gradiant-green;
+  border: 1px solid $c04;
   text-shadow: 2px 2px 3px $c02;
   font-family: 'Kaushan Script', cursive;
   border-radius: 25px;
@@ -117,7 +126,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 .myoccasion small {
-  color: #999999;
+  color: $c03;
   font-weight: bold;
 }
 
@@ -147,22 +156,23 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 .card-product-proposal {
   overflow: hidden;
   height: 120px;
-  background: $gradiant-light;
-
+  background: white;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 15px $c04;
+  border: 1px solid $c04;
+  box-shadow: 1px 1px 2px $c07;
   display: flex;
   align-items: center;
 }
 
 /* line 39, app/assets/stylesheets/components/_card.scss */
 .card-product-proposal img {
-  height: 100%;
+  height: 140px;
   width: 140px;
   object-fit: cover;
-
-
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 4px;
 }
 
 /* line 47, app/assets/stylesheets/components/_card.scss */
@@ -178,7 +188,6 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 .list-group-proposal {
   background: none;
-
 }
 
 .position-indicator {
@@ -196,9 +205,9 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   font-size: 1.3em;
   /* Adjust as needed */
   font-weight: bold;
-  color: #fff;
+  color: white;
   /* White text */
-  background-color: $c07;
+  background-color: $c08;
   /* Blue background or any color you prefer */
   border-radius: 50%;
   /* Circular badge */
@@ -219,19 +228,15 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   justify-content: center;
   margin-right: 2px;
   /* Adjust as needed */
-  padding: 0.1em 0.1em;
+  padding: 0.1em 0.4em;
   font-size: 1.2em;
   color: #fff;
-  text-shadow: 2px 1px 2px $c01;
+  text-shadow: 1px 2px 2px $c01;
   /* White text */
-  background-color: $c02;
-  box-shadow: 1px 1px 15px $c04;
-  box-shadow: 0 0 15px $c07;
+  background: $gradiant-green;
+  box-shadow: 1px 1px 4px $c05;
   /* Blue background or any color you prefer */
-  border-radius: 12px;
-  /* Circular badge */
-  /* Fixed width */
-  /* Fixed height */
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -263,14 +268,13 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   font-family: 'Kaushan Script', cursive;
   font-size: 2.5em;
   font-weight: 600;
-  color: white;
-  text-shadow: 4px 4px 14px $c08 ;
+  color: $c03;
+  text-shadow: 2px 2px 2px $c07 ;
   margin-left: -1em;
 }
 
 .logo-shadow {
-
-  box-shadow: 4px 4px 8px $c02;
+  box-shadow: 2px 2px 6px $c02;
 }
 
 
@@ -286,21 +290,20 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   align-items: center;
   justify-content: center;
   height: 70px;
-  width: 84px;
-  background: $gradiant-green;
+  width: 70px;
+  background: $gradiant-black;
   font-size: 1.1em;
-  font-family: 'Kaushan Script', cursive;
+  //font-family: 'Kaushan Script', cursive;
   color: #E9E4C9;
-  text-shadow: white;
-  text-shadow: 4px 4px 4px $c01;
-  box-shadow: 1px 1px 8px $c08;
+  //text-shadow: 0px 0px 4px $c03;
+  //box-shadow: 0px 0px 4px $c04;
 
 }
 
 .footer {
   display: flex;
   align-items: center;
-
+  margin-top: 5px;
   height: 80px;
   padding: 0px 0px;
 
@@ -352,9 +355,9 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   height: 120px;
   /* Make height equal to width for a perfect circle */
   border-radius: 50%;
-  box-shadow: 0 4px 8px $c07;
+  box-shadow: 0 4px 8px $c05;
   /* This shadow gives a nice depth effect */
-  border: 5px solid $c03;
+  // border: 5px solid $c03;
   /* Adjust border thickness and color as needed */
   object-fit: cover;
   /* This will make sure the image covers the area without stretching */
@@ -379,12 +382,12 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
   text-shadow: $c08;
   font-weight: 800;
   position: absolute;
-  top: 100px;
-  box-shadow: 0 4px 8px $c06;
-  background-color: $c04;
+  top: 110px;
+  box-shadow: 0 4px 8px $c04;
+  background: $gradiant-green;
   width: 140px;
   align-items: center;
-  border: 5px solid $c03;
+  //border: 5px solid $c03;
   /* Or any color you’d like */
   border-radius: 45px;
   /* Adjust this value to increase or decrease the roundness */
@@ -417,12 +420,12 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 //********************* */ cards on home page
 
 .card-trip-home {
-  border: 3px solid $c04;
+  border: 1px solid $c05;
   margin: 10px 0px;
   border-radius: 25px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px $c06;
+  box-shadow: 2px 2px 4px $c07;
 }
 
 .card-trip-home>img {
@@ -451,12 +454,14 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 .card-trip-home h2 {
+  color: $c03;
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-trip-home p {
+  color: $c04;
   font-size: 12px;
   opacity: .7;
   margin: 0;
@@ -506,7 +511,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 ///***************icons colors on home */
 .icon-trip-group {
   color: white;
-  text-shadow: 2px 2px 5px coral;
+  text-shadow: 0px 0px 3px $s3;
   position: absolute;
   font-size: 2em;
   left: 20px;
@@ -515,7 +520,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 .icon-trip-question {
   color: white;
-  text-shadow: 2px 2px 5px $c04;
+  text-shadow: 2px 2px 5px $c01;
   position: absolute;
   font-size: 2em;
   left: 24px;
@@ -524,7 +529,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 .icon-trip-gift {
   color: white;
-  text-shadow: 2px 2px 5px $c08;
+  text-shadow: 2px 2px 5px $c04;
   position: absolute;
   font-size: 2em;
   right: 24px;
@@ -557,7 +562,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 .icon-trip-gift-half {
   position: absolute;
   color: white;
-  text-shadow: 2px 2px 5px $c06;
+  text-shadow: 2px 2px 5px $c01;
   font-size: 2em;
   top: 0px;
   right: 10px;

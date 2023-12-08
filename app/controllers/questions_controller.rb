@@ -26,13 +26,13 @@ class QuestionsController < ApplicationController
       "Mystery", "Romance", "Sci-Fi", "Thriller", "War",
     ]
 
-    @music = [
-      "",
-      "Blues", "Classical", "Country", "Disco", "Electronic",
-      "Folk", "Funk", "Hip Hop", "House", "Indie",
-      "Jazz", "Metal", "Pop", "Punk", "R&B",
-      "Reggae", "Rock", "Soul", "Techno",
-    ]
+    # @music = [
+    #   "",
+    #   "Blues", "Classical", "Country", "Disco", "Electronic",
+    #   "Folk", "Funk", "Hip Hop", "House", "Indie",
+    #   "Jazz", "Metal", "Pop", "Punk", "R&B",
+    #   "Reggae", "Rock", "Soul", "Techno",
+    # ]
 
     @books = [
       "",
@@ -46,13 +46,6 @@ class QuestionsController < ApplicationController
       "Board Games", "Cooking", "Crafting", "Cycling", "Drawing", "Fishing",
       "Gardening", "Hiking", "Painting", "Photography", "Playing Musical Instruments",
       "Reading", "Running", "Traveling", "Yoga",
-    ]
-
-    @brands = [
-      "",
-      "Adidas", "Amazon", "Apple", "Coca-Cola", "Gap",
-      "H&M", "Levi's", "McDonald's", "Nike", "Puma",
-      "Sony", "Starbucks", "Samsung", "Target", "Toyota",
     ]
 
     @places = [
@@ -69,26 +62,32 @@ class QuestionsController < ApplicationController
       "Map and Compass", "Outdoor Clothing", "Paperback Novels", "Travel Guides", "Water Bottles",
     ]
 
-    @restaurant = [
-      "",
-      "American (Burgers)", "Brazilian", "Chinese", "French", "Greek",
-      "Indian", "Italian", "Japanese", "Korean", "Mediterranean",
-      "Mexican", "Middle Eastern", "Spanish", "Thai", "Vietnamese",
-    ]
-
     @devices = [
       "",
       "Amazon Echo", "Apple Watch", "Canon EOS Camera", "DJI Mavic Drone", "Fitbit",
       "iPad", "iPhone", "MacBook", "Nintendo Switch", "PlayStation",
       "Samsung Galaxy S Series", "Smart TV", "Windows Laptop", "Xbox", "GoPro Camera",
     ]
+    # @restaurant = [
+    #   "",
+    #   "American (Burgers)", "Brazilian", "Chinese", "French", "Greek",
+    #   "Indian", "Italian", "Japanese", "Korean", "Mediterranean",
+    #   "Mexican", "Middle Eastern", "Spanish", "Thai", "Vietnamese",
+    # ]
 
-    @games = [
-      "",
-      "Adventure", "Arcade", "Educational", "Fighting", "First-Person Shooter (FPS)",
-      "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
-      "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
-    ]
+    # @games = [
+    #   "",
+    #   "Adventure", "Arcade", "Educational", "Fighting", "First-Person Shooter (FPS)",
+    #   "Horror", "Music/Rhythm", "Platformer", "Puzzle", "Racing",
+    #   "Role-Playing Game (RPG)", "Simulation", "Sports", "Strategy",
+    # ]
+
+    # @brands = [
+    #   "",
+    #   "Adidas", "Amazon", "Apple", "Coca-Cola", "Gap",
+    #   "H&M", "Levi's", "McDonald's", "Nike", "Puma",
+    #   "Sony", "Starbucks", "Samsung", "Target", "Toyota",
+    # ]
   end
 
   def new
@@ -113,6 +112,7 @@ class QuestionsController < ApplicationController
     @answer_values = params[:question].values
     @without_pledge = @answer_values.delete_at(0)
 
+    #@answer.favorites = { favorites: params[:question][:favorites] }
     @answer.pledge_amount = params[:question][:pledge_amount]
     @answer.hobbies = params[:question][:hobbies]
     @answer.movies = params[:question][:movies]
@@ -136,6 +136,7 @@ class QuestionsController < ApplicationController
       # end
 
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
+
       @scraped_products.each do |product_data|
         product = Product.new(
           title: product_data[:name],
@@ -160,7 +161,7 @@ class QuestionsController < ApplicationController
   private
 
   def param_strong
-    params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
+    params.require(:question).permit(:music, :favorites, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
   def gift_scraper(answer_values)
@@ -193,8 +194,8 @@ class QuestionsController < ApplicationController
   def backup_scrapper(answer_values)
     scraped_products = []
     answer_values.each do |answer|
-      filepath = "#{answer}.json"
-      responses = %w[ Action.json Beach.json Amazon_Echo.json Beach.json Biography.json Camping_Tent.json Classical.json Comedy.json Cooking.json Cycling.json Drama.json Electronic.json Fantasy.json Gardening.json Historical_Fiction.json Horror.json Jazz.json MacBook.json Paiting.json Photography.json Pop.json Rock.json Romance.json Sci-Fi.json SmartTV.json Thriller.json ]
+      filepath = "#{answer}"
+      responses = %w[ Action.json Adventure.json Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Playing_Musical_Instruments.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json SmartTV.json Thriller.json Traveling.json Xbox.json ]
       filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
@@ -202,18 +203,19 @@ class QuestionsController < ApplicationController
       number = results["total"].to_i
       if number > 0
         results = results["products"]
-        results = results.sample(number > 10 ? 10 : number)
+        results = results.sample(number > 30 ? 10 : number)
         results.each do |result|
-          #if result["regularPrice"].to_f <= @occasion.answer
-          scraped_products.push({
-            name: result["name"],
-            price: result["regularPrice"],
-            image_url: result["image"],
-          })
-          #end
+          if result["regularPrice"].to_f >= 150
+            scraped_products.push({
+              name: result["name"],
+              price: result["regularPrice"],
+              image_url: result["image"],
+            })
+            #end
+          end
         end
+        return scraped_products
       end
     end
-    scraped_products
   end
 end

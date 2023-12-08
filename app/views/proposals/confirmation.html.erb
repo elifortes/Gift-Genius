@@ -1,8 +1,8 @@
-<div class=" p-1 mx-1 text-center">
+<div class=" p-1 mx-2 text-center">
   <div class="proposal-text">Thanks to everyone's input, we've chosen the perfect gift!
   </div>
   <!--   product card-->
-  <div class="card-trip-home ">
+  <div class="card-trip-home" style="box-shadow:0px 0px 0px white;">
     <% myoccasion = @myoccasion %>
     <% if Gift.find(myoccasion.gift).title != "" %>
       <%= image_tag "occasion/#{Gift.find(myoccasion.gift).title}.jpg", alt: "",class: "image" %>
@@ -14,42 +14,18 @@
       <i class="fa-solid fas fa-users"></i>
       <span></span>
     <% end %>
-    <!--Link to Questions --><%# myoccasion.id %>
-    <% myoccasion.occasions.each do |o| %>
-      <% if o.user_id == current_user.id %>
-        <% link_to edit_occasion_question_path(o,o.question) , class: 'card-trip-question' do %>
-          <% if  !o.status %>
-            <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
-          <% else %>
-            <i class="fas fa-file-lines"></i>
-          <% end %>
-          <span></span>
-        <% end %>
-      <% end %>
-    <% end %>
-    <!--Link to Gift -->
-    <% myoccasion.occasions.each do |o| %>
-      <% if o.user_id == current_user.id %>
-        <% unless o.proposal.nil? %>
-          <% link_to proposal_path(o.proposal.id) , class: 'card-trip-gift' do %>
-            <% if  o.status %>
-              <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.25;--fa-animation-duration: 3s;"></i>
-            <% else %>
-              <i class="fas fa-gifts"></i>
-            <% end %>
-            <span></span>
-          <% end %>     <% end %>     <% end %> <% end %>
     <!-- My occasion info-->
     <div class="card-trip-infos">
-      <div style="text-align: left;font-size:.9em pt-2"><%= User.find(myoccasion.recipient).personnal.name %>'s <% if Gift.find(myoccasion.gift).title %> <%= Gift.find(myoccasion.gift).title %> is Coming Up!</>
-      <% end %>
+      <div style="text-align: left;font-size:.9em pt-2"><%= User.find(myoccasion.recipient).personnal.name %>'s <% if Gift.find(myoccasion.gift).title %> <%= Gift.find(myoccasion.gift).title %>
+        <% end %>
+      </div>
+      <%   recipient = User.includes(:personnal).find(myoccasion.recipient) %>
+      <%= image_tag recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-home" %>
     </div>
-    <%   recipient = User.includes(:personnal).find(myoccasion.recipient) %>
-    <%= image_tag recipient.personnal.info['picture'], alt: "",class: "card-trip-user avatar-home" %>
+    <!--  end product card -->
   </div>
-  <!--  end product card -->
   <% product = @product %>
-  <div class="card-product mx-1" style="box-shadow:0px 0px 0px white">
+  <div class="card-product mx-1 m-0" style="box-shadow:0px 0px 0px white;border: 1px solid grey;border-radius:20px;">
     <% if product.url %>
       <%= image_tag product.url, alt: "Product image", class: "card-product-proposal-infos rounded-2" %>
     <% end %>
@@ -73,7 +49,6 @@
       </dir>
     <% end %>
   </div>
-</div>
-<!-- end of friend  -->
-<%= link_to "Confirm", root_path,class: "btn btn-gradiant-pink" %>
+  <!-- end of friend  -->
+  <%= link_to "Confirm", root_path,class: "btn btn-gradiant-pink" %>
 </div>

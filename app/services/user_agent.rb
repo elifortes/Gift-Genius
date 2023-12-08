@@ -2,14 +2,17 @@
 require "json"
 require "open-uri"
 
-answer =  ["Horror", "Pop", "Fantasy", "Painting", "MacBook"]
+answer =  ["Blues", "Electronic", "Indie", "Jazz", "Rock"]
+
+
+
 scraped_products = []
 
 
 answer.each do |ans|
   encoded_answer = ans.gsub(" ", "%20")
 
-  url = "https://api.bestbuy.com/v1/products((search=#{encoded_answer}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&sort=regularPrice.asc&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=20&format=json"
+  url = "https://api.bestbuy.com/v1/products((search=#{encoded_answer}))?apiKey=TEaoEZmvBDYZWr2hHVcHOZHY&show=regularPrice,shortDescription,name,image,thumbnailImage&pageSize=50&format=json"
   p url
   url_serialized = URI.open(url).read
   results = JSON.parse(url_serialized)
