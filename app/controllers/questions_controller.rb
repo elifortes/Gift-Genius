@@ -118,12 +118,12 @@ class QuestionsController < ApplicationController
     @answer.movies = params[:question][:movies]
     @answer.music = params[:question][:music]
     @answer.books = params[:question][:books]
-    @answer.brands = params[:question][:brands]
-    @answer.places = params[:question][:places]
-    @answer.games = params[:question][:games]
+    @answer.brands = [params[:question][:brands]]
+    @answer.places = [params[:question][:places]]
+    @answer.games = [params[:question][:games]]
     @answer.restaurant = params[:question][:restaurant]
-    @answer.devices = params[:question][:devices]
-    @answer.purchases = params[:question][:purchases]
+    @answer.devices = [params[:question][:devices]]
+    @answer.purchases = [params[:question][:purchases]]
 
     if @answer.save
       @answers = @answer_values.select { |a| a.size > 1 }
@@ -161,10 +161,8 @@ class QuestionsController < ApplicationController
   private
 
   def param_strong
-    params.require(:question).permit( :books, :hobbies, :movies,
-      :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
+    params.require(:question).permit(:music, :favorites, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
-
 
   def gift_scraper(answer_values)
     scraped_products = []
