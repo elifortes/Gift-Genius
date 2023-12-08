@@ -1,8 +1,0 @@
-<div class="d-flex w-100 overflow-auto p-1">
-  <div class="btn-group col-6 p-2">
-    <% @current_user.occasions.each do |occasion| %>
-      <%= occasion.id %>
-      <%= link_to "Gift Suggestion", proposal_path(occasion.proposal) ,class: "btn btn-dark" %>
-    <% end %>
-  </div>
-</div>

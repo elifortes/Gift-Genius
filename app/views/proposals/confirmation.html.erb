@@ -50,5 +50,7 @@
     <% end %>
   </div>
   <!-- end of friend  -->
-  <%= link_to "Confirm", root_path,class: "btn btn-gradiant-pink" %>
+  <% if  @showconfirm  %>
+    <%= link_to "Confirm", root_path,class: "btn btn-gradiant-pink" %>
+  <% end %>
 </div>

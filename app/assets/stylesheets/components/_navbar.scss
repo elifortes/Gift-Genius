@@ -3,13 +3,12 @@
 }
 
 .navbar-font {
-  color: white;
+  color: $c01;
   font-weight: bold;
 }
 
 .navbar-font:hover {
-
-  color: white;
+  color: $c04;
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
 }
@@ -22,21 +21,4 @@
   width: 50px;
 
   border-radius: 15px;
-}
-
-.gift-genius {
-  // font-family: 'Grechen Fuemen', cursive;
-  font-family: 'Gochi Hand', cursive; //
-  padding-top: 0em;
-  color: white;
-  font-size: 2.5em;
-
-
-}
-
-.logo-img {
-  height: 40px;
-  width: 200px;
-  overflow: hidden;
-
 }

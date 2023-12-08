@@ -7,19 +7,48 @@
         <span class="d-none">Home</span></div>
     <% end %>
     <%= link_to myoccasions_new_path, class: 'footer-item' do %>
-      <div class="cube"> <i class="fa-solid fa-gift"></i> <span class="d-none">Organise Gift</span></div>
+      <div class="cube">
+        <div class="icon-group" >
+          <i class="fa-solid fa-gift"></i>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      <% end %>
+    </nav>
+  </footer>
+  <nav>
+    <% if @notify_user %>
+      <script type="text/javascript">
+        document.addEventListener('turbolinks:load', () => {
+            // Assuming `alert` is the correct controller name
+            const notificationElement = document.querySelector('[data-controller="alert"]');
+            if (notificationElement) {
+                notificationElement.dispatchEvent(new Event('click'));
+            }
+        });
+      </script>
     <% end %>
-  </nav>
-</footer>
-<nav>
-  <% if @notify_user %>
-    <script type="text/javascript">
-      document.addEventListener('turbolinks:load', () => {
-          // Assuming `alert` is the correct controller name
-          const notificationElement = document.querySelector('[data-controller="alert"]');
-          if (notificationElement) {
-              notificationElement.dispatchEvent(new Event('click'));
-          }
-      });
-    </script>
-  <% end %>
+    <style>
+      .icon-group {
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem; /* Adjust the size of the main (gift) icon */
+      }
+
+      .icon-group .fa-solid {
+      color:rgb(233, 228, 201);
+      }
+
+      .icon-group .fa-gift {
+        position: relative;
+        z-index: 1;
+      }
+
+      .fa-plus {
+        position: absolute;
+        top: -10px; /* Position the plus icon at the top of the gift icon */
+        right: -8px; /* Position the plus icon at the right of the gift icon */
+        font-size: 1em; /* Make the plus icon smaller */
+        transform: translate(50%, 0%); /* Adjust for precise positioning */
+        z-index: 2;
+      }
+    </style>

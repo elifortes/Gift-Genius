@@ -66,9 +66,18 @@ class ProposalsController < ApplicationController
     @proposal = Proposal.find(params[:proposal_id])
     @product = Product.find(params[:product_id])
     @myoccasion = Myoccasion.find(@proposal.myoccasion_id)
-    @product.selected = true
-    @product.save!
-    @friends = @myoccasion.groups.map { |id| User.find(id).personnal unless id.nil? }
+    @showconfirm = !@myoccasion.selected
+
+    @friends = @myoccasion.groups.map { |id| User.find(id).personnal unless id.nil? && id.include?(current_user.id) }
+    @myoccasion.selected = true
+    selection = { product: @product.id, proposal: @proposal.id, myoccasion: @myoccasion.id }
+    @myoccasion.selection = selection
+    @myoccasion.occasions.each do |occasion|
+      occasion.selected = true
+      occasion.selection = selection
+      occasion.save!
+    end
+    @myoccasion.save!
   end
 
   private
