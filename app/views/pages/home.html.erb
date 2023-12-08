@@ -106,25 +106,26 @@
         <% end %>
         <!--Link to Questions -->
         <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'icon-trip-question-half' do %>
-          <% if  !occasion.status %>
+          <% if !occasion.status %>
             <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
           <% else %>
             <i class="fas fa-file-lines"></i>
           <% end %>
-          <span></span>
         <% end %>
         <!--Link to Gift -->
         <% if occasion.selected %>
           <% s = occasion.selection %>
           <%= link_to  proposal_product_confirmation_path(s['proposal'],s['product']), class: "icon-trip-gift" do %>
             <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
-          <% end %>
-        <% elsif occasion.status && !occasion.selected %>
+          <% end %> <% end %>
+        <% if !occasion.selected %>
           <%= link_to proposal_path(occasion.proposal.id) , class: 'icon-trip-gift-half' do %>
-            <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
+            <% if  !occasion.status %>
+              <i class="fas fa-gifts fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
+            <% else %>
+              <i class="fas fa-gifts"></i>
+            <% end %>
           <% end %>
-        <% else %>
-          <i class="fas fa-gifts"></i>
         <% end %>
         <!-- My occasion info-->
         <div class="card-trip-infos border-0">
