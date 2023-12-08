@@ -12,6 +12,7 @@ Myoccasion.destroy_all
 Occasion.destroy_all
 Question.destroy_all
 Answer.destroy_all
+Mycontact.destroy_all
 User.destroy_all
 
 man = ["This chef's passion for fusion cuisine is complemented by his love for cycling. He's also a wine enthusiast, often organizing wine and dine events. His kitchen at home is a testament to his culinary adventures, filled with cookbooks and exotic spices. On weekends, he enjoys long cycling trips, exploring rural landscapes and enjoying the tranquility of nature.",
@@ -92,21 +93,12 @@ User.all.each do |u|
   end
 end
 
-mycontacts = Mycontact.new
-mycontacts.user = userU
-mycontacts.contacts = array
-p mycontacts.save!
-
-array << userM.id
-contacts = Mycontact.new
-contacts.user = userM
-contacts.contacts = array
-p contacts.save!
-
-contacts = Mycontact.new
-contacts.user = userE
-contacts.contacts = array
-p contacts.save!
+User.all.each do |u|
+  mycontacts = Mycontact.new
+  mycontacts.user = u
+  mycontacts.contacts = array
+  mycontacts.save!
+end
 
 def occasion(user, array, user1, user2)
   myoccasion = Myoccasion.new(
@@ -166,7 +158,7 @@ def occasion(user, array, user1, user2)
   end
 end
 
-# only_on_dev
+# only_on_dev uncomment.
 #  occasion(userU, array, userM, userE)
 #  occasion(userM, array, userU, userE)
 #  occasion(userE, array, userU, userM)
