@@ -48,7 +48,6 @@ class QuestionsController < ApplicationController
       "Reading", "Running", "Traveling", "Yoga",
     ]
 
-
     @places = [
       "",
       "Amusement Park", "Beach", "Botanical Garden", "City Park", "Cave",
@@ -62,8 +61,6 @@ class QuestionsController < ApplicationController
       "Climbing Gear", "Cooking Equipment", "E-books", "Hiking Boots", "Headlamp",
       "Map and Compass", "Outdoor Clothing", "Paperback Novels", "Travel Guides", "Water Bottles",
     ]
-
-
 
     @devices = [
       "",
@@ -115,6 +112,7 @@ class QuestionsController < ApplicationController
     @answer_values = params[:question].values
     @without_pledge = @answer_values.delete_at(0)
 
+    #@answer.favorites = { favorites: params[:question][:favorites] }
     @answer.pledge_amount = params[:question][:pledge_amount]
     @answer.hobbies = params[:question][:hobbies]
     @answer.movies = params[:question][:movies]
@@ -138,6 +136,7 @@ class QuestionsController < ApplicationController
       # end
 
       proposal = Proposal.find_or_create_by(occasion: @occasion, myoccasion: @occasion.myoccasion)
+
       @scraped_products.each do |product_data|
         product = Product.new(
           title: product_data[:name],
@@ -162,7 +161,7 @@ class QuestionsController < ApplicationController
   private
 
   def param_strong
-    params.require(:question).permit(:music, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
+    params.require(:question).permit(:music, :favorites, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
   def gift_scraper(answer_values)
@@ -195,8 +194,8 @@ class QuestionsController < ApplicationController
   def backup_scrapper(answer_values)
     scraped_products = []
     answer_values.each do |answer|
-      filepath = "#{answer}.json"
-      responses = %w[ Action.json Adventure.json  Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Playing_Musical_Instruments.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json  SmartTV.json Thriller.json Traveling.json Xbox.json]
+      filepath = "#{answer}"
+      responses = %w[ Action.json Adventure.json Amazon_Echo.json Backpack.json Beach.json Binoculars.json Camping_Tent.json Playing_Musical_Instruments.json Comedy.json Cooking.json Cycling.json Documentary.json Drama.json Electronic.json Fantasy.json Gardening.json Horror.json Non_Fiction.json MacBook.json Mystery.json Photography.json SmartTV.json Thriller.json Traveling.json Xbox.json ]
       filepath = responses.include?(filepath) ? filepath : responses.sample
       serialized_beatles = File.read(filepath)
 
@@ -207,15 +206,16 @@ class QuestionsController < ApplicationController
         results = results.sample(number > 30 ? 10 : number)
         results.each do |result|
           if result["regularPrice"].to_f >= 150
-          scraped_products.push({
-            name: result["name"],
-            price: result["regularPrice"],
-            image_url: result["image"],
-          })
-          #end
+            scraped_products.push({
+              name: result["name"],
+              price: result["regularPrice"],
+              image_url: result["image"],
+            })
+            #end
+          end
         end
+        return scraped_products
       end
     end
-    scraped_products
   end
 end

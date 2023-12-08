@@ -21,7 +21,7 @@
     <%# <%= p.input :restaurant, as: :select, collection: @restaurant , selected: if @answer then @answer.restaurant  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
     <%= p.input :devices, as: :select, collection: @devices , selected: if @answer then @answer.devices  else nil end , input_html: { class: 'form-control mb-2 rounded-input' }%>
     <%= p.input :purchases, as: :select, collection: @purchases , selected: if @answer then @answer.purchases  else nil end, input_html: { class: 'form-control mb-2 rounded-input' }%>
-    <%= p.input :favorites %>
+    <%# p.input :favorites %>
     <%= p.button :submit, class: 'pt-2 btn-gradiant-pink' %>
   <% end %>
 </div>
