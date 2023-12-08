@@ -10,27 +10,5 @@ class PagesController < ApplicationController
     @ids_to_reject = @myoccasions.map { |myoccasion| myoccasion.id }
     @occasions = @occasions.map { |occasion| occasion unless @ids_to_reject.member?(occasion.myoccasion_id) }
     @occasions.compact!
-
-    if current_user.personnal.nil?
-      personnal = Personnal.new
-      personnal.user = current_user
-      personnal.save!
-      mycontact = Mycontact.new
-      mycontact.user = current_user
-
-      mycontact.save!
-    end
-
-    # def update
-    #   user = User.find(params[:uid])
-    #   user.personnal.update(notification: false)
-    # end
-
-    # @notify_user = current_user&.personnal&.notifications
-
-    #@notify_user = current_user&.notification
-
-    #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
-
   end
 end
