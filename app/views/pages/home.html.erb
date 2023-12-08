@@ -22,7 +22,7 @@
           <h1 class="text-center" style="font-family:'Kaushan Script'">Need some help with organizing gifts?</h1>
         <% end %>
         <% if current_user  %>
-          <% if  @myoccasions.count == 0   %>
+          <% if  @myoccasions.count == 0 && @occasions.count == 0  %>
             <%= image_tag "option1.png", alt: "",width: 360,class: "text-center " %>
             <h1 class="text-center" style="font-family:'Kaushan Script'">Need some help with organizing gifts?</h1>
           <% end %>

@@ -17,11 +17,11 @@ class MyoccasionsController < ApplicationController
 
   def new
     unless current_user.mycontact.contacts.nil?
-      @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) unless c.nil? }
+      @mycontacts = current_user.mycontact.contacts.map { |c| User.find(c) }
     else
       @mycontacts = []
     end
-    @mycontacts.compact!
+
     @mycontacts = @mycontacts.map { |c| c.personnal unless c.nil? }
     # @mycontacts.sort_by! { |p| p.personnal.birthday }
     @myoccasion = Myoccasion.new

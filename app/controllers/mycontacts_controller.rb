@@ -1,10 +1,10 @@
 class MycontactsController < ApplicationController
   def update
-    @mycontact = Mycontact.find(params[:id])
-    #@mycontact = current_user.mycontact
+    @mycontact = current_user.mycontact
     @mycontact.contacts = params[:mycontact][:contacts]
     @mycontact.contacts.delete(0)
     @mycontact.contacts.compact!
+
     if @mycontact.save!
       redirect_to new_myoccasion_path
     end

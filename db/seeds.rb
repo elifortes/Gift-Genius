@@ -7,7 +7,6 @@ require "faker"
 # clean database
 Product.destroy_all
 Gift.destroy_all
-UserContact.destroy_all
 Myoccasion.destroy_all
 Occasion.destroy_all
 Question.destroy_all
@@ -52,38 +51,37 @@ userE.personnal = Personnal.new(name: "Eli", birthday: Date.new(1992, 01, 1), in
 userE.save!
 
 # creating 30 users for login with userxx@me.com
-def users(man, woman)
-  10.times do |i|
-    user = User.new(email: "user0#{i}@gmail.com")
-    user.password = "123456"
-    personnal = Personnal.new(
-      name: Faker::Name.name,
-      birthday: Faker::Date.birthday,
-      info: { sex: "man", picture: "man/man-0#{i}.jpg", profile: man.sample },
-    )
-    mycontacts = Mycontact.new
-    mycontacts.user = user
-    mycontacts.save!
-    user.personnal = personnal
-    print i, user.save!
-  end
-  10.times do |i|
-    user = User.new(email: "user1#{i}@gmail.com")
-    user.password = "123456"
-    personnal = Personnal.new(
-      name: Faker::Name.name,
-      birthday: Faker::Date.birthday,
-      info: { sex: "woman", picture: "woman/woman-0#{i}.jpg", profile: woman.sample },
-    )
-    mycontacts = Mycontact.new
-    mycontacts.user = user
-    mycontacts.save!
-    user.personnal = personnal
-    print i, user.save!
-  end
-end
 
-users(man, woman)
+10.times do |i|
+  user = User.new(email: "user0#{i}@gmail.com")
+  user.password = "123456"
+  personnal = Personnal.new(
+    name: Faker::Name.name,
+    birthday: Faker::Date.birthday,
+    info: { sex: "man", picture: "man/man-0#{i}.jpg", profile: man.sample },
+  )
+  mycontacts = Mycontact.new
+  mycontacts.user = user
+  mycontacts.contacts = [userM.id, userU.id, userE.id]
+  mycontacts.save!
+  user.personnal = personnal
+  print i, user.save!
+end
+10.times do |i|
+  user = User.new(email: "user1#{i}@gmail.com")
+  user.password = "123456"
+  personnal = Personnal.new(
+    name: Faker::Name.name,
+    birthday: Faker::Date.birthday,
+    info: { sex: "woman", picture: "woman/woman-0#{i}.jpg", profile: woman.sample },
+  )
+  mycontacts = Mycontact.new
+  mycontacts.user = user
+  mycontacts.contacts = [userM.id, userU.id, userE.id]
+  mycontacts.save!
+  user.personnal = personnal
+  print i, user.save!
+end
 
 # creating a contacts group from User.all
 array = []
@@ -97,7 +95,7 @@ User.all.each do |u|
   mycontacts = Mycontact.new
   mycontacts.user = u
   mycontacts.contacts = array
-  mycontacts.save!
+  p mycontacts if mycontacts.save!
 end
 
 def occasion(user, array, user1, user2)
