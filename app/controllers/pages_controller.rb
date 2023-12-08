@@ -26,5 +26,25 @@ class PagesController < ApplicationController
     else
       @mycontacts = []
     end
+
+
+    @mycontacts.sort_by! { |p| p.personnal.birthday }
+
+
+    # def update
+    #   user = User.find(params[:uid])
+    #   user.personnal.update(notification: false)
+    # end
+
+
+
+    # @notify_user = current_user&.personnal&.notifications
+
+
+    #@notify_user = current_user&.notification
+
+    #@mycontacts.sort_by! { |p| p.personnal.birthday unless p.personnal.birthday.nil? }
+
+
   end
 end

@@ -1,3 +1,6 @@
+class ApiService
+  # Your class implementation here
+end
 
 # install gem
 # gem 'httparty'

@@ -161,7 +161,7 @@ class QuestionsController < ApplicationController
   private
 
   def param_strong
-    params.require(:question).permit(:music, :favorites, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
+    params.require(:question).permit(:music, :answers, :favorites, :hobbies, :movie, :brands, :books, :restaurant, :games, :places, :devices, :purchases, :occasion_id, :user_id, :recipient, :myoccasion, :gift)
   end
 
   def gift_scraper(answer_values)
