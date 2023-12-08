@@ -522,7 +522,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 ///***************icons colors on home */
 .icon-trip-group {
   color: white;
-  text-shadow: 0px 0px 3px $s3;
+  text-shadow: 4px 4px 8px $c01;
   position: absolute;
   font-size: 2em;
   left: 20px;
@@ -531,20 +531,27 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 
 .icon-trip-question {
   color: white;
-  text-shadow: 2px 2px 5px $c01;
+  text-shadow: 4px 4px 8px $c01;
   position: absolute;
   font-size: 2em;
   left: 24px;
-  padding-top: 50px;
+  padding-top: 53px;
 }
 
 .icon-trip-gift {
   color: white;
-  text-shadow: 2px 2px 5px $c04;
+  text-shadow: 4px 4px 8px $c01;
   position: absolute;
   font-size: 2em;
   right: 24px;
+}
 
+.icon-trip-gift-end {
+  color: white;
+  text-shadow: 4px 4px 8px $c08;
+  position: absolute;
+  font-size: 2em;
+  right: 24px;
 }
 
 
@@ -561,23 +568,7 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 
-.icon-trip-question-half {
-  position: absolute;
-  color: white;
-  text-shadow: 2px 2px 5px $c04;
-  font-size: 2em;
-  top: 0px;
-  left: 12px;
-}
 
-.icon-trip-gift-half {
-  position: absolute;
-  color: white;
-  text-shadow: 2px 2px 5px $c01;
-  font-size: 2em;
-  top: 0px;
-  right: 10px;
-}
 
 
 
