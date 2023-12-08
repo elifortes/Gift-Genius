@@ -6,9 +6,12 @@
 </div>
 <!-- Questionnaire Section -->
 <div class="proposal-text text-center p-2 pt-4" style="font-size:1.2em">
-  Please provide some information about <%= User.find(@occasion.recipient).personnal.name %>.
+  Please provide some information about <%= User.find(@occasion.recipient).personnal.name %>:
 </div>
-<div class="p-4">
+<div class="px-4">
+  <div class="mb-3">
+    <textarea class="form-control" id="short" rows="2"></textarea>
+  </div>
   <%= simple_form_for @question do |p| %>
     <%= p.input :pledge_amount,  label: "Pledge Amount ($)", required: true, input_html: {  min: 0, value: if @answer then @answer.pledge_amount  else 0.0 end }, input_html: { class: 'form-control mb-2 rounded-input' } %>
     <%= p.input :hobbies, as: :select, collection: @hobbies, selected: if @answer then @answer.hobbies  else nil end,  input_html: { class: 'form-control mb-2 rounded-input' }%>

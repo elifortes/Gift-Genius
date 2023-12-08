@@ -52,15 +52,17 @@
                 <!-- this is the loop -->
                 <% if o.user_id == current_user.id %>
                   <!-- keep only one -->
-                  <%= link_to edit_occasion_question_path(o,o.question) , class: 'icon-trip-question' do %>
-                    <!-- link  -->
-                    <% if  !o.status %>
-                      <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
-                    <% else %>
-                      <i class="fas fa-file-lines"></i>
+                  <% if !o.selected %>
+                    <%= link_to edit_occasion_question_path(o,o.question) , class: 'icon-trip-question' do %>
+                      <!-- link  -->
+                      <% if  !o.status %>
+                        <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
+                      <% else %>
+                        <i class="fas fa-file-lines"></i>
+                      <% end %>
+                      <span></span>
+                      <!-- link  -->
                     <% end %>
-                    <span></span>
-                    <!-- link  -->
                   <% end %>
                   <!-- keep only one -->
                 <% end %>
@@ -128,13 +130,15 @@
           <%= image_tag "occasion/occasion.jpg", alt: "",class: "image" %>
         <% end %>
         <!--Link to Questions -->
-        <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'icon-trip-question-half' do %>
-          <% if  !occasion.status %>
-            <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
-          <% else %>
-            <i class="fas fa-file-lines"></i>
+        <% if  !occasion.selected %>
+          <%= link_to edit_occasion_question_path(occasion,occasion.question) , class: 'icon-trip-question-half' do %>
+            <% if  !occasion.status %>
+              <i class="fas fa-file-lines fa-beat" style="--fa-beat-scale: 1.35;--fa-animation-duration: 3s;"></i>
+            <% else %>
+              <i class="fas fa-file-lines"></i>
+            <% end %>
+            <span></span>
           <% end %>
-          <span></span>
         <% end %>
         <!--Link to Gift -->
         <!-- no proposal -->
