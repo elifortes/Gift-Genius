@@ -36,7 +36,7 @@ class ProposalsController < ApplicationController
       products.each do |p|
         product = Product.new(title: p.title, description: p.description, url: p.url, position: p.position, selected: p.selected, price: p.price, rating: p.rating)
         product.proposal = @proposal
-        product.save!
+        # product.save!
       end
     end
     @proposal = Proposal.find(params[:id])
