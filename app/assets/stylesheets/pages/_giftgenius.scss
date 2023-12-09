@@ -568,6 +568,23 @@ $gradiant-light: linear-gradient(185deg, #fff6e3 -8.78%, #b7ebff 96.15%);
 }
 
 
+.icon-trip-question-half {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 5px $c04;
+  font-size: 2em;
+  top: 0px;
+  left: 12px;
+}
+
+.icon-trip-gift-half {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 5px $c01;
+  font-size: 2em;
+  top: 0px;
+  right: 10px;
+}
 
 
 
